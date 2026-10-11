@@ -1,0 +1,7 @@
+.vercel
+node_modules
+dist
+conversations
+single line drawing art
+*.zip
+.env*

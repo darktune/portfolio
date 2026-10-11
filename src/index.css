@@ -1,0 +1,283 @@
+@import "tailwindcss";
+@source "../index.html";
+@source "../src";
+
+:root {
+  /* iOS 26 Glassmorphic & Monochromatic Design Tokens: Light Mode */
+  --bg-canvas: #f8fafc;
+  --bg-subtle: #f1f5f9;
+  --bg-surface: rgba(255, 255, 255, 0.85);
+  --bg-surface-elevated: rgba(255, 255, 255, 0.95);
+  --bg-surface-hover: rgba(248, 250, 252, 0.9);
+  
+  --text-primary: #09090b;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-faint: #94a3b8;
+  
+  --border-subtle: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.14);
+  --border-hover: rgba(0, 0, 0, 0.24);
+  
+  --nav-bg: #ffffff;
+  --glass-specular: inset 0 1px 0 0 rgba(255, 255, 255, 0.9);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+  
+  --pill-bg: rgba(241, 245, 249, 0.8);
+  --pill-active: #ffffff;
+  --pill-text-active: #09090b;
+  
+  --badge-bg: rgba(241, 245, 249, 0.9);
+  --badge-border: rgba(0, 0, 0, 0.08);
+  --badge-text: #1e293b;
+  
+  --code-bg: #f8fafc;
+  
+  /* Custom Emil Animation Decision Curves */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+:root[data-theme="dark"], .dark {
+  /* iOS 26 Glassmorphic & Monochromatic Design Tokens: Dark Mode */
+  --bg-canvas: #09090c;
+  --bg-subtle: #0d0d12;
+  --bg-surface: rgba(18, 18, 24, 0.92);
+  --bg-surface-elevated: #111117; /* Solid backing so floating windows never bleed */
+  --bg-surface-hover: rgba(30, 30, 42, 0.95);
+  
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --text-faint: #475569;
+  
+  --border-subtle: rgba(255, 255, 255, 0.18);
+  --border-strong: rgba(255, 255, 255, 0.28);
+  --border-hover: rgba(255, 255, 255, 0.45);
+  
+  --nav-bg: #0c0c11;
+  --glass-specular: inset 0 1px 0 0 rgba(255, 255, 255, 0.26), inset 0 0 16px 0 rgba(255, 255, 255, 0.02);
+  --glass-shadow: 0 16px 48px -12px rgba(0, 0, 0, 0.75), 0 0 35px -8px rgba(255, 255, 255, 0.04);
+  
+  --pill-bg: rgba(28, 28, 42, 0.94);
+  --pill-active: rgba(48, 48, 66, 0.98);
+  --pill-text-active: #ffffff;
+  
+  --badge-bg: rgba(255, 255, 255, 0.07);
+  --badge-border: rgba(255, 255, 255, 0.12);
+  --badge-text: #e2e8f0;
+  
+  --code-bg: #0c0c10;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: auto;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--bg-canvas);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  letter-spacing: -0.015em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: background-color 200ms var(--ease-out), color 200ms var(--ease-out);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--text-primary);
+  color: var(--bg-canvas);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+/* ─── iOS 26 Glassmorphic Engine ─── */
+.ios-glass {
+  background: var(--bg-surface);
+  backdrop-filter: blur(32px) saturate(190%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--glass-specular), var(--glass-shadow);
+}
+
+.ios-glass-nav {
+  background: var(--nav-bg);
+  backdrop-filter: blur(36px) saturate(200%);
+  -webkit-backdrop-filter: blur(36px) saturate(200%);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--glass-specular), 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+}
+
+.ios-glass-card {
+  position: relative;
+  background: var(--bg-surface);
+  backdrop-filter: blur(28px) saturate(170%);
+  -webkit-backdrop-filter: blur(28px) saturate(170%);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--glass-specular), 0 4px 20px 0 rgba(0, 0, 0, 0.04);
+  transition: all 220ms var(--ease-out);
+}
+
+.dark .ios-glass-card {
+  background: linear-gradient(180deg, rgba(24, 24, 32, 0.88) 0%, rgba(13, 13, 18, 0.94) 100%);
+  box-shadow: var(--glass-specular), 0 8px 32px -8px rgba(0, 0, 0, 0.7), 0 0 25px -5px rgba(255, 255, 255, 0.025);
+}
+
+/* Resend-style luminous top edge gleam */
+.dark .ios-glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  pointer-events: none;
+}
+
+.ios-glass-card:hover {
+  border-color: var(--border-hover);
+  box-shadow: var(--glass-specular), 0 12px 32px -4px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+
+.dark .ios-glass-card:hover {
+  border-color: rgba(255, 255, 255, 0.28);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.35), 0 16px 44px -8px rgba(0, 0, 0, 0.85), 0 0 35px -6px rgba(255, 255, 255, 0.07);
+}
+
+/* Squircle / Continuous Round Corner Pills */
+.ios-pill {
+  border-radius: 9999px;
+  background: var(--pill-bg);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--glass-specular);
+  transition: all 180ms var(--ease-out);
+}
+
+/* Circular-cornered rectangular chatbox (Squircle Chatbox) */
+.ios-chatbox-pill {
+  border-radius: 18px;
+  background: var(--bg-surface-elevated);
+  backdrop-filter: blur(32px) saturate(190%);
+  -webkit-backdrop-filter: blur(32px) saturate(190%);
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--glass-specular), 0 10px 30px -4px rgba(0, 0, 0, 0.22);
+  transition: all 240ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ─── Hover Physics & Tactile Interactions ─── */
+/* Instant feedback on press (Emil Kowalski / Apple design guideline) */
+button:active, .interactive-press:active {
+  transform: scale(0.97) !important;
+  transition: transform 100ms var(--ease-out) !important;
+}
+
+/* Iconography Spring Physics */
+.icon-hover-physics {
+  transition: transform 220ms var(--ease-out), color 180ms var(--ease-out);
+}
+.group:hover .icon-hover-physics,
+button:hover .icon-hover-physics {
+  transform: scale(1.12) rotate(-3deg);
+}
+
+/* Typography Physics on Hover */
+.title-hover-physics {
+  transition: letter-spacing 200ms var(--ease-out), color 180ms var(--ease-out);
+}
+.group:hover .title-hover-physics {
+  letter-spacing: -0.025em;
+}
+
+.mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+/* Minimalist Glass Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid var(--text-secondary);
+  outline-offset: 2px;
+}
+
+/* Signal Pulse Animation */
+@keyframes signalPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.92); }
+}
+.animate-signal-pulse {
+  animation: signalPulse 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Resend Infinite Logo Marquee */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes marquee-reverse {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 38s linear infinite;
+}
+.animate-marquee:hover,
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
