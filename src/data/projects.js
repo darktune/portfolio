@@ -10,15 +10,10 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Research Prototype (In Progress)",
-    "coverImage": "/media/civos_spatial.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/civos_spatial.jpg",
-        "title": "CivOS Decentralized AI Agent Network & Topology"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "Ongoing research prototype exploring distributed architectures for persistent AI metaverses. Combines a 5-tier deterministic compute hierarchy in C++ with Kafka event sourcing and ERC-4337 agent accounts to slash LLM overhead by 94%.",
     "role": "Lead Systems Architect & Researcher",
     "status": "Prototype in Progress / Active Research",
@@ -94,15 +89,10 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "BSc Capstone / Flagship",
-    "coverImage": "/media/dmex_protocol.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/dmex_protocol.jpg",
-        "title": "D-MEX Atomic Swap Terminal & Smart Contract Execution Trace"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "Trustless cross-chain atomic swap infrastructure engineered for sovereign gaming ecosystems. Eliminates centralized bridge exploits via cryptographic hash-time locked contracts (HTLC), inline Yul assembly optimizations, and EIP-1271 multi-sig support.",
     "role": "Sole Protocol Architect & Smart Contract Engineer",
     "status": "Completed BSc Capstone Protocol",
@@ -174,15 +164,10 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Institutional Workstation (105 Desks)",
-    "coverImage": "/media/stelcera_terminal.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/stelcera_terminal.jpg",
-        "title": "STELCERA 105-Desk Quantitative Workstation & Real-Time Telemetry"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "Ultra-low latency institutional quantitative workstation engineered with Next.js 15, React 19, TypeScript, and FastAPI. Expanded to 105 operational desks spanning Autonomous Multi-Agent LLM Alpha Execution Swarms, Direct Market Access (DMA) Colocation Latency Modelers, Zero-Knowledge Dark Routers, and Black-Scholes options Greeks.",
     "role": "Full-Stack Quantitative Systems Architect",
     "status": "Production Ready Workstation",
@@ -255,15 +240,10 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Production E-Commerce OS",
-    "coverImage": "/media/reavo_commerce.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/reavo_commerce.jpg",
-        "title": "REAVO Storefront & Admin OS Dashboard with KoraPay Checkout"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "Production consumer electronics storefront and specialized Corporate Admin OS powered by Supabase, KoraPay webhook idempotency, automated inventory synchronization, and an autonomous AI operations copilot.",
     "role": "Sole Full-Stack Architect & Core Engineer",
     "status": "Live in Production",
@@ -336,15 +316,10 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Production Media Platform",
-    "coverImage": "/media/news_insights.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/news_insights.jpg",
-        "title": "News-Insights Media Intelligence Dashboard & Obsidian Gold Modal"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "High-throughput digital publishing and investigative journalism portal engineered with Next.js 15 App Router, Supabase PostgreSQL with RLS, TipTap rich text, bespoke obsidian & gold glass luxury subscription modal, and 75 Common Vibe-Coded Web App security defenses.",
     "role": "Lead Full-Stack & Security Engineer",
     "status": "Live in Production",
@@ -417,15 +392,10 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Production Storefront & Vault",
-    "coverImage": "/media/antho_storefront.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/antho_storefront.jpg",
-        "title": "ANTHO Luxury Streetwear Storefront & Capsule Catalog"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "Avant-garde youth luxury streetwear commerce platform and digital vault engineered on Next.js 15, React 19, Tailwind CSS, Prisma ORM, and Paystack. Grounded in Nielsen HCI heuristics with visual-first portal navigation, Edge middleware HMAC route protection, and automated Playwright E2E suites.",
     "role": "Lead Full-Stack & Product Engineer",
     "status": "Live in Production",
@@ -498,15 +468,10 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Quantitative Workstation",
-    "coverImage": "/media/siphoon_os.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/siphoon_os.jpg",
-        "title": "SIPHOON OS Forex Telemetry, Kelly Risk Curves & Trade Journal"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "Comprehensive Forex intelligence, trade journaling, and quantitative decision-support operating system built with Next.js 15, TypeScript, lightweight-charts, PostgreSQL, and Prisma. Features real-math pip/Kelly risk calculators, currency correlation heatmaps, and AI trade review copilot.",
     "role": "Quantitative Systems Engineer & Architect",
     "status": "Production Workstation",
@@ -579,15 +544,10 @@ export const projectsData = [
     "year": "2025 · Present",
     "featured": true,
     "badge": "Unfinished Prototype (In Progress)",
-    "coverImage": "/media/virtual_atelier.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/virtual_atelier.jpg",
-        "title": "LOOM 3D Spatial Mannequin, Draping Physics & WebGL HUD"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "3D bespoke luxury fashion commerce platform connecting bespoke tailors with global patrons through interactive 3D spatial mannequins and milestone escrow, an unfinished prototype that Abraham has been developing recently.",
     "role": "Lead Spatial & Systems Engineer",
     "status": "Unfinished Prototype (Active R&D)",
@@ -650,15 +610,10 @@ export const projectsData = [
     "year": "2025",
     "featured": false,
     "badge": "Industrial Training",
-    "coverImage": "/media/kucheza_gaming.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/kucheza_gaming.jpg",
-        "title": "3D Esports Arena Tournament Stage Design in Blender"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "6-Month Industrial Training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship pitch decks for tier-1 enterprises including MTN, Infinix, Rexona, and Seplat Energy.",
     "role": "R&D Engineer & 3D Staging Designer",
     "status": "Completed October 2025",
@@ -720,15 +675,10 @@ export const projectsData = [
     "year": "2025",
     "featured": false,
     "badge": "EduTech Impact",
-    "coverImage": "/media/codeplay_naija.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/codeplay_naija.jpg",
-        "title": "CodePlay Naija Interactive Coding Dashboard & Blockly-to-Python Pipeline"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "Practical computing curriculum empowering Nigerian secondary school educators and students with computational thinking skills through visual programming, embedded hardware, and Python progression.",
     "role": "Curriculum Architect & Lead Instructor",
     "status": "Deployed Initiative",
@@ -786,15 +736,10 @@ export const projectsData = [
     "year": "2024\u201326",
     "featured": false,
     "badge": "Exhibited Masterworks",
-    "coverImage": "/media/pointillism_studio.jpg",
-    "videoUrl": "/media/demo_walkthrough.mp4",
-    "hasVideo": true,
-    "gallery": [
-      {
-        "url": "/media/pointillism_studio.jpg",
-        "title": "Macro View: Hand-Stippled Archival Ink Artwork on Cotton Paper"
-      }
-    ],
+    "coverImage": null,
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [],
     "summary": "Creative direction, visual brand systems, and original pointillism ink artworks ('Illusion of Freedom', 'Morayo') selected and curated for the prestigious Spectrum Ori Art Exhibition.",
     "role": "Creative Director & Fine Artist",
     "status": "Ongoing Studio Practice",

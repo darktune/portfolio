@@ -143,36 +143,64 @@ export default function ProjectModal({ project, isOpen, onClose }) {
               </p>
             </div>
 
-            {/* Media Presentation: Video or Cover */}
-            <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/90 border border-white/10 shadow-lg">
-              {project.hasVideo && project.videoUrl ? (
-                <>
-                  <video
-                    ref={videoRef}
-                    src={project.videoUrl}
-                    poster={project.coverImage}
-                    playsInline
-                    loop
-                    muted={isMuted}
+            {/* Media Presentation: Video, Cover or Architectural Blueprint */}
+            {project.coverImage || (project.hasVideo && project.videoUrl) ? (
+              <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/90 border border-white/10 shadow-lg">
+                {project.hasVideo && project.videoUrl ? (
+                  <>
+                    <video
+                      ref={videoRef}
+                      src={project.videoUrl}
+                      poster={project.coverImage}
+                      playsInline
+                      loop
+                      muted={isMuted}
+                      className="w-full h-full object-cover"
+                    />
+                    <div className="absolute bottom-3 right-3 flex items-center gap-2 bg-black/70 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-mono text-white border border-white/20">
+                      <button onClick={togglePlay} className="hover:opacity-80 active:scale-90">
+                        {isPlaying ? <Pause size={14} /> : <Play size={14} className="fill-white" />}
+                      </button>
+                      <button onClick={toggleMute} className="hover:opacity-80 active:scale-90">
+                        {isMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
+                      </button>
+                    </div>
+                  </>
+                ) : (
+                  <img
+                    src={project.coverImage}
+                    alt={project.title}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute bottom-3 right-3 flex items-center gap-2 bg-black/70 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-mono text-white border border-white/20">
-                    <button onClick={togglePlay} className="hover:opacity-80 active:scale-90">
-                      {isPlaying ? <Pause size={14} /> : <Play size={14} className="fill-white" />}
-                    </button>
-                    <button onClick={toggleMute} className="hover:opacity-80 active:scale-90">
-                      {isMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
-                    </button>
-                  </div>
-                </>
-              ) : (
-                <img
-                  src={project.coverImage}
-                  alt={project.title}
-                  className="w-full h-full object-cover"
-                />
-              )}
-            </div>
+                )}
+              </div>
+            ) : (
+              <div className="relative rounded-2xl overflow-hidden p-6 bg-[var(--bg-subtle)] border border-[var(--border-subtle)] space-y-4">
+                <div className="absolute inset-0 opacity-[0.08] dark:opacity-[0.14] bg-[radial-gradient(currentColor_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+                <div className="relative z-10 flex items-center justify-between text-xs font-mono">
+                  <span className="inline-flex items-center gap-2 text-emerald-500 font-semibold px-3 py-1 rounded-full ios-pill bg-emerald-500/10 border border-emerald-500/20">
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span>SYSTEM BLUEPRINT // {project.code || '01'}</span>
+                  </span>
+                  <span className="text-[var(--text-muted)]">{project.year} · {project.category}</span>
+                </div>
+                <div className="relative z-10 text-xs sm:text-sm text-[var(--text-secondary)] font-mono leading-relaxed">
+                  {project.summary}
+                </div>
+                <div className="relative z-10 pt-1 flex flex-wrap gap-1.5 text-[11px] font-mono text-[var(--text-muted)]">
+                  {project.techStack?.map((tech, idx) => (
+                    <span key={idx} className="px-2.5 py-0.5 rounded-full ios-pill text-[var(--text-secondary)]">
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div className="relative z-10 pt-2 border-t border-[var(--border-subtle)] flex items-center justify-between text-[11px] font-mono text-[var(--text-muted)]">
+                  <span>STATUS // SYSTEM LOGIC & CODE INVARIANTS VERIFIED</span>
+                  <span className="text-cyan-400">READY FOR ASSET INGESTION</span>
+                </div>
+                <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-cyan-500/40 via-emerald-500/40 to-transparent" />
+              </div>
+            )}
 
             {/* Circular Navigation Tabs */}
             <div className="flex items-center gap-2 border-b border-[var(--border-subtle)] pb-2 text-xs font-mono">

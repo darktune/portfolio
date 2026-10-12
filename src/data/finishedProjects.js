@@ -9,15 +9,10 @@ export const finishedProjectsData = [
     year: "2026",
     statusBadge: "Completed BSc Capstone",
     featured: true,
-    coverImage: "/media/dmex_protocol.jpg",
-    videoUrl: "/media/demo_walkthrough.mp4",
-    hasVideo: true,
-    gallery: [
-      {
-        url: "/media/dmex_protocol.jpg",
-        title: "D MEX Atomic Swap Execution Engine and Invariant Verification"
-      }
-    ],
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
     summary: "Trustless cross chain atomic swap infrastructure engineered for sovereign gaming ecosystems. Eliminates centralized bridge exploits via cryptographic timelocks and assembly code optimizations.",
     role: "Sole Protocol Architect and Smart Contract Engineer",
     techStack: ["Solidity", "Foundry", "Yul Assembly", "Chainlink Oracles", "EVM", "Python"],
@@ -57,15 +52,10 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
     year: "2026",
     statusBadge: "Production Workstation",
     featured: true,
-    coverImage: "/media/stelcera_terminal.jpg",
-    videoUrl: "/media/demo_walkthrough.mp4",
-    hasVideo: true,
-    gallery: [
-      {
-        url: "/media/stelcera_terminal.jpg",
-        title: "STELCERA 105 Desk Quantitative Workstation and Real Time Telemetry"
-      }
-    ],
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
     summary: "Ultra low latency institutional quantitative workstation built with modern web standards and high speed data pipelines. Features 105 operational desks spanning autonomous market models and real time risk analytics.",
     role: "Full Stack Quantitative Systems Architect",
     techStack: ["Next.js 15", "React 19", "FastAPI", "WebSockets", "HTML5 Canvas", "Python", "NumPy"],
@@ -108,15 +98,10 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
     year: "2026",
     statusBadge: "Live in Production",
     featured: true,
-    coverImage: "/media/reavo_commerce.jpg",
-    videoUrl: "/media/demo_walkthrough.mp4",
-    hasVideo: true,
-    gallery: [
-      {
-        url: "/media/reavo_commerce.jpg",
-        title: "REAVO Storefront and Admin OS Dashboard with KoraPay Checkout"
-      }
-    ],
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
     summary: "Production consumer electronics storefront and corporate operating system powered by verified payment workflows and automated inventory synchronization. Built with bank grade security rules and an autonomous operations copilot.",
     role: "Sole Full Stack Architect and Core Engineer",
     techStack: ["Node.js", "Express", "Vite / React", "Supabase", "KoraPay API", "Tailwind CSS"],
@@ -160,15 +145,10 @@ router.post('/webhook/korapay', async (req, res) => {
     year: "2026",
     statusBadge: "Live in Production",
     featured: true,
-    coverImage: "/media/news_insights.jpg",
-    videoUrl: "/media/demo_walkthrough.mp4",
-    hasVideo: true,
-    gallery: [
-      {
-        url: "/media/news_insights.jpg",
-        title: "News Insights Media Intelligence Dashboard and Obsidian Gold Modal"
-      }
-    ],
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
     summary: "High throughput digital publishing and investigative journalism portal engineered with server rendered articles and luxury reader modals. Audited against 75 common web application vulnerabilities with hardened database permissions.",
     role: "Lead Full Stack and Security Engineer",
     techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Supabase", "Zustand", "TipTap", "OAuth 2.0"],
@@ -205,15 +185,10 @@ USING (status = 'published' AND published_at <= NOW());`
     year: "2026",
     statusBadge: "Live in Production",
     featured: true,
-    coverImage: "/media/antho_storefront.jpg",
-    videoUrl: "/media/demo_walkthrough.mp4",
-    hasVideo: true,
-    gallery: [
-      {
-        url: "/media/antho_storefront.jpg",
-        title: "ANTHO Luxury Streetwear Storefront and Capsule Catalog"
-      }
-    ],
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
     summary: "Avant garde luxury streetwear commerce platform engineered with visual first portal navigation and cryptographic route protection. Grounded in human computer interaction heuristics and automated end to end test suites.",
     role: "Lead Full Stack and Product Engineer",
     techStack: ["Next.js 15", "React 19", "Tailwind CSS", "Prisma", "Paystack", "Playwright", "Web Crypto"],
@@ -253,15 +228,10 @@ export async function middleware(req: NextRequest) {
     year: "2025",
     statusBadge: "Completed Industrial Training",
     featured: false,
-    coverImage: "/media/kucheza_gaming.jpg",
-    videoUrl: "/media/demo_walkthrough.mp4",
-    hasVideo: true,
-    gallery: [
-      {
-        url: "/media/kucheza_gaming.jpg",
-        title: "3D Esports Arena Tournament Stage Design in Blender"
-      }
-    ],
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
     summary: "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes pitch materials for major enterprises including MTN, Infinix, Rexona, and Seplat Energy.",
     role: "Research Engineer and 3D Staging Designer",
     techStack: ["3D Staging", "Blender", "Spatial Design", "Esports Operations", "Pitch Engineering"],
