@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import ProjectModal from './components/ProjectModal';
 import GwenFloatingChat from './components/GwenFloatingChat';
 import NightLightEssence from './components/NightLightEssence';
+import CustomCursor from './components/CustomCursor';
 import { finishedProjectsData } from './data/finishedProjects';
 
 export default function App() {
@@ -81,6 +82,9 @@ export default function App() {
   return (
     <div className="relative min-h-screen bg-[var(--bg-canvas)] text-[var(--text-primary)] transition-colors duration-200 selection:bg-[var(--text-primary)] selection:text-[var(--bg-canvas)] overflow-x-hidden">
       
+      {/* Precision Techy Reticle & Telemetry Cursor */}
+      <CustomCursor />
+
       {/* Resend-Style Night Light Essence & Ambient Ray in Dark Theme */}
       <NightLightEssence />
 
@@ -96,19 +100,34 @@ export default function App() {
           onExploreClick={scrollToProjects}
         />
 
+        {/* Luminous Neon Gradient Horizon */}
+        <div className="neon-divider max-w-5xl mx-auto my-4 opacity-75" />
+
         {/* 3. The 6 Finished Deployments & Deliverables */}
         <ProjectsSection
           onOpenDetails={(project) => setSelectedProject(project)}
         />
 
+        {/* Luminous Neon Gradient Horizon */}
+        <div className="neon-divider max-w-5xl mx-auto my-4 opacity-75" />
+
         {/* 4. Experience & Institutional Track Record */}
         <ExperienceSection />
+
+        {/* Luminous Neon Gradient Horizon */}
+        <div className="neon-divider max-w-5xl mx-auto my-4 opacity-75" />
 
         {/* 5. Tech Stack & Motion Design Showcase */}
         <TechStackSection />
 
+        {/* Luminous Neon Gradient Horizon */}
+        <div className="neon-divider max-w-5xl mx-auto my-4 opacity-75" />
+
         {/* 6. Pedigree, Engineering Rigor & Principles */}
         <AboutSection />
+
+        {/* Luminous Neon Gradient Horizon */}
+        <div className="neon-divider max-w-5xl mx-auto my-4 opacity-75" />
 
         {/* 7. Direct Transmission Contact Card */}
         <ContactSection />

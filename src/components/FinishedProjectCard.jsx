@@ -55,7 +55,8 @@ export default function FinishedProjectCard({ project, onOpenDetails }) {
           </div>
 
           {/* Finished Highlights */}
-          <div className="border-t border-[var(--border-subtle)] pt-4 space-y-2.5">
+          <div className="pt-2 space-y-2.5">
+            <div className="neon-divider-subtle mb-3" />
             <div className="text-[11px] font-mono uppercase tracking-wider text-[var(--text-muted)]">
               Verified Deliverables
             </div>
@@ -71,7 +72,8 @@ export default function FinishedProjectCard({ project, onOpenDetails }) {
         </div>
 
         {/* Bottom Section: Metrics & Actions */}
-        <div className="space-y-4 pt-3 border-t border-[var(--border-subtle)]">
+        <div className="space-y-4 pt-2">
+          <div className="neon-divider-subtle mb-3" />
           {/* Metrics Pill Grid */}
           <div className="grid grid-cols-3 gap-2 text-center text-xs font-mono">
             {project.metrics.map((metric, idx) => (
