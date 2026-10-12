@@ -15,11 +15,11 @@ export default function GwenFloatingChat({ onOpenCaseStudy, externalPrompt, isOp
     {
       id: "intro",
       role: "assistant",
-      text: "I am GWEN, Abraham's AI systems intelligence.\n\nWhile the portfolio foregrounds his 6 completed flagship deployments, I possess complete knowledge of his full body of work including unlisted research prototypes such as CivOS and OEES, fine art discipline since age six, and institutional quantitative algorithms.",
+      text: "Hello, I am GWEN, Abraham's portfolio companion.\n\nI can share the heart and story behind all of his work: his living world prototypes like CivOS, his fine art started at age six, his high speed financial software, and his lifelong dream of building The OASIS.",
       contextCard: {
-        title: "Intelligence Scope",
-        badge: "Systems · Web3 · Research · Games",
-        detail: "C++ Kernels · Yul Assembly · Spatial AI · Quant DOM",
+        title: "Creative & Systems Journey",
+        badge: "Virtual Worlds · Fine Art · Games",
+        detail: "Living Worlds · Fair Ownership · Pure Rhythm",
         actionText: "EXPLORE VERIFIED DEPLOYMENTS",
         targetSection: "projects"
       },
@@ -351,7 +351,7 @@ export default function GwenFloatingChat({ onOpenCaseStudy, externalPrompt, isOp
               <button
                 type="submit"
                 disabled={!inputPrompt.trim() || isStreaming || isThinking}
-                className="p-2.5 rounded-full bg-[var(--text-primary)] text-[var(--bg-canvas)] hover:opacity-90 active:scale-90 transition-all disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center shadow-sm"
+                className="p-2.5 rounded-full bg-zinc-950 text-white dark:bg-white dark:text-zinc-950 hover:opacity-90 active:scale-90 transition-all disabled:opacity-30 disabled:cursor-not-allowed flex items-center justify-center shadow-sm"
                 aria-label="Send prompt"
               >
                 <CornerDownLeft size={13} />
@@ -363,11 +363,12 @@ export default function GwenFloatingChat({ onOpenCaseStudy, externalPrompt, isOp
               <div className="flex items-center gap-1.5 overflow-x-auto">
                 <span className="text-[10px] uppercase text-[var(--text-muted)] font-semibold shrink-0">Topics:</span>
                 {[
-                  { tag: "CivOS", q: "What is CivOS and the 5 tier compute hierarchy?" },
-                  { tag: "D MEX", q: "Explain the D MEX cross chain atomic swap protocol" },
-                  { tag: "Art Since 6", q: "How does Abraham's art since age 6 inspire his code?" },
-                  { tag: "STELCERA", q: "What is STELCERA and the 105 quantitative desks?" },
-                  { tag: "OEES", q: "Tell me about OEES olfactory HCI research" }
+                  { tag: "The OASIS", q: "What is The OASIS and Abraham's vision?" },
+                  { tag: "Art Since 6", q: "How does art since age six inspire his software?" },
+                  { tag: "CivOS", q: "Tell me about CivOS and living virtual worlds" },
+                  { tag: "D MEX", q: "What is D MEX Protocol?" },
+                  { tag: "STELCERA", q: "Tell me about STELCERA Terminal" },
+                  { tag: "OEES", q: "How does OEES bring scent into games?" }
                 ].map((item, tIdx) => (
                   <button
                     key={tIdx}

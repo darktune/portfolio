@@ -5,7 +5,7 @@ import { projectsData } from '../../data/projects';
 export function queryGwenKnowledge(userPrompt) {
   if (!userPrompt || typeof userPrompt !== 'string') {
     return {
-      answer: "I am GWEN, Abraham's AI systems intelligence. Ask me about his distributed architectures (**CivOS**), gas-optimized smart contracts (**D-MEX**), 105-desk quant terminal (**STELCERA**), game engines (**Paint Infusion**), sensory HCI (**OEES**), or his origin in pointillism fine art since age six.",
+      answer: "Hello, I am GWEN, Abraham's portfolio companion. Feel free to ask about his living virtual worlds (**CivOS**), safe gaming trades (**D MEX**), high speed trading screens (**STELCERA**), games (**Paint Infusion**), sensory research (**OEES**), or his origin in pointillism fine art since age six.",
       contextCard: null,
       followUps: gwenKnowledgeBase.suggestedPrompts.slice(0, 3)
     };
@@ -23,8 +23,8 @@ export function queryGwenKnowledge(userPrompt) {
     if (rawTag) {
       return p.id.toLowerCase().includes(rawTag) || p.title.toLowerCase().includes(rawTag);
     }
-    const cleanTitle = p.title.toLowerCase();
-    return query.includes(cleanTitle) || query.includes(p.id.toLowerCase());
+    const cleanTitle = p.title.toLowerCase().replace(/-/g, ' ');
+    return query.includes(cleanTitle) || query.includes(p.id.toLowerCase().replace(/-/g, ' '));
   });
 
   // Score knowledge entries by keyword / intent matches
@@ -57,18 +57,18 @@ export function queryGwenKnowledge(userPrompt) {
   // If a specific project was matched directly
   if (matchedProj) {
     return {
-      answer: `**${matchedProj.title}** (${matchedProj.year}) — ${matchedProj.subtitle}.\n\n${matchedProj.summary}\n\n**Role:** ${matchedProj.role}\n**Status:** ${matchedProj.statusBadge || matchedProj.status}\n**Tech Stack:** ${matchedProj.techStack.join(' · ')}`,
+      answer: `**${matchedProj.title}** (${matchedProj.year}) · ${matchedProj.subtitle}.\n\n${matchedProj.summary}\n\n**Role:** ${matchedProj.role}\n**Status:** ${matchedProj.statusBadge || matchedProj.status}\n**Tech Stack:** ${matchedProj.techStack.join(' · ')}`,
       contextCard: {
         title: matchedProj.title,
         badge: `${matchedProj.statusBadge || matchedProj.badge || matchedProj.year}`,
-        detail: matchedProj.techStack.slice(0, 5).join(' · '),
+        detail: matchedProj.techStack.slice(0, 4).join(' · '),
         actionText: `VIEW ${matchedProj.title.split(' ')[0].toUpperCase()} DETAILS →`,
         projectId: matchedProj.id
       },
       followUps: [
         `How does ${matchedProj.title.split(' ')[0]} work?`,
         "What is CivOS?",
-        "Explain Abraham's 105-desk quant terminal",
+        "Tell me about STELCERA Terminal",
         "Tell me about his fine art background"
       ]
     };
@@ -76,19 +76,19 @@ export function queryGwenKnowledge(userPrompt) {
 
   // Fallback response for unindexed queries
   return {
-    answer: "I can give you deep technical insight into Abraham's entire body of work—including his unlisted research prototypes:\n\n- **Distributed Systems**: **CivOS** (5-tier C++ compute hierarchy cutting LLM overhead by 94%).\n- **Smart Contracts**: **D-MEX Protocol** (Yul inline assembly HTLC atomic swaps).\n- **Quant Systems**: **STELCERA Terminal** (105 desks, 120 FPS Canvas orderbook DOM).\n- **Game Design & HCI**: **Paint Infusion** (tactile tactical combat) & **OEES** (olfactory scent actuators with sub-50ms serial bus).\n- **Fine Art Origin**: Handcrafted pointillism since age six (Spectrum Ori exhibition masterworks *'Illusion of Freedom'* & *'Morayo'*).\n\nWhat would you like to delve into?",
+    answer: "I can share the heart, story, and engineering behind all of Abraham's creations:\n\n• **Living Virtual Worlds**: **CivOS** · intelligent characters that remember and grow.\n• **Fair Game Trading**: **D MEX Protocol** · letting players trade freely without middlemen.\n• **High Speed Finance**: **STELCERA Terminal** · 105 trading desks with zero lag.\n• **Play and Senses**: **Paint Infusion** tactical gaming and **OEES** scent immersion.\n• **Art Since Age Six**: Over twenty years of patient ink drawings with zero margin for error.\n\nWhich of these would you love to explore?",
     contextCard: {
-      title: "Abraham Toluwani — Intelligence Scope",
-      badge: "Full Technical Knowledge",
-      detail: "Systems Architect · Smart Contract Engineer · Researcher · Game Designer",
+      title: "Abraham Toluwani · Creative Journey",
+      badge: "Full Portfolio Companion",
+      detail: "Systems Architect · Software Engineer · Researcher · Game Designer",
       actionText: "EXPLORE VERIFIED DEPLOYMENTS",
       targetSection: "projects"
     },
     followUps: [
-      "What is CivOS and the 5-tier compute hierarchy?",
-      "How does his art since age 6 inspire his code?",
-      "Tell me about D-MEX cross-chain swaps",
-      "What is OEES olfactory HCI research?"
+      "What is The OASIS and Abraham's vision?",
+      "How does art since age six inspire his software?",
+      "Tell me about D MEX Protocol",
+      "Tell me about STELCERA Terminal"
     ]
   };
 }

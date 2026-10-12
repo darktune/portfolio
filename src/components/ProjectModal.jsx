@@ -323,10 +323,10 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-full text-xs font-semibold bg-[var(--text-primary)] text-[var(--bg-canvas)] hover:opacity-90 active:scale-95 transition-all shadow-sm"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-xs font-semibold bg-zinc-950 text-white hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-100 active:scale-95 transition-all shadow-md group"
                 >
-                  <span>Open Live Application</span>
-                  <ExternalLink size={13} />
+                  <span className="font-medium text-white dark:text-zinc-950">Open Live Site</span>
+                  <ExternalLink size={13} className="text-white dark:text-zinc-950 group-hover:translate-x-0.5 transition-transform" />
                 </a>
               )}
               {project.github && (
@@ -334,10 +334,10 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-mono ios-pill text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all active:scale-95"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-mono ios-pill text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all active:scale-95"
                 >
                   <GithubIcon size={14} />
-                  <span>View Repository</span>
+                  <span>View Code</span>
                 </a>
               )}
             </div>
