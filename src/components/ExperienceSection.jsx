@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Calendar, MapPin, ChevronDown, CheckCircle2, Award, Sparkles, Building2, ArrowUpRight } from 'lucide-react';
+import { Calendar, MapPin, ChevronDown, CheckCircle2, Sparkles, ArrowUpRight } from 'lucide-react';
 import PersonalMark from './PersonalMark';
 
 export default function ExperienceSection() {
@@ -15,38 +15,57 @@ export default function ExperienceSection() {
     {
       id: 'kucheza',
       company: 'Kucheza Gaming',
-      role: 'Industrial Training Fellow · R&D & Esports Systems',
+      role: 'Industrial Training Fellow · Spatial R&D & Esports Systems',
       period: 'Apr 2025 · Oct 2025',
       status: 'Completed',
       location: 'Lagos, Nigeria',
       badge: 'Tier 1 Industry',
-      highlight: 'Engineered spatial 3D tournament booth architectures and tier 1 corporate pitch decks for MTN, Infinix, and Rexona.',
+      highlight: 'Engineered spatial 3D tournament arena stage architectures and corporate presentation systems for leading enterprise brand partnerships.',
       keyMetric: '3D Spatial Staging & Enterprise Decks',
+      glowClass: 'bg-emerald-500',
+      logo: (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+          <path d="M6 11H8M7 10V12" stroke="#10b981" strokeWidth="2" strokeLinecap="round" />
+          <circle cx="16" cy="10.5" r="1" fill="#06b6d4" />
+          <circle cx="18" cy="12.5" r="1" fill="#10b981" />
+          <rect x="2" y="6" width="20" height="12" rx="6" stroke="currentColor" strokeWidth="1.8" className="text-[var(--text-primary)]" />
+        </svg>
+      ),
       deliverables: [
-        'Designed interactive 3D tournament staging and exhibition booth layouts for national esports events',
-        'Engineered high conversion corporate sponsorship pitch decks for MTN, Infinix, Fan Milk, and Rexona',
-        'Authored and presented the Seplat Energy executive retreat keynote Bloom Beyond Limits',
+        'Designed interactive 3D tournament staging and spectator arena layouts for national esports championships',
+        'Engineered spatial exhibition booths and visual pitch systems for premier enterprise brand partnerships',
+        'Authored and presented executive spatial keynote visualizations for corporate partner retreats',
         'Conducted spatial computing and audience engagement research for youth digital recreation'
       ],
       technologies: ['Unreal Engine 5', 'Blender', 'Spatial Staging', 'Enterprise Strategy', 'Pitch Architecture']
     },
     {
-      id: 'covenant',
-      company: 'Covenant University Research Labs',
-      role: 'Systems Architect & Protocol Researcher',
+      id: 'gdg-covenant',
+      company: 'Google Developer Groups · Game Developers Track & Systems R&D',
+      role: 'Track Lead & Systems Researcher · Final Year Capstone',
       period: '2022 · 2026',
       status: 'Graduated',
       location: 'Ota, Nigeria',
-      badge: 'BSc Computer Science',
-      highlight: 'Spearheaded D MEX atomic cross chain swap protocol and CivOS 5 Tier distributed compute hierarchy with C++ memory bouncers.',
-      keyMetric: 'Zero Counterparty Risk Protocols',
+      badge: 'GDG on Campus & BSc Capstone',
+      highlight: 'Led game development initiatives for Google Developer Groups and conducted personal systems R&D for final year thesis project D MEX and spatial computing.',
+      keyMetric: 'Game Dev Track & BSc Thesis',
+      glowClass: 'bg-blue-500',
+      logo: (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+          {/* Official GDG Colors: Blue, Red, Yellow, Green */}
+          <path d="M7 7L3 12L7 17" stroke="#4285F4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M17 7L21 12L17 17" stroke="#34A853" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+          <circle cx="12" cy="9.5" r="1.5" fill="#EA4335" />
+          <circle cx="12" cy="14.5" r="1.5" fill="#FBBC05" />
+        </svg>
+      ),
       deliverables: [
-        'Spearheaded D MEX protocol development with hashed timelock contracts and zero centralized counterparty risk',
-        'Engineered CivOS 5 Tier compute hierarchy research prototype with C++ memory bouncers and Kafka event streams',
-        'Authored research on Olfactory Enhanced Entertainment Experience for multimodal sensory computing',
-        'Graduated with BSc in Computer Science with focus on systems architecture and cryptographic primitives'
+        'Directed game development workshops, spatial physics tutorials, and game engine sessions for the Google Developer Groups community',
+        'Conducted personal systems R&D architecting D MEX cross chain atomic swap protocol as final year BSc thesis capstone at Covenant University',
+        'Engineered CivOS distributed computing research prototype exploring living virtual world compute hierarchies',
+        'Graduated with BSc in Computer Science with distinction in systems architecture and cryptographic protocols'
       ],
-      technologies: ['C++', 'Solidity', 'Apache Kafka', 'Redis', 'ERC 4337', 'Memory Bouncers']
+      technologies: ['Game Development', 'Unreal Engine 5', 'Solidity', 'C++', 'Three.js', 'BSc Capstone R&D']
     },
     {
       id: 'loom',
@@ -58,6 +77,13 @@ export default function ExperienceSection() {
       badge: 'Recent Prototype',
       highlight: 'Engineering LOOM as an unfinished 3D spatial atelier prototype with real time WebGL cloth drape simulation and smart escrow pipelines.',
       keyMetric: 'Active Spatial Prototype',
+      glowClass: 'bg-purple-500',
+      logo: (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+          <path d="M12 2L20 7V17L12 22L4 17V7L12 2Z" stroke="#a855f7" strokeWidth="1.8" strokeLinejoin="round" />
+          <path d="M12 22V12M20 7L12 12M4 7L12 12" stroke="#ec4899" strokeWidth="1.8" strokeLinejoin="round" />
+        </svg>
+      ),
       deliverables: [
         'Constructing real time WebGL custom draping simulation with realistic fabric tensile physics in Three.js',
         'Engineering dual rail milestone escrow architecture connecting secure settlement with state transitions',
@@ -76,6 +102,15 @@ export default function ExperienceSection() {
       badge: '200+ Trained',
       highlight: 'Designed and deployed computing literacy programs across Nigerian secondary schools with a 92% completion rate.',
       keyMetric: '92% Completion Rate Across Schools',
+      glowClass: 'bg-amber-500',
+      logo: (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+          <rect x="3" y="4" width="18" height="14" rx="3" stroke="#f59e0b" strokeWidth="1.8" />
+          <path d="M7 10L10 12L7 14" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+          <line x1="12" y1="14" x2="16" y2="14" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" />
+          <line x1="9" y1="20" x2="15" y2="20" stroke="currentColor" strokeWidth="1.8" className="text-[var(--text-muted)]" />
+        </svg>
+      ),
       deliverables: [
         'Authored comprehensive curriculum in algorithmic logic, Python programming, and modern web systems',
         'Trained over 200 secondary school students and educators with an unprecedented 92% completion rate',
@@ -94,6 +129,14 @@ export default function ExperienceSection() {
       badge: 'Creative Advisory',
       highlight: 'Directed luxury brand identity systems and fine art pointillism masterpieces exhibited at Spectrum Ori Art Exhibition.',
       keyMetric: 'Exhibited Fine Art & Brand Systems',
+      glowClass: 'bg-yellow-500',
+      logo: (
+        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+          <circle cx="12" cy="12" r="8" stroke="#eab308" strokeWidth="1.8" strokeDasharray="2 2" />
+          <circle cx="12" cy="12" r="3" fill="#ca8a04" />
+          <path d="M12 2V6M12 18V22M2 12H6M18 12H22" stroke="#eab308" strokeWidth="1.8" strokeLinecap="round" />
+        </svg>
+      ),
       deliverables: [
         'Engineered brand identity systems and digital flagship commerce for Abraham\'s Collection luxury house',
         'Advised technology founders and institutional ventures on unified brand narratives and interface systems',
@@ -107,7 +150,7 @@ export default function ExperienceSection() {
   return (
     <section id="experience" className="py-16 md:py-24 px-5 sm:px-8 max-w-6xl mx-auto border-t border-[var(--border-subtle)]">
       
-      {/* Section Header: Strict 2 Sentences, Zero Clutter, Zero Tabs */}
+      {/* Section Header */}
       <div className="mb-10 sm:mb-12">
         <div className="space-y-3">
           <div className="flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-[var(--text-muted)]">
@@ -123,7 +166,7 @@ export default function ExperienceSection() {
         </div>
       </div>
 
-      {/* Experience Stream: Executive Highlights with Smooth Deep Dive Expansion */}
+      {/* Experience Stream */}
       <div className="space-y-4 sm:space-y-5">
         {experiences.map((exp, index) => {
           const isExpanded = expandedId === exp.id;
@@ -140,44 +183,59 @@ export default function ExperienceSection() {
               {/* Resend Specular Top Edge Gleam */}
               <div className="absolute top-0 left-8 right-8 h-[1px] bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none" />
 
-              {/* Card Summary: Uncluttered Executive View */}
+              {/* Card Summary */}
               <div className="p-5 sm:p-7">
-                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+                <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
                   
-                  {/* Left: Metadata & Titles */}
-                  <div className="space-y-2 max-w-2xl">
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="w-6 h-6 rounded-xl ios-pill flex items-center justify-center text-[11px] font-mono font-bold text-[var(--text-primary)] shrink-0">
-                        0{index + 1}
-                      </span>
-                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
-                        <Sparkles size={10} />
-                        <span>{exp.badge}</span>
-                      </span>
-                      <span className="text-xs font-mono text-[var(--text-muted)] flex items-center gap-1">
-                        <Calendar size={11} className="text-zinc-400" />
-                        <span>{exp.period}</span>
-                      </span>
-                      <span className="text-[var(--text-muted)] text-xs">·</span>
-                      <span className="text-xs font-mono text-[var(--text-muted)] flex items-center gap-1">
-                        <MapPin size={11} className="text-zinc-400" />
-                        <span>{exp.location}</span>
-                      </span>
-                    </div>
-
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-extrabold text-[var(--text-primary)] tracking-tight title-hover-physics">
-                        {exp.company}
-                      </h3>
-                      <div className="text-xs sm:text-sm font-semibold text-[var(--text-secondary)] mt-0.5">
-                        {exp.role}
+                  {/* Left: Organization Logo & Metadata */}
+                  <div className="flex items-start gap-4 max-w-2xl">
+                    
+                    {/* Animated Glassmorphic Brand Logo with Ambient Glow */}
+                    <div className="relative shrink-0 pt-0.5">
+                      <div className="w-12 h-12 rounded-2xl ios-pill flex items-center justify-center p-2.5 relative overflow-hidden border border-[var(--border-subtle)] shadow-sm group-hover:border-[var(--border-strong)] transition-all duration-300">
+                        {/* Ambient glow matching brand color palette */}
+                        <div className={`absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity blur-md ${exp.glowClass}`} />
+                        <div className="relative z-10">
+                          {exp.logo}
+                        </div>
                       </div>
                     </div>
 
-                    {/* Executive Highlight: Clean, Uncluttered at Rest */}
-                    <p className="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed pt-1">
-                      {exp.highlight}
-                    </p>
+                    <div className="space-y-2 flex-1">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="w-6 h-6 rounded-xl ios-pill flex items-center justify-center text-[11px] font-mono font-bold text-[var(--text-primary)] shrink-0">
+                          0{index + 1}
+                        </span>
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
+                          <Sparkles size={10} />
+                          <span>{exp.badge}</span>
+                        </span>
+                        <span className="text-xs font-mono text-[var(--text-muted)] flex items-center gap-1">
+                          <Calendar size={11} className="text-zinc-400" />
+                          <span>{exp.period}</span>
+                        </span>
+                        <span className="text-[var(--text-muted)] text-xs">·</span>
+                        <span className="text-xs font-mono text-[var(--text-muted)] flex items-center gap-1">
+                          <MapPin size={11} className="text-zinc-400" />
+                          <span>{exp.location}</span>
+                        </span>
+                      </div>
+
+                      <div>
+                        <h3 className="text-lg sm:text-xl font-extrabold text-[var(--text-primary)] tracking-tight title-hover-physics">
+                          {exp.company}
+                        </h3>
+                        <div className="text-xs sm:text-sm font-semibold text-[var(--text-secondary)] mt-0.5">
+                          {exp.role}
+                        </div>
+                      </div>
+
+                      {/* Executive Highlight */}
+                      <p className="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed pt-1">
+                        {exp.highlight}
+                      </p>
+                    </div>
+
                   </div>
 
                   {/* Right: Deep Dive Interactive Trigger Button */}
@@ -206,7 +264,7 @@ export default function ExperienceSection() {
 
                 </div>
 
-                {/* Deep Dive Expanded Section: Unfolds Smoothly with Framer Motion */}
+                {/* Deep Dive Expanded Section */}
                 <AnimatePresence>
                   {isExpanded && (
                     <motion.div
@@ -218,31 +276,31 @@ export default function ExperienceSection() {
                     >
                       <div className="pt-6 mt-6 border-t border-[var(--border-subtle)] grid grid-cols-1 lg:grid-cols-12 gap-6">
                         
-                        {/* Key Technical Deliverables */}
+                        {/* Verified Deliverables */}
                         <div className="lg:col-span-8 space-y-3">
-                          <div className="text-xs font-mono uppercase tracking-wider text-[var(--text-muted)]">
+                          <div className="text-[11px] font-mono uppercase tracking-wider text-[var(--text-muted)]">
                             Technical Deliverables & Institutional Architecture
                           </div>
-                          <div className="space-y-2.5">
-                            {exp.deliverables.map((item, dIdx) => (
-                              <div key={dIdx} className="flex items-start gap-2.5 text-xs sm:text-sm text-[var(--text-secondary)]">
-                                <CheckCircle2 size={15} className="text-emerald-500 shrink-0 mt-0.5" />
-                                <span className="leading-snug">{item}</span>
-                              </div>
+                          <ul className="space-y-2.5 text-xs text-[var(--text-secondary)]">
+                            {exp.deliverables.map((del, dIdx) => (
+                              <li key={dIdx} className="flex items-start gap-2.5">
+                                <CheckCircle2 size={14} className="text-emerald-500 mt-0.5 shrink-0" />
+                                <span className="leading-relaxed">{del}</span>
+                              </li>
                             ))}
-                          </div>
+                          </ul>
                         </div>
 
-                        {/* Systems & Technology Stack Chips */}
-                        <div className="lg:col-span-4 space-y-3 lg:border-l lg:border-[var(--border-subtle)] lg:pl-6">
-                          <div className="text-xs font-mono uppercase tracking-wider text-[var(--text-muted)]">
+                        {/* Core Technologies */}
+                        <div className="lg:col-span-4 space-y-3">
+                          <div className="text-[11px] font-mono uppercase tracking-wider text-[var(--text-muted)]">
                             Core Technologies
                           </div>
-                          <div className="flex flex-wrap items-center gap-1.5">
-                            {exp.technologies.map((tech) => (
+                          <div className="flex flex-wrap gap-1.5">
+                            {exp.technologies.map((tech, tIdx) => (
                               <span
-                                key={tech}
-                                className="px-2.5 py-1 rounded-xl text-[11px] font-mono bg-black/5 dark:bg-white/5 border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+                                key={tIdx}
+                                className="px-3 py-1 rounded-full text-xs font-mono ios-pill text-[var(--text-secondary)]"
                               >
                                 {tech}
                               </span>
@@ -259,26 +317,6 @@ export default function ExperienceSection() {
             </div>
           );
         })}
-      </div>
-
-      {/* Verified Academic Accreditation Banner */}
-      <div className="mt-10 p-6 rounded-3xl ios-glass-card border border-[var(--border-subtle)] flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-2xl ios-pill flex items-center justify-center text-emerald-500 shrink-0">
-            <Award size={20} />
-          </div>
-          <div>
-            <div className="text-xs font-mono uppercase tracking-wider text-[var(--text-muted)]">
-              Verified Academic Credentials
-            </div>
-            <div className="text-sm font-bold text-[var(--text-primary)]">
-              BSc in Computer Science · Covenant University Class of 2026
-            </div>
-          </div>
-        </div>
-        <div className="text-xs font-mono text-[var(--text-muted)] text-center sm:text-right">
-          Systems Research · Cryptographic Protocols · Multimodal HCI
-        </div>
       </div>
 
     </section>

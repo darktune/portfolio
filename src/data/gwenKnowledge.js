@@ -141,9 +141,9 @@ export const gwenKnowledgeBase = {
     // 8. Flagship: Kucheza Gaming
     {
       id: "kucheza-gaming",
-      intent: ["kucheza", "gaming", "esports", "blender", "staging", "industrial training", "mtn", "infinix", "seplat"],
+      intent: ["kucheza", "gaming", "esports", "blender", "staging", "industrial training", "arena"],
       tags: ["#KuchezaGaming", "#3DStaging", "#Esports", "#Blender"],
-      answer: "**Kucheza Gaming** was Abraham's six month industrial training where he explored gaming production and spatial arena stage design.\n\n**What he created:**\n• **3D Arena Stages**: Crafted full tournament stage environments in Blender with dramatic concert lighting and camera views.\n• **Impactful Presentations**: Engineered winning visual decks for leading brands including MTN and Infinix.\n• **Executive Staging**: Designed the spatial retreat presentation titled *Bloom Beyond Limits* for Seplat Energy.",
+      answer: "**Kucheza Gaming** was Abraham's six month industrial training where he explored gaming production and spatial arena stage design.\n\n**What he created:**\n• **3D Arena Stages**: Crafted full tournament stage environments in Blender with dramatic concert lighting and camera views.\n• **Impactful Presentations**: Engineered winning visual systems and decks for premier enterprise partner brands.\n• **Executive Staging**: Designed interactive 3D spatial retreat presentations for corporate leadership partners.",
       contextCard: {
         title: "Kucheza Gaming R&D",
         badge: "Completed Industrial Training",

@@ -232,25 +232,25 @@ export async function middleware(req: NextRequest) {
     videoUrl: null,
     hasVideo: false,
     gallery: [],
-    summary: "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes pitch materials for major enterprises including MTN, Infinix, Rexona, and Seplat Energy.",
+    summary: "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes spatial presentation systems for leading telecommunications and consumer brand partnerships.",
     role: "Research Engineer and 3D Staging Designer",
     techStack: ["3D Staging", "Blender", "Spatial Design", "Esports Operations", "Pitch Engineering"],
     github: "https://github.com/abraham-DT",
     demoUrl: null,
     metrics: [
       { label: "Training Duration", value: "6 Months" },
-      { label: "Enterprise Decks", value: "MTN, Infinix, Rexona" },
-      { label: "Key Milestone", value: "Seplat Energy Staging" }
+      { label: "Partner Systems", value: "Enterprise Partnerships" },
+      { label: "Staging Scope", value: "Arena & Exhibition Staging" }
     ],
     finishedHighlights: [
       "Designed 3D esports arena stages in Blender with concert lighting and camera angles.",
-      "Engineered corporate sponsorship presentations for enterprise brands including MTN and Infinix.",
-      "Delivered the executive retreat presentation titled Bloom Beyond Limits for Seplat Energy."
+      "Engineered spatial presentation systems for premier corporate sponsorship partnerships.",
+      "Delivered interactive 3D spatial keynote visualizations for executive partner retreats."
     ],
     caseStudy: {
       problem: "Traditional esports events struggle to present clear commercial value and immersive physical presence to corporate enterprise sponsors.",
       solution: "Engineered 3D spatial tournament stage mockups and structured sponsorship architecture presentations translating gaming engagement into corporate impact.",
-      breakthrough: "Successfully delivered the Seplat Energy executive retreat presentation titled Bloom Beyond Limits and completed the six month training with distinction."
+      breakthrough: "Successfully delivered spatial 3D stage and keynote presentations for corporate partner retreats, completing the six month training with distinction."
     }
   }
 ];

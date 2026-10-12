@@ -614,7 +614,7 @@ export const projectsData = [
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [],
-    "summary": "6-Month Industrial Training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship pitch decks for tier-1 enterprises including MTN, Infinix, Rexona, and Seplat Energy.",
+    "summary": "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes spatial presentation systems for leading telecommunications and consumer brand partnerships.",
     "role": "R&D Engineer & 3D Staging Designer",
     "status": "Completed October 2025",
     "techStack": [
@@ -632,22 +632,22 @@ export const projectsData = [
         "value": "6 Months"
       },
       {
-        "label": "Corporate Decks",
-        "value": "MTN, Infinix, Rexona"
+        "label": "Partner Systems",
+        "value": "Enterprise Partnerships"
       },
       {
-        "label": "Key Deliverable",
-        "value": "Seplat Energy Staging"
+        "label": "Staging Scope",
+        "value": "Arena & Exhibition Staging"
       }
     ],
     "powHighlights": [
       "3D tournament arena stage architectural design rendered in Blender with realistic concert lighting",
-      "High-stakes corporate sponsorship decks engineered for MTN, Infinix, and Seplat Energy",
+      "Spatial presentation systems engineered for corporate sponsorship partnerships",
       "Real-time tournament bracket workflows and player telemetry integration for esports operations"
     ],
     "caseStudy": {
       "overview": "Bridging the gap between gaming entertainment, corporate sponsorship systems, and physical event staging in the African esports ecosystem.",
-      "problem": "Traditional esports events struggle to present clear ROI and immersive physical presence to tier-1 enterprise sponsors.",
+      "problem": "Traditional esports events struggle to present clear ROI and immersive physical presence to tier 1 enterprise sponsors.",
       "idea": "Engineer 3D spatial tournament stage mockups and structured sponsorship architecture decks translating gaming metrics into corporate impact.",
       "architecture": [
         {
@@ -656,10 +656,10 @@ export const projectsData = [
         },
         {
           "tier": "Corporate Pitch Engineering",
-          "desc": "Data-driven sponsorship pitch decks engineered for MTN, Infinix, and Seplat Energy."
+          "desc": "Data-driven sponsorship pitch decks engineered for premier corporate partner brands."
         }
       ],
-      "breakthrough": "Successfully engineered the Seplat Energy executive retreat pitch deck 'Bloom Beyond Limits'.",
+      "breakthrough": "Successfully delivered spatial 3D stage and keynote presentations for corporate partner retreats.",
       "result": "Completed 6-month intensive training program on October 2, 2025.",
       "lesson": "Great engineering requires great communication; technical systems must translate clearly to business stakeholders."
     }
