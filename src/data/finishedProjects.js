@@ -98,10 +98,15 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
     year: "2026",
     statusBadge: "Live in Production",
     featured: true,
-    coverImage: null,
+    coverImage: "/media/reavo_live.webp",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/reavo_live.webp",
+        title: "REAVO Live Storefront & Admin OS"
+      }
+    ],
     summary: "Production consumer electronics storefront and corporate operating system powered by verified payment workflows and automated inventory synchronization. Built with bank grade security rules and an autonomous operations copilot.",
     role: "Sole Full Stack Architect and Core Engineer",
     techStack: ["Node.js", "Express", "Vite / React", "Supabase", "KoraPay API", "Tailwind CSS"],
@@ -145,10 +150,15 @@ router.post('/webhook/korapay', async (req, res) => {
     year: "2026",
     statusBadge: "Live in Production",
     featured: true,
-    coverImage: null,
+    coverImage: "/media/news_insights_live.webp",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/news_insights_live.webp",
+        title: "News Insights Live Publishing Platform"
+      }
+    ],
     summary: "High throughput digital publishing and investigative journalism portal engineered with server rendered articles and luxury reader modals. Audited against 75 common web application vulnerabilities with hardened database permissions.",
     role: "Lead Full Stack and Security Engineer",
     techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Supabase", "Zustand", "TipTap", "OAuth 2.0"],
@@ -185,10 +195,15 @@ USING (status = 'published' AND published_at <= NOW());`
     year: "2026",
     statusBadge: "Live in Production",
     featured: true,
-    coverImage: null,
+    coverImage: "/media/antho_live.webp",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/antho_live.webp",
+        title: "ANTHO Live Luxury Streetwear Storefront"
+      }
+    ],
     summary: "Avant garde luxury streetwear commerce platform engineered with visual first portal navigation and cryptographic route protection. Grounded in human computer interaction heuristics and automated end to end test suites.",
     role: "Lead Full Stack and Product Engineer",
     techStack: ["Next.js 15", "React 19", "Tailwind CSS", "Prisma", "Paystack", "Playwright", "Web Crypto"],

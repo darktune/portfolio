@@ -240,10 +240,15 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Production E-Commerce OS",
-    "coverImage": null,
+    "coverImage": "/media/reavo_live.webp",
     "videoUrl": null,
     "hasVideo": false,
-    "gallery": [],
+    "gallery": [
+      {
+        "url": "/media/reavo_live.webp",
+        "title": "REAVO Live Storefront & Admin OS"
+      }
+    ],
     "summary": "Production consumer electronics storefront and specialized Corporate Admin OS powered by Supabase, KoraPay webhook idempotency, automated inventory synchronization, and an autonomous AI operations copilot.",
     "role": "Sole Full-Stack Architect & Core Engineer",
     "status": "Live in Production",
@@ -316,10 +321,15 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Production Media Platform",
-    "coverImage": null,
+    "coverImage": "/media/news_insights_live.webp",
     "videoUrl": null,
     "hasVideo": false,
-    "gallery": [],
+    "gallery": [
+      {
+        "url": "/media/news_insights_live.webp",
+        "title": "News Insights Live Publishing Platform"
+      }
+    ],
     "summary": "High-throughput digital publishing and investigative journalism portal engineered with Next.js 15 App Router, Supabase PostgreSQL with RLS, TipTap rich text, bespoke obsidian & gold glass luxury subscription modal, and 75 Common Vibe-Coded Web App security defenses.",
     "role": "Lead Full-Stack & Security Engineer",
     "status": "Live in Production",
@@ -392,10 +402,15 @@ export const projectsData = [
     "year": "2026",
     "featured": true,
     "badge": "Production Storefront & Vault",
-    "coverImage": null,
+    "coverImage": "/media/antho_live.webp",
     "videoUrl": null,
     "hasVideo": false,
-    "gallery": [],
+    "gallery": [
+      {
+        "url": "/media/antho_live.webp",
+        "title": "ANTHO Live Luxury Streetwear Storefront"
+      }
+    ],
     "summary": "Avant-garde youth luxury streetwear commerce platform and digital vault engineered on Next.js 15, React 19, Tailwind CSS, Prisma ORM, and Paystack. Grounded in Nielsen HCI heuristics with visual-first portal navigation, Edge middleware HMAC route protection, and automated Playwright E2E suites.",
     "role": "Lead Full-Stack & Product Engineer",
     "status": "Live in Production",
