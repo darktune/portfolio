@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, ArrowRight, ArrowUpRight } from 'lucide-react';
+import { ExternalLink, Layers, ArrowUpRight } from 'lucide-react';
 import { GithubIcon } from './Icons';
 
 export default function FinishedProjectCard({ project, onOpenDetails }) {
@@ -98,14 +98,22 @@ export default function FinishedProjectCard({ project, onOpenDetails }) {
             )}
           </div>
 
-          {/* Direct Details & Thinking Flow Trigger */}
-          <button
-            onClick={() => onOpenDetails({ ...project, initialTab: 'thinkingTree' })}
-            className="inline-flex items-center gap-1 text-zinc-900 dark:text-white font-semibold hover:opacity-75 transition-opacity"
-          >
-            <span>Thinking Flow</span>
-            <ArrowRight size={13} />
-          </button>
+          {/* Deep Dive Action: Understandable Icon with alt text 'Deep Dive' */}
+          <div className="relative group/tooltip flex items-center">
+            <button
+              type="button"
+              onClick={() => onOpenDetails(project)}
+              title="Deep Dive"
+              aria-label="Deep Dive"
+              className="p-1.5 rounded-lg text-zinc-500 dark:text-zinc-400 hover:text-zinc-950 dark:hover:text-white hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-all active:scale-95 flex items-center justify-center border border-transparent hover:border-zinc-200 dark:hover:border-zinc-700/60"
+            >
+              <Layers size={16} />
+              <span className="sr-only">Deep Dive</span>
+            </button>
+            <div className="absolute right-0 bottom-full mb-1.5 opacity-0 group-hover/tooltip:opacity-100 transition-opacity pointer-events-none z-20 flex items-center px-2 py-1 rounded bg-zinc-950 text-white dark:bg-zinc-100 dark:text-zinc-950 text-[10px] font-mono tracking-wider whitespace-nowrap shadow-md">
+              Deep Dive
+            </div>
+          </div>
         </div>
 
       </div>

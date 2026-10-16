@@ -177,67 +177,64 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                 )}
               </div>
             ) : (
-              <div className="relative rounded-2xl overflow-hidden p-6 bg-[var(--bg-subtle)] border border-[var(--border-subtle)] space-y-4">
-                <div className="absolute inset-0 opacity-[0.08] dark:opacity-[0.14] bg-[radial-gradient(currentColor_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none" />
+              <div className="relative rounded-2xl overflow-hidden p-6 bg-zinc-50/50 dark:bg-zinc-900/40 border border-zinc-200 dark:border-zinc-800 space-y-4">
                 <div className="relative z-10 flex items-center justify-between text-xs font-mono">
-                  <span className="inline-flex items-center gap-2 text-emerald-500 font-semibold px-3 py-1 rounded-full ios-pill bg-emerald-500/10 border border-emerald-500/20">
-                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                    <span>SYSTEM BLUEPRINT // {project.code || '01'}</span>
+                  <span className="font-semibold text-zinc-900 dark:text-white uppercase tracking-wider">
+                    SYSTEM BLUEPRINT // {project.code || '01'}
                   </span>
-                  <span className="text-[var(--text-muted)]">{project.year} · {project.category}</span>
+                  <span className="text-zinc-500">{project.year} · {project.category}</span>
                 </div>
-                <div className="relative z-10 text-xs sm:text-sm text-[var(--text-secondary)] font-mono leading-relaxed">
+                <div className="relative z-10 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 font-mono leading-relaxed">
                   {project.summary}
                 </div>
-                <div className="relative z-10 pt-1 flex flex-wrap gap-1.5 text-[11px] font-mono text-[var(--text-muted)]">
+                <div className="relative z-10 pt-1 flex flex-wrap gap-2 text-[11px] font-mono text-zinc-500">
                   {project.techStack?.map((tech, idx) => (
-                    <span key={idx} className="px-2.5 py-0.5 rounded-full ios-pill text-[var(--text-secondary)]">
+                    <span key={idx} className="px-2.5 py-1 rounded-md border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300">
                       {tech}
                     </span>
                   ))}
                 </div>
-                <div className="relative z-10 pt-2 border-t border-[var(--border-subtle)] flex items-center justify-between text-[11px] font-mono text-[var(--text-muted)]">
+                <div className="relative z-10 pt-2 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between text-[11px] font-mono text-zinc-500">
                   <span>STATUS // SYSTEM LOGIC & CODE INVARIANTS VERIFIED</span>
-                  <span className="text-cyan-400">READY FOR ASSET INGESTION</span>
+                  <span className="text-zinc-900 dark:text-white font-medium">READY FOR ASSET INGESTION</span>
                 </div>
-                <div className="absolute bottom-0 left-0 right-0 h-[1.5px] bg-gradient-to-r from-transparent via-cyan-500/40 via-emerald-500/40 to-transparent" />
               </div>
             )}
 
-            {/* Circular Navigation Tabs */}
-            <div className="flex items-center gap-2 border-b border-[var(--border-subtle)] pb-2 text-xs font-mono overflow-x-auto no-scrollbar">
+            {/* Clean Typographic Navigation Tabs */}
+            <div className="flex items-center gap-4 border-b border-[var(--border-subtle)] pb-2 text-xs font-mono overflow-x-auto no-scrollbar">
               <button
                 onClick={() => setActiveTab('highlights')}
-                className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
+                className={`pb-2 px-1 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
                   activeTab === 'highlights'
-                    ? 'border-[var(--text-primary)] text-[var(--text-primary)] font-bold'
-                    : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
+                    ? 'border-zinc-950 dark:border-white text-zinc-950 dark:text-white font-bold'
+                    : 'border-transparent text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200'
                 }`}
               >
-                Finished Highlights
+                Highlights
               </button>
               {project.thinkingTree && (
                 <button
                   onClick={() => setActiveTab('thinkingTree')}
-                  className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
+                  className={`pb-2 px-1 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
                     activeTab === 'thinkingTree'
-                      ? 'border-[var(--text-primary)] text-[var(--text-primary)] font-bold'
-                      : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
+                      ? 'border-zinc-950 dark:border-white text-zinc-950 dark:text-white font-bold'
+                      : 'border-transparent text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200'
                   }`}
                 >
-                  <span>Thinking Process Tree</span>
+                  <span>Thinking Flow</span>
                 </button>
               )}
               {project.caseStudy && (
                 <button
                   onClick={() => setActiveTab('caseStudy')}
-                  className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
+                  className={`pb-2 px-1 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
                     activeTab === 'caseStudy'
-                      ? 'border-[var(--text-primary)] text-[var(--text-primary)] font-bold'
-                      : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
+                      ? 'border-zinc-950 dark:border-white text-zinc-950 dark:text-white font-bold'
+                      : 'border-transparent text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200'
                   }`}
                 >
-                  Architecture & Code Verification
+                  Architecture & Code
                 </button>
               )}
             </div>
@@ -262,19 +259,19 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                 {/* Metrics Row */}
                 <div className="grid grid-cols-3 gap-3 text-center">
                   {project.metrics.map((metric, idx) => (
-                    <div key={idx} className="p-3.5 rounded-2xl ios-pill">
-                      <div className="text-[11px] font-mono text-[var(--text-muted)]">{metric.label}</div>
-                      <div className="text-sm sm:text-base font-bold text-[var(--text-primary)] mt-1">{metric.value}</div>
+                    <div key={idx} className="p-3.5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/40">
+                      <div className="text-[11px] font-mono text-zinc-500">{metric.label}</div>
+                      <div className="text-sm sm:text-base font-bold text-zinc-900 dark:text-white mt-1">{metric.value}</div>
                     </div>
                   ))}
                 </div>
 
                 {/* Tech Stack */}
                 <div className="space-y-2 pt-2">
-                  <div className="text-xs font-mono text-[var(--text-muted)]">Production Tech Stack</div>
+                  <div className="text-xs font-mono text-zinc-500">Production Tech Stack</div>
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech, idx) => (
-                      <span key={idx} className="px-3 py-1 text-xs font-mono rounded-full ios-pill text-[var(--text-secondary)]">
+                      <span key={idx} className="px-3 py-1 text-xs font-mono rounded-lg border border-zinc-200 dark:border-zinc-800 text-zinc-700 dark:text-zinc-300">
                         {tech}
                       </span>
                     ))}
@@ -353,7 +350,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-mono ios-pill text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all active:scale-95"
+                  className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full text-xs font-mono border border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white transition-all active:scale-95"
                 >
                   <GithubIcon size={14} />
                   <span>View Code</span>
