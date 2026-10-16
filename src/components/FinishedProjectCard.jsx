@@ -175,15 +175,26 @@ export default function FinishedProjectCard({ project, onOpenDetails }) {
               )}
             </div>
 
-            <button
-              onClick={() => onOpenDetails(project)}
-              className="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--text-primary)] hover:opacity-75 transition-opacity"
-            >
-              <span>Deep Dive</span>
-              <div className="icon-hover-physics">
-                <ArrowRight size={13} />
-              </div>
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                onClick={() => onOpenDetails({ ...project, initialTab: 'thinkingTree' })}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-mono ios-pill text-emerald-500 hover:text-emerald-400 hover:border-emerald-500/40 transition-all active:scale-95"
+                title="View Thinking Flowchart"
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span>Thinking Flow</span>
+              </button>
+
+              <button
+                onClick={() => onOpenDetails(project)}
+                className="inline-flex items-center gap-1.5 text-xs font-medium text-[var(--text-primary)] hover:opacity-75 transition-opacity"
+              >
+                <span>Deep Dive</span>
+                <div className="icon-hover-physics">
+                  <ArrowRight size={13} />
+                </div>
+              </button>
+            </div>
           </div>
         </div>
 

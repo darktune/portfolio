@@ -36,6 +36,13 @@ export default function ProjectsSection({ onOpenDetails }) {
           <p className="text-sm sm:text-base text-[var(--text-secondary)] mt-2 max-w-xl">
             A curated portfolio of verified production systems, university research, and industrial engineering deployments. Each project showcases proven performance, audited security, and production ready architecture.
           </p>
+          {/* Proportional Editorial Quote: Shipping Fast */}
+          <div className="mt-3.5 inline-flex items-center gap-2.5 px-4 py-2 rounded-full ios-pill bg-zinc-900/5 dark:bg-white/5 border border-[var(--border-subtle)]">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+            <p className="font-serif italic text-sm sm:text-base text-[var(--text-primary)] tracking-wide">
+              “I like building my ideas and shipping fast.”
+            </p>
+          </div>
         </div>
 
         {/* Filter Navigation: Discrete Shaped iOS 26 Pills (Zero Numbers) */}

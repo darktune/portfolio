@@ -122,11 +122,11 @@ export default function ExperienceSection() {
     {
       id: 'studio',
       company: 'Studio Practice & Brand Architecture',
-      role: 'Principal Brand Architect & Creative Director',
+      role: 'Principal FDE & Brand Systems Architect',
       period: '2023 · Present',
       status: 'Active',
       location: 'Lagos, Nigeria',
-      badge: 'Creative Advisory',
+      badge: 'FDE & Creative Advisory',
       highlight: 'Directed luxury brand identity systems and fine art pointillism masterpieces exhibited at Spectrum Ori Art Exhibition.',
       keyMetric: 'Exhibited Fine Art & Brand Systems',
       glowClass: 'bg-yellow-500',

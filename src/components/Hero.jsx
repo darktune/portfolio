@@ -39,12 +39,14 @@ export default function Hero({ onExploreClick }) {
             </h1>
 
             {/* Clear Professional Authority in Tech Space */}
-            <div className="flex flex-wrap items-center gap-2 pt-1 text-sm sm:text-base font-mono font-medium text-[var(--text-primary)]">
+            <div className="flex flex-wrap items-center gap-2 pt-1 text-xs sm:text-sm font-mono font-medium text-[var(--text-primary)]">
+              <span className="px-3 py-1 rounded-full ios-pill text-emerald-500 font-semibold">FDE · Forward Deployed Engineer</span>
+              <span className="text-[var(--text-muted)]">•</span>
+              <span className="px-3 py-1 rounded-full ios-pill text-cyan-400 font-semibold">R&D · Research and Development</span>
+              <span className="text-[var(--text-muted)]">•</span>
               <span className="px-3 py-1 rounded-full ios-pill">Systems Architect</span>
               <span className="text-[var(--text-muted)]">•</span>
               <span className="px-3 py-1 rounded-full ios-pill">Smart Contract Engineer</span>
-              <span className="text-[var(--text-muted)]">•</span>
-              <span className="px-3 py-1 rounded-full ios-pill">Researcher</span>
               <span className="text-[var(--text-muted)]">•</span>
               <span className="px-3 py-1 rounded-full ios-pill">Game Designer</span>
             </div>
@@ -58,6 +60,15 @@ export default function Hero({ onExploreClick }) {
             <p className="text-sm sm:text-base text-[var(--text-muted)] font-normal">
               Every system is engineered for zero vulnerability tolerance, high throughput execution, and sovereign digital ownership.
             </p>
+          </div>
+
+          {/* Proportional Editorial Quote: Frontend Beauty & Layered Backend Mind */}
+          <div className="pt-1 pb-1 max-w-2xl">
+            <div className="relative pl-5 py-2.5 border-l-2 border-emerald-500/80 dark:border-emerald-400/70 bg-emerald-500/[0.04] dark:bg-emerald-400/[0.03] rounded-r-2xl">
+              <p className="font-serif italic text-base sm:text-lg text-[var(--text-primary)] tracking-wide leading-relaxed">
+                “I have a good eye for beauty of the frontend and a bright mind for the layered architecture of the backend.”
+              </p>
+            </div>
           </div>
 
           {/* Action Row: iOS 26 Glassmorphic Buttons with Hover Physics (No Duplicate Gwen) */}

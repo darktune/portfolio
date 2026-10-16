@@ -28,6 +28,70 @@ export const finishedProjectsData = [
       "Protected user funds with mathematical tests that verified zero security flaws.",
       "Built an AI guardian that monitors transactions to prevent front running fraud."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "The Vulnerability of Centralized Bridges in Web3 Games",
+        description: "Game economies were losing millions to bridge exploits and players were trapped in slow token trades with unfair conversion costs.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Cryptographic Hash Locks in Solidity",
+              detail: "Wrote smart contracts with SHA256 secrets ensuring tokens swap only when both sides prove the secret mathematically.",
+              tech: "Solidity"
+            },
+            {
+              num: "02B",
+              title: "Assembly Memory Tuning in Yul",
+              detail: "Rewrote storage checks in EVM assembly cutting transaction gas costs by thirty eight percent.",
+              tech: "Yul Assembly"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Tactile Atomic Swap HUD",
+              detail: "Designed a clean game visual interface with synchronized countdown clocks and live chain state indicators.",
+              tech: "React"
+            },
+            {
+              num: "03B",
+              title: "Reassuring Audio Visual Feedback",
+              detail: "Engineered clear confirmation states giving players total calm and certainty during cross chain swaps.",
+              tech: "Tailwind CSS"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Automated Fuzzing and Local EVM Testnet Validation",
+        description: "Ran thousands of automated invariant tests in Foundry before deploying live contracts to verify zero exploit vectors.",
+        tag: "FDE Deployment"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Zero Exploit Sovereign Player Asset Swaps",
+        metric: "38% Gas Cut",
+        detail: "Delivered a mathematical atomic swap protocol eliminating custodial bridge risks for digital economies.",
+        tag: "BSc Capstone"
+      }
+    },
     caseStudy: {
       problem: "Cross chain gaming bridges suffer constant security exploits and high slippage during multi token conversions.",
       solution: "Eliminated trusted bridge intermediaries by building atomic swaps guaranteed by cryptographic hash locks and automated refund timelocks.",
@@ -71,6 +135,70 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
       "Created an autonomous AI swarm to analyze market swings across 105 financial desks.",
       "Calculated institutional investment risk values in under 15 milliseconds."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "Eliminating Screen Stutter During High Frequency Market Swings",
+        description: "Standard web trading apps freeze during volatile trading hours and fail to compute portfolio risk in real time.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Stochastic Options Pricing Engine",
+              detail: "Programmed Black Scholes and Greeks equations computing risk metrics in under fifteen milliseconds.",
+              tech: "Python & NumPy"
+            },
+            {
+              num: "02B",
+              title: "High Speed WebSocket Pipeline",
+              detail: "Broadcasted micro orderbook depth across one hundred and five operational trading desks simultaneously.",
+              tech: "FastAPI"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Direct HTML5 Canvas Renderer",
+              detail: "Bypassed standard browser redraw delays by driving charts directly on canvas at one hundred and twenty frames per second.",
+              tech: "HTML5 Canvas"
+            },
+            {
+              num: "03B",
+              title: "Obsidian Gold Visual Hierarchy",
+              detail: "Styled a focused dark layout with golden data accents and instant keyboard shortcuts for rapid execution.",
+              tech: "Tailwind CSS"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Sub Millisecond Local Benchmarks and Continuous Builds",
+        description: "Benchmarked rendering loops and memory buffers to ship a zero lag workstation without external runtime weight.",
+        tag: "FDE Deployment"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Silky Smooth Institutional Analytics at 120 FPS",
+        metric: "120 FPS",
+        detail: "Unified deep quantitative models with responsive visual beauty into a high performance financial trading desk.",
+        tag: "Production Workstation"
+      }
+    },
     caseStudy: {
       problem: "Standard web trading interfaces suffer from render lag during market volatility spikes and lack integrated cross venue risk tools.",
       solution: "Built a hardware accelerated chart engine paired with a stochastic market generator broadcasting micro orderbook depth over WebSockets.",
@@ -130,6 +258,70 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
       "Protected customer order databases with strict bank grade permission rules.",
       "Automated warehouse inventory updates and created an AI assistant for daily operations."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "Campus Gadget Chaos and Payment Anxiety",
+        description: "Students needed a trustworthy hub to purchase university electronics without fear of payment fraud or fake inventory.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Cryptographic HMAC Payment Verification",
+              detail: "Enforced webhook signature authentication preventing duplicate orders and double charging.",
+              tech: "Node.js & Express"
+            },
+            {
+              num: "02B",
+              title: "Zero Trust Database Row Security",
+              detail: "Locked sensitive student records and order logs behind strict bank grade access permissions.",
+              tech: "Supabase"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Inviting Consumer Gadget Portal",
+              detail: "Created an intuitive shopping experience with instant category filters and fluid cart animations.",
+              tech: "React & Vite"
+            },
+            {
+              num: "03B",
+              title: "Apple Ecosystem Hub",
+              detail: "Styled dedicated product spotlight pages with crisp photography, specs, and student friendly prices.",
+              tech: "Tailwind CSS"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Rapid Vercel Production Release with Live Verification",
+        description: "Packaged the client and server into an optimized cloud deployment with instant mobile responsiveness.",
+        tag: "FDE Deployment"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Live Autonomous Student Commerce and Operations",
+        metric: "Zero Fraud",
+        detail: "Live in production powering safe campus electronics commerce backed by automated stock management.",
+        tag: "Live in Production"
+      }
+    },
     caseStudy: {
       problem: "Retail platforms frequently encounter duplicate payment issues from unverified webhooks and delayed inventory updates.",
       solution: "Architected a fast customer storefront paired with an authoritative backend featuring cryptographic payment checks and automated sync.",
@@ -190,6 +382,70 @@ router.post('/webhook/korapay', async (req, res) => {
       "Crafted a luxury reader subscription modal with smooth visual blur and one tap Google login.",
       "Delivered fast loading article pages that appear instantly on Google search."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "Intrusive Ads and Broken Digital Reading Experiences",
+        description: "Online journalism is ruined by aggressive popups, data leaks, and clunky paywalls that drive readers away.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Seventy Five Vulnerability Security Hardening",
+              detail: "Audited database queries and authentication against top web vulnerability standards.",
+              tech: "Supabase RLS"
+            },
+            {
+              num: "02B",
+              title: "Server Rendered Article Engine",
+              detail: "Pre rendered investigative articles on edge servers so pages open immediately from search engines.",
+              tech: "Next.js 15"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Obsidian Gold Editorial Reader Modal",
+              detail: "Crafted a serene reading environment with elegant typography, soft blur, and zero distractions.",
+              tech: "Tailwind CSS"
+            },
+            {
+              num: "03B",
+              title: "Real Time Breaking News Ticker",
+              detail: "Engineered an animated news ticker streaming breaking stories across technology, politics, and culture.",
+              tech: "Framer Motion"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "One Tap Google OAuth Integration and Production Deploy",
+        description: "Shipped seamless social authentication and edge deployment on Vercel with instant lighthouse performance scores.",
+        tag: "FDE Deployment"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Safe, Serene Investigative Media Platform",
+        metric: "75 Audits",
+        detail: "Empowers readers with high speed journalism while protecting publishing systems from web exploits.",
+        tag: "Live in Production"
+      }
+    },
     caseStudy: {
       problem: "Media platforms suffer from client side data leaks and reader churn caused by intrusive paywalls and clunky subscription flows.",
       solution: "Engineered a bespoke web portal backed by database row security, audited against 75 web vulnerability standards, featuring a luxury glass paywall.",
@@ -247,6 +503,70 @@ USING (status = 'published' AND published_at <= NOW());`
       "Redesigned product catalogs into a clear visual portal that simplifies shopping decisions.",
       "Verified complete checkout reliability with automated end to end test simulations."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "Generic Fashion Storefronts Without Atelier Soul",
+        description: "High end fashion portals often feel like generic web templates instead of celebrating the prestige and craftsmanship of a luxury runway.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Cryptographic Edge Route Protection",
+              detail: "Guarded administrative stock and drops behind cryptographic cookies and edge middleware.",
+              tech: "Web Crypto & Next.js"
+            },
+            {
+              num: "02B",
+              title: "Optimized Media Pipeline",
+              detail: "Compressed high resolution lookbook imagery to serve editorial photography in under one hundred milliseconds.",
+              tech: "Vercel Edge"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Visual First Spatial Catalog Heuristics",
+              detail: "Built visual discovery grounded in Nielsen heuristic rules that make exploring collections effortless.",
+              tech: "React 19"
+            },
+            {
+              num: "03B",
+              title: "The Vault Editorial Lookbook",
+              detail: "Designed a dark luxury lookbook letting visitors inspect garment silhouettes and archival textures.",
+              tech: "Tailwind CSS"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Automated End to End Playwright Checkout Simulations",
+        description: "Verified all checkout steps, cart states, and payment flows with automated test suites before deploying globally.",
+        tag: "FDE Deployment"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Avant Garde Streetwear Storefront and Digital Vault",
+        metric: "100% Pass",
+        detail: "Live luxury portal uniting haute couture presentation with reliable modern web architecture.",
+        tag: "Live in Production"
+      }
+    },
     caseStudy: {
       problem: "Luxury fashion storefronts frequently suffer from cluttered dropdown menus that violate user recall heuristics and fragile checkout flows.",
       solution: "Overhauled storefront navigation into a visual first portal grounded in human computer interaction heuristics, edge route guards, and automated tests.",
@@ -290,6 +610,70 @@ export async function middleware(req: NextRequest) {
       "Engineered spatial presentation systems for premier corporate sponsorship partnerships.",
       "Delivered interactive 3D spatial keynote visualizations for executive partner retreats."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "Translating Esports Energy to Corporate Enterprise Sponsors",
+        description: "Championship gaming competitions struggled to present physical scale and brand value to corporate executives.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Spatial Tournament Staging Systems",
+              detail: "Structured three dimensional arena layouts in Blender calculating audience viewing angles and stage lighting.",
+              tech: "Blender"
+            },
+            {
+              num: "02B",
+              title: "Enterprise Pitch Architecture",
+              detail: "Built structured narrative decks and data visualizations communicating return on investment.",
+              tech: "Spatial Strategy"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Concert Grade 3D Arena Visuals",
+              detail: "Rendered high impact visual mockups with vibrant lighting rigs, player booths, and spectator stands.",
+              tech: "3D Staging"
+            },
+            {
+              num: "03B",
+              title: "Executive Spatial Keynote Presentations",
+              detail: "Created interactive visual walk throughs for corporate partner retreats and sponsor meetings.",
+              tech: "Keynote Architecture"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Live Presentation Delivery for Top Enterprise Brands",
+        description: "Delivered live presentations and architectural walk throughs to premier corporate partner executives during industrial training.",
+        tag: "FDE Deployment"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Distinction in Spatial R&D and Esports Operations",
+        metric: "6 Months",
+        detail: "Completed six month industrial training with leadership distinction in spatial design and corporate presentation.",
+        tag: "Tier 1 Industry"
+      }
+    },
     caseStudy: {
       problem: "Traditional esports events struggle to present clear commercial value and immersive physical presence to corporate enterprise sponsors.",
       solution: "Engineered 3D spatial tournament stage mockups and structured sponsorship architecture presentations translating gaming engagement into corporate impact.",
@@ -334,6 +718,70 @@ export async function middleware(req: NextRequest) {
       "Designed a procedural sound synthesizer using the Web Audio API with zero audio file lag.",
       "Built an intelligent referee using Gemini AI that rates humor, context fit, and reaction timing."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "Party Games Ruined by Heavy App Installs and Slow Rooms",
+        description: "Friends wanting to play together get bogged down by clumsy downloads, sign up walls, and boring repetitive cards.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Zero File Audio Synthesizer",
+              detail: "Built a pure Web Audio API oscillator engine generating retro sweeps, lock clicks, and victory chords on the fly.",
+              tech: "Web Audio API"
+            },
+            {
+              num: "02B",
+              title: "Intelligent Humor Evaluation Engine",
+              detail: "Connected Gemini AI to rate meme context fit, comedic timing, and wit across five battle rounds.",
+              tech: "Gemini API"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Electric Mobile Portrait Battle Arena",
+              detail: "Designed a bold colorful interface optimized for single thumb play on smartphones and smooth laptops.",
+              tech: "Tailwind CSS"
+            },
+            {
+              num: "03B",
+              title: "Tactile Sticker Arsenal & Quick Taps",
+              detail: "Engineered animated sticker drawers and snappy voting buttons that keep energy high in the room.",
+              tech: "Motion"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Single Day Vite Build to Live Vercel Production",
+        description: "Built with Vite, transformed two thousand modules, and deployed to live production with instant shareable links.",
+        tag: "FDE Deployment"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Viral Live Party Game Bringing Friends Together",
+        metric: "150+ Cards",
+        detail: "Live in production offering instant multiplayer laughs with zero app store barrier.",
+        tag: "Live in Production"
+      }
+    },
     caseStudy: {
       problem: "Party games often struggle with slow card selection, clunky mobile controls, and repetitive joke fatigue.",
       solution: "Engineered a rapid mobile first battle screen combining instant emotion filters, procedural sound sweeps, and synchronized card reveals.",
@@ -387,6 +835,70 @@ class SoundEffectsEngine {
       "Streamed immutable universe state logs across high speed event pipelines for real time auditing.",
       "Empowered autonomous game characters to manage virtual inventories with smart accounts."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "The Unsustainable Compute Costs of AI Virtual Worlds",
+        description: "Powering thousands of intelligent characters with raw AI calls leads to immediate server bankruptcy, while scripted bots feel lifeless.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Five Tier Deterministic C++ Hierarchy",
+              detail: "Shifted ninety five percent of world physics, collision, and trading math to deterministic C++ microservices.",
+              tech: "C++"
+            },
+            {
+              num: "02B",
+              title: "Kafka Event Log and ERC 4337 Accounts",
+              detail: "Streamed immutable state events and gave AI agents smart accounts to hold on chain game assets.",
+              tech: "Apache Kafka"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Spatial Population Heatmap",
+              detail: "Built real time visual dashboards showing autonomous agent clusters, economic velocity, and trade routes.",
+              tech: "WebGL"
+            },
+            {
+              num: "03B",
+              title: "Creator Command Console",
+              detail: "Designed clean telemetry monitors letting world architects inspect civilization dynamics at a glance.",
+              tech: "React"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Simulated Stress Testing Across Ten Thousand Agents",
+        description: "Validated compute overhead savings across multi agent simulation clusters before open prototyping.",
+        tag: "R&D Prototype"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Ninety Four Percent Overhead Cut for Autonomous Worlds",
+        metric: "94% Saved",
+        detail: "Breakthrough R&D prototype setting the architectural blueprint for persistent digital societies.",
+        tag: "Active R&D Prototype"
+      }
+    },
     caseStudy: {
       problem: "Simulating thousands of concurrent autonomous agents using raw AI calls causes immediate server insolvency while simple scripts lack social depth.",
       solution: "Engineered a layered compute hierarchy where ninety five percent of world physics runs deterministically in C++ microservices.",
@@ -422,6 +934,70 @@ class SoundEffectsEngine {
       "Designed a three stage milestone escrow pipeline that releases funds as garments are verified.",
       "Crafted realistic textile shaders celebrating authentic African fabric patterns in real time."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "High Return Rates and Distrust in Custom Bespoke Fashion",
+        description: "Custom garment tailoring across distances suffers from manual tape measure errors and payment anxiety for both client and tailor.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Three Stage Milestone Escrow Contracts",
+              detail: "Programmed smart contracts releasing client payments automatically as garment stages are verified.",
+              tech: "Node.js & EVM"
+            },
+            {
+              num: "02B",
+              title: "Parametric Mannequin Calculation",
+              detail: "Converted customer body measurements into accurate three dimensional parametric mesh dimensions.",
+              tech: "WebGL"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Real Time WebGL Fabric Drape Studio",
+              detail: "Engineered custom cloth shaders in Three.js simulating realistic fabric weight and tensile physics in browser.",
+              tech: "Three.js"
+            },
+            {
+              num: "03B",
+              title: "Minimalist Atelier Studio Controls",
+              detail: "Styled an uncluttered studio layout putting focus entirely on garment silhouettes and luxury textures.",
+              tech: "Tailwind CSS"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Mobile Optimized 3D Orbit and Physics Tuning",
+        description: "Tuned rendering loops to ensure smooth sixty frame per second orbit controls on mobile touchscreens.",
+        tag: "R&D Prototype"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Bespoke Fashion Digital Atelier and Escrow Protocol",
+        metric: "98.5% Fit",
+        detail: "Active prototype merging physical textile heritage with interactive spatial computing.",
+        tag: "Active Spatial Prototype"
+      }
+    },
     caseStudy: {
       problem: "Traditional bespoke tailoring relies on error prone manual measurements, creating high return rates and payment anxiety across borders.",
       solution: "Combined an interactive 3D spatial mannequin with smart milestone escrow released in three verified stages.",
@@ -457,6 +1033,70 @@ class SoundEffectsEngine {
       "Rendered hardware accelerated multi timeframe candlestick charts with zero interface stutter.",
       "Built an AI review companion that audits closed trades against personal trading rules."
     ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "Emotional Position Sizing and Account Blowups in Forex",
+        description: "Individual currency traders lose capital because they trade with emotion rather than disciplined mathematical risk management.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Kelly Criterion and Risk of Ruin Calculators",
+              detail: "Programmed mathematical engines computing exact optimal lot sizes and capital safety buffers.",
+              tech: "TypeScript"
+            },
+            {
+              num: "02B",
+              title: "Automated Trade Journal and Audit Engine",
+              detail: "Built database models tracking trade setups, emotional states, and rule adherence scores.",
+              tech: "Prisma & PostgreSQL"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Silky 60 FPS Candlestick Chart Canvas",
+              detail: "Integrated lightweight hardware accelerated charts rendering multi timeframe data without stutter.",
+              tech: "HTML5 Canvas"
+            },
+            {
+              num: "03B",
+              title: "Currency Correlation Matrix",
+              detail: "Styled high contrast visual heatmaps displaying currency pair strengths and market volatility at a glance.",
+              tech: "Tailwind CSS"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "Instant In Browser State Execution Without Server Lag",
+        description: "Compiled mathematical formulas into client side state managers for zero latency calculations.",
+        tag: "R&D Prototype"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Disciplined Quantitative Trading Command Center",
+        metric: "60 FPS",
+        detail: "Personal quantitative risk workstation empowering disciplined execution through verified mathematical formulas.",
+        tag: "Quantitative Workstation"
+      }
+    },
     caseStudy: {
       problem: "Individual currency traders suffer high failure rates from emotional position sizing and undisciplined risk management.",
       solution: "Architected a unified command center combining deterministic risk calculations with 60 frames per second charting.",

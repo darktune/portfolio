@@ -2,9 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Play, Pause, Volume2, VolumeX, ExternalLink, Code2, Check, Copy } from 'lucide-react';
 import { GithubIcon } from './Icons';
+import ProjectThinkingTree from './ProjectThinkingTree';
 
 export default function ProjectModal({ project, isOpen, onClose }) {
-  const [activeTab, setActiveTab] = useState('highlights'); // 'highlights' | 'caseStudy' | 'video'
+  const [activeTab, setActiveTab] = useState('highlights'); // 'highlights' | 'thinkingTree' | 'caseStudy'
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const [copiedCode, setCopiedCode] = useState(false);
@@ -12,7 +13,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
 
   useEffect(() => {
     if (project) {
-      setActiveTab('highlights');
+      setActiveTab(project.initialTab || 'highlights');
       setIsPlaying(false);
     }
   }, [project]);
@@ -203,10 +204,10 @@ export default function ProjectModal({ project, isOpen, onClose }) {
             )}
 
             {/* Circular Navigation Tabs */}
-            <div className="flex items-center gap-2 border-b border-[var(--border-subtle)] pb-2 text-xs font-mono">
+            <div className="flex items-center gap-2 border-b border-[var(--border-subtle)] pb-2 text-xs font-mono overflow-x-auto no-scrollbar">
               <button
                 onClick={() => setActiveTab('highlights')}
-                className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 ${
+                className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
                   activeTab === 'highlights'
                     ? 'border-[var(--text-primary)] text-[var(--text-primary)] font-bold'
                     : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
@@ -214,10 +215,23 @@ export default function ProjectModal({ project, isOpen, onClose }) {
               >
                 Finished Highlights
               </button>
+              {project.thinkingTree && (
+                <button
+                  onClick={() => setActiveTab('thinkingTree')}
+                  className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 shrink-0 flex items-center gap-1.5 ${
+                    activeTab === 'thinkingTree'
+                      ? 'border-emerald-500 text-emerald-500 font-bold'
+                      : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
+                  }`}
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+                  <span>Thinking Process Tree</span>
+                </button>
+              )}
               {project.caseStudy && (
                 <button
                   onClick={() => setActiveTab('caseStudy')}
-                  className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 ${
+                  className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
                     activeTab === 'caseStudy'
                       ? 'border-[var(--text-primary)] text-[var(--text-primary)] font-bold'
                       : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
@@ -267,6 +281,11 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                   </div>
                 </div>
               </div>
+            )}
+
+            {/* Tab: Thinking Process Tree */}
+            {activeTab === 'thinkingTree' && (
+              <ProjectThinkingTree project={project} />
             )}
 
             {/* Tab: Case Study */}

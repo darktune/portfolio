@@ -57,7 +57,7 @@ export default function AboutSection() {
                       Abraham Toluwani
                     </div>
                     <div className="text-xs font-mono text-[var(--text-muted)]">
-                      Systems Architect · Class of 2026
+                      FDE & Systems Architect · Class of 2026
                     </div>
                   </div>
                 </div>
@@ -71,7 +71,7 @@ export default function AboutSection() {
                 <span className="text-emerald-500 font-semibold">BSc Computer Science</span>
               </div>
               <div className="text-xs text-[var(--text-secondary)] font-mono">
-                Covenant University · Systems & Cryptography Focus
+                Covenant University · Systems, R&D & Cryptography Focus
               </div>
             </div>
           </div>
