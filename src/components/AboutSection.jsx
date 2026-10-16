@@ -61,14 +61,14 @@ export default function AboutSection() {
                     </div>
                   </div>
                 </div>
-                <span className="text-[10px] font-mono uppercase tracking-wider px-2.5 py-1 rounded-full ios-pill text-emerald-500 font-bold border border-emerald-500/20 bg-emerald-500/10">
+                <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-900 dark:text-white font-bold border-b border-zinc-900 dark:border-white pb-0.5">
                   Principal
                 </span>
               </div>
 
               <div className="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between text-xs font-mono">
                 <span className="text-[var(--text-muted)]">INSTITUTIONAL RECORD</span>
-                <span className="text-emerald-500 font-semibold">BSc Computer Science</span>
+                <span className="text-zinc-900 dark:text-white font-semibold">BSc Computer Science</span>
               </div>
               <div className="text-xs text-[var(--text-secondary)] font-mono">
                 Covenant University · Systems, R&D & Cryptography Focus

@@ -20,12 +20,12 @@ export default function Hero({ onExploreClick }) {
   return (
     <section id="top" className="pt-36 pb-16 md:pt-44 md:pb-24 px-5 sm:px-8 max-w-6xl mx-auto">
       
-      {/* Status Pill: iOS Glassmorphic Round Badge */}
-      <div className="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full text-xs font-mono ios-pill text-[var(--text-secondary)] mb-8">
-        <PersonalMark size={14} className="text-[var(--text-primary)]" />
+      {/* Status Line: Clean Minimalist Typography */}
+      <div className="flex items-center gap-2.5 text-xs font-mono text-zinc-500 dark:text-zinc-400 mb-8 tracking-wide">
+        <PersonalMark size={14} className="text-zinc-900 dark:text-white" />
         <span>BSc Computer Science Graduate · Covenant University</span>
-        <span className="text-[var(--text-muted)]">|</span>
-        <span className="text-[var(--text-primary)] font-semibold">Class of 2026</span>
+        <span className="text-zinc-300 dark:text-zinc-700">|</span>
+        <span className="text-zinc-900 dark:text-white font-semibold">Class of 2026</span>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
@@ -34,41 +34,39 @@ export default function Hero({ onExploreClick }) {
         <div className="lg:col-span-8 space-y-6">
           
           <div className="space-y-3">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-[var(--text-primary)] leading-[1.04]">
+            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-950 dark:text-white leading-[1.04]">
               Abraham Toluwani
             </h1>
 
-            {/* Clear Professional Authority in Tech Space */}
-            <div className="flex flex-wrap items-center gap-2 pt-1 text-xs sm:text-sm font-mono font-medium text-[var(--text-primary)]">
-              <span className="px-3 py-1 rounded-full ios-pill text-emerald-500 font-semibold">FDE · Forward Deployed Engineer</span>
-              <span className="text-[var(--text-muted)]">•</span>
-              <span className="px-3 py-1 rounded-full ios-pill text-cyan-400 font-semibold">R&D · Research and Development</span>
-              <span className="text-[var(--text-muted)]">•</span>
-              <span className="px-3 py-1 rounded-full ios-pill">Systems Architect</span>
-              <span className="text-[var(--text-muted)]">•</span>
-              <span className="px-3 py-1 rounded-full ios-pill">Smart Contract Engineer</span>
-              <span className="text-[var(--text-muted)]">•</span>
-              <span className="px-3 py-1 rounded-full ios-pill">Game Designer</span>
+            {/* Occupations: Clean Black/Neutral Typography Without Pill Bubbles */}
+            <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 pt-1 text-xs sm:text-sm font-mono font-medium text-zinc-900 dark:text-zinc-100">
+              <span>FDE · Forward Deployed Engineer</span>
+              <span className="text-zinc-300 dark:text-zinc-700">/</span>
+              <span>R&D · Research and Development</span>
+              <span className="text-zinc-300 dark:text-zinc-700">/</span>
+              <span>Systems Architect</span>
+              <span className="text-zinc-300 dark:text-zinc-700">/</span>
+              <span>Smart Contract Engineer</span>
+              <span className="text-zinc-300 dark:text-zinc-700">/</span>
+              <span>Game Designer</span>
             </div>
           </div>
 
-          {/* Vision, Emotional Cadence & Motive: Strictly 2 Sentences, Zero Hyphens */}
-          <div className="space-y-3 max-w-2xl text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
+          {/* Inspiring Cadence of Hope & Simple Truth */}
+          <div className="space-y-3 max-w-2xl text-base sm:text-lg text-zinc-600 dark:text-zinc-300 leading-relaxed">
             <p>
-              I architect software where mathematical proof replaces trust across low level distributed systems and deterministic smart contracts.
+              I build software that brings quiet confidence to people. Systems crafted with honest care, proven logic, and lasting beauty.
             </p>
-            <p className="text-sm sm:text-base text-[var(--text-muted)] font-normal">
-              Every system is engineered for zero vulnerability tolerance, high throughput execution, and sovereign digital ownership.
+            <p className="text-sm sm:text-base text-zinc-500 dark:text-zinc-400 font-normal">
+              Every piece of code is made to protect what matters, run fast and smooth, and give users true freedom in a connected world.
             </p>
           </div>
 
           {/* Proportional Editorial Quote: Frontend Beauty & Layered Backend Mind */}
-          <div className="pt-1 pb-1 max-w-2xl">
-            <div className="relative pl-5 py-2.5 border-l-2 border-emerald-500/80 dark:border-emerald-400/70 bg-emerald-500/[0.04] dark:bg-emerald-400/[0.03] rounded-r-2xl">
-              <p className="font-serif italic text-base sm:text-lg text-[var(--text-primary)] tracking-wide leading-relaxed">
-                “I have a good eye for beauty of the frontend and a bright mind for the layered architecture of the backend.”
-              </p>
-            </div>
+          <div className="pt-2 max-w-2xl border-l-2 border-zinc-900 dark:border-white pl-5 py-1">
+            <p className="font-serif italic text-base sm:text-lg text-zinc-900 dark:text-white leading-relaxed">
+              “I have a good eye for beauty of the frontend and a bright mind for the layered architecture of the backend.”
+            </p>
           </div>
 
           {/* Action Row: iOS 26 Glassmorphic Buttons with Hover Physics (No Duplicate Gwen) */}

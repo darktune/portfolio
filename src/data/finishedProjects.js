@@ -9,10 +9,15 @@ export const finishedProjectsData = [
     year: "2026",
     statusBadge: "Completed BSc Capstone",
     featured: true,
-    coverImage: null,
+    coverImage: "/media/dmex_protocol.jpg",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/dmex_protocol.jpg",
+        title: "D MEX Protocol Architecture & Invariants"
+      }
+    ],
     summary: "Trustless cross chain atomic swap infrastructure engineered for sovereign gaming ecosystems. Eliminates centralized bridge exploits via cryptographic timelocks and assembly code optimizations.",
     role: "Sole Protocol Architect and Smart Contract Engineer",
     techStack: ["Solidity", "Foundry", "Yul Assembly", "Chainlink Oracles", "EVM", "Python"],
@@ -116,10 +121,15 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
     year: "2026",
     statusBadge: "Production Workstation",
     featured: true,
-    coverImage: null,
+    coverImage: "/media/stelcera_terminal.jpg",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/stelcera_terminal.jpg",
+        title: "STELCERA Quantitative Terminal Desk"
+      }
+    ],
     summary: "Ultra low latency institutional quantitative workstation built with modern web standards and high speed data pipelines. Features 105 operational desks spanning autonomous market models and real time risk analytics.",
     role: "Full Stack Quantitative Systems Architect",
     techStack: ["Next.js 15", "React 19", "FastAPI", "WebSockets", "HTML5 Canvas", "Python", "NumPy"],
@@ -591,10 +601,15 @@ export async function middleware(req: NextRequest) {
     year: "2025",
     statusBadge: "Completed Industrial Training",
     featured: false,
-    coverImage: null,
+    coverImage: "/media/kucheza_gaming.jpg",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/kucheza_gaming.jpg",
+        title: "Kucheza Esports 3D Stage & Arena Staging"
+      }
+    ],
     summary: "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes spatial presentation systems for leading telecommunications and consumer brand partnerships.",
     role: "Research Engineer and 3D Staging Designer",
     techStack: ["3D Staging", "Blender", "Spatial Design", "Esports Operations", "Pitch Engineering"],
@@ -816,10 +831,15 @@ class SoundEffectsEngine {
     year: "2026",
     statusBadge: "Active Research Prototype",
     featured: false,
-    coverImage: null,
+    coverImage: "/media/civos_spatial.jpg",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/civos_spatial.jpg",
+        title: "CivOS Autonomous Metaverse Architecture"
+      }
+    ],
     summary: "Ongoing conceptual research prototype exploring distributed architectures for persistent AI metaverses. Combines a five tier deterministic compute hierarchy in C++ with Kafka event sourcing and autonomous agent accounts to slash AI overhead by 94 percent.",
     role: "Lead Systems Architect and Researcher",
     techStack: ["C++", "Apache Kafka", "ERC 4337", "Redis", "Solidity", "Vector DB"],
@@ -915,10 +935,15 @@ class SoundEffectsEngine {
     year: "2025 Present",
     statusBadge: "Active Spatial Prototype",
     featured: false,
-    coverImage: null,
+    coverImage: "/media/virtual_atelier.jpg",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/virtual_atelier.jpg",
+        title: "LOOM 3D Spatial Digital Atelier"
+      }
+    ],
     summary: "Conceptual 3D bespoke luxury fashion commerce platform connecting custom tailors with global patrons through interactive 3D spatial mannequins and verified milestone escrow payments.",
     role: "Lead Spatial and Systems Engineer",
     techStack: ["Three.js", "React", "Blender", "WebGL", "Node.js", "Tailwind CSS"],
@@ -1014,10 +1039,15 @@ class SoundEffectsEngine {
     year: "2026",
     statusBadge: "Quantitative Workstation",
     featured: false,
-    coverImage: null,
+    coverImage: "/media/siphoon_os.jpg",
     videoUrl: null,
     hasVideo: false,
-    gallery: [],
+    gallery: [
+      {
+        url: "/media/siphoon_os.jpg",
+        title: "SIPHOON OS Quantitative Workstation"
+      }
+    ],
     summary: "Conceptual Forex intelligence, trade journaling, and quantitative decision support workstation. Built with real math Kelly risk calculators, currency correlation heatmaps, and an autonomous trade review copilot.",
     role: "Quantitative Systems Engineer and Architect",
     techStack: ["Next.js 15", "TypeScript", "PostgreSQL", "Prisma", "lightweight charts", "Tailwind CSS"],

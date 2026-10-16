@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import { Sparkles, Layers, Eye, Zap, Trophy, ChevronRight, CheckCircle2 } from 'lucide-react';
+import React from 'react';
+import { Sparkles, Layers, Eye, Zap, Trophy } from 'lucide-react';
 
 export default function ProjectThinkingTree({ project }) {
-  const [activeBranch, setActiveBranch] = useState('all'); // 'all' | 'backend' | 'frontend'
-
   if (!project || !project.thinkingTree) {
     return (
-      <div className="p-6 rounded-2xl ios-glass-card text-center text-xs font-mono text-[var(--text-muted)]">
+      <div className="p-8 text-center text-xs font-mono text-zinc-400 dark:text-zinc-500">
         Thinking process tree is being compiled for this project deployment.
       </div>
     );
@@ -17,143 +15,139 @@ export default function ProjectThinkingTree({ project }) {
   const frontendBranch = branches?.find(b => b.id === 'frontend');
 
   return (
-    <div className="space-y-6 pt-1">
+    <div className="space-y-8 pt-2">
       
-      {/* Top Banner: Mind & Beauty Manifesto */}
-      <div className="p-4 sm:p-5 rounded-2xl ios-glass-card border border-[var(--border-subtle)] bg-gradient-to-br from-emerald-500/[0.04] via-transparent to-cyan-500/[0.04]">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-          <div className="space-y-1">
-            <div className="text-[11px] font-mono uppercase tracking-wider text-[var(--text-muted)] flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-              <span>Thinking Process Flowchart · Systems to Visuals</span>
+      {/* Top Banner: Proportional Quote & Intent */}
+      <div className="p-5 sm:p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/40">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="space-y-1.5">
+            <div className="text-xs font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+              Thinking Flowchart · Systems to Visuals
             </div>
-            <p className="font-serif italic text-sm sm:text-base text-[var(--text-primary)]">
+            <p className="font-serif italic text-base sm:text-lg text-zinc-900 dark:text-white">
               “I have a good eye for beauty of the frontend and a bright mind for the layered architecture of the backend.”
             </p>
           </div>
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-[11px] font-mono ios-pill text-emerald-500 font-semibold self-start sm:self-auto shrink-0">
-            <span>FDE & R&D Pipeline</span>
+          <div className="text-xs font-mono tracking-wider text-zinc-900 dark:text-white font-semibold uppercase self-start sm:self-auto shrink-0 border-b border-zinc-900 dark:border-white pb-0.5">
+            FDE & R&D Process
           </div>
         </div>
       </div>
 
       {/* The Visual Tree Container */}
-      <div className="relative p-4 sm:p-6 rounded-3xl ios-glass-card border border-[var(--border-subtle)] space-y-6 overflow-hidden">
+      <div className="space-y-8">
         
-        {/* Subtle Background Circuit Grid */}
-        <div className="absolute inset-0 opacity-[0.04] dark:opacity-[0.08] bg-[radial-gradient(currentColor_1px,transparent_1px)] [background-size:20px_20px] pointer-events-none" />
-
         {/* ======================================================== */}
         {/* ROOT NODE: 01 // Problem & Creative Spark */}
         {/* ======================================================== */}
-        <div className="relative z-10 flex flex-col items-center">
-          <div className="w-full max-w-xl p-4 sm:p-5 rounded-2xl bg-[var(--bg-surface-elevated)] border border-amber-500/30 shadow-lg shadow-amber-500/5 group hover:border-amber-500/60 transition-all">
-            <div className="flex items-center justify-between text-xs font-mono mb-2">
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full ios-pill text-amber-500 font-bold bg-amber-500/10 border border-amber-500/20">
-                <Sparkles size={12} />
-                <span>STAGE {root.stage} // THE CREATIVE SPARK</span>
+        <div className="flex flex-col items-center">
+          <div className="w-full max-w-2xl p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 space-y-2">
+            <div className="flex items-center justify-between text-xs font-mono text-zinc-400 dark:text-zinc-500">
+              <span className="font-bold text-zinc-900 dark:text-white flex items-center gap-1.5 uppercase tracking-wider">
+                <Sparkles size={13} />
+                <span>Stage {root.stage} / The Creative Spark</span>
               </span>
-              <span className="text-[11px] font-mono text-[var(--text-muted)]">{root.tag}</span>
+              <span className="uppercase tracking-widest text-[11px]">{root.tag}</span>
             </div>
-            <h4 className="text-base font-bold text-[var(--text-primary)] tracking-tight">
+            <h4 className="text-lg font-bold text-zinc-950 dark:text-white pt-1">
               {root.title}
             </h4>
-            <p className="text-xs sm:text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
+            <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
               {root.description}
             </p>
           </div>
 
           {/* Stem Connector Down to Branch Fork */}
-          <div className="w-0.5 h-8 bg-gradient-to-b from-amber-500 via-cyan-500 to-transparent my-1" />
-          <div className="text-[10px] font-mono uppercase tracking-widest text-[var(--text-muted)] px-3 py-0.5 rounded-full ios-pill border border-[var(--border-subtle)] bg-[var(--bg-surface-elevated)]">
-            Branching Architecture & Aesthetic
+          <div className="w-px h-8 bg-zinc-300 dark:bg-zinc-700 my-1" />
+          <div className="text-[11px] font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+            Branching Architecture & Craft
           </div>
-          <div className="w-0.5 h-6 bg-gradient-to-b from-transparent via-cyan-500/50 to-cyan-500 my-1" />
+          <div className="w-px h-6 bg-zinc-300 dark:bg-zinc-700 my-1" />
         </div>
 
         {/* ======================================================== */}
         {/* DUAL BRANCH SPLIT: Backend on Left, Frontend on Right */}
         {/* ======================================================== */}
-        <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           
           {/* LEFT BRANCH: Layered Backend Architecture */}
           {backendBranch && (
-            <div className="space-y-3.5 p-4 sm:p-5 rounded-2xl bg-[var(--bg-surface-elevated)] border border-cyan-500/30 shadow-md hover:border-cyan-500/60 transition-all flex flex-col justify-between">
-              <div className="space-y-2">
-                <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full ios-pill text-cyan-500 font-bold bg-cyan-500/10 border border-cyan-500/20">
-                    <Layers size={12} />
-                    <span>LAYERED BACKEND MIND</span>
+            <div className="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 flex flex-col justify-between space-y-5">
+              <div className="space-y-1.5">
+                <div className="flex items-center justify-between text-xs font-mono text-zinc-400 dark:text-zinc-500">
+                  <span className="font-bold text-zinc-900 dark:text-white flex items-center gap-1.5 uppercase tracking-wider">
+                    <Layers size={13} />
+                    <span>Layered Backend Mind</span>
                   </span>
-                  <span className="text-[10px] font-mono text-[var(--text-muted)]">R&D Core</span>
+                  <span className="uppercase tracking-widest text-[11px]">R&D Core</span>
                 </div>
-                <h5 className="text-sm font-bold text-[var(--text-primary)]">
+                <h5 className="text-base font-bold text-zinc-950 dark:text-white">
                   {backendBranch.branchType}
                 </h5>
-                <p className="text-xs text-[var(--text-muted)] font-mono">
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">
                   {backendBranch.subtitle}
                 </p>
               </div>
 
               {/* Steps Inside Left Branch */}
-              <div className="space-y-2.5 pt-2">
+              <div className="space-y-3 pt-2">
                 {backendBranch.steps.map((step, idx) => (
-                  <div key={idx} className="p-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border-subtle)] space-y-1">
-                    <div className="flex items-center justify-between text-[11px] font-mono">
-                      <span className="text-cyan-400 font-semibold">{step.num} // {step.title}</span>
-                      <span className="px-2 py-0.5 rounded-full text-[10px] ios-pill text-[var(--text-muted)]">{step.tech}</span>
+                  <div key={idx} className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80 space-y-1">
+                    <div className="flex items-center justify-between text-xs font-mono">
+                      <span className="text-zinc-900 dark:text-white font-semibold">{step.num} // {step.title}</span>
+                      <span className="text-zinc-400 dark:text-zinc-500 text-[11px]">{step.tech}</span>
                     </div>
-                    <p className="text-xs text-[var(--text-secondary)] leading-relaxed pt-1">
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed pt-1">
                       {step.detail}
                     </p>
                   </div>
                 ))}
               </div>
 
-              <div className="pt-2 border-t border-[var(--border-subtle)] flex items-center justify-between text-[10px] font-mono text-cyan-400">
-                <span>Deterministic Logic Invariant</span>
-                <span>Verified ✓</span>
+              <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-xs font-mono text-zinc-500 dark:text-zinc-400">
+                <span>Deterministic Logic</span>
+                <span className="text-zinc-900 dark:text-white font-semibold">Verified</span>
               </div>
             </div>
           )}
 
           {/* RIGHT BRANCH: Frontend Beauty & Sensory UI */}
           {frontendBranch && (
-            <div className="space-y-3.5 p-4 sm:p-5 rounded-2xl bg-[var(--bg-surface-elevated)] border border-emerald-500/30 shadow-md hover:border-emerald-500/60 transition-all flex flex-col justify-between">
-              <div className="space-y-2">
-                <div className="flex items-center justify-between text-xs font-mono">
-                  <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full ios-pill text-emerald-500 font-bold bg-emerald-500/10 border border-emerald-500/20">
-                    <Eye size={12} />
-                    <span>FRONTEND BEAUTY EYE</span>
+            <div className="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 flex flex-col justify-between space-y-5">
+              <div className="space-y-1.5">
+                <div className="flex items-center justify-between text-xs font-mono text-zinc-400 dark:text-zinc-500">
+                  <span className="font-bold text-zinc-900 dark:text-white flex items-center gap-1.5 uppercase tracking-wider">
+                    <Eye size={13} />
+                    <span>Frontend Beauty Eye</span>
                   </span>
-                  <span className="text-[10px] font-mono text-[var(--text-muted)]">Sensory UI</span>
+                  <span className="uppercase tracking-widest text-[11px]">Sensory UI</span>
                 </div>
-                <h5 className="text-sm font-bold text-[var(--text-primary)]">
+                <h5 className="text-base font-bold text-zinc-950 dark:text-white">
                   {frontendBranch.branchType}
                 </h5>
-                <p className="text-xs text-[var(--text-muted)] font-mono">
+                <p className="text-xs text-zinc-500 dark:text-zinc-400 font-mono">
                   {frontendBranch.subtitle}
                 </p>
               </div>
 
               {/* Steps Inside Right Branch */}
-              <div className="space-y-2.5 pt-2">
+              <div className="space-y-3 pt-2">
                 {frontendBranch.steps.map((step, idx) => (
-                  <div key={idx} className="p-3 rounded-xl bg-[var(--bg-subtle)] border border-[var(--border-subtle)] space-y-1">
-                    <div className="flex items-center justify-between text-[11px] font-mono">
-                      <span className="text-emerald-400 font-semibold">{step.num} // {step.title}</span>
-                      <span className="px-2 py-0.5 rounded-full text-[10px] ios-pill text-[var(--text-muted)]">{step.tech}</span>
+                  <div key={idx} className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900/60 border border-zinc-100 dark:border-zinc-800/80 space-y-1">
+                    <div className="flex items-center justify-between text-xs font-mono">
+                      <span className="text-zinc-900 dark:text-white font-semibold">{step.num} // {step.title}</span>
+                      <span className="text-zinc-400 dark:text-zinc-500 text-[11px]">{step.tech}</span>
                     </div>
-                    <p className="text-xs text-[var(--text-secondary)] leading-relaxed pt-1">
+                    <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed pt-1">
                       {step.detail}
                     </p>
                   </div>
                 ))}
               </div>
 
-              <div className="pt-2 border-t border-[var(--border-subtle)] flex items-center justify-between text-[10px] font-mono text-emerald-400">
-                <span>Tactile Interaction Physics</span>
-                <span>Crafted ✓</span>
+              <div className="pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-xs font-mono text-zinc-500 dark:text-zinc-400">
+                <span>Tactile Interaction</span>
+                <span className="text-zinc-900 dark:text-white font-semibold">Crafted</span>
               </div>
             </div>
           )}
@@ -161,41 +155,41 @@ export default function ProjectThinkingTree({ project }) {
         </div>
 
         {/* Stem Connector Down to Convergence Node */}
-        <div className="relative z-10 flex flex-col items-center">
-          <div className="w-0.5 h-6 bg-gradient-to-b from-cyan-500/50 via-emerald-500 to-transparent my-1" />
-          <div className="text-[10px] font-mono uppercase tracking-widest text-[var(--text-muted)] px-3 py-0.5 rounded-full ios-pill border border-[var(--border-subtle)] bg-[var(--bg-surface-elevated)]">
+        <div className="flex flex-col items-center">
+          <div className="w-px h-6 bg-zinc-300 dark:bg-zinc-700 my-1" />
+          <div className="text-[11px] font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
             Synthesis & Rapid Execution
           </div>
-          <div className="w-0.5 h-6 bg-gradient-to-b from-transparent via-emerald-500/50 to-emerald-500 my-1" />
+          <div className="w-px h-6 bg-zinc-300 dark:bg-zinc-700 my-1" />
         </div>
 
         {/* ======================================================== */}
         {/* CONVERGENCE NODE: 04 // Fast Shipping & Field Delivery */}
         {/* ======================================================== */}
         {convergence && (
-          <div className="relative z-10 flex flex-col items-center">
-            <div className="w-full max-w-xl p-4 sm:p-5 rounded-2xl bg-[var(--bg-surface-elevated)] border border-emerald-500/40 shadow-lg shadow-emerald-500/5 group hover:border-emerald-500/70 transition-all">
-              <div className="flex items-center justify-between text-xs font-mono mb-2">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full ios-pill text-emerald-500 font-bold bg-emerald-500/10 border border-emerald-500/20">
-                  <Zap size={12} />
-                  <span>STAGE {convergence.stage} // FAST SHIPPING</span>
+          <div className="flex flex-col items-center">
+            <div className="w-full max-w-2xl p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950 space-y-2">
+              <div className="flex items-center justify-between text-xs font-mono text-zinc-400 dark:text-zinc-500">
+                <span className="font-bold text-zinc-900 dark:text-white flex items-center gap-1.5 uppercase tracking-wider">
+                  <Zap size={13} />
+                  <span>Stage {convergence.stage} / Fast Shipping</span>
                 </span>
-                <span className="text-[11px] font-mono text-emerald-500 font-semibold">{convergence.tag}</span>
+                <span className="uppercase tracking-widest text-[11px] text-zinc-900 dark:text-white font-semibold">{convergence.tag}</span>
               </div>
-              <h4 className="text-base font-bold text-[var(--text-primary)] tracking-tight">
+              <h4 className="text-lg font-bold text-zinc-950 dark:text-white pt-1">
                 {convergence.title}
               </h4>
-              <p className="text-xs sm:text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
+              <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
                 {convergence.description}
               </p>
-              <div className="mt-3 pt-2 border-t border-[var(--border-subtle)] flex items-center justify-between text-[11px] font-mono text-[var(--text-muted)]">
-                <span className="italic font-serif text-[var(--text-primary)]">“I like building my ideas and shipping fast.”</span>
-                <span className="text-emerald-500">Live Ready</span>
+              <div className="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-xs font-mono">
+                <span className="italic font-serif text-zinc-900 dark:text-white">“I like building my ideas and shipping fast.”</span>
+                <span className="text-zinc-900 dark:text-white font-semibold">Live Production</span>
               </div>
             </div>
 
             {/* Stem Connector Down to Outcome Node */}
-            <div className="w-0.5 h-6 bg-gradient-to-b from-emerald-500 to-purple-500 my-1" />
+            <div className="w-px h-6 bg-zinc-300 dark:bg-zinc-700 my-1" />
           </div>
         )}
 
@@ -203,28 +197,28 @@ export default function ProjectThinkingTree({ project }) {
         {/* OUTCOME NODE: 05 // Real World Impact & Future Evolution */}
         {/* ======================================================== */}
         {outcome && (
-          <div className="relative z-10 flex flex-col items-center">
-            <div className="w-full max-w-xl p-4 sm:p-5 rounded-2xl bg-[var(--bg-surface-elevated)] border border-purple-500/40 shadow-lg shadow-purple-500/5 group hover:border-purple-500/70 transition-all">
-              <div className="flex items-center justify-between text-xs font-mono mb-2">
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full ios-pill text-purple-400 font-bold bg-purple-500/10 border border-purple-500/20">
-                  <Trophy size={12} />
-                  <span>STAGE {outcome.stage} // FIELD IMPACT</span>
+          <div className="flex flex-col items-center">
+            <div className="w-full max-w-2xl p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-950">
+              <div className="flex items-center justify-between text-xs font-mono text-zinc-400 dark:text-zinc-500 mb-2">
+                <span className="font-bold text-zinc-900 dark:text-white flex items-center gap-1.5 uppercase tracking-wider">
+                  <Trophy size={13} />
+                  <span>Stage {outcome.stage} / Real World Impact</span>
                 </span>
-                <span className="text-[11px] font-mono text-purple-400 font-semibold">{outcome.tag}</span>
+                <span className="uppercase tracking-widest text-[11px] text-zinc-900 dark:text-white font-semibold">{outcome.tag}</span>
               </div>
-              <div className="flex items-start justify-between gap-3">
-                <div>
-                  <h4 className="text-base font-bold text-[var(--text-primary)] tracking-tight">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4 pt-1">
+                <div className="space-y-1">
+                  <h4 className="text-lg font-bold text-zinc-950 dark:text-white">
                     {outcome.title}
                   </h4>
-                  <p className="text-xs sm:text-sm text-[var(--text-secondary)] mt-2 leading-relaxed">
+                  <p className="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
                     {outcome.detail}
                   </p>
                 </div>
                 {outcome.metric && (
-                  <div className="shrink-0 p-3 rounded-xl ios-pill border border-purple-500/30 text-center">
-                    <div className="text-[10px] font-mono text-[var(--text-muted)]">KEY METRIC</div>
-                    <div className="text-sm font-bold text-purple-400 mt-0.5">{outcome.metric}</div>
+                  <div className="shrink-0 p-3 rounded-xl border border-zinc-200 dark:border-zinc-800 text-center bg-zinc-50 dark:bg-zinc-900/60 self-start">
+                    <div className="text-[10px] font-mono uppercase tracking-wider text-zinc-400 dark:text-zinc-500">Key Metric</div>
+                    <div className="text-sm font-bold text-zinc-900 dark:text-white mt-0.5">{outcome.metric}</div>
                   </div>
                 )}
               </div>

@@ -25,45 +25,44 @@ export default function ProjectsSection({ onOpenDetails }) {
     <section id="projects" className="py-16 md:py-24 px-5 sm:px-8 max-w-6xl mx-auto border-t border-[var(--border-subtle)]">
       
       {/* Section Header */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8">
         <div>
-          <div className="text-xs font-mono uppercase tracking-wider text-[var(--text-muted)] mb-2">
+          <div className="text-xs font-mono uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-2">
             01 // Flagship Portfolio
           </div>
-          <h2 className="text-2xl sm:text-4xl font-bold tracking-tight text-[var(--text-primary)]">
+          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-zinc-950 dark:text-white">
             Finished Deployments & Highlights
           </h2>
-          <p className="text-sm sm:text-base text-[var(--text-secondary)] mt-2 max-w-xl">
-            A curated portfolio of verified production systems, university research, and industrial engineering deployments. Each project showcases proven performance, audited security, and production ready architecture.
-          </p>
-          {/* Proportional Editorial Quote: Shipping Fast */}
-          <div className="mt-3.5 inline-flex items-center gap-2.5 px-4 py-2 rounded-full ios-pill bg-zinc-900/5 dark:bg-white/5 border border-[var(--border-subtle)]">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <p className="font-serif italic text-sm sm:text-base text-[var(--text-primary)] tracking-wide">
+          {/* User Quote in Clean Proportion: No Pills, No Green Dots */}
+          <div className="mt-3">
+            <p className="font-serif italic text-lg sm:text-xl text-zinc-900 dark:text-zinc-100 tracking-wide">
               “I like building my ideas and shipping fast.”
             </p>
           </div>
         </div>
+      </div>
 
-        {/* Filter Navigation: Discrete Shaped iOS 26 Pills (Zero Numbers) */}
-        <div className="flex flex-wrap items-center gap-2">
-          {filterTabs.map((tab) => {
-            const isActive = activeCategory === tab.id;
-            return (
-              <button
-                key={tab.id}
-                onClick={() => setActiveCategory(tab.id)}
-                className={`relative px-4 py-2 rounded-full text-xs font-mono transition-all duration-200 active:scale-95 border ${
-                  isActive 
-                    ? 'bg-zinc-900 text-white dark:bg-white dark:text-zinc-950 font-bold border-zinc-900 dark:border-white shadow-md dark:shadow-[0_0_16px_rgba(255,255,255,0.2)]' 
-                    : 'ios-pill text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--border-hover)]'
-                }`}
-              >
-                <span>{tab.label}</span>
-              </button>
-            );
-          })}
-        </div>
+      {/* Filter Navigation: Minimalist Typographic Tabs (Zero Pills, Zero Dots) */}
+      <div className="flex flex-wrap items-center gap-x-5 sm:gap-x-7 gap-y-2 mb-10 border-b border-zinc-200/80 dark:border-zinc-800 pb-3">
+        {filterTabs.map((tab) => {
+          const isActive = activeCategory === tab.id;
+          return (
+            <button
+              key={tab.id}
+              onClick={() => setActiveCategory(tab.id)}
+              className={`text-xs sm:text-sm font-mono tracking-wider transition-colors py-1 relative ${
+                isActive 
+                  ? 'text-zinc-950 dark:text-white font-bold' 
+                  : 'text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-200'
+              }`}
+            >
+              <span>{tab.label}</span>
+              {isActive && (
+                <span className="absolute -bottom-3 left-0 right-0 h-[2px] bg-zinc-950 dark:bg-white" />
+              )}
+            </button>
+          );
+        })}
       </div>
 
       {/* Projects Grid */}

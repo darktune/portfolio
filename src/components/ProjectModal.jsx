@@ -85,10 +85,11 @@ export default function ProjectModal({ project, isOpen, onClose }) {
           
           {/* Header Bar */}
           <div className="sticky top-0 z-20 bg-[var(--bg-surface-elevated)] backdrop-blur-xl px-6 sm:px-8 py-4 border-b border-[var(--border-subtle)] flex items-center justify-between">
-            <div className="flex items-center gap-2.5">
-              <span className="px-3.5 py-1 rounded-full text-xs font-mono font-semibold ios-pill text-[var(--badge-text)]">
+            <div className="flex items-center gap-3">
+              <span className="text-xs font-mono font-bold text-zinc-900 dark:text-white uppercase tracking-wider">
                 {project.statusBadge}
               </span>
+              <span className="text-zinc-300 dark:text-zinc-700">|</span>
               <span className="text-xs font-mono text-[var(--text-muted)]">
                 {project.year} // {project.category}
               </span>
@@ -100,7 +101,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                   href={project.demoUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full ios-pill text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all group"
+                  className="p-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all group"
                   title="Open Live Site"
                 >
                   <div className="icon-hover-physics">
@@ -113,7 +114,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 rounded-full ios-pill text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all group"
+                  className="p-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all group"
                   title="View GitHub Repository"
                 >
                   <div className="icon-hover-physics">
@@ -123,7 +124,7 @@ export default function ProjectModal({ project, isOpen, onClose }) {
               )}
               <button
                 onClick={onClose}
-                className="p-2 rounded-full ios-pill text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all active:scale-90"
+                className="p-2 rounded-full border border-zinc-200 dark:border-zinc-800 text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all active:scale-90"
                 aria-label="Close dialog"
               >
                 <X size={16} />
@@ -218,13 +219,12 @@ export default function ProjectModal({ project, isOpen, onClose }) {
               {project.thinkingTree && (
                 <button
                   onClick={() => setActiveTab('thinkingTree')}
-                  className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 shrink-0 flex items-center gap-1.5 ${
+                  className={`pb-2 px-2 font-medium transition-colors border-b-2 -mb-2 shrink-0 ${
                     activeTab === 'thinkingTree'
-                      ? 'border-emerald-500 text-emerald-500 font-bold'
+                      ? 'border-[var(--text-primary)] text-[var(--text-primary)] font-bold'
                       : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
                   }`}
                 >
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                   <span>Thinking Process Tree</span>
                 </button>
               )}
