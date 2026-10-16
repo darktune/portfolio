@@ -7,12 +7,13 @@ export default function ProjectsSection({ onOpenDetails }) {
   const [activeCategory, setActiveCategory] = useState('all');
 
   const filterTabs = useMemo(() => [
-    { id: 'all', label: 'All Finished', count: finishedProjectsData.length },
+    { id: 'all', label: 'All Works', count: finishedProjectsData.length },
     { id: 'systems', label: 'Systems & Web3', count: finishedProjectsData.filter(p => p.filterCategory === 'systems').length },
     { id: 'fintech', label: 'Fintech & Quant', count: finishedProjectsData.filter(p => p.filterCategory === 'fintech').length },
     { id: 'commerce', label: 'Commerce', count: finishedProjectsData.filter(p => p.filterCategory === 'commerce').length },
     { id: 'media', label: 'Media & AI', count: finishedProjectsData.filter(p => p.filterCategory === 'media').length },
     { id: 'gaming', label: '3D & Gaming', count: finishedProjectsData.filter(p => p.filterCategory === 'gaming').length },
+    { id: 'conceptual', label: 'Conceptual Projects', count: finishedProjectsData.filter(p => p.filterCategory === 'conceptual').length },
   ], []);
 
   const filteredProjects = useMemo(() => {

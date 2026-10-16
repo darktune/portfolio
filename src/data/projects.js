@@ -247,6 +247,14 @@ export const projectsData = [
       {
         "url": "/media/reavo_live.webp",
         "title": "REAVO Live Storefront & Admin OS"
+      },
+      {
+        "url": "/media/reavo_shop.webp",
+        "title": "Student Gadget Catalog & Hardware Store"
+      },
+      {
+        "url": "/media/reavo_apple.webp",
+        "title": "Apple Ecosystem & Student Deals"
       }
     ],
     "summary": "Production consumer electronics storefront and specialized Corporate Admin OS powered by Supabase, KoraPay webhook idempotency, automated inventory synchronization, and an autonomous AI operations copilot.",
@@ -327,7 +335,15 @@ export const projectsData = [
     "gallery": [
       {
         "url": "/media/news_insights_live.webp",
-        "title": "News Insights Live Publishing Platform"
+        "title": "News Insights Live Publishing Platform & Ticker"
+      },
+      {
+        "url": "/media/news_insights_tech.webp",
+        "title": "Technology & AI Intelligence Desk"
+      },
+      {
+        "url": "/media/news_insights_politics.webp",
+        "title": "Investigative Politics & Analysis Desk"
       }
     ],
     "summary": "High-throughput digital publishing and investigative journalism portal engineered with Next.js 15 App Router, Supabase PostgreSQL with RLS, TipTap rich text, bespoke obsidian & gold glass luxury subscription modal, and 75 Common Vibe-Coded Web App security defenses.",
@@ -409,6 +425,18 @@ export const projectsData = [
       {
         "url": "/media/antho_live.webp",
         "title": "ANTHO Live Luxury Streetwear Storefront"
+      },
+      {
+        "url": "/media/antho_lookbook.webp",
+        "title": "Editorial Lookbook & Archival Drops"
+      },
+      {
+        "url": "/media/antho_shop.webp",
+        "title": "The Vault Exclusive Catalog & Filters"
+      },
+      {
+        "url": "/media/antho_collections.webp",
+        "title": "Capsule Collections Gallery & Showcase"
       }
     ],
     "summary": "Avant-garde youth luxury streetwear commerce platform and digital vault engineered on Next.js 15, React 19, Tailwind CSS, Prisma ORM, and Paystack. Grounded in Nielsen HCI heuristics with visual-first portal navigation, Edge middleware HMAC route protection, and automated Playwright E2E suites.",
@@ -799,6 +827,87 @@ export const projectsData = [
       "breakthrough": "Masterpieces 'Illusion of Freedom' and 'Morayo' curated and exhibited at the Spectrum Ori Art Exhibition.",
       "result": "Enduring aesthetic philosophy that guides all digital products and user interfaces engineered by Abraham.",
       "lesson": "Extreme patience in physical craft builds the mental tolerance required for complex, zero-error systems architecture."
+    }
+  },
+  {
+    "id": "meme-battle",
+    "code": "12",
+    "slug": "meme-battle-party-game",
+    "title": "Meme Battle",
+    "subtitle": "1v1 Multiplayer Reaction Party Game & Procedural Sound Engine",
+    "category": "Games & 3D",
+    "filterCategory": "gaming",
+    "year": "2026",
+    "featured": true,
+    "badge": "Production Party Game",
+    "coverImage": "/media/meme_battle_live.webp",
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [
+      {
+        "url": "/media/meme_battle_live.webp",
+        "title": "Meme Battle Live Desktop Arena & Scenario Card"
+      },
+      {
+        "url": "/media/meme_battle_mobile.webp",
+        "title": "Meme Battle Mobile Portrait Battle UI & Sticker Arsenal"
+      }
+    ],
+    "summary": "Fast-paced 1v1 multiplayer party game engineered with interactive scenario reactions, searchable sticker and GIF arsenal with emotion filters, procedural Web Audio synthesizer, and live audience voting with AI referee scoring.",
+    "role": "Lead Game Designer, Audio Architect & Full-Stack Engineer",
+    "status": "Live in Production",
+    "techStack": [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Motion",
+      "Web Audio API",
+      "Gemini API"
+    ],
+    "github": "https://github.com/darktune",
+    "demoUrl": "https://meme-battle-zeta.vercel.app",
+    "metrics": [
+      {
+        "label": "Scenario Library",
+        "value": "150+ Situations"
+      },
+      {
+        "label": "Audio Engine",
+        "value": "100% Web Audio"
+      },
+      {
+        "label": "AI Referee",
+        "value": "3-Scale Context AI"
+      }
+    ],
+    "powHighlights": [
+      "Engineered a fast paced party game where players clash in witty meme duels across five rounds",
+      "Designed a procedural sound synthesizer using the Web Audio API with zero audio file lag",
+      "Built an intelligent referee using Gemini AI that rates humor, context fit, and reaction timing"
+    ],
+    "caseStudy": {
+      "overview": "Meme Battle (Sticker Clash) is a high-speed interactive web party game where players compete in real-time meme duels across five rounds.",
+      "problem": "Party games frequently struggle with slow card selection, clunky mobile controls, and repetitive joke fatigue.",
+      "idea": "Engineer a rapid mobile-first battle screen combining instant emotion filters, procedural Web Audio sweeps, and synchronized card reveals.",
+      "architecture": [
+        {
+          "tier": "Core Battle Loop",
+          "desc": "Strict round state transitions: Matchmaking -> Selecting -> Locked In -> Synchronous Reveal -> Live Voting -> Review."
+        },
+        {
+          "tier": "Procedural Web Audio Engine",
+          "desc": "Zero-latency mathematical synthesis producing audio sweeps, tension countdown ticks, and fanfare without external audio files."
+        },
+        {
+          "tier": "AI Referee & Review Engine",
+          "desc": "Contextual 3-bar evaluation scoring context fit, humor impact, and reaction timing."
+        }
+      ],
+      "breakthrough": "Achieved sub-second sticker filtering and seamless real-time audience voting with 100% procedural sound synthesis.",
+      "codeSnippet": "// Meme Battle Procedural Sound Synthesizer\nclass SoundEffectsEngine {\n  playLock() {\n    const ctx = this.getContext();\n    [330, 440, 660].forEach((freq, i) => {\n      const osc = ctx.createOscillator();\n      const gain = ctx.createGain();\n      osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.04);\n      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.04 + 0.12);\n      osc.connect(gain); gain.connect(ctx.destination);\n      osc.start(ctx.currentTime + i * 0.04); osc.stop(ctx.currentTime + i * 0.04 + 0.12);\n    });\n  }\n}",
+      "result": "Deployed in production on Vercel with responsive desktop and mobile viewports.",
+      "lesson": "Party game magic lives in the speed of interaction. Eliminate decision friction and the comedy takes care of itself."
     }
   }
 ];

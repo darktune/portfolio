@@ -105,6 +105,14 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
       {
         url: "/media/reavo_live.webp",
         title: "REAVO Live Storefront & Admin OS"
+      },
+      {
+        url: "/media/reavo_shop.webp",
+        title: "Student Gadget Catalog & Hardware Store"
+      },
+      {
+        url: "/media/reavo_apple.webp",
+        title: "Apple Ecosystem & Student Deals"
       }
     ],
     summary: "Production consumer electronics storefront and corporate operating system powered by verified payment workflows and automated inventory synchronization. Built with bank grade security rules and an autonomous operations copilot.",
@@ -156,7 +164,15 @@ router.post('/webhook/korapay', async (req, res) => {
     gallery: [
       {
         url: "/media/news_insights_live.webp",
-        title: "News Insights Live Publishing Platform"
+        title: "News Insights Live Publishing Platform & Ticker"
+      },
+      {
+        url: "/media/news_insights_tech.webp",
+        title: "Technology & AI Intelligence Desk"
+      },
+      {
+        url: "/media/news_insights_politics.webp",
+        title: "Investigative Politics & Analysis Desk"
       }
     ],
     summary: "High throughput digital publishing and investigative journalism portal engineered with server rendered articles and luxury reader modals. Audited against 75 common web application vulnerabilities with hardened database permissions.",
@@ -202,6 +218,18 @@ USING (status = 'published' AND published_at <= NOW());`
       {
         url: "/media/antho_live.webp",
         title: "ANTHO Live Luxury Streetwear Storefront"
+      },
+      {
+        url: "/media/antho_lookbook.webp",
+        title: "Editorial Lookbook & Archival Drops"
+      },
+      {
+        url: "/media/antho_shop.webp",
+        title: "The Vault Exclusive Catalog & Filters"
+      },
+      {
+        url: "/media/antho_collections.webp",
+        title: "Capsule Collections Gallery & Showcase"
       }
     ],
     summary: "Avant garde luxury streetwear commerce platform engineered with visual first portal navigation and cryptographic route protection. Grounded in human computer interaction heuristics and automated end to end test suites.",
@@ -266,6 +294,173 @@ export async function middleware(req: NextRequest) {
       problem: "Traditional esports events struggle to present clear commercial value and immersive physical presence to corporate enterprise sponsors.",
       solution: "Engineered 3D spatial tournament stage mockups and structured sponsorship architecture presentations translating gaming engagement into corporate impact.",
       breakthrough: "Successfully delivered spatial 3D stage and keynote presentations for corporate partner retreats, completing the six month training with distinction."
+    }
+  },
+  {
+    id: "meme-battle",
+    code: "07",
+    title: "Meme Battle",
+    subtitle: "Multiplayer Reaction Party Game and Procedural Sound Synthesizer",
+    category: "3D & Gaming",
+    filterCategory: "gaming",
+    year: "2026",
+    statusBadge: "Live in Production",
+    featured: true,
+    coverImage: "/media/meme_battle_live.webp",
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [
+      {
+        url: "/media/meme_battle_live.webp",
+        title: "Meme Battle Live Desktop Arena & Scenario Card"
+      },
+      {
+        url: "/media/meme_battle_mobile.webp",
+        title: "Meme Battle Mobile Portrait Battle UI & Sticker Arsenal"
+      }
+    ],
+    summary: "Real time multiplayer party game where players clash in witty meme duels across five rounds. Powered by a custom procedural Web Audio API synthesizer engine, instant emotion filtering, and an intelligent referee that evaluates humor and context fit.",
+    role: "Lead Game Designer, Audio Architect and Full Stack Engineer",
+    techStack: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Motion", "Web Audio API", "Gemini API"],
+    github: "https://github.com/darktune",
+    demoUrl: "https://meme-battle-zeta.vercel.app",
+    metrics: [
+      { label: "Scenario Library", value: "150+ Situations" },
+      { label: "Audio Engine", value: "100% Web Audio" },
+      { label: "AI Referee", value: "3 Bar Context Fit" }
+    ],
+    finishedHighlights: [
+      "Engineered a fast paced party game where players clash in witty meme duels across five rounds.",
+      "Designed a procedural sound synthesizer using the Web Audio API with zero audio file lag.",
+      "Built an intelligent referee using Gemini AI that rates humor, context fit, and reaction timing."
+    ],
+    caseStudy: {
+      problem: "Party games often struggle with slow card selection, clunky mobile controls, and repetitive joke fatigue.",
+      solution: "Engineered a rapid mobile first battle screen combining instant emotion filters, procedural sound sweeps, and synchronized card reveals.",
+      breakthrough: "Achieved seamless sub second meme selection and fair real time audience voting that keeps players laughing round after round.",
+      codeSnippet: `// Meme Battle Web Audio API Procedural Synthesizer Engine
+class SoundEffectsEngine {
+  private ctx: AudioContext | null = null;
+  playLock() {
+    const ctx = this.getContext();
+    const freqs = [330, 440, 660];
+    freqs.forEach((freq, i) => {
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.04);
+      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.04 + 0.12);
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start(ctx.currentTime + i * 0.04);
+      osc.stop(ctx.currentTime + i * 0.04 + 0.12);
+    });
+  }
+}`
+    }
+  },
+  {
+    id: "civos",
+    code: "08",
+    title: "CivOS",
+    subtitle: "Civilization Operating System Spatial Autonomous World Engine",
+    category: "Conceptual & Systems",
+    filterCategory: "conceptual",
+    year: "2026",
+    statusBadge: "Active Research Prototype",
+    featured: false,
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
+    summary: "Ongoing conceptual research prototype exploring distributed architectures for persistent AI metaverses. Combines a five tier deterministic compute hierarchy in C++ with Kafka event sourcing and autonomous agent accounts to slash AI overhead by 94 percent.",
+    role: "Lead Systems Architect and Researcher",
+    techStack: ["C++", "Apache Kafka", "ERC 4337", "Redis", "Solidity", "Vector DB"],
+    github: "https://github.com/abraham-DT/CivOS",
+    demoUrl: null,
+    metrics: [
+      { label: "Status Stage", value: "Active Prototype" },
+      { label: "Deterministic Core", value: "95% in C++" },
+      { label: "Compute Cut", value: "94% Overhead Saved" }
+    ],
+    finishedHighlights: [
+      "Designed a deterministic validation engine in C++ that verifies physics before triggering AI dialogue.",
+      "Streamed immutable universe state logs across high speed event pipelines for real time auditing.",
+      "Empowered autonomous game characters to manage virtual inventories with smart accounts."
+    ],
+    caseStudy: {
+      problem: "Simulating thousands of concurrent autonomous agents using raw AI calls causes immediate server insolvency while simple scripts lack social depth.",
+      solution: "Engineered a layered compute hierarchy where ninety five percent of world physics runs deterministically in C++ microservices.",
+      breakthrough: "High order AI reasoning spins up only when human observers enter interaction proximity, preserving universe fidelity at a fraction of standard cost."
+    }
+  },
+  {
+    id: "loom",
+    code: "09",
+    title: "LOOM",
+    subtitle: "3D Spatial Digital Atelier and Milestone Escrow System",
+    category: "Conceptual & Spatial",
+    filterCategory: "conceptual",
+    year: "2025 Present",
+    statusBadge: "Active Spatial Prototype",
+    featured: false,
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
+    summary: "Conceptual 3D bespoke luxury fashion commerce platform connecting custom tailors with global patrons through interactive 3D spatial mannequins and verified milestone escrow payments.",
+    role: "Lead Spatial and Systems Engineer",
+    techStack: ["Three.js", "React", "Blender", "WebGL", "Node.js", "Tailwind CSS"],
+    github: "https://github.com/darktune/loom",
+    demoUrl: null,
+    metrics: [
+      { label: "Status Stage", value: "Active Prototype" },
+      { label: "Accuracy Target", value: "98.5% Fit" },
+      { label: "Escrow Stages", value: "3 Milestones" }
+    ],
+    finishedHighlights: [
+      "Engineered an interactive 3D WebGL mannequin with customizable dimensions and fabric drape physics.",
+      "Designed a three stage milestone escrow pipeline that releases funds as garments are verified.",
+      "Crafted realistic textile shaders celebrating authentic African fabric patterns in real time."
+    ],
+    caseStudy: {
+      problem: "Traditional bespoke tailoring relies on error prone manual measurements, creating high return rates and payment anxiety across borders.",
+      solution: "Combined an interactive 3D spatial mannequin with smart milestone escrow released in three verified stages.",
+      breakthrough: "Rendered realistic cloth drape physics in browser WebGL with smooth mobile performance."
+    }
+  },
+  {
+    id: "siphoon-os",
+    code: "10",
+    title: "SIPHOON OS",
+    subtitle: "Personal Forex Intelligence, Quantitative Journal and Risk Engine",
+    category: "Conceptual & Fintech",
+    filterCategory: "conceptual",
+    year: "2026",
+    statusBadge: "Quantitative Workstation",
+    featured: false,
+    coverImage: null,
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [],
+    summary: "Conceptual Forex intelligence, trade journaling, and quantitative decision support workstation. Built with real math Kelly risk calculators, currency correlation heatmaps, and an autonomous trade review copilot.",
+    role: "Quantitative Systems Engineer and Architect",
+    techStack: ["Next.js 15", "TypeScript", "PostgreSQL", "Prisma", "lightweight charts", "Tailwind CSS"],
+    github: "https://github.com/darktune/Stelcera",
+    demoUrl: null,
+    metrics: [
+      { label: "Performance", value: "60 FPS Canvas" },
+      { label: "Risk Formulas", value: "Kelly & Ruin Math" },
+      { label: "Market Heatmap", value: "Live Correlation" }
+    ],
+    finishedHighlights: [
+      "Engineered analytical calculators for optimal position bet sizing and risk of ruin probability.",
+      "Rendered hardware accelerated multi timeframe candlestick charts with zero interface stutter.",
+      "Built an AI review companion that audits closed trades against personal trading rules."
+    ],
+    caseStudy: {
+      problem: "Individual currency traders suffer high failure rates from emotional position sizing and undisciplined risk management.",
+      solution: "Architected a unified command center combining deterministic risk calculations with 60 frames per second charting.",
+      breakthrough: "Calculated complex risk models directly in browser state without server roundtrip latency."
     }
   }
 ];
