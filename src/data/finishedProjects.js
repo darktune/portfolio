@@ -608,6 +608,10 @@ export async function middleware(req: NextRequest) {
       {
         url: "/media/kucheza_gaming.jpg",
         title: "Kucheza Esports 3D Stage & Arena Staging"
+      },
+      {
+        url: "/media/kucheza_logo_white.png",
+        title: "Official Kucheza Gaming Identity"
       }
     ],
     summary: "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes spatial presentation systems for leading telecommunications and consumer brand partnerships.",

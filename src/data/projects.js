@@ -653,10 +653,13 @@ export const projectsData = [
     "year": "2025",
     "featured": false,
     "badge": "Industrial Training",
-    "coverImage": null,
+    "coverImage": "/media/kucheza_gaming.jpg",
     "videoUrl": null,
     "hasVideo": false,
-    "gallery": [],
+    "gallery": [
+      "/media/kucheza_gaming.jpg",
+      "/media/kucheza_logo_white.png"
+    ],
     "summary": "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes spatial presentation systems for leading telecommunications and consumer brand partnerships.",
     "role": "R&D Engineer & 3D Staging Designer",
     "status": "Completed October 2025",

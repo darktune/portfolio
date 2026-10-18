@@ -24,12 +24,18 @@ export default function ExperienceSection() {
       keyMetric: '3D Spatial Staging & Enterprise Decks',
       glowClass: 'bg-emerald-500',
       logo: (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
-          <path d="M6 11H8M7 10V12" stroke="#10b981" strokeWidth="2" strokeLinecap="round" />
-          <circle cx="16" cy="10.5" r="1" fill="#06b6d4" />
-          <circle cx="18" cy="12.5" r="1" fill="#10b981" />
-          <rect x="2" y="6" width="20" height="12" rx="6" stroke="currentColor" strokeWidth="1.8" className="text-[var(--text-primary)]" />
-        </svg>
+        <div className="w-6 h-6 shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+          <img
+            src="/media/kucheza_mark_dark.png"
+            alt="Kucheza Gaming Logo"
+            className="w-full h-full object-contain dark:hidden"
+          />
+          <img
+            src="/media/kucheza_mark_white.png"
+            alt="Kucheza Gaming Logo"
+            className="w-full h-full object-contain hidden dark:block"
+          />
+        </div>
       ),
       deliverables: [
         'Designed interactive 3D tournament staging and spectator arena layouts for national esports championships',
@@ -306,6 +312,28 @@ export default function ExperienceSection() {
                               </span>
                             ))}
                           </div>
+
+                          {exp.id === 'kucheza' && (
+                            <div className="pt-2">
+                              <div className="p-3 rounded-2xl ios-pill flex items-center justify-between gap-3 border border-[var(--border-subtle)]">
+                                <div className="flex items-center gap-2">
+                                  <img
+                                    src="/media/kucheza_logo_dark.png"
+                                    alt="Kucheza Gaming Brand"
+                                    className="h-3.5 w-auto object-contain dark:hidden"
+                                  />
+                                  <img
+                                    src="/media/kucheza_logo_white.png"
+                                    alt="Kucheza Gaming Brand"
+                                    className="h-3.5 w-auto object-contain hidden dark:block"
+                                  />
+                                </div>
+                                <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-wider">
+                                  Official Brand Mark
+                                </span>
+                              </div>
+                            </div>
+                          )}
                         </div>
 
                       </div>
