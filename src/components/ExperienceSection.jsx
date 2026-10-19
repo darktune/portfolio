@@ -23,8 +23,10 @@ export default function ExperienceSection() {
       highlight: 'Engineered spatial 3D tournament arena stage architectures and corporate presentation systems for leading enterprise brand partnerships.',
       keyMetric: '3D Spatial Staging & Enterprise Decks',
       glowClass: 'bg-emerald-500',
+      accentGlow: 'rgba(16, 185, 129, 0.22)',
+      accentBorder: 'rgba(16, 185, 129, 0.65)',
       logo: (
-        <div className="w-6 h-6 shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+        <div className="w-5 h-5 shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
           <img
             src="/media/kucheza_mark_dark.png"
             alt="Kucheza Gaming Logo"
@@ -56,8 +58,10 @@ export default function ExperienceSection() {
       highlight: 'Led game development initiatives for Google Developer Groups and conducted personal systems R&D for final year thesis project D MEX and spatial computing.',
       keyMetric: 'Game Dev Track & BSc Thesis',
       glowClass: 'bg-blue-500',
+      accentGlow: 'rgba(66, 133, 244, 0.22)',
+      accentBorder: 'rgba(66, 133, 244, 0.65)',
       logo: (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+        <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
           {/* Official GDG Colors: Blue, Red, Yellow, Green */}
           <path d="M7 7L3 12L7 17" stroke="#4285F4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M17 7L21 12L17 17" stroke="#34A853" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -84,8 +88,10 @@ export default function ExperienceSection() {
       highlight: 'Engineering LOOM as an unfinished 3D spatial atelier prototype with real time WebGL cloth drape simulation and smart escrow pipelines.',
       keyMetric: 'Active Spatial Prototype',
       glowClass: 'bg-purple-500',
+      accentGlow: 'rgba(168, 85, 247, 0.22)',
+      accentBorder: 'rgba(168, 85, 247, 0.65)',
       logo: (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+        <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
           <path d="M12 2L20 7V17L12 22L4 17V7L12 2Z" stroke="#a855f7" strokeWidth="1.8" strokeLinejoin="round" />
           <path d="M12 22V12M20 7L12 12M4 7L12 12" stroke="#ec4899" strokeWidth="1.8" strokeLinejoin="round" />
         </svg>
@@ -109,8 +115,10 @@ export default function ExperienceSection() {
       highlight: 'Designed and deployed computing literacy programs across Nigerian secondary schools with a 92% completion rate.',
       keyMetric: '92% Completion Rate Across Schools',
       glowClass: 'bg-amber-500',
+      accentGlow: 'rgba(245, 158, 11, 0.22)',
+      accentBorder: 'rgba(245, 158, 11, 0.65)',
       logo: (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+        <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
           <rect x="3" y="4" width="18" height="14" rx="3" stroke="#f59e0b" strokeWidth="1.8" />
           <path d="M7 10L10 12L7 14" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <line x1="12" y1="14" x2="16" y2="14" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" />
@@ -136,8 +144,10 @@ export default function ExperienceSection() {
       highlight: 'Directed luxury brand identity systems and fine art pointillism masterpieces exhibited at Spectrum Ori Art Exhibition.',
       keyMetric: 'Exhibited Fine Art & Brand Systems',
       glowClass: 'bg-yellow-500',
+      accentGlow: 'rgba(234, 179, 8, 0.22)',
+      accentBorder: 'rgba(234, 179, 8, 0.65)',
       logo: (
-        <svg viewBox="0 0 24 24" className="w-6 h-6 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+        <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
           <circle cx="12" cy="12" r="8" stroke="#eab308" strokeWidth="1.8" strokeDasharray="2 2" />
           <circle cx="12" cy="12" r="3" fill="#ca8a04" />
           <path d="M12 2V6M12 18V22M2 12H6M18 12H22" stroke="#eab308" strokeWidth="1.8" strokeLinecap="round" />
@@ -180,68 +190,85 @@ export default function ExperienceSection() {
           return (
             <div
               key={exp.id}
+              onMouseMove={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
+                e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+              }}
               className={`group rounded-3xl ios-glass-card transition-all duration-300 relative overflow-hidden border ${
                 isExpanded 
                   ? 'border-[var(--border-strong)] shadow-xl' 
                   : 'border-[var(--border-subtle)] hover:border-[var(--border-hover)]'
               }`}
             >
+              {/* Dynamic Cursor-Responsive Ambient Accent Spotlight behind bars and pill bars */}
+              <div
+                className="pointer-events-none absolute -inset-px rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-0 overflow-hidden"
+                style={{
+                  background: `radial-gradient(480px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), ${exp.accentGlow || 'rgba(16, 185, 129, 0.22)'}, transparent 70%)`
+                }}
+              />
+
+              {/* Dynamic Specular Border Glow following the cursor along the card boundary */}
+              <div
+                className="pointer-events-none absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-[1px] z-0 overflow-hidden"
+                style={{
+                  background: `radial-gradient(280px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), ${exp.accentBorder || 'rgba(16, 185, 129, 0.65)'}, transparent 65%)`,
+                  WebkitMask: 'linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)',
+                  WebkitMaskComposite: 'xor',
+                  maskComposite: 'exclude'
+                }}
+              />
+
               {/* Resend Specular Top Edge Gleam */}
-              <div className="absolute top-0 left-8 right-8 h-[1px] bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none" />
+              <div className="absolute top-0 left-8 right-8 h-[1px] bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none z-10" />
 
               {/* Card Summary */}
-              <div className="p-5 sm:p-7">
+              <div className="p-5 sm:p-7 relative z-10">
                 <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
                   
-                  {/* Left: Organization Logo & Metadata */}
-                  <div className="flex items-start gap-4 max-w-2xl">
-                    
-                    {/* Animated Glassmorphic Brand Logo with Ambient Glow */}
-                    <div className="relative shrink-0 pt-0.5">
-                      <div className="w-12 h-12 rounded-2xl ios-pill flex items-center justify-center p-2.5 relative overflow-hidden border border-[var(--border-subtle)] shadow-sm group-hover:border-[var(--border-strong)] transition-all duration-300">
-                        {/* Ambient glow matching brand color palette */}
-                        <div className={`absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity blur-md ${exp.glowClass}`} />
-                        <div className="relative z-10">
-                          {exp.logo}
-                        </div>
-                      </div>
+                  {/* Left: Metadata & Heading with Logo right beside the name */}
+                  <div className="space-y-2 flex-1 max-w-2xl">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="w-6 h-6 rounded-xl ios-pill flex items-center justify-center text-[11px] font-mono font-bold text-[var(--text-primary)] shrink-0">
+                        0{index + 1}
+                      </span>
+                      <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
+                        <Sparkles size={10} />
+                        <span>{exp.badge}</span>
+                      </span>
+                      <span className="text-xs font-mono text-[var(--text-muted)] flex items-center gap-1">
+                        <Calendar size={11} className="text-zinc-400" />
+                        <span>{exp.period}</span>
+                      </span>
+                      <span className="text-[var(--text-muted)] text-xs">·</span>
+                      <span className="text-xs font-mono text-[var(--text-muted)] flex items-center gap-1">
+                        <MapPin size={11} className="text-zinc-400" />
+                        <span>{exp.location}</span>
+                      </span>
                     </div>
 
-                    <div className="space-y-2 flex-1">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="w-6 h-6 rounded-xl ios-pill flex items-center justify-center text-[11px] font-mono font-bold text-[var(--text-primary)] shrink-0">
-                          0{index + 1}
+                    <div>
+                      {/* Logo positioned directly beside the name for validity */}
+                      <div className="flex items-center gap-2.5 flex-wrap">
+                        <span className="w-7 h-7 rounded-lg ios-pill flex items-center justify-center p-1 shrink-0 border border-[var(--border-subtle)] shadow-xs">
+                          {exp.logo}
                         </span>
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-mono font-bold bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">
-                          <Sparkles size={10} />
-                          <span>{exp.badge}</span>
-                        </span>
-                        <span className="text-xs font-mono text-[var(--text-muted)] flex items-center gap-1">
-                          <Calendar size={11} className="text-zinc-400" />
-                          <span>{exp.period}</span>
-                        </span>
-                        <span className="text-[var(--text-muted)] text-xs">·</span>
-                        <span className="text-xs font-mono text-[var(--text-muted)] flex items-center gap-1">
-                          <MapPin size={11} className="text-zinc-400" />
-                          <span>{exp.location}</span>
-                        </span>
-                      </div>
-
-                      <div>
                         <h3 className="text-lg sm:text-xl font-extrabold text-[var(--text-primary)] tracking-tight title-hover-physics">
                           {exp.company}
                         </h3>
-                        <div className="text-xs sm:text-sm font-semibold text-[var(--text-secondary)] mt-0.5">
-                          {exp.role}
-                        </div>
                       </div>
-
-                      {/* Executive Highlight */}
-                      <p className="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed pt-1">
-                        {exp.highlight}
-                      </p>
+                      <div className="text-xs sm:text-sm font-semibold text-[var(--text-secondary)] mt-1">
+                        {exp.role}
+                      </div>
                     </div>
 
+                    {/* Executive Highlight */}
+                    <p className="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed pt-1">
+                      {exp.highlight}
+                    </p>
                   </div>
 
                   {/* Right: Deep Dive Interactive Trigger Button */}

@@ -53,11 +53,26 @@ export default function Navbar({ theme = 'system', setTheme }) {
         : 'py-4 sm:py-5'
     }`}>
       <div className="max-w-6xl mx-auto px-4 sm:px-8">
-        <div className={`flex items-center justify-between px-4 sm:px-6 py-2.5 rounded-full transition-all duration-300 ios-glass-nav neon-nav-glow border ${
+        <div 
+          onMouseMove={(e) => {
+            const rect = e.currentTarget.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
+            e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+          }}
+          className={`group/nav relative overflow-hidden flex items-center justify-between px-4 sm:px-6 py-2.5 rounded-full transition-all duration-300 ios-glass-nav neon-nav-glow border ${
           scrolled
             ? 'shadow-xl border-[var(--border-strong)]'
             : 'shadow-md border-[var(--border-subtle)]'
         }`}>
+          {/* Dynamic Cursor-Responsive Ambient Accent Glow gliding across the navbar pill bar */}
+          <div
+            className="pointer-events-none absolute -inset-px rounded-full opacity-0 group-hover/nav:opacity-100 transition-opacity duration-300 z-0 overflow-hidden"
+            style={{
+              background: `radial-gradient(220px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(56, 189, 248, 0.22), transparent 70%)`
+            }}
+          />
           
           {/* Brand & Personal Architect Insignia */}
           <a 

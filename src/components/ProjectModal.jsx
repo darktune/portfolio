@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Play, Pause, Volume2, VolumeX, ExternalLink, Code2, Check, Copy } from 'lucide-react';
 import { GithubIcon } from './Icons';
 import ProjectThinkingTree from './ProjectThinkingTree';
+import ProjectLogo from './ProjectLogo';
 
 export default function ProjectModal({ project, isOpen, onClose }) {
   const [activeTab, setActiveTab] = useState('highlights'); // 'highlights' | 'thinkingTree' | 'caseStudy'
@@ -137,8 +138,11 @@ export default function ProjectModal({ project, isOpen, onClose }) {
             
             {/* Title & Subtitle */}
             <div className="space-y-1.5">
-              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[var(--text-primary)]">
-                {project.title}
+              <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[var(--text-primary)] flex items-center gap-3 flex-wrap">
+                <span className="w-8 h-8 rounded-xl ios-pill flex items-center justify-center p-1.5 shrink-0 border border-[var(--border-subtle)] shadow-xs">
+                  <ProjectLogo project={project} size={22} />
+                </span>
+                <span>{project.title}</span>
               </h2>
               <p className="text-sm sm:text-base text-[var(--text-secondary)]">
                 {project.subtitle}
