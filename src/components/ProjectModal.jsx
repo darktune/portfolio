@@ -10,12 +10,14 @@ export default function ProjectModal({ project, isOpen, onClose }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
   const [copiedCode, setCopiedCode] = useState(false);
+  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
   const videoRef = useRef(null);
 
   useEffect(() => {
     if (project) {
       setActiveTab(project.initialTab || 'highlights');
       setIsPlaying(false);
+      setSelectedImageIndex(0);
     }
   }, [project]);
 
@@ -33,6 +35,12 @@ export default function ProjectModal({ project, isOpen, onClose }) {
   }, [isOpen, project, onClose]);
 
   if (!isOpen || !project) return null;
+
+  const galleryItems = (project.gallery && project.gallery.length > 0)
+    ? project.gallery.map(item => typeof item === 'string' ? { url: item, title: project.title } : item)
+    : project.coverImage ? [{ url: project.coverImage, title: project.title }] : [];
+
+  const activeImage = galleryItems[selectedImageIndex] || { url: project.coverImage, title: project.title };
 
   const togglePlay = () => {
     if (!videoRef.current) return;
@@ -150,34 +158,66 @@ export default function ProjectModal({ project, isOpen, onClose }) {
             </div>
 
             {/* Media Presentation: Video, Cover or Architectural Blueprint */}
-            {project.coverImage || (project.hasVideo && project.videoUrl) ? (
-              <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/90 border border-white/10 shadow-lg">
-                {project.hasVideo && project.videoUrl ? (
-                  <>
-                    <video
-                      ref={videoRef}
-                      src={project.videoUrl}
-                      poster={project.coverImage}
-                      playsInline
-                      loop
-                      muted={isMuted}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute bottom-3 right-3 flex items-center gap-2 bg-black/70 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-mono text-white border border-white/20">
-                      <button onClick={togglePlay} className="hover:opacity-80 active:scale-90">
-                        {isPlaying ? <Pause size={14} /> : <Play size={14} className="fill-white" />}
+            {activeImage?.url || (project.hasVideo && project.videoUrl) ? (
+              <div className="space-y-3">
+                <div className="relative aspect-video w-full rounded-2xl overflow-hidden bg-black/90 border border-white/10 shadow-lg">
+                  {project.hasVideo && project.videoUrl ? (
+                    <>
+                      <video
+                        ref={videoRef}
+                        src={project.videoUrl}
+                        poster={activeImage?.url || project.coverImage}
+                        playsInline
+                        loop
+                        muted={isMuted}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute bottom-3 right-3 flex items-center gap-2 bg-black/70 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-mono text-white border border-white/20">
+                        <button onClick={togglePlay} className="hover:opacity-80 active:scale-90">
+                          {isPlaying ? <Pause size={14} /> : <Play size={14} className="fill-white" />}
+                        </button>
+                        <button onClick={toggleMute} className="hover:opacity-80 active:scale-90">
+                          {isMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
+                        </button>
+                      </div>
+                    </>
+                  ) : (
+                    <>
+                      <img
+                        src={activeImage?.url}
+                        alt={activeImage?.title || project.title}
+                        className="w-full h-full object-cover transition-opacity duration-200"
+                      />
+                      {activeImage?.title && galleryItems.length > 1 && (
+                        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent px-4 py-3 text-white text-xs font-mono flex items-center justify-between pointer-events-none">
+                          <span className="truncate pr-3 font-medium text-xs sm:text-sm text-zinc-100">{activeImage.title}</span>
+                          <span className="shrink-0 text-[11px] text-zinc-300 font-mono">
+                            {selectedImageIndex + 1} / {galleryItems.length}
+                          </span>
+                        </div>
+                      )}
+                    </>
+                  )}
+                </div>
+
+                {/* Multiple Gallery Thumbnails Bar */}
+                {galleryItems.length > 1 && (
+                  <div className="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5">
+                    {galleryItems.map((img, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setSelectedImageIndex(idx)}
+                        className={`relative shrink-0 w-20 sm:w-24 aspect-video rounded-xl overflow-hidden border transition-all ${
+                          selectedImageIndex === idx
+                            ? 'border-zinc-950 dark:border-white ring-2 ring-zinc-950/20 dark:ring-white/20 scale-[1.02]'
+                            : 'border-[var(--border-subtle)] opacity-60 hover:opacity-100'
+                        }`}
+                        title={img.title}
+                      >
+                        <img src={img.url} alt={img.title} className="w-full h-full object-cover" />
                       </button>
-                      <button onClick={toggleMute} className="hover:opacity-80 active:scale-90">
-                        {isMuted ? <VolumeX size={14} /> : <Volume2 size={14} />}
-                      </button>
-                    </div>
-                  </>
-                ) : (
-                  <img
-                    src={project.coverImage}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
+                    ))}
+                  </div>
                 )}
               </div>
             ) : (

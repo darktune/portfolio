@@ -7,10 +7,15 @@ TARGETS = [
     'antho_lookbook',
     'antho_shop',
     'antho_collections',
+    'antho_editorial',
     'news_insights_tech',
     'news_insights_politics',
+    'news_insights_business',
+    'news_insights_world',
     'reavo_shop',
     'reavo_apple',
+    'reavo_cart',
+    'reavo_accessories',
 ]
 
 MAX_WIDTH = 1920

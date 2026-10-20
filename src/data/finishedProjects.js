@@ -9,13 +9,29 @@ export const finishedProjectsData = [
     year: "2026",
     statusBadge: "Completed BSc Capstone",
     featured: true,
-    coverImage: "/media/dmex_protocol.jpg",
+    coverImage: "/media/dmex_dashboard.webp",
     videoUrl: null,
     hasVideo: false,
     gallery: [
       {
+        url: "/media/dmex_dashboard.webp",
+        title: "D MEX Protocol Web3 Trading Dashboard"
+      },
+      {
         url: "/media/dmex_protocol.jpg",
-        title: "D MEX Protocol Architecture & Invariants"
+        title: "D MEX Protocol Cross Game Trading Architecture"
+      },
+      {
+        url: "/media/dmex_contracts_test.webp",
+        title: "Smart Contract Implementation & Foundry Benchmarks"
+      },
+      {
+        url: "/media/dmex_gas_benchmark.webp",
+        title: "Gas Execution Savings & Yul Invariant Benchmarks"
+      },
+      {
+        url: "/media/dmex_security_model.webp",
+        title: "Seven Layer Security Model & Cryptographic Defense"
       }
     ],
     summary: "Trustless cross chain atomic swap infrastructure engineered for sovereign gaming ecosystems. Eliminates centralized bridge exploits via cryptographic timelocks and assembly code optimizations.",
@@ -251,6 +267,14 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
       {
         url: "/media/reavo_apple.webp",
         title: "Apple Ecosystem & Student Deals"
+      },
+      {
+        url: "/media/reavo_cart.webp",
+        title: "Student Checkout & Cart Drawer Verification"
+      },
+      {
+        url: "/media/reavo_accessories.webp",
+        title: "Student Tech Accessories & Peripherals Desk"
       }
     ],
     summary: "Production consumer electronics storefront and corporate operating system powered by verified payment workflows and automated inventory synchronization. Built with bank grade security rules and an autonomous operations copilot.",
@@ -375,6 +399,14 @@ router.post('/webhook/korapay', async (req, res) => {
       {
         url: "/media/news_insights_politics.webp",
         title: "Investigative Politics & Analysis Desk"
+      },
+      {
+        url: "/media/news_insights_business.webp",
+        title: "Global Markets & Business Intelligence Desk"
+      },
+      {
+        url: "/media/news_insights_world.webp",
+        title: "World Affairs & International Bureau"
       }
     ],
     summary: "High throughput digital publishing and investigative journalism portal engineered with server rendered articles and luxury reader modals. Audited against 75 common web application vulnerabilities with hardened database permissions.",
@@ -496,6 +528,10 @@ USING (status = 'published' AND published_at <= NOW());`
       {
         url: "/media/antho_collections.webp",
         title: "Capsule Collections Gallery & Showcase"
+      },
+      {
+        url: "/media/antho_editorial.webp",
+        title: "Brand Heritage & Haute Couture Vision"
       }
     ],
     summary: "Avant garde luxury streetwear commerce platform engineered with visual first portal navigation and cryptographic route protection. Grounded in human computer interaction heuristics and automated end to end test suites.",
@@ -608,6 +644,10 @@ export async function middleware(req: NextRequest) {
       {
         url: "/media/kucheza_gaming.jpg",
         title: "Kucheza Esports 3D Stage & Arena Staging"
+      },
+      {
+        url: "/media/kucheza_arena_stage.webp",
+        title: "High Definition 3D Arena Lighting & Spectator Booths"
       },
       {
         url: "/media/kucheza_logo_white.png",
