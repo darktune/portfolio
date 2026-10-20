@@ -6,29 +6,30 @@ import React from 'react';
  * Supports theme adaptive rendering (light/dark) and zero network overhead.
  */
 export default function ProjectLogo({ project, projectId, size = 18, className = "" }) {
-  const id = (typeof project === 'string' ? project : (project?.id || projectId || ''))?.toLowerCase();
+  const id = (
+    typeof project === 'string' 
+      ? project 
+      : (project?.id || project?.title || project?.company || project?.name || projectId || '')
+  )?.toLowerCase();
 
-  // 1. Kucheza Gaming: Official Extracted Identity Mark (adaptive PNG)
+  // 1. Kucheza Gaming: Official Geometric Brand Mark & Esports Cross (Adaptive Vector SVG)
   if (id.includes('kucheza')) {
     return (
-      <div 
-        className={`relative flex items-center justify-center shrink-0 ${className}`} 
-        style={{ width: size, height: size }}
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 32 32"
+        fill="none"
+        className={`shrink-0 ${className}`}
         title="Kucheza Gaming Official Logo"
+        aria-label="Kucheza Gaming"
       >
-        <img
-          src="/media/kucheza_mark_dark.png"
-          alt="Kucheza Gaming"
-          className="w-full h-full object-contain dark:hidden"
-          loading="eager"
+        <path
+          d="M32.0052 11.953L27.9593 16.0047L32.0052 20.0563V32.0035H17.1799V24.9897H14.8252V32.0035H0V0.00488281H14.8252V7.01865H17.1799V0.00488281H32.0052V11.953Z"
+          className="fill-zinc-950 dark:fill-[#24F2BE] transition-colors"
         />
-        <img
-          src="/media/kucheza_mark_white.png"
-          alt="Kucheza Gaming"
-          className="w-full h-full object-contain hidden dark:block"
-          loading="eager"
-        />
-      </div>
+        <circle cx="28" cy="16" r="2.2" className="fill-emerald-500 dark:fill-white" />
+      </svg>
     );
   }
 
@@ -218,6 +219,42 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
       >
         <circle cx="12" cy="12" r="9.5" stroke="currentColor" strokeWidth="1.8" />
         <path d="M12 5.5L6.5 18H9.2L10.6 14.5H13.4L14.8 18H17.5L12 5.5ZM11.3 12.5L12 10.2L12.7 12.5H11.3Z" fill="currentColor" />
+      </svg>
+    );
+  }
+
+  // 11. CodePlay Naija: Gamified Logic & STEM Computing Terminal
+  if (id.includes('codeplay')) {
+    return (
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        className={`shrink-0 ${className}`}
+        title="CodePlay Naija Verified Mark"
+      >
+        <rect x="3" y="4" width="18" height="14" rx="3" stroke="#f59e0b" strokeWidth="1.8" />
+        <path d="M7 10L10 12L7 14" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <line x1="12" y1="14" x2="16" y2="14" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    );
+  }
+
+  // 12. Fine Art & Pointillism Studio: Concentric Archival Stipple Geometry
+  if (id.includes('fine-art') || id.includes('pointillism') || id.includes('creative-direction') || id.includes('spectrum')) {
+    return (
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        className={`shrink-0 ${className}`}
+        title="Fine Art Studio Verified Mark"
+      >
+        <circle cx="12" cy="12" r="8.5" stroke="#eab308" strokeWidth="1.8" strokeDasharray="2 2" />
+        <circle cx="12" cy="12" r="3.2" fill="#ca8a04" />
+        <path d="M12 2V5M12 19V22M2 12H5M19 12H22" stroke="#eab308" strokeWidth="1.8" strokeLinecap="round" />
       </svg>
     );
   }

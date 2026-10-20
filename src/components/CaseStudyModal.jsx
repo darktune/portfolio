@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { X, Cpu, CheckCircle2, AlertTriangle, Layers, Code2, ArrowUpRight } from 'lucide-react';
 import { GithubIcon } from './Icons';
+import ProjectLogo from './ProjectLogo';
 
 export default function CaseStudyModal({ project, onClose }) {
   useEffect(() => {
@@ -66,8 +67,11 @@ export default function CaseStudyModal({ project, onClose }) {
           
           {/* Title & Subtitle */}
           <div>
-            <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-[var(--text-primary)] mb-2">
-              {project.title}
+            <h2 className="text-3xl sm:text-4xl font-extrabold font-heading text-[var(--text-primary)] mb-2 inline-flex items-center gap-3 flex-wrap">
+              <span className="w-9 h-9 rounded-xl ios-pill flex items-center justify-center p-1 shrink-0 border border-zinc-200/80 dark:border-zinc-800 shadow-xs">
+                <ProjectLogo project={project} size={24} />
+              </span>
+              <span>{project.title}</span>
             </h2>
             <p className="font-mono text-sm sm:text-base text-[var(--text-secondary)]">
               // {project.subtitle}

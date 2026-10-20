@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, Cpu, ShieldCheck, TrendingUp, Sparkles, Layers, FileText } from 'lucide-react';
 import { GithubIcon } from './Icons';
+import ProjectLogo from './ProjectLogo';
 import { projectsData } from '../data/projects';
 
 export default function FlagshipBento({ onOpenCaseStudy }) {
@@ -53,8 +54,11 @@ export default function FlagshipBento({ onOpenCaseStudy }) {
                 </div>
 
                 {/* Title */}
-                <h3 className="font-heading font-extrabold text-2xl text-[var(--text-primary)] mb-1 group-hover:text-[var(--text-secondary)] transition-colors">
-                  {project.title}
+                <h3 className="font-heading font-extrabold text-2xl text-[var(--text-primary)] mb-1 group-hover:text-[var(--text-secondary)] transition-colors inline-flex items-center gap-2.5 flex-wrap">
+                  <span className="w-7 h-7 rounded-lg ios-pill flex items-center justify-center p-1 shrink-0 border border-zinc-200/80 dark:border-zinc-800 shadow-xs">
+                    <ProjectLogo project={project} size={18} />
+                  </span>
+                  <span>{project.title}</span>
                 </h3>
                 <p className="font-mono text-xs text-[var(--text-muted)] mb-3">
                   // {project.subtitle}

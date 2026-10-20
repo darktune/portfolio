@@ -26,18 +26,13 @@ export default function ExperienceSection() {
       accentGlow: 'rgba(16, 185, 129, 0.22)',
       accentBorder: 'rgba(16, 185, 129, 0.65)',
       logo: (
-        <div className="w-5 h-5 shrink-0 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-          <img
-            src="/media/kucheza_mark_dark.png"
-            alt="Kucheza Gaming Logo"
-            className="w-full h-full object-contain dark:hidden"
+        <svg viewBox="0 0 32 32" className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
+          <path
+            d="M32.0052 11.953L27.9593 16.0047L32.0052 20.0563V32.0035H17.1799V24.9897H14.8252V32.0035H0V0.00488281H14.8252V7.01865H17.1799V0.00488281H32.0052V11.953Z"
+            className="fill-zinc-950 dark:fill-[#24F2BE] transition-colors"
           />
-          <img
-            src="/media/kucheza_mark_white.png"
-            alt="Kucheza Gaming Logo"
-            className="w-full h-full object-contain hidden dark:block"
-          />
-        </div>
+          <circle cx="28" cy="16" r="2.2" className="fill-emerald-500 dark:fill-white" />
+        </svg>
       ),
       deliverables: [
         'Designed interactive 3D tournament staging and spectator arena layouts for national esports championships',
@@ -344,16 +339,15 @@ export default function ExperienceSection() {
                             <div className="pt-2">
                               <div className="p-3 rounded-2xl ios-pill flex items-center justify-between gap-3 border border-[var(--border-subtle)]">
                                 <div className="flex items-center gap-2">
-                                  <img
-                                    src="/media/kucheza_logo_dark.png"
-                                    alt="Kucheza Gaming Brand"
-                                    className="h-3.5 w-auto object-contain dark:hidden"
-                                  />
-                                  <img
-                                    src="/media/kucheza_logo_white.png"
-                                    alt="Kucheza Gaming Brand"
-                                    className="h-3.5 w-auto object-contain hidden dark:block"
-                                  />
+                                  <svg viewBox="0 0 248 32" className="h-4 w-auto fill-zinc-950 dark:fill-white">
+                                    <path d="M96.8667 14.8265V17.1822H103.88V32.0074H77.4894L71.8818 26.3996V5.61654L77.4894 0.0078125H103.88V14.833L96.8667 14.8265Z" />
+                                    <path d="M139.818 0.00488281V32.0044H125.001V24.9907H122.641V32.0044H107.824V0.00488281H122.641V7.01865H125.001V0.00488281H139.818Z" />
+                                    <path d="M168.741 9.37432V11.7302H175.76V20.2744H168.741V22.6292H175.76V32.0026H143.761V0.00488281H175.76V9.37829L168.741 9.37432Z" />
+                                    <path d="M211.697 15.9995L200.813 22.6299H211.697V32.0033H179.697V16.0035L190.577 9.37317H179.697V0H211.697V15.9995Z" />
+                                    <path d="M215.636 0.00488281V32.0044H230.461V24.9907H232.816V32.0044H247.641V0.00488281H215.636ZM232.813 19.512H230.458V12.4982H232.813V19.512Z" />
+                                    <path d="M32.0052 11.953L27.9593 16.0047L32.0052 20.0563V32.0035H17.1799V24.9897H14.8252V32.0035H0V0.00488281H14.8252V7.01865H17.1799V0.00488281H32.0052V11.953Z" className="fill-emerald-600 dark:fill-[#24F2BE]" />
+                                    <path d="M67.9376 0.00488281V26.3957L62.3347 32.0035H41.547L35.9395 26.3957V0.00488281H50.7647V7.01865H53.1194V0.00488281H67.9376Z" />
+                                  </svg>
                                 </div>
                                 <span className="text-[10px] font-mono text-[var(--text-muted)] uppercase tracking-wider">
                                   Official Brand Mark

@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowUpRight, FileText, Cpu, ShieldCheck, Gamepad2, Box, Bot, TrendingUp, Palette } from 'lucide-react';
 import { GithubIcon } from './Icons';
+import ProjectLogo from './ProjectLogo';
 
 const categoryIconMap = {
   "Systems & Web3": ShieldCheck,
@@ -39,8 +40,11 @@ export default function ProjectCard({ project, onOpenCaseStudy }) {
           </div>
 
           {/* Title & Subtitle */}
-          <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-[var(--text-primary)] mb-1 group-hover:text-[var(--text-secondary)] transition-colors">
-            {project.title}
+          <h3 className="font-heading font-extrabold text-2xl sm:text-3xl text-[var(--text-primary)] mb-1 group-hover:text-[var(--text-secondary)] transition-colors inline-flex items-center gap-2.5 flex-wrap">
+            <span className="w-7 h-7 rounded-lg ios-pill flex items-center justify-center p-1 shrink-0 border border-zinc-200/80 dark:border-zinc-800 shadow-xs">
+              <ProjectLogo project={project} size={18} />
+            </span>
+            <span>{project.title}</span>
           </h3>
           <p className="font-mono text-xs text-[var(--text-muted)] mb-3">
             // {project.subtitle}
@@ -121,8 +125,11 @@ export default function ProjectCard({ project, onOpenCaseStudy }) {
           </span>
         </div>
 
-        <h3 className="font-heading font-bold text-lg text-[var(--text-primary)] mb-1 group-hover:text-[var(--text-secondary)] transition-colors">
-          {project.title}
+        <h3 className="font-heading font-bold text-lg text-[var(--text-primary)] mb-1 group-hover:text-[var(--text-secondary)] transition-colors inline-flex items-center gap-2 flex-wrap">
+          <span className="w-6 h-6 rounded-md ios-pill flex items-center justify-center p-0.5 shrink-0 border border-zinc-200/80 dark:border-zinc-800 shadow-xs">
+            <ProjectLogo project={project} size={15} />
+          </span>
+          <span>{project.title}</span>
         </h3>
 
         <p className="font-mono text-xs text-[var(--text-muted)] mb-2">

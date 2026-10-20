@@ -5,6 +5,7 @@ import {
   Terminal, ShieldCheck, Cpu, Layers, Sparkles, Volume2, VolumeX
 } from 'lucide-react';
 import { GithubIcon } from './Icons';
+import ProjectLogo from './ProjectLogo';
 
 export default function ProofOfWorkModal({ 
   project, 
@@ -93,6 +94,9 @@ export default function ProofOfWorkModal({
             </span>
             <div>
               <div className="flex items-center gap-2">
+                <span className="w-6 h-6 rounded-md ios-pill flex items-center justify-center p-0.5 shrink-0 border border-zinc-200/80 dark:border-zinc-800 shadow-xs">
+                  <ProjectLogo project={project} size={15} />
+                </span>
                 <h2 className="text-base sm:text-lg font-bold tracking-tight truncate">
                   {project.title}
                 </h2>
