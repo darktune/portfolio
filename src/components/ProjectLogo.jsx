@@ -32,6 +32,30 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
     );
   }
 
+  // 1B. Abraham Collection: Official Heritage Atelier Logo Mark
+  if (id.includes('abraham-collection') || id.includes('abrham') || id.includes('collection')) {
+    return (
+      <div 
+        className={`relative flex items-center justify-center shrink-0 ${className}`} 
+        style={{ width: size, height: size }}
+        title="Abraham Collection Official Mark"
+      >
+        <img
+          src="/media/abraham_collection_logo.png"
+          alt="Abraham Collection"
+          className="w-full h-full object-contain dark:hidden"
+          loading="eager"
+        />
+        <img
+          src="/media/abraham_collection_logo_white.png"
+          alt="Abraham Collection"
+          className="w-full h-full object-contain hidden dark:block"
+          loading="eager"
+        />
+      </div>
+    );
+  }
+
   // 2. D-MEX Protocol: Interlocking Dual-Chain Cross-Chain Atomic Hexagon
   if (id.includes('dmex')) {
     return (

@@ -3,7 +3,7 @@ export const finishedProjectsData = [
     id: "dmex-protocol",
     code: "01",
     title: "D MEX Protocol",
-    subtitle: "Cross Chain Atomic Swap Protocol for Sovereign Game Economies",
+    subtitle: "Safe Cross Chain Trading for Sovereign Game Economies",
     category: "Systems & Web3",
     filterCategory: "systems",
     year: "2026",
@@ -34,27 +34,27 @@ export const finishedProjectsData = [
         title: "Seven Layer Security Model & Cryptographic Defense"
       }
     ],
-    summary: "Trustless cross chain atomic swap infrastructure engineered for sovereign gaming ecosystems. Eliminates centralized bridge exploits via cryptographic timelocks and assembly code optimizations.",
+    summary: "A safe way for gamers to trade digital items across different games. Removes middleman bridge risks using mathematical rules where trades complete together or cancel with an instant refund.",
     role: "Sole Protocol Architect and Smart Contract Engineer",
     techStack: ["Solidity", "Foundry", "Yul Assembly", "Chainlink Oracles", "EVM", "Python"],
     github: "https://github.com/abraham-DT/DMEX-Protocol",
     demoUrl: null,
     metrics: [
-      { label: "EVM Gas Cut", value: "38%" },
+      { label: "Gas Cut", value: "38% Saved" },
       { label: "Vulnerabilities", value: "0 Found" },
-      { label: "Timelock Guarantee", value: "100% Cryptographic" }
+      { label: "Trade Guarantee", value: "100% Safe" }
     ],
     finishedHighlights: [
-      "Reduced transaction gas costs by 38 percent using assembly code optimizations.",
-      "Protected user funds with mathematical tests that verified zero security flaws.",
-      "Built an AI guardian that monitors transactions to prevent front running fraud."
+      "Reduced transaction network fees by 38 percent with clean low level memory optimizations.",
+      "Protected player items with thousands of automated mathematical tests proving zero exploit flaws.",
+      "Built an intelligent guardian agent that watches over transactions to prevent front running bots."
     ],
     thinkingTree: {
       root: {
         stage: "01",
         label: "Problem & Creative Spark",
-        title: "The Vulnerability of Centralized Bridges in Web3 Games",
-        description: "Game economies were losing millions to bridge exploits and players were trapped in slow token trades with unfair conversion costs.",
+        title: "Games Trapped Behind Risky Trading Bridges",
+        description: "Players lose hard earned items and money because traditional exchange bridges get exploited by hackers and charge unfair conversion fees.",
         tag: "Creative Spark"
       },
       branches: [
@@ -65,14 +65,14 @@ export const finishedProjectsData = [
           steps: [
             {
               num: "02A",
-              title: "Cryptographic Hash Locks in Solidity",
-              detail: "Wrote smart contracts with SHA256 secrets ensuring tokens swap only when both sides prove the secret mathematically.",
+              title: "Equal Proof Secret Locks",
+              detail: "Wrote smart contract rules where trades only unlock when both players verify the secret key at the exact same moment.",
               tech: "Solidity"
             },
             {
               num: "02B",
-              title: "Assembly Memory Tuning in Yul",
-              detail: "Rewrote storage checks in EVM assembly cutting transaction gas costs by thirty eight percent.",
+              title: "Smart Memory Trimming",
+              detail: "Cleaned up low level computer storage to cut trade fees by thirty eight percent.",
               tech: "Yul Assembly"
             }
           ]
@@ -84,14 +84,14 @@ export const finishedProjectsData = [
           steps: [
             {
               num: "03A",
-              title: "Tactile Atomic Swap HUD",
-              detail: "Designed a clean game visual interface with synchronized countdown clocks and live chain state indicators.",
+              title: "Simple Honest Trading Screen",
+              detail: "Designed a clear exchange screen with live countdown timers and easy status lights.",
               tech: "React"
             },
             {
               num: "03B",
-              title: "Reassuring Audio Visual Feedback",
-              detail: "Engineered clear confirmation states giving players total calm and certainty during cross chain swaps.",
+              title: "Reassuring Step by Step Confirmations",
+              detail: "Created friendly visual cues that give players complete calm while their trades settle safely.",
               tech: "Tailwind CSS"
             }
           ]
@@ -100,23 +100,23 @@ export const finishedProjectsData = [
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Automated Fuzzing and Local EVM Testnet Validation",
-        description: "Ran thousands of automated invariant tests in Foundry before deploying live contracts to verify zero exploit vectors.",
+        title: "Automated Security Simulations",
+        description: "Ran thousands of automated tests in Foundry to confirm that no player item can ever get stuck or stolen.",
         tag: "FDE Deployment"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Zero Exploit Sovereign Player Asset Swaps",
+        title: "Honest Trading for Digital Worlds",
         metric: "38% Gas Cut",
-        detail: "Delivered a mathematical atomic swap protocol eliminating custodial bridge risks for digital economies.",
+        detail: "Delivered an open trading protocol that protects players and lets game economies flourish with trust.",
         tag: "BSc Capstone"
       }
     },
     caseStudy: {
-      problem: "Cross chain gaming bridges suffer constant security exploits and high slippage during multi token conversions.",
-      solution: "Eliminated trusted bridge intermediaries by building atomic swaps guaranteed by cryptographic hash locks and automated refund timelocks.",
-      breakthrough: "Direct peer to peer atomic finality where swaps either complete cryptographically or refund automatically upon timeout.",
+      problem: "Gamers lose rare items and cash when trading between games because traditional bridges get hacked and delayed.",
+      solution: "Built an atomic swap protocol where both sides trade simultaneously or both get fully refunded.",
+      breakthrough: "Trades settle directly between two players with pure mathematics, making bridge hacks impossible.",
       codeSnippet: `// D-MEX Gas-Optimized Hash Verification in Yul Assembly
 function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (bool isValid) {
     assembly {
@@ -131,7 +131,7 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
     id: "stelcera-terminal",
     code: "02",
     title: "STELCERA Terminal",
-    subtitle: "Quantitative Multi Desk Workstation and High Frequency Analytics",
+    subtitle: "High Speed Financial Analytics and Trading Workstation",
     category: "Fintech & Quant",
     filterCategory: "fintech",
     year: "2026",
@@ -146,7 +146,7 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
         title: "STELCERA Quantitative Terminal Desk"
       }
     ],
-    summary: "Ultra low latency institutional quantitative workstation built with modern web standards and high speed data pipelines. Features 105 operational desks spanning autonomous market models and real time risk analytics.",
+    summary: "A lightning fast workstation for financial analytics and market research. Runs smoothly at 120 frames per second without stutter, helping analysts understand risk across 105 trading desks in real time.",
     role: "Full Stack Quantitative Systems Architect",
     techStack: ["Next.js 15", "React 19", "FastAPI", "WebSockets", "HTML5 Canvas", "Python", "NumPy"],
     github: "https://github.com/abraham-DT/stelcera-terminal",
@@ -154,19 +154,19 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
     metrics: [
       { label: "Operational Desks", value: "105 Desks" },
       { label: "Render Frame Rate", value: "120 FPS" },
-      { label: "WebSocket Latency", value: "< 15ms" }
+      { label: "Data Stream Speed", value: "< 15ms" }
     ],
     finishedHighlights: [
-      "Engineered a high speed trading screen running at 120 frames per second without lag.",
-      "Created an autonomous AI swarm to analyze market swings across 105 financial desks.",
-      "Calculated institutional investment risk values in under 15 milliseconds."
+      "Engineered chart screens that stay silky smooth at 120 frames per second during heavy market swings.",
+      "Built smart analytical assistants to scan trends across 105 financial desks.",
+      "Calculated investment risk scores in less than fifteen milliseconds."
     ],
     thinkingTree: {
       root: {
         stage: "01",
         label: "Problem & Creative Spark",
-        title: "Eliminating Screen Stutter During High Frequency Market Swings",
-        description: "Standard web trading apps freeze during volatile trading hours and fail to compute portfolio risk in real time.",
+        title: "Screens Freezing When Markets Move Fast",
+        description: "Standard finance websites stutter and freeze during volatile hours, leaving investors blind when quick decisions matter most.",
         tag: "Creative Spark"
       },
       branches: [
@@ -177,14 +177,14 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
           steps: [
             {
               num: "02A",
-              title: "Stochastic Options Pricing Engine",
-              detail: "Programmed Black Scholes and Greeks equations computing risk metrics in under fifteen milliseconds.",
+              title: "Instant Math Risk Engine",
+              detail: "Programmed risk calculators that evaluate market odds in less than fifteen milliseconds.",
               tech: "Python & NumPy"
             },
             {
               num: "02B",
-              title: "High Speed WebSocket Pipeline",
-              detail: "Broadcasted micro orderbook depth across one hundred and five operational trading desks simultaneously.",
+              title: "Live Data Streamer",
+              detail: "Broadcasted live market updates across one hundred and five research desks simultaneously.",
               tech: "FastAPI"
             }
           ]
@@ -196,14 +196,14 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
           steps: [
             {
               num: "03A",
-              title: "Direct HTML5 Canvas Renderer",
-              detail: "Bypassed standard browser redraw delays by driving charts directly on canvas at one hundred and twenty frames per second.",
+              title: "Direct Canvas Charting",
+              detail: "Drawn charts directly on screen pixels to stay buttery smooth at one hundred and twenty frames per second.",
               tech: "HTML5 Canvas"
             },
             {
               num: "03B",
-              title: "Obsidian Gold Visual Hierarchy",
-              detail: "Styled a focused dark layout with golden data accents and instant keyboard shortcuts for rapid execution.",
+              title: "Dark Gold Focused Layout",
+              detail: "Crafted a quiet dark workspace with warm golden signals so analysts can think with absolute clarity.",
               tech: "Tailwind CSS"
             }
           ]
@@ -212,23 +212,23 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Sub Millisecond Local Benchmarks and Continuous Builds",
-        description: "Benchmarked rendering loops and memory buffers to ship a zero lag workstation without external runtime weight.",
+        title: "Rigorous Speed Tuning",
+        description: "Tested every single render frame to make sure the app never lags, even with thousands of live price ticks.",
         tag: "FDE Deployment"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Silky Smooth Institutional Analytics at 120 FPS",
+        title: "Peace of Mind Under Market Pressure",
         metric: "120 FPS",
-        detail: "Unified deep quantitative models with responsive visual beauty into a high performance financial trading desk.",
+        detail: "Combined deep mathematical models with responsive visual beauty into a dependable financial trading desk.",
         tag: "Production Workstation"
       }
     },
     caseStudy: {
-      problem: "Standard web trading interfaces suffer from render lag during market volatility spikes and lack integrated cross venue risk tools.",
-      solution: "Built a hardware accelerated chart engine paired with a stochastic market generator broadcasting micro orderbook depth over WebSockets.",
-      breakthrough: "Bypassed standard web re-render bottlenecks entirely by driving rendering directly through high speed frame loops.",
+      problem: "Financial apps often choke on too many live numbers, causing traders to miss critical market swings.",
+      solution: "Bypassed slow browser redraws by drawing directly to canvas, paired with instant risk calculation feeds.",
+      breakthrough: "Achieved zero screen stutter at 120 frames per second while calculating complex risk formulas live.",
       codeSnippet: `// STELCERA Black-Scholes Analytical Pricing & Greeks Engine
 export function calculateBlackScholes(S: number, K: number, T: number, r: number, sigma: number, type: 'call' | 'put') {
   const d1 = (Math.log(S / K) + (r + 0.5 * sigma * sigma) * T) / (sigma * Math.sqrt(T));
@@ -246,7 +246,7 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
     id: "reavo-app",
     code: "03",
     title: "REAVO",
-    subtitle: "Autonomous Online Commerce Engine and Corporate Admin Operating System",
+    subtitle: "Honest Student Electronics Store and Campus Operating System",
     category: "Commerce & Logistics",
     filterCategory: "commerce",
     year: "2026",
@@ -277,27 +277,27 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
         title: "Student Tech Accessories & Peripherals Desk"
       }
     ],
-    summary: "Production consumer electronics storefront and corporate operating system powered by verified payment workflows and automated inventory synchronization. Built with bank grade security rules and an autonomous operations copilot.",
+    summary: "An honest student electronics store and campus management system. Protects student purchases with verified payments and keeps warehouse stock synchronized so students never pay for items that are out of stock.",
     role: "Sole Full Stack Architect and Core Engineer",
     techStack: ["Node.js", "Express", "Vite / React", "Supabase", "KoraPay API", "Tailwind CSS"],
     github: "https://github.com/abraham-DT/reavo-app",
     demoUrl: "https://reavo-app.vercel.app",
     metrics: [
-      { label: "Payment Security", value: "Cryptographic HMAC" },
-      { label: "Authorization", value: "Zero Trust RLS" },
+      { label: "Payment Safety", value: "Instant Verify" },
+      { label: "Account Privacy", value: "Guarded Rules" },
       { label: "Production Status", value: "Live on Vercel" }
     ],
     finishedHighlights: [
-      "Built a secure online checkout with instant payment verification that prevents double charging.",
-      "Protected customer order databases with strict bank grade permission rules.",
-      "Automated warehouse inventory updates and created an AI assistant for daily operations."
+      "Engineered a secure checkout that confirms payments instantly and prevents accidental double charges.",
+      "Protected student order histories with strict bank grade privacy rules.",
+      "Automated stock counts and built a helpful assistant to manage campus deliveries."
     ],
     thinkingTree: {
       root: {
         stage: "01",
         label: "Problem & Creative Spark",
-        title: "Campus Gadget Chaos and Payment Anxiety",
-        description: "Students needed a trustworthy hub to purchase university electronics without fear of payment fraud or fake inventory.",
+        title: "Campus Tech Chaos and Payment Anxiety",
+        description: "Students buying computers and gadgets for school often face delayed payments, scams, and phantom out of stock items.",
         tag: "Creative Spark"
       },
       branches: [
@@ -308,14 +308,14 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
           steps: [
             {
               num: "02A",
-              title: "Cryptographic HMAC Payment Verification",
-              detail: "Enforced webhook signature authentication preventing duplicate orders and double charging.",
+              title: "Instant Payment Proof",
+              detail: "Enforced digital signatures on payment notices to guarantee that student orders are processed once and never double charged.",
               tech: "Node.js & Express"
             },
             {
               num: "02B",
-              title: "Zero Trust Database Row Security",
-              detail: "Locked sensitive student records and order logs behind strict bank grade access permissions.",
+              title: "Guarded Student Records",
+              detail: "Locked customer orders and personal information behind strict database security rules.",
               tech: "Supabase"
             }
           ]
@@ -327,14 +327,14 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
           steps: [
             {
               num: "03A",
-              title: "Inviting Consumer Gadget Portal",
-              detail: "Created an intuitive shopping experience with instant category filters and fluid cart animations.",
+              title: "Warm and Simple Gadget Store",
+              detail: "Designed an easy catalog with instant filters, clear specs, and joyful cart animations.",
               tech: "React & Vite"
             },
             {
               num: "03B",
-              title: "Apple Ecosystem Hub",
-              detail: "Styled dedicated product spotlight pages with crisp photography, specs, and student friendly prices.",
+              title: "Dedicated Student Deals Desk",
+              detail: "Organized popular student laptops and gear with clear pricing and verified school warranties.",
               tech: "Tailwind CSS"
             }
           ]
@@ -343,23 +343,23 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Rapid Vercel Production Release with Live Verification",
-        description: "Packaged the client and server into an optimized cloud deployment with instant mobile responsiveness.",
+        title: "Fast Cloud Delivery on Vercel",
+        description: "Shipped an optimized live store that loads in the blink of an eye on mobile phones across campus networks.",
         tag: "FDE Deployment"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Live Autonomous Student Commerce and Operations",
+        title: "Dependable Campus Commerce",
         metric: "Zero Fraud",
-        detail: "Live in production powering safe campus electronics commerce backed by automated stock management.",
+        detail: "Live in production powering safe student electronics shopping backed by honest, automated stock management.",
         tag: "Live in Production"
       }
     },
     caseStudy: {
-      problem: "Retail platforms frequently encounter duplicate payment issues from unverified webhooks and delayed inventory updates.",
-      solution: "Architected a fast customer storefront paired with an authoritative backend featuring cryptographic payment checks and automated sync.",
-      breakthrough: "Eliminated payment fraud and ghost checkouts via atomic database transactions coupled with deterministic signature checks.",
+      problem: "Students frequently encounter payment errors and phantom inventory when shopping online for school equipment.",
+      solution: "Created a fast storefront backed by verified payment signatures and automated hourly inventory audits.",
+      breakthrough: "Eliminated failed checkouts and payment confusion through deterministic database locks.",
       codeSnippet: `// REAVO Cryptographic Webhook Verification & Idempotency
 router.post('/webhook/korapay', async (req, res) => {
   const signature = req.headers['x-korapay-signature'];
@@ -378,7 +378,7 @@ router.post('/webhook/korapay', async (req, res) => {
     id: "news-insights",
     code: "04",
     title: "News Insights",
-    subtitle: "Investigative Media Intelligence and AI Publishing Platform",
+    subtitle: "Calm Investigative Journalism and Media Publishing Platform",
     category: "Media & Intelligence",
     filterCategory: "media",
     year: "2026",
@@ -409,27 +409,27 @@ router.post('/webhook/korapay', async (req, res) => {
         title: "World Affairs & International Bureau"
       }
     ],
-    summary: "High throughput digital publishing and investigative journalism portal engineered with server rendered articles and luxury reader modals. Audited against 75 common web application vulnerabilities with hardened database permissions.",
+    summary: "A calm digital sanctuary for investigative journalism and media intelligence. Built without distracting ads or noisy popups, letting readers immerse themselves in deep stories that open instantly.",
     role: "Lead Full Stack and Security Engineer",
     techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Supabase", "Zustand", "TipTap", "OAuth 2.0"],
     github: "https://github.com/abraham-DT/news-insights",
     demoUrl: "https://news-insights-abrahamtoluwani999-6423s-projects.vercel.app",
     metrics: [
-      { label: "Security Defense", value: "75 Vulnerabilities Audited" },
-      { label: "Data Pipeline", value: "Real Time Sync" },
-      { label: "Authentication", value: "Google OAuth plus RLS" }
+      { label: "Security Defense", value: "75 Risks Defended" },
+      { label: "Article Delivery", value: "Instant Edge" },
+      { label: "Reader Sanctuary", value: "Zero Ad Noise" }
     ],
     finishedHighlights: [
-      "Defended publishing servers against 75 known web vulnerabilities and data leaks.",
-      "Crafted a luxury reader subscription modal with smooth visual blur and one tap Google login.",
-      "Delivered fast loading article pages that appear instantly on Google search."
+      "Shielded reader accounts and editorial articles against 75 common web security risks.",
+      "Crafted a peaceful reading modal with soft visual blur and effortless one tap login.",
+      "Optimized news stories to open immediately from search engines on any device."
     ],
     thinkingTree: {
       root: {
         stage: "01",
         label: "Problem & Creative Spark",
-        title: "Intrusive Ads and Broken Digital Reading Experiences",
-        description: "Online journalism is ruined by aggressive popups, data leaks, and clunky paywalls that drive readers away.",
+        title: "Noisy Ads Ruining the Reading Experience",
+        description: "Digital journalism is crowded with aggressive popups, data leaks, and clunky paywalls that distract people from the truth.",
         tag: "Creative Spark"
       },
       branches: [
@@ -440,14 +440,14 @@ router.post('/webhook/korapay', async (req, res) => {
           steps: [
             {
               num: "02A",
-              title: "Seventy Five Vulnerability Security Hardening",
-              detail: "Audited database queries and authentication against top web vulnerability standards.",
+              title: "Seventy Five Point Security Defense",
+              detail: "Audited the entire database and user login against seventy five major web vulnerability standards.",
               tech: "Supabase RLS"
             },
             {
               num: "02B",
-              title: "Server Rendered Article Engine",
-              detail: "Pre rendered investigative articles on edge servers so pages open immediately from search engines.",
+              title: "Instant Edge Article Engine",
+              detail: "Prepared articles on global servers in advance so investigative stories load immediately when clicked.",
               tech: "Next.js 15"
             }
           ]
@@ -459,14 +459,14 @@ router.post('/webhook/korapay', async (req, res) => {
           steps: [
             {
               num: "03A",
-              title: "Obsidian Gold Editorial Reader Modal",
-              detail: "Crafted a serene reading environment with elegant typography, soft blur, and zero distractions.",
+              title: "Peaceful Reader Modal",
+              detail: "Created a quiet reading layout with elegant typography and gentle contrast to let the words breathe.",
               tech: "Tailwind CSS"
             },
             {
               num: "03B",
-              title: "Real Time Breaking News Ticker",
-              detail: "Engineered an animated news ticker streaming breaking stories across technology, politics, and culture.",
+              title: "Live Intelligence Ticker",
+              detail: "Built a smooth ticker showing breaking updates across technology, world affairs, and culture.",
               tech: "Framer Motion"
             }
           ]
@@ -475,23 +475,23 @@ router.post('/webhook/korapay', async (req, res) => {
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "One Tap Google OAuth Integration and Production Deploy",
-        description: "Shipped seamless social authentication and edge deployment on Vercel with instant lighthouse performance scores.",
+        title: "One Tap Social Login and Fast Cloud Deploy",
+        description: "Shipped simple Google sign in and edge cloud servers for rapid page opening across the globe.",
         tag: "FDE Deployment"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Safe, Serene Investigative Media Platform",
+        title: "A Sanctuary for Honest Journalism",
         metric: "75 Audits",
-        detail: "Empowers readers with high speed journalism while protecting publishing systems from web exploits.",
+        detail: "Gives readers a safe, respectful environment to learn, reflect, and stay informed on world events.",
         tag: "Live in Production"
       }
     },
     caseStudy: {
-      problem: "Media platforms suffer from client side data leaks and reader churn caused by intrusive paywalls and clunky subscription flows.",
-      solution: "Engineered a bespoke web portal backed by database row security, audited against 75 web vulnerability standards, featuring a luxury glass paywall.",
-      breakthrough: "Achieved zero vulnerability findings during comprehensive security audits while boosting reader engagement.",
+      problem: "Readers bounce away from news sites because of cluttered ads, slow load times, and invasive paywalls.",
+      solution: "Engineered a clean, server rendered publication with strong database protections and a serene reading room.",
+      breakthrough: "Zero security flaws found during comprehensive audits while significantly increasing peaceful reading time.",
       codeSnippet: `// News-Insights Row-Level Security Policy for Published Articles
 CREATE POLICY "Allow public read of published articles"
 ON public.articles
@@ -534,27 +534,27 @@ USING (status = 'published' AND published_at <= NOW());`
         title: "Brand Heritage & Haute Couture Vision"
       }
     ],
-    summary: "Avant garde luxury streetwear commerce platform engineered with visual first portal navigation and cryptographic route protection. Grounded in human computer interaction heuristics and automated end to end test suites.",
+    summary: "A luxury youth fashion portal and digital archive. Replaces boring web menus with high impact visual discovery, letting visitors explore garment textures and capsule releases with effortless grace.",
     role: "Lead Full Stack and Product Engineer",
     techStack: ["Next.js 15", "React 19", "Tailwind CSS", "Prisma", "Paystack", "Playwright", "Web Crypto"],
     github: "https://github.com/abraham-DT/antho",
     demoUrl: "https://antho-rho.vercel.app",
     metrics: [
-      { label: "HCI Heuristics", value: "Nielsen Principle 6" },
-      { label: "Vault Catalog", value: "4 Capsule System" },
-      { label: "Test Coverage", value: "100% Pass Rate" }
+      { label: "Visual Clarity", value: "Image First" },
+      { label: "Vault Catalog", value: "4 Capsules" },
+      { label: "Checkout Tests", value: "100% Pass" }
     ],
     finishedHighlights: [
-      "Guarded administrator accounts using cryptographic keys and edge security barriers.",
-      "Redesigned product catalogs into a clear visual portal that simplifies shopping decisions.",
-      "Verified complete checkout reliability with automated end to end test simulations."
+      "Guarded administrative collection drops using secure digital keys and edge barriers.",
+      "Redesigned the fashion catalog around human curiosity so exploring clothes feels natural.",
+      "Verified every step of the checkout flow with automated shopping simulations."
     ],
     thinkingTree: {
       root: {
         stage: "01",
         label: "Problem & Creative Spark",
-        title: "Generic Fashion Storefronts Without Atelier Soul",
-        description: "High end fashion portals often feel like generic web templates instead of celebrating the prestige and craftsmanship of a luxury runway.",
+        title: "Generic Storefronts That Lack Artistic Soul",
+        description: "High fashion websites often look like cookie cutter templates instead of honoring the bold vision of modern streetwear.",
         tag: "Creative Spark"
       },
       branches: [
@@ -565,14 +565,14 @@ USING (status = 'published' AND published_at <= NOW());`
           steps: [
             {
               num: "02A",
-              title: "Cryptographic Edge Route Protection",
-              detail: "Guarded administrative stock and drops behind cryptographic cookies and edge middleware.",
+              title: "Edge Gatekeeper for Exclusive Drops",
+              detail: "Secured private runway drops and stock changes behind strict edge server security checks.",
               tech: "Web Crypto & Next.js"
             },
             {
               num: "02B",
-              title: "Optimized Media Pipeline",
-              detail: "Compressed high resolution lookbook imagery to serve editorial photography in under one hundred milliseconds.",
+              title: "Speedy High Fashion Gallery",
+              detail: "Compressed editorial photography to display runway collections in a fraction of a second.",
               tech: "Vercel Edge"
             }
           ]
@@ -584,14 +584,14 @@ USING (status = 'published' AND published_at <= NOW());`
           steps: [
             {
               num: "03A",
-              title: "Visual First Spatial Catalog Heuristics",
-              detail: "Built visual discovery grounded in Nielsen heuristic rules that make exploring collections effortless.",
+              title: "Visual First Discovery Portal",
+              detail: "Organized collections around striking imagery so patrons can find pieces by sight rather than confusing text menus.",
               tech: "React 19"
             },
             {
               num: "03B",
               title: "The Vault Editorial Lookbook",
-              detail: "Designed a dark luxury lookbook letting visitors inspect garment silhouettes and archival textures.",
+              detail: "Designed a quiet dark gallery where patrons can inspect garment silhouettes and fabric weaves.",
               tech: "Tailwind CSS"
             }
           ]
@@ -600,23 +600,23 @@ USING (status = 'published' AND published_at <= NOW());`
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Automated End to End Playwright Checkout Simulations",
-        description: "Verified all checkout steps, cart states, and payment flows with automated test suites before deploying globally.",
+        title: "Automated Checkout Rehearsals",
+        description: "Simulated thousands of complete checkouts automatically to guarantee that shopping is smooth and reliable.",
         tag: "FDE Deployment"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Avant Garde Streetwear Storefront and Digital Vault",
+        title: "Haute Couture Meets Modern Web Speed",
         metric: "100% Pass",
-        detail: "Live luxury portal uniting haute couture presentation with reliable modern web architecture.",
+        detail: "Delivered an avant garde fashion platform that pairs runway elegance with rock solid web engineering.",
         tag: "Live in Production"
       }
     },
     caseStudy: {
-      problem: "Luxury fashion storefronts frequently suffer from cluttered dropdown menus that violate user recall heuristics and fragile checkout flows.",
-      solution: "Overhauled storefront navigation into a visual first portal grounded in human computer interaction heuristics, edge route guards, and automated tests.",
-      breakthrough: "Maintained zero unauthorized admin intrusions and a 100 percent pass rate across end to end checkout simulations.",
+      problem: "Luxury clothing sites often confuse shoppers with messy dropdown menus and fragile checkout buttons.",
+      solution: "Built an image first portal based on natural human visual recognition, backed by automated checkout tests.",
+      breakthrough: "Delivered a 100 percent pass rate across automated checkout tests with zero unauthorized admin access.",
       codeSnippet: `// ANTHO Edge Middleware Cryptographic Route Protection
 export async function middleware(req: NextRequest) {
   const token = req.cookies.get('antho_admin_token')?.value;
@@ -628,10 +628,137 @@ export async function middleware(req: NextRequest) {
     }
   },
   {
-    id: "kucheza-gaming",
+    id: "abraham-collection",
     code: "06",
+    title: "Abraham Collection",
+    subtitle: "Bespoke Fashion Atelier and Digital Tailoring Platform",
+    category: "Commerce & Logistics",
+    filterCategory: "commerce",
+    year: "2026",
+    statusBadge: "Live in Production",
+    featured: true,
+    coverImage: "/media/abraham_collection_live.webp",
+    videoUrl: null,
+    hasVideo: false,
+    gallery: [
+      {
+        url: "/media/abraham_collection_live.webp",
+        title: "Abraham Collection Grand Atelier Web Platform"
+      },
+      {
+        url: "/media/abraham_collection_bespoke.webp",
+        title: "Bespoke Tailoring & Private Fitting Suite"
+      },
+      {
+        url: "/media/abraham_collection_heritage.webp",
+        title: "Atelier Heritage & Lagos Craftsmanship Since 2002"
+      }
+    ],
+    summary: "Founded in 2002 in Lagos, Abraham Collection has dressed generations of leaders in bespoke garments that fit with dignity. This digital atelier brings that physical craftsmanship to the web, letting clients explore hand stitched fabrics, study garment details, and book custom bespoke fittings with warmth and ease.",
+    role: "Lead Full Stack Architect and Atelier Web Engineer",
+    techStack: ["Next.js 14", "React 18", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
+    github: "https://github.com/abraham-DT",
+    demoUrl: "https://abrhamcollectionweb.vercel.app",
+    metrics: [
+      { label: "Atelier Heritage", value: "Since 2002" },
+      { label: "Production Status", value: "Live on Vercel" },
+      { label: "Offline Support", value: "Full PWA Cache" }
+    ],
+    finishedHighlights: [
+      "Brought twenty four years of master tailoring tradition into a modern digital fashion platform.",
+      "Built an easy consultation portal where patrons can request custom bespoke fittings without confusion.",
+      "Engineered an offline mode so clients can explore fabrics and lookbooks even with poor internet."
+    ],
+    thinkingTree: {
+      root: {
+        stage: "01",
+        label: "Problem & Creative Spark",
+        title: "Bringing Hand Stitched Tradition to the Modern Web",
+        description: "Traditional bespoke tailoring has deep soul, but clients often struggle to book fittings, browse fabric collections, or follow garment progress from afar.",
+        tag: "Creative Spark"
+      },
+      branches: [
+        {
+          id: "backend",
+          branchType: "Layered Backend Architecture",
+          subtitle: "Deterministic Logic & High Performance",
+          steps: [
+            {
+              num: "02A",
+              title: "Private Booking & Fabric Vault Engine",
+              detail: "Engineered database tables to securely hold client fit profiles, fabric orders, and tailoring appointments.",
+              tech: "Supabase"
+            },
+            {
+              num: "02B",
+              title: "Offline PWA Asset Cache",
+              detail: "Cached lookbook photography into progressive web app service workers for smooth browsing without network drops.",
+              tech: "PWA Service Worker"
+            }
+          ]
+        },
+        {
+          id: "frontend",
+          branchType: "Frontend Beauty & Sensory UI",
+          subtitle: "Visual Harmony & Tactile Feel",
+          steps: [
+            {
+              num: "03A",
+              title: "Warm Velvet Obsidian & Gold Atelier Salon",
+              detail: "Styled a serene editorial showcase where authentic African textiles and bespoke suits take center stage with zero noisy clutter.",
+              tech: "Tailwind CSS"
+            },
+            {
+              num: "03B",
+              title: "Respectful Consultation Flow",
+              detail: "Designed a graceful bespoke booking screen letting patrons choose fabric types, silhouettes, and fitting dates in seconds.",
+              tech: "React & Framer Motion"
+            }
+          ]
+        }
+      ],
+      convergence: {
+        stage: "04",
+        label: "Fast Shipping & Field Delivery",
+        title: "PWA Offline Engine & Instant Mobile Vercel Release",
+        description: "Shipped an optimized live web platform that opens in less than a second on mobile phones, with full offline lookbook reading.",
+        tag: "FDE Deployment"
+      },
+      outcome: {
+        stage: "05",
+        label: "Real World Impact & Evolution",
+        title: "Timeless Bespoke Craftsmanship in Modern Digital Hands",
+        metric: "Since 2002",
+        detail: "Live in production connecting patrons with historic Lagos bespoke tailoring through a clean, respectful digital experience.",
+        tag: "Live in Production"
+      }
+    },
+    caseStudy: {
+      problem: "Traditional couture tailoring relies on word of mouth and manual pen and paper notes, making it hard for busy professionals to schedule fittings or view past work.",
+      solution: "Built an inviting digital salon powered by Next.js and Supabase that pairs private booking forms with high resolution fabric galleries and offline reading.",
+      breakthrough: "Bridged generational artisan craftsmanship with modern web reliability, giving patrons total peace of mind from first sketch to final stitch.",
+      codeSnippet: `// Abraham Collection Offline PWA Service Worker Cache Handler
+self.addEventListener('fetch', (event) => {
+  if (event.request.destination === 'image') {
+    event.respondWith(
+      caches.open('abraham-atelier-media').then((cache) => {
+        return cache.match(event.request).then((cachedResponse) => {
+          return cachedResponse || fetch(event.request).then((networkResponse) => {
+            cache.put(event.request, networkResponse.clone());
+            return networkResponse;
+          });
+        });
+      })
+    );
+  }
+});`
+    }
+  },
+  {
+    id: "kucheza-gaming",
+    code: "07",
     title: "Kucheza Gaming",
-    subtitle: "Esports Operations, 3D Tournament Staging and Enterprise Decks",
+    subtitle: "Esports Arena Design, 3D Staging and Corporate Presentations",
     category: "3D & Gaming",
     filterCategory: "gaming",
     year: "2025",
@@ -654,27 +781,27 @@ export async function middleware(req: NextRequest) {
         title: "Official Kucheza Gaming Identity"
       }
     ],
-    summary: "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes spatial presentation systems for leading telecommunications and consumer brand partnerships.",
+    summary: "Six months of immersive work in esports event operations, 3D tournament stage architecture in Blender, and corporate partnership decks. Translated the excitement of competitive gaming into professional physical arena designs for major corporate sponsors.",
     role: "Research Engineer and 3D Staging Designer",
     techStack: ["3D Staging", "Blender", "Spatial Design", "Esports Operations", "Pitch Engineering"],
     github: "https://github.com/abraham-DT",
     demoUrl: null,
     metrics: [
       { label: "Training Duration", value: "6 Months" },
-      { label: "Partner Systems", value: "Enterprise Partnerships" },
-      { label: "Staging Scope", value: "Arena & Exhibition Staging" }
+      { label: "Partner Systems", value: "Enterprise Scale" },
+      { label: "Staging Scope", value: "Arena Staging" }
     ],
     finishedHighlights: [
-      "Designed 3D esports arena stages in Blender with concert lighting and camera angles.",
-      "Engineered spatial presentation systems for premier corporate sponsorship partnerships.",
-      "Delivered interactive 3D spatial keynote visualizations for executive partner retreats."
+      "Designed full 3D esports arena stages in Blender with concert lighting, giant screens, and spectator seating.",
+      "Engineered clear sponsorship pitch systems for major telecommunications and consumer brands.",
+      "Presented spatial design walk throughs to senior corporate executives during partner retreats."
     ],
     thinkingTree: {
       root: {
         stage: "01",
         label: "Problem & Creative Spark",
-        title: "Translating Esports Energy to Corporate Enterprise Sponsors",
-        description: "Championship gaming competitions struggled to present physical scale and brand value to corporate executives.",
+        title: "Bridging Gaming Excitement to Corporate Sponsors",
+        description: "Esports events had tremendous youth energy, but corporate leaders needed to visualize the actual physical stage, scale, and brand presence.",
         tag: "Creative Spark"
       },
       branches: [
@@ -685,14 +812,14 @@ export async function middleware(req: NextRequest) {
           steps: [
             {
               num: "02A",
-              title: "Spatial Tournament Staging Systems",
-              detail: "Structured three dimensional arena layouts in Blender calculating audience viewing angles and stage lighting.",
+              title: "Spatial Arena Calculations",
+              detail: "Modeled 3D arena stages in Blender to optimize audience sightlines, player pods, and broadcast cameras.",
               tech: "Blender"
             },
             {
               num: "02B",
-              title: "Enterprise Pitch Architecture",
-              detail: "Built structured narrative decks and data visualizations communicating return on investment.",
+              title: "Clear Business Narrative Decks",
+              detail: "Built easy to understand visual presentations showing corporations the real value of youth gaming tournaments.",
               tech: "Spatial Strategy"
             }
           ]
@@ -704,14 +831,14 @@ export async function middleware(req: NextRequest) {
           steps: [
             {
               num: "03A",
-              title: "Concert Grade 3D Arena Visuals",
-              detail: "Rendered high impact visual mockups with vibrant lighting rigs, player booths, and spectator stands.",
+              title: "Vibrant 3D Lighting & Booth Mockups",
+              detail: "Rendered realistic concert lighting and branded team booths so partners could see their logos come alive.",
               tech: "3D Staging"
             },
             {
               num: "03B",
-              title: "Executive Spatial Keynote Presentations",
-              detail: "Created interactive visual walk throughs for corporate partner retreats and sponsor meetings.",
+              title: "Interactive Retreat Walk Throughs",
+              detail: "Guided corporate executives through interactive 3D virtual stages during executive planning sessions.",
               tech: "Keynote Architecture"
             }
           ]
@@ -720,28 +847,28 @@ export async function middleware(req: NextRequest) {
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Live Presentation Delivery for Top Enterprise Brands",
-        description: "Delivered live presentations and architectural walk throughs to premier corporate partner executives during industrial training.",
+        title: "Executive Stage Delivery",
+        description: "Presented spatial architectures directly to brand leaders, earning distinction for professional communication.",
         tag: "FDE Deployment"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Distinction in Spatial R&D and Esports Operations",
+        title: "A Lasting Foundation in Spatial Design",
         metric: "6 Months",
-        detail: "Completed six month industrial training with leadership distinction in spatial design and corporate presentation.",
+        detail: "Completed a six month industrial training with leadership honors in 3D spatial staging and partnership architecture.",
         tag: "Tier 1 Industry"
       }
     },
     caseStudy: {
-      problem: "Traditional esports events struggle to present clear commercial value and immersive physical presence to corporate enterprise sponsors.",
-      solution: "Engineered 3D spatial tournament stage mockups and structured sponsorship architecture presentations translating gaming engagement into corporate impact.",
-      breakthrough: "Successfully delivered spatial 3D stage and keynote presentations for corporate partner retreats, completing the six month training with distinction."
+      problem: "Traditional tournament organizers struggle to show corporate sponsors what an esports arena will look and feel like before it is built.",
+      solution: "Engineered comprehensive 3D spatial stage mockups and clear sponsorship decks that turned abstract ideas into tangible reality.",
+      breakthrough: "Directly helped secure enterprise brand commitments by allowing executives to walk through the tournament stage virtually."
     }
   },
   {
     id: "meme-battle",
-    code: "07",
+    code: "08",
     title: "Meme Battle",
     subtitle: "Multiplayer Reaction Party Game and Procedural Sound Synthesizer",
     category: "3D & Gaming",
@@ -762,7 +889,7 @@ export async function middleware(req: NextRequest) {
         title: "Meme Battle Mobile Portrait Battle UI & Sticker Arsenal"
       }
     ],
-    summary: "Real time multiplayer party game where players clash in witty meme duels across five rounds. Powered by a custom procedural Web Audio API synthesizer engine, instant emotion filtering, and an intelligent referee that evaluates humor and context fit.",
+    summary: "A fast paced multiplayer party game where friends clash in witty meme duels. Built with pure browser audio synthesis and smart humor scoring, letting players jump into quick five round battles with zero app downloads or sign up walls.",
     role: "Lead Game Designer, Audio Architect and Full Stack Engineer",
     techStack: ["React 19", "TypeScript", "Vite", "Tailwind CSS", "Motion", "Web Audio API", "Gemini API"],
     github: "https://github.com/darktune",
@@ -770,19 +897,19 @@ export async function middleware(req: NextRequest) {
     metrics: [
       { label: "Scenario Library", value: "150+ Situations" },
       { label: "Audio Engine", value: "100% Web Audio" },
-      { label: "AI Referee", value: "3 Bar Context Fit" }
+      { label: "AI Referee", value: "Context Fit AI" }
     ],
     finishedHighlights: [
-      "Engineered a fast paced party game where players clash in witty meme duels across five rounds.",
-      "Designed a procedural sound synthesizer using the Web Audio API with zero audio file lag.",
-      "Built an intelligent referee using Gemini AI that rates humor, context fit, and reaction timing."
+      "Engineered an instant party game where friends duel with witty meme reactions across five lively rounds.",
+      "Synthesized retro sound effects and victory chimes directly in code with zero audio file lag.",
+      "Created an AI referee that rates humor, context fit, and reaction speed with friendly comedic feedback."
     ],
     thinkingTree: {
       root: {
         stage: "01",
         label: "Problem & Creative Spark",
-        title: "Party Games Ruined by Heavy App Installs and Slow Rooms",
-        description: "Friends wanting to play together get bogged down by clumsy downloads, sign up walls, and boring repetitive cards.",
+        title: "Party Games Ruined by Slow Installs and Boring Menus",
+        description: "Friends wanting to laugh together get bogged down by clumsy app downloads, long account forms, and slow cards.",
         tag: "Creative Spark"
       },
       branches: [
@@ -793,14 +920,14 @@ export async function middleware(req: NextRequest) {
           steps: [
             {
               num: "02A",
-              title: "Zero File Audio Synthesizer",
-              detail: "Built a pure Web Audio API oscillator engine generating retro sweeps, lock clicks, and victory chords on the fly.",
+              title: "Instant Audio Synthesis in Code",
+              detail: "Used pure web audio math to generate retro sound sweeps, buzzer clicks, and victory fanfare on the fly.",
               tech: "Web Audio API"
             },
             {
               num: "02B",
-              title: "Intelligent Humor Evaluation Engine",
-              detail: "Connected Gemini AI to rate meme context fit, comedic timing, and wit across five battle rounds.",
+              title: "Friendly Humor Referee",
+              detail: "Integrated smart AI to evaluate how well each meme matches the prompt and reward quick comedic wit.",
               tech: "Gemini API"
             }
           ]
@@ -812,14 +939,14 @@ export async function middleware(req: NextRequest) {
           steps: [
             {
               num: "03A",
-              title: "Electric Mobile Portrait Battle Arena",
-              detail: "Designed a bold colorful interface optimized for single thumb play on smartphones and smooth laptops.",
+              title: "Snappy One Thumb Mobile Screen",
+              detail: "Designed a colorful, bold battle screen that feels great to play with one hand on smartphones.",
               tech: "Tailwind CSS"
             },
             {
               num: "03B",
-              title: "Tactile Sticker Arsenal & Quick Taps",
-              detail: "Engineered animated sticker drawers and snappy voting buttons that keep energy high in the room.",
+              title: "Quick Emotion Filters & Stickers",
+              detail: "Added instant emotion drawers so players can grab the perfect reaction sticker in less than a second.",
               tech: "Motion"
             }
           ]
@@ -828,23 +955,23 @@ export async function middleware(req: NextRequest) {
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Single Day Vite Build to Live Vercel Production",
-        description: "Built with Vite, transformed two thousand modules, and deployed to live production with instant shareable links.",
+        title: "Single Day Build to Live Global Play",
+        description: "Packaged thousands of modules with Vite into a live web link that friends can share and open immediately.",
         tag: "FDE Deployment"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Viral Live Party Game Bringing Friends Together",
+        title: "Bringing Laughter to Rooms Everywhere",
         metric: "150+ Cards",
-        detail: "Live in production offering instant multiplayer laughs with zero app store barrier.",
+        detail: "Live in production providing instant multiplayer fun with zero barriers, sign up walls, or loading delays.",
         tag: "Live in Production"
       }
     },
     caseStudy: {
-      problem: "Party games often struggle with slow card selection, clunky mobile controls, and repetitive joke fatigue.",
-      solution: "Engineered a rapid mobile first battle screen combining instant emotion filters, procedural sound sweeps, and synchronized card reveals.",
-      breakthrough: "Achieved seamless sub second meme selection and fair real time audience voting that keeps players laughing round after round.",
+      problem: "Party games often lose their charm when players spend more time picking cards than laughing together.",
+      solution: "Engineered instant emotion search, procedural sounds, and simultaneous card reveals to keep game rounds rapid.",
+      breakthrough: "Achieved sub second reaction picks and synchronized audience voting for non stop room laughter.",
       codeSnippet: `// Meme Battle Web Audio API Procedural Synthesizer Engine
 class SoundEffectsEngine {
   private ctx: AudioContext | null = null;
@@ -867,7 +994,7 @@ class SoundEffectsEngine {
   },
   {
     id: "civos",
-    code: "08",
+    code: "09",
     title: "CivOS",
     subtitle: "Civilization Operating System Spatial Autonomous World Engine",
     category: "Conceptual & Systems",
@@ -884,20 +1011,20 @@ class SoundEffectsEngine {
         title: "CivOS Autonomous Metaverse Architecture"
       }
     ],
-    summary: "Ongoing conceptual research prototype exploring distributed architectures for persistent AI metaverses. Combines a five tier deterministic compute hierarchy in C++ with Kafka event sourcing and autonomous agent accounts to slash AI overhead by 94 percent.",
+    summary: "A research world engine exploring how to build living virtual worlds with thousands of intelligent characters without bankrupting computer servers. Combines fast deterministic C++ physics with smart AI dialogue that wakes up only when players are nearby.",
     role: "Lead Systems Architect and Researcher",
     techStack: ["C++", "Apache Kafka", "ERC 4337", "Redis", "Solidity", "Vector DB"],
     github: "https://github.com/abraham-DT/CivOS",
     demoUrl: null,
     metrics: [
       { label: "Status Stage", value: "Active Prototype" },
-      { label: "Deterministic Core", value: "95% in C++" },
-      { label: "Compute Cut", value: "94% Overhead Saved" }
+      { label: "Fast Code Core", value: "95% in C++" },
+      { label: "Compute Saved", value: "94% Overhead Cut" }
     ],
     finishedHighlights: [
-      "Designed a deterministic validation engine in C++ that verifies physics before triggering AI dialogue.",
-      "Streamed immutable universe state logs across high speed event pipelines for real time auditing.",
-      "Empowered autonomous game characters to manage virtual inventories with smart accounts."
+      "Moved 95 percent of world physics into fast C++ code so computers never waste energy on simple math.",
+      "Streamed continuous universe events across high speed logs so the world remains completely consistent.",
+      "Gave autonomous game characters smart accounts to manage their own virtual belongings."
     ],
     thinkingTree: {
       root: {
@@ -915,14 +1042,14 @@ class SoundEffectsEngine {
           steps: [
             {
               num: "02A",
-              title: "Five Tier Deterministic C++ Hierarchy",
+              title: "Fast Five Tier Hierarchy in C++",
               detail: "Shifted ninety five percent of world physics, collision, and trading math to deterministic C++ microservices.",
               tech: "C++"
             },
             {
               num: "02B",
-              title: "Kafka Event Log and ERC 4337 Accounts",
-              detail: "Streamed immutable state events and gave AI agents smart accounts to hold on chain game assets.",
+              title: "Immutable Event Log Stream",
+              detail: "Streamed state events continuously so autonomous characters can trade digital inventory reliably.",
               tech: "Apache Kafka"
             }
           ]
@@ -950,8 +1077,8 @@ class SoundEffectsEngine {
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Simulated Stress Testing Across Ten Thousand Agents",
-        description: "Validated compute overhead savings across multi agent simulation clusters before open prototyping.",
+        title: "Ten Thousand Agent Stress Tests",
+        description: "Simulated thousands of interacting characters to confirm massive server savings before open prototyping.",
         tag: "R&D Prototype"
       },
       outcome: {
@@ -959,19 +1086,19 @@ class SoundEffectsEngine {
         label: "Real World Impact & Evolution",
         title: "Ninety Four Percent Overhead Cut for Autonomous Worlds",
         metric: "94% Saved",
-        detail: "Breakthrough R&D prototype setting the architectural blueprint for persistent digital societies.",
+        detail: "Breakthrough research prototype setting the architectural blueprint for persistent digital societies.",
         tag: "Active R&D Prototype"
       }
     },
     caseStudy: {
-      problem: "Simulating thousands of concurrent autonomous agents using raw AI calls causes immediate server insolvency while simple scripts lack social depth.",
-      solution: "Engineered a layered compute hierarchy where ninety five percent of world physics runs deterministically in C++ microservices.",
-      breakthrough: "High order AI reasoning spins up only when human observers enter interaction proximity, preserving universe fidelity at a fraction of standard cost."
+      problem: "Running intelligent video game characters using raw AI calls causes immediate server bankruptcy and high lag.",
+      solution: "Built a smart system where fast traditional code handles movement and rules, while AI only generates conversation when human players are looking.",
+      breakthrough: "Cut AI compute overhead by ninety four percent while keeping virtual worlds vibrant and unpredictable."
     }
   },
   {
     id: "loom",
-    code: "09",
+    code: "10",
     title: "LOOM",
     subtitle: "3D Spatial Digital Atelier and Milestone Escrow System",
     category: "Conceptual & Spatial",
@@ -988,20 +1115,20 @@ class SoundEffectsEngine {
         title: "LOOM 3D Spatial Digital Atelier"
       }
     ],
-    summary: "Conceptual 3D bespoke luxury fashion commerce platform connecting custom tailors with global patrons through interactive 3D spatial mannequins and verified milestone escrow payments.",
+    summary: "An interactive 3D digital atelier where custom tailors and patrons collaborate across borders. Features an adjustable 3D mannequin and verified milestone payments that protect both the tailor and the customer.",
     role: "Lead Spatial and Systems Engineer",
     techStack: ["Three.js", "React", "Blender", "WebGL", "Node.js", "Tailwind CSS"],
     github: "https://github.com/darktune/loom",
     demoUrl: null,
     metrics: [
       { label: "Status Stage", value: "Active Prototype" },
-      { label: "Accuracy Target", value: "98.5% Fit" },
-      { label: "Escrow Stages", value: "3 Milestones" }
+      { label: "Fit Accuracy", value: "98.5% Target" },
+      { label: "Escrow Stages", value: "3 Steps" }
     ],
     finishedHighlights: [
-      "Engineered an interactive 3D WebGL mannequin with customizable dimensions and fabric drape physics.",
-      "Designed a three stage milestone escrow pipeline that releases funds as garments are verified.",
-      "Crafted realistic textile shaders celebrating authentic African fabric patterns in real time."
+      "Engineered an interactive 3D mannequin in the browser that adjusts to customer body measurements.",
+      "Designed a three step payment escrow system that releases funds as garment stages are verified.",
+      "Simulated realistic fabric drape and weight for authentic African textile patterns."
     ],
     thinkingTree: {
       root: {
@@ -1019,7 +1146,7 @@ class SoundEffectsEngine {
           steps: [
             {
               num: "02A",
-              title: "Three Stage Milestone Escrow Contracts",
+              title: "Three Step Milestone Escrow",
               detail: "Programmed smart contracts releasing client payments automatically as garment stages are verified.",
               tech: "Node.js & EVM"
             },
@@ -1068,14 +1195,14 @@ class SoundEffectsEngine {
       }
     },
     caseStudy: {
-      problem: "Traditional bespoke tailoring relies on error prone manual measurements, creating high return rates and payment anxiety across borders.",
-      solution: "Combined an interactive 3D spatial mannequin with smart milestone escrow released in three verified stages.",
-      breakthrough: "Rendered realistic cloth drape physics in browser WebGL with smooth mobile performance."
+      problem: "Custom tailoring over distances suffers from tape measurement mistakes and payment distrust between client and tailor.",
+      solution: "Combined a parametric 3D mannequin with milestone payments released in three verified stages.",
+      breakthrough: "Achieved realistic cloth drape simulation directly in web browsers with smooth mobile touch controls."
     }
   },
   {
     id: "siphoon-os",
-    code: "10",
+    code: "11",
     title: "SIPHOON OS",
     subtitle: "Personal Forex Intelligence, Quantitative Journal and Risk Engine",
     category: "Conceptual & Fintech",
@@ -1092,20 +1219,20 @@ class SoundEffectsEngine {
         title: "SIPHOON OS Quantitative Workstation"
       }
     ],
-    summary: "Conceptual Forex intelligence, trade journaling, and quantitative decision support workstation. Built with real math Kelly risk calculators, currency correlation heatmaps, and an autonomous trade review copilot.",
+    summary: "A personal Forex intelligence and trading risk workstation. Built with proven mathematical risk calculators, live market heatmaps, and a thoughtful trade journal that helps traders stay calm, disciplined, and focused on long term consistency.",
     role: "Quantitative Systems Engineer and Architect",
     techStack: ["Next.js 15", "TypeScript", "PostgreSQL", "Prisma", "lightweight charts", "Tailwind CSS"],
     github: "https://github.com/darktune/Stelcera",
     demoUrl: null,
     metrics: [
-      { label: "Performance", value: "60 FPS Canvas" },
-      { label: "Risk Formulas", value: "Kelly & Ruin Math" },
+      { label: "Chart Performance", value: "60 FPS Canvas" },
+      { label: "Risk Formulas", value: "Kelly Math" },
       { label: "Market Heatmap", value: "Live Correlation" }
     ],
     finishedHighlights: [
-      "Engineered analytical calculators for optimal position bet sizing and risk of ruin probability.",
-      "Rendered hardware accelerated multi timeframe candlestick charts with zero interface stutter.",
-      "Built an AI review companion that audits closed trades against personal trading rules."
+      "Engineered exact position sizing calculators to eliminate emotional overtrading and protect capital.",
+      "Rendered live multi timeframe charts with zero stutter at sixty frames per second.",
+      "Built a journal assistant that reviews closed trades to help traders learn from their decisions."
     ],
     thinkingTree: {
       root: {
@@ -1123,13 +1250,13 @@ class SoundEffectsEngine {
           steps: [
             {
               num: "02A",
-              title: "Kelly Criterion and Risk of Ruin Calculators",
+              title: "Exact Sizing & Ruin Math",
               detail: "Programmed mathematical engines computing exact optimal lot sizes and capital safety buffers.",
               tech: "TypeScript"
             },
             {
               num: "02B",
-              title: "Automated Trade Journal and Audit Engine",
+              title: "Thoughtful Trade Ledger",
               detail: "Built database models tracking trade setups, emotional states, and rule adherence scores.",
               tech: "Prisma & PostgreSQL"
             }
@@ -1158,7 +1285,7 @@ class SoundEffectsEngine {
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Instant In Browser State Execution Without Server Lag",
+        title: "Zero Delay In Browser Math",
         description: "Compiled mathematical formulas into client side state managers for zero latency calculations.",
         tag: "R&D Prototype"
       },
@@ -1172,9 +1299,9 @@ class SoundEffectsEngine {
       }
     },
     caseStudy: {
-      problem: "Individual currency traders suffer high failure rates from emotional position sizing and undisciplined risk management.",
-      solution: "Architected a unified command center combining deterministic risk calculations with 60 frames per second charting.",
-      breakthrough: "Calculated complex risk models directly in browser state without server roundtrip latency."
+      problem: "Individual currency traders often lose accounts due to emotional bet sizing and revenge trading.",
+      solution: "Built a unified workstation that calculates exact mathematical position sizes before any trade is opened.",
+      breakthrough: "Ran complex risk math directly in the browser with zero delay, enforcing strict discipline on every trade."
     }
   }
 ];

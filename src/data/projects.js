@@ -542,8 +542,92 @@ export const projectsData = [
     }
   },
   {
-    "id": "siphoon-os",
+    "id": "abraham-collection",
     "code": "07",
+    "slug": "abraham-collection-atelier",
+    "title": "Abraham Collection",
+    "subtitle": "Bespoke Fashion Atelier & Digital Tailoring Platform",
+    "category": "Luxury Commerce",
+    "filterCategory": "commerce",
+    "year": "2026",
+    "featured": true,
+    "badge": "Live in Production",
+    "coverImage": "/media/abraham_collection_live.webp",
+    "videoUrl": null,
+    "hasVideo": false,
+    "gallery": [
+      {
+        "url": "/media/abraham_collection_live.webp",
+        "title": "Abraham Collection Grand Atelier Web Platform"
+      },
+      {
+        "url": "/media/abraham_collection_bespoke.webp",
+        "title": "Bespoke Tailoring & Private Fitting Suite"
+      },
+      {
+        "url": "/media/abraham_collection_heritage.webp",
+        "title": "Atelier Heritage & Lagos Craftsmanship Since 2002"
+      }
+    ],
+    "summary": "Founded in 2002 in Lagos, Abraham Collection has dressed generations of leaders in bespoke garments that fit with dignity. This digital atelier brings that physical craftsmanship to the web, letting clients explore hand stitched fabrics, study garment details, and book custom bespoke fittings with warmth and ease.",
+    "role": "Lead Full Stack Architect & Atelier Web Engineer",
+    "status": "Live in Production",
+    "techStack": [
+      "Next.js 14",
+      "React 18",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PWA"
+    ],
+    "github": "https://github.com/abraham-DT",
+    "demoUrl": "https://abrhamcollectionweb.vercel.app",
+    "metrics": [
+      {
+        "label": "Atelier Heritage",
+        "value": "Since 2002"
+      },
+      {
+        "label": "Production Status",
+        "value": "Live on Vercel"
+      },
+      {
+        "label": "Offline Support",
+        "value": "Full PWA Cache"
+      }
+    ],
+    "powHighlights": [
+      "Brought twenty four years of master tailoring tradition into a modern digital fashion platform",
+      "Built an easy consultation portal where patrons can request custom bespoke fittings without confusion",
+      "Engineered an offline mode so clients can explore fabrics and lookbooks even with poor internet"
+    ],
+    "caseStudy": {
+      "overview": "Bridging twenty four years of master African bespoke tailoring tradition with modern web engineering, offline lookbooks, and private fitting requests.",
+      "problem": "Traditional couture tailoring relies on word of mouth and manual pen and paper notes, making it hard for busy professionals to schedule fittings or view past work.",
+      "idea": "Build an inviting digital salon powered by Next.js and Supabase that pairs private booking forms with high resolution fabric galleries and offline reading.",
+      "architecture": [
+        {
+          "tier": "Private Client Vault (Supabase)",
+          "desc": "Secure database models holding patron fit profiles, bespoke consultation requests, and fabric selections."
+        },
+        {
+          "tier": "Offline Lookbook Engine (PWA)",
+          "desc": "Progressive Web App service worker caching garment collections so clients can browse fabrics anywhere."
+        },
+        {
+          "tier": "Velvet Obsidian & Gold Salon",
+          "desc": "Quiet editorial design celebrating rich hand woven textiles and bespoke suits with zero noisy ads."
+        }
+      ],
+      "breakthrough": "Bridged generational artisan craftsmanship with modern web reliability, giving patrons total peace of mind from first sketch to final stitch.",
+      "codeSnippet": "// Abraham Collection Offline PWA Service Worker Cache Handler\\nself.addEventListener('fetch', (event) => {\\n  if (event.request.destination === 'image') {\\n    event.respondWith(\\n      caches.open('abraham-atelier-media').then((cache) => {\\n        return cache.match(event.request).then((cachedResponse) => {\\n          return cachedResponse || fetch(event.request).then((networkResponse) => {\\n            cache.put(event.request, networkResponse.clone());\\n            return networkResponse;\\n          });\\n        });\\n      })\\n    );\\n  }\\n});",
+      "result": "Deployed in production on Vercel delivering instantaneous lookbook browsing and verified client consultation bookings.",
+      "lesson": "Software should honor human heritage. Bringing master craft to the web requires simplicity, respect, and zero clutter."
+    }
+  },
+  {
+    "id": "siphoon-os",
+    "code": "08",
     "slug": "siphoon-quantitative-os",
     "title": "SIPHOON OS",
     "subtitle": "Personal Forex Intelligence, Quantitative Journal & Decision Engine",
@@ -619,7 +703,7 @@ export const projectsData = [
   },
   {
     "id": "loom",
-    "code": "08",
+    "code": "09",
     "slug": "loom-spatial-atelier",
     "title": "LOOM",
     "subtitle": "3D Spatial Digital Atelier & Milestone Escrow Prototype",
@@ -685,7 +769,7 @@ export const projectsData = [
   },
   {
     "id": "kucheza-gaming",
-    "code": "09",
+    "code": "10",
     "slug": "kucheza-gaming-esports",
     "title": "Kucheza Gaming",
     "subtitle": "Esports Operations, 3D Tournament Staging & Enterprise Decks",
@@ -763,7 +847,7 @@ export const projectsData = [
   },
   {
     "id": "codeplay-naija",
-    "code": "10",
+    "code": "11",
     "slug": "codeplay-naija-edutech",
     "title": "CodePlay Naija",
     "subtitle": "Digital Literacy, Gamified STEM & Playful Computing",
@@ -824,7 +908,7 @@ export const projectsData = [
   },
   {
     "id": "creative-direction-fine-art",
-    "code": "11",
+    "code": "12",
     "slug": "creative-direction-fine-art",
     "title": "Pointillism & Fine Art Studio",
     "subtitle": "Archival Ink Masterworks & Spectrum Ori Art Exhibition",
@@ -885,7 +969,7 @@ export const projectsData = [
   },
   {
     "id": "meme-battle",
-    "code": "12",
+    "code": "13",
     "slug": "meme-battle-party-game",
     "title": "Meme Battle",
     "subtitle": "1v1 Multiplayer Reaction Party Game & Procedural Sound Engine",
