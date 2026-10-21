@@ -9,7 +9,7 @@ export const profileData = {
       chapter: "GENESIS // 2008",
       age: "AGE 06",
       title: "The Line & The Dot",
-      summary: "Drawing was the first language I spoke. Handcrafted pointillism with zero margin for error — one misplaced ink dot destroys 40 hours of work.",
+      summary: "Drawing was the first language I spoke. Handcrafted pointillism with zero margin for error where one misplaced ink dot destroys an entire drawing.",
       tag: "Pointillism & Single Line Art",
       icon: "Palette"
     },
@@ -17,7 +17,7 @@ export const profileData = {
       chapter: "MISSION // 2023",
       age: "THE CODE",
       title: "Sustainable GameFi",
-      summary: "Learnt smart contract assembly and distributed systems to build sustainable, AI-backed game economies where players earn income in a few clicks.",
+      summary: "Studied smart contract assembly and distributed systems to build transparent game economies where players truly own their items.",
       tag: "Yul · Solidity · C++ Engines",
       icon: "ShieldCheck"
     },
@@ -25,16 +25,16 @@ export const profileData = {
       chapter: "THE DREAM // 2026+",
       age: "THE OASIS",
       title: "The Ready Player One Reality",
-      summary: "Synthesizing AI memory bouncers (CivOS), frictionless cross-game liquidity (D-MEX), and real-time spatial physics into an interconnected virtual universe.",
+      summary: "Synthesizing deterministic state validation (CivOS), safe cross game liquidity (D MEX), and real time spatial physics into interconnected virtual worlds.",
       tag: "The Oasis Vision",
       icon: "Sparkles"
     }
   ],
 
   principles: [
-    { num: "01", title: "Ink Precision", desc: "Extreme patience. Zero errant dots. Translates directly to zero-bug assembly code." },
-    { num: "02", title: "Frictionless Economy", desc: "Gamers shouldn't need a PhD in Web3 to earn from their time in virtual worlds." },
-    { num: "03", title: "The Oasis Architecture", desc: "Low-latency C++ kernels running beneath breathtaking spatial renderers." }
+    { num: "01", title: "Ink Precision", desc: "Extreme patience. Zero errant dots. Translates directly to verified byte level code." },
+    { num: "02", title: "Frictionless Economy", desc: "Gamers shouldn't need a PhD in Web3 to trade and own their digital items." },
+    { num: "03", title: "The Oasis Architecture", desc: "Low latency C++ engines running beneath responsive spatial renderers." }
   ],
 
   stats: [

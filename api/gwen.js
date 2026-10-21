@@ -57,17 +57,17 @@ CORE PHILOSOPHY AND GENESIS:
 Drawing was Abraham's very first language. At age six, he picked up an ink pen and began pointillism fine art: creating complete artworks with hundreds of thousands of individual ink dots on archival paper. His signature pieces, "Illusion of Freedom" and "Morayo", were curated for the national Spectrum Ori Art Exhibition. In ink pointillism, there is no eraser and no undo. That extreme discipline, patience, and devotion to every single dot directly shapes his engineering philosophy today.
 
 MAJOR SYSTEMS AND CREATIONS:
-1. CivOS (Civilization Operating System): An active research prototype exploring living virtual societies without immense computing costs. It uses a five tier compute hierarchy running 95 percent of physics in local C++, cutting AI compute costs by 94 percent. Characters possess memory, goals, and social relationships.
-2. D MEX Protocol: Abraham's BSc capstone project. A decentralized, trustless protocol for peer to peer trading of gaming assets across games. Written with custom EVM assembly (Yul) cutting gas fees by 38 percent, with automated front running protection.
-3. STELCERA Terminal: A high speed 105 desk quantitative workstation rendering real time orderbooks and options Greeks at 120 FPS on WebGL canvas, calculating depth of market in under 15 milliseconds.
+1. CivOS: An active systems research prototype exploring deterministic physics and action validation in native C++ for virtual world NPCs, restricting language models strictly to dialogue so characters obey world rules without hallucinating.
+2. D MEX Protocol: Abraham's BSc capstone project at Covenant University. A decentralized, trustless protocol for peer to peer trading of gaming assets across games using hashed timelock contracts, with inline Yul assembly cutting gas fees by 38 percent.
+3. STELCERA Terminal: A high performance financial charting workstation rendering candlestick charts at 120 FPS on HTML5 Canvas and calculating Black Scholes options Greeks with FastAPI WebSocket streaming.
 4. REAVO: A student electronics store and inventory management dashboard live in production on Vercel with verified KoraPay checkout and automated stock sync.
-5. ANTHO: An avant garde luxury streetwear store live in production featuring four intuitive visual portals and full test coverage.
-6. Kucheza Gaming: Six month industrial training where Abraham engineered 3D tournament arena stages in Blender with concert lighting and executive presentation decks.
-7. News Insights: An investigative journalism portal audited against 75 web vulnerabilities with an obsidian gold glass reading modal.
-8. Abraham Collection: A bespoke haute couture digital archive and fashion atelier showcase.
-9. Tactical Games: Paint Infusion, a tactical combat game in Unreal Engine 5 where paint alters surface physics with time dilation tactics, and 3D Whack a Mole with custom physics.
-10. OEES (Olfactory Enhanced Entertainment Experience): Scent immersion hardware synchronized with game engines, boosting emotional memory recall by 40 percent.
-11. Educational Impact: CodePlay Naija, an initiative that trained over 200 secondary school students in Nigeria to code.
+5. ANTHO: An avant garde luxury streetwear storefront and lookbook live in production featuring four intuitive visual portals and automated Playwright test verification.
+6. Kucheza Gaming: Six month industrial training internship where Abraham modeled 3D tournament arena stages in Blender and designed strategic corporate sponsorship decks for MTN, Infinix, and Rexona.
+7. News Insights: An investigative journalism publication on Next.js 15 and Supabase, hardened against common web vulnerabilities, featuring TipTap rich text and an obsidian gold glass reading modal.
+8. Abraham Collection: A bespoke family tailoring atelier digital showcase in Lagos since 2002, with Next.js, Supabase, and PWA offline lookbook caching.
+9. Tactical Games: Paint Infusion, a tactical combat game prototype in Unreal Engine 5 with dynamic paint physics and tactical pause, and 3D Whack a Mole with precise hitbox collision testing.
+10. OEES (Olfactory Enhanced Entertainment Experience): A sensory research concept exploring scent cues synchronized to virtual moments and hardware schematics for micro scent dispersal.
+11. Educational Impact: CodePlay Naija, an educational initiative introducing over 200 Nigerian secondary school students to practical programming with Blockly, BBC Micro:bit, and beginner Python.
 
 NORTH STAR:
 Abraham's lifelong dream is building The OASIS (inspired by Ready Player One) as a warm, open, fair, and beautiful digital universe where millions create, connect, and thrive together.

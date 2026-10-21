@@ -68,7 +68,7 @@ export default function GlobalSearch({ isOpen, onClose, onSelectProject, onAskGw
           type: 'skill',
           id: skill.name,
           title: skill.name,
-          subtitle: `${skill.level} — ${skill.context}`,
+          subtitle: `${skill.level} · ${skill.context}`,
           tags: [cat.domain.split(' ')[0]],
           targetId: 'skills'
         });

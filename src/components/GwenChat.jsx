@@ -154,10 +154,10 @@ export default function GwenChat({ onOpenCaseStudy, externalPrompt }) {
         <div className="space-y-3 max-w-2xl">
           <div className="flex items-center gap-2 text-xs font-mono text-[var(--accent)] uppercase tracking-wider">
             <Sparkles size={14} />
-            <span>07.0 // AI-NATIVE INTELLIGENCE</span>
+            <span>07.0 // AI NATIVE INTELLIGENCE</span>
           </div>
           <h2 className="text-3xl sm:text-5xl font-extrabold font-heading text-[var(--text-primary)]">
-            GWEN — Portfolio AI Assistant
+            GWEN · Portfolio AI Assistant
           </h2>
           <p className="text-sm sm:text-base text-[var(--text-secondary)]">
             An intelligent, transparent assistant loaded with verified knowledge about Abraham's system architectures, codebases, research papers, and polymath philosophy.

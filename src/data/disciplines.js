@@ -5,9 +5,9 @@ export const disciplinesData = [
     shortName: "SYSTEMS",
     name: "Distributed Systems & Kernels",
     role: "Architect & C++ Engineer",
-    tagline: "C++, Go, OS Memory & Deterministic State Engines.",
-    description: "Designing low-latency compute hierarchies where 94% of queries resolve before touching an LLM.",
-    techStack: ["C++", "Go", "Distributed State", "Linux"]
+    tagline: "C++, OS Memory & Deterministic State Engines.",
+    description: "Architecting deterministic C++ state machines and validation layers that keep world rules strictly separated from conversational models.",
+    techStack: ["C++", "Apache Kafka", "Redis", "Linux"]
   },
   {
     id: "web3",
@@ -15,18 +15,18 @@ export const disciplinesData = [
     shortName: "WEB3",
     name: "Smart Contracts & Protocol Security",
     role: "Solidity & Yul Engineer",
-    tagline: "Inline assembly, HTLC cross-chain swaps & formal fuzzing.",
-    description: "Engineering trustless DeFi primitives and gas-optimized escrow with mathematical finality.",
+    tagline: "Inline assembly, HTLC cross chain swaps & formal fuzzing.",
+    description: "Engineering decentralized swap protocols and gas optimized contracts verified with Foundry invariant testing.",
     techStack: ["Solidity", "Yul Assembly", "Foundry", "EVM"]
   },
   {
     id: "games",
     code: "03",
     shortName: "GAMES",
-    name: "Real-Time 3D & Game Physics",
+    name: "Real Time 3D & Game Physics",
     role: "Game Engine Developer",
     tagline: "Spatial physics, custom hitboxes & tactical mechanics.",
-    description: "Building immersive multi-sensory experiences in Unreal Engine 5 and custom web renderers.",
+    description: "Building immersive multi sensory experiences in Unreal Engine 5 and custom web renderers.",
     techStack: ["Unreal Engine 5", "C++", "Spatial Physics", "HCI"]
   },
   {
@@ -36,28 +36,28 @@ export const disciplinesData = [
     name: "Spatial Commerce & Three.js",
     role: "Technical Artist & Designer",
     tagline: "Procedural geometry, cloth simulation & WebGL.",
-    description: "Merging interactive 3D spatial web showrooms with seamless fintech payment escrows.",
+    description: "Developing interactive Three.js 3D web showcases and milestone payment workflows.",
     techStack: ["Three.js", "WebGL", "Blender", "Tailwind"]
   },
   {
     id: "ai",
     code: "05",
     shortName: "AI & HCI",
-    name: "Multi-Tier Intelligence & Vision",
+    name: "Multi Tier Intelligence & Vision",
     role: "AI Systems Engineer",
-    tagline: "Sub-20ms facial vision, RAG & agent orchestration.",
-    description: "Designing transparent AI agents with deterministic bouncers and instant streaming retrieval.",
-    techStack: ["Python", "FastAPI", "OpenCV", "Local RAG"]
+    tagline: "Computer vision, OpenCV, FastAPI backends & grounded AI.",
+    description: "Designing software systems with deterministic rule verification and responsive streaming interfaces.",
+    techStack: ["Python", "FastAPI", "OpenCV", "LangChain"]
   },
   {
     id: "markets",
     code: "06",
     shortName: "MARKETS",
-    name: "Quantitative Trading & Arbitrage",
+    name: "Quantitative Trading & Risk Math",
     role: "Systems Trader",
-    tagline: "Cross-DEX scanners, Black-Scholes Greeks & order book DOM.",
-    description: "Modeling automated liquidity spreads, statistical arbitrage, and multi-exchange routing.",
-    techStack: ["FastAPI", "WebSockets", "Level 2 DOM", "Options Math"]
+    tagline: "Candlestick charting, Black Scholes Greeks & position sizing calculators.",
+    description: "Building financial charting terminals and mathematical risk models with Kelly criterion sizing.",
+    techStack: ["FastAPI", "WebSockets", "HTML5 Canvas", "Options Math"]
   },
   {
     id: "creative",
@@ -65,9 +65,9 @@ export const disciplinesData = [
     shortName: "CREATIVE",
     name: "Fine Art & Pointillism Ink",
     role: "Exhibited Fine Artist",
-    tagline: "Spectrum Ori exhibition, single-line art & extreme patience.",
-    description: "Handcrafting 40-hour pointillist ink masterworks where a single misplaced dot breaks the system.",
-    techStack: ["Pointillism", "Single-Line", "Spectrum Ori", "Negative Space"]
+    tagline: "Spectrum Ori exhibition, single line art & patient ink craft.",
+    description: "Handcrafting detailed pointillist ink masterworks where a single misplaced dot breaks the composition.",
+    techStack: ["Pointillism", "Single Line", "Spectrum Ori", "Negative Space"]
   },
 ];
 
@@ -75,7 +75,7 @@ export const polymathCausalityMatrix = [
   {
     from: "Pointillism Fine Art",
     to: "Smart Contract Assembly",
-    how: "Zero-error ink precision teaches byte-level gas optimization. One misplaced byte drains a pool; one wrong ink dot ruins 40 hours."
+    how: "Zero error ink precision mirrors byte level gas optimization. One misplaced byte can break a contract; one wrong ink dot ruins an entire drawing."
   },
   {
     from: "Creative Direction & HCI",
@@ -85,6 +85,6 @@ export const polymathCausalityMatrix = [
   {
     from: "Game Physics Engines",
     to: "Quantitative Trading",
-    how: "Real-time tick loops and sub-millisecond collision detection map 1:1 to cross-exchange arbitrage scanning."
+    how: "Real time game tick loops and frame rendering share the exact same low latency constraints as financial market charting."
   }
 ];

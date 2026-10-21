@@ -67,7 +67,7 @@ export default function SkillsSection() {
                         {skill.name}
                       </span>
                       <span className="text-[11px] text-[var(--text-secondary)]">
-                        — {skill.context}
+                        · {skill.context}
                       </span>
                     </div>
 

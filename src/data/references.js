@@ -5,7 +5,7 @@ export const referenceArtData = [
     category: "Single Line Art",
     filename: "211174979496110.jpg",
     src: "/references/211174979496110.jpg",
-    concept: "Continuous single unbroken stroke defining anatomy—metaphor for polymath disciplines converging into one mind."
+    concept: "Continuous single unbroken stroke defining anatomy · metaphor for polymath disciplines converging into one mind."
   },
   {
     id: "ref-02",
@@ -21,7 +21,7 @@ export const referenceArtData = [
     category: "Dynamic Line Motion",
     filename: "Walnut ink drawing of a cyclist - James Colter.jpg",
     src: "/references/Walnut ink drawing of a cyclist - James Colter.jpg",
-    concept: "Kinetic energy captured through ink weight and velocity—informs the moving polymath dot system."
+    concept: "Kinetic energy captured through ink weight and velocity · informs the moving polymath dot system."
   },
   {
     id: "ref-04",

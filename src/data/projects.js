@@ -4,7 +4,7 @@ export const projectsData = [
     "code": "01",
     "slug": "civos-metaverse-os",
     "title": "CivOS",
-    "subtitle": "Civilization Operating System \u2014 Spatial Autonomous OS",
+    "subtitle": "Virtual World Simulation Architecture · Deterministic State Validation",
     "category": "Systems & Web3",
     "filterCategory": "systems",
     "year": "2026",
@@ -14,13 +14,13 @@ export const projectsData = [
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [],
-    "summary": "Ongoing research prototype exploring distributed architectures for persistent AI metaverses. Combines a 5-tier deterministic compute hierarchy in C++ with Kafka event sourcing and ERC-4337 agent accounts to slash LLM overhead by 94%.",
-    "role": "Lead Systems Architect & Researcher",
-    "status": "Prototype in Progress / Active Research",
+    "summary": "An active systems research prototype exploring cost efficient simulation of game non player characters. Validates movement, resource physics, and trade rules deterministically in C++ before calling language models solely for character dialogue.",
+    "role": "Systems Researcher & C++ Engineer",
+    "status": "Active Research Prototype",
     "techStack": [
       "C++",
       "Apache Kafka",
-      "ERC-4337",
+      "ERC 4337",
       "Redis",
       "Solidity",
       "Vector DB"
@@ -29,66 +29,62 @@ export const projectsData = [
     "demoUrl": null,
     "metrics": [
       {
-        "label": "Stage",
-        "value": "Research Prototype"
+        "label": "Architecture",
+        "value": "State Machine"
       },
       {
-        "label": "Deterministic Logic",
-        "value": "95% in C++"
+        "label": "Validation Core",
+        "value": "Deterministic C++"
       },
       {
-        "label": "Compute Overhead Cut",
-        "value": "~94%"
+        "label": "AI Role",
+        "value": "Dialogue Only"
       }
     ],
     "powHighlights": [
-      "C++ Deterministic Bouncer validates physics and transactions before triggering LLM generation",
-      "Immutable Kafka event log streams universe state for real-time AI judges and auditors",
-      "ERC-4337 Account Abstraction empowers autonomous AI NPCs to control on-chain inventory"
+      "C++ action validation checking physics and player inventories before any dialogue generation",
+      "Restricts language models to conversational text to prevent hallucinated rule breaks",
+      "Explores smart contract accounts for managing digital items in game economies"
     ],
     "caseStudy": {
-      "overview": "CivOS is an ongoing research prototype investigating the compute and economic bottlenecks of persistent virtual worlds: scaling intelligent autonomous NPC civilizations without catastrophic API costs.",
-      "problem": "Simulating thousands of concurrent autonomous agents using raw LLM calls causes instant API insolvency, while hardcoded state machines lack emergent social intelligence.",
-      "idea": "A 5-tier compute hierarchy where 95% of world math runs deterministically in C++ microservices, and LLMs only act as flavor generators once actions are cryptographically and logically validated.",
+      "overview": "CivOS is an ongoing systems research prototype exploring how to simulate responsive virtual communities without expensive language model API bills.",
+      "problem": "Querying cloud language models for every character action causes high latency, immense API costs, and game breaking hallucinations.",
+      "idea": "Handle character physics, inventory math, and rule checks deterministically in C++, and invoke language models only when characters speak to a player.",
       "architecture": [
         {
-          "tier": "Tier 1: Background Logic (C++)",
-          "desc": "95% of world math runs deterministically at near-zero compute (pathfinding, trade math, collision)."
+          "tier": "Deterministic C++ Engine",
+          "desc": "Validates all character movements, inventory trades, and collision rules in native code."
         },
         {
-          "tier": "Tier 2: The Bouncer Pattern",
-          "desc": "C++ microservices validate all actions before state mutation; LLMs only generate dialogue post-validation."
+          "tier": "Action Validation Filter",
+          "desc": "Enforces game rules before state changes take effect, passing context to dialogue models only when needed."
         },
         {
-          "tier": "Tier 3: Layered Memory Engine",
-          "desc": "Vector DBs for episodic recall, Graph DBs for social networks, Redis for procedural task queues."
+          "tier": "Structured Memory Storage",
+          "desc": "Uses relational and key value caches for character inventories, locations, and quest tasks."
         },
         {
-          "tier": "Tier 4: Event Sourcing via Kafka",
-          "desc": "Every universe action is committed to an immutable log stream for AI judges and auditors."
-        },
-        {
-          "tier": "Tier 5: Autonomous Web3 Sovereignty",
-          "desc": "ERC-4337 Account Abstraction enables AI agents to autonomously own inventory and execute contracts."
+          "tier": "Dialogue Dispatch",
+          "desc": "Calls language models for character conversation only when a player initiates dialogue."
         }
       ],
-      "breakthrough": "Lazy LLM Deployment: high-order AI reasoning only spins up when human players enter observation radius, preserving full world fidelity at 6% of traditional compute overhead.",
-      "codeSnippet": "// CivOS Bouncer Pattern \u2014 Deterministic Action Validation Before LLM Dialogue\nbool BouncerService::ValidateAgentAction(const AgentID& agentId, const ActionPayload& action) {\n    if (!WorldState::Get().HasSufficientResources(agentId, action.resourceCost)) {\n        AuditLog::RecordViolation(agentId, \"INSUFFICIENT_FUNDS_REJECTED\");\n        return false;\n    }\n    WorldState::Get().ApplyDeterministicDelta(agentId, action);\n    LLMOrchestrator::DispatchFlavorText(agentId, action.context);\n    return true;\n}",
-      "result": "Architectural specifications, benchmark simulations, and research paper under active prototype development.",
-      "lesson": "Autonomous agent societies cannot rely on probabilistic models for core logic. Deterministic rigor must enforce the rules; AI provides the narrative texture."
+      "breakthrough": "Separated rigid world rules from conversational dialogue, keeping character behavior consistent while minimizing cloud API calls.",
+      "codeSnippet": "// CivOS Deterministic Action Validation Before LLM Dialogue\nbool BouncerService::ValidateAgentAction(const AgentID& agentId, const ActionPayload& action) {\n    if (!WorldState::Get().HasSufficientResources(agentId, action.resourceCost)) {\n        AuditLog::RecordViolation(agentId, \"INSUFFICIENT_FUNDS_REJECTED\");\n        return false;\n    }\n    WorldState::Get().ApplyDeterministicDelta(agentId, action);\n    LLMOrchestrator::DispatchFlavorText(agentId, action.context);\n    return true;\n}",
+      "result": "Architectural specifications and prototype validation benchmarks in active development.",
+      "lesson": "Virtual world rules must remain strictly deterministic. Probabilistic language models belong in dialogue generation, not in simulation physics."
     }
   },
   {
     "id": "dmex-protocol",
     "code": "02",
     "slug": "dmex-cross-game-swap",
-    "title": "D-MEX Protocol",
-    "subtitle": "Decentralized Cross-Chain Atomic Swap Protocol for Digital Assets",
+    "title": "D MEX Protocol",
+    "subtitle": "Cross Chain Atomic Swap Protocol for Digital Game Assets",
     "category": "Smart Contracts",
     "filterCategory": "systems",
     "year": "2026",
     "featured": true,
-    "badge": "BSc Capstone / Flagship",
+    "badge": "BSc Capstone Project",
     "coverImage": "/media/dmex_dashboard.webp",
     "videoUrl": null,
     "hasVideo": false,
@@ -114,8 +110,8 @@ export const projectsData = [
         "title": "Seven Layer Security Model & Cryptographic Defense"
       }
     ],
-    "summary": "Trustless cross-chain atomic swap infrastructure engineered for sovereign gaming ecosystems. Eliminates centralized bridge exploits via cryptographic hash-time locked contracts (HTLC), inline Yul assembly optimizations, and EIP-1271 multi-sig support.",
-    "role": "Sole Protocol Architect & Smart Contract Engineer",
+    "summary": "A decentralized atomic swap protocol built for peer to peer trading of gaming items across EVM blockchains. Eliminates custodial bridge risks through hash time locked contracts (HTLC), inline Yul assembly for gas reduction, and automated timelock refunds.",
+    "role": "Protocol Architect & Smart Contract Engineer",
     "status": "Completed BSc Capstone Protocol",
     "techStack": [
       "Solidity",
@@ -129,49 +125,49 @@ export const projectsData = [
     "demoUrl": null,
     "metrics": [
       {
-        "label": "EVM Gas Reduction",
-        "value": "38%"
+        "label": "EVM Gas Savings",
+        "value": "38% with Yul"
       },
       {
-        "label": "Audit Vulnerabilities",
-        "value": "0 Found"
+        "label": "Test Coverage",
+        "value": "100+ Foundry Tests"
       },
       {
-        "label": "Time-Lock Safety",
-        "value": "100% Cryptographic"
+        "label": "Swap Guarantee",
+        "value": "Hash Time Locks"
       }
     ],
     "powHighlights": [
-      "Inline Yul assembly keccak256 verification cutting EVM gas by 38%",
-      "Foundry invariant test suites (test/VaultInvariant.t.sol) proving zero exploitable states",
-      "Off-chain AI Guardian real-time mempool anomaly detection preventing front-running exploits"
+      "Inline Yul assembly verification reducing EVM gas costs by 38 percent",
+      "Foundry invariant test suites proving zero lockups or exploitable states across contract flows",
+      "Cryptographic hash time locks guaranteeing that token swaps complete or automatically refund"
     ],
     "caseStudy": {
-      "overview": "D-MEX Protocol provides mathematical finality for peer-to-peer asset transfers across disparate gaming ecosystems using cryptographic hash-time locked contracts (HTLC) and Chainlink oracle feeds.",
-      "problem": "Cross-chain gaming bridges suffer constant security exploits ($2B+ lost industry-wide) and exorbitant slippage during multi-token conversions.",
-      "idea": "Remove trusted bridge intermediaries completely. Implement atomic swaps guaranteed by cryptographic hash locks and automated refund timelocks with Yul assembly optimizations.",
+      "overview": "D MEX Protocol is a BSc capstone engineering project enabling peer to peer swaps of digital game tokens across blockchains without centralized bridge custody.",
+      "problem": "Centralized cross chain bridges are frequent targets for hacks and exploits, risking user funds and charging high intermediary conversion fees.",
+      "idea": "Remove bridge intermediaries entirely by using atomic hash time locked contracts (HTLC) where swaps execute directly between users or automatically refund upon expiration.",
       "architecture": [
         {
-          "tier": "Gas-Optimized Core (Yul)",
-          "desc": "Inline assembly for memory-efficient hash verification, saving 38% gas over standard Solidity."
+          "tier": "Gas Optimized Core in Yul",
+          "desc": "Inline assembly for hash verification, cutting transaction execution gas by 38 percent over standard Solidity."
         },
         {
-          "tier": "AI Guardian Agent",
-          "desc": "Off-chain monitoring agent performing real-time transaction mempool anomaly detection before state commitment."
+          "tier": "Atomic Swap Escrow",
+          "desc": "Cryptographic hash locks ensuring counterparties only claim assets by providing the correct secret preimage."
         },
         {
-          "tier": "Fail-Safe Swap Escrow",
-          "desc": "Cryptographic timelocks automatically refund users if network power or connectivity fails mid-swap."
+          "tier": "Timelock Refund Protection",
+          "desc": "Deterministic block expiration that automatically returns funds to depositors if counterparties fail to complete the trade."
         },
         {
-          "tier": "Chainlink Oracle Integration",
-          "desc": "Decentralized price feeds providing real-time multi-token conversion parity."
+          "tier": "Chainlink Price Oracles",
+          "desc": "Decentralized oracle feeds verifying exchange rates between different game tokens."
         }
       ],
-      "breakthrough": "Elimination of trusted bridge intermediaries; swaps are fully peer-to-peer, atomic, and immune to bridge contract drainage exploits.",
+      "breakthrough": "Direct peer to peer token swaps without custodial bridges, eliminating the vulnerability surface of centralized bridge contracts.",
       "codeSnippet": "// D-MEX Gas-Optimized Hash Verification in Yul Assembly\nfunction verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (bool isValid) {\n    assembly {\n        mstore(0x00, secret)\n        let computedHash := keccak256(0x00, 0x20)\n        isValid := eq(computedHash, hashLock)\n    }\n}",
-      "result": "Zero vulnerability exploits across 100+ Foundry fuzz and invariant test suites with 38% lower gas overhead.",
-      "lesson": "Security in Web3 is not about adding more governance layers \u2014 it is about mathematical simplicity and eliminating trusted third parties."
+      "result": "Zero vulnerabilities across 100+ Foundry fuzz and invariant test suites with 38 percent lower gas overhead.",
+      "lesson": "Protocol security comes from mathematical simplicity and removing custodial intermediaries rather than adding complex administrative layers."
     }
   },
   {
@@ -179,19 +175,19 @@ export const projectsData = [
     "code": "03",
     "slug": "stelcera-institutional-terminal",
     "title": "STELCERA Terminal",
-    "subtitle": "Quantitative Multi-Desk Workstation & High-Frequency Analytics",
+    "subtitle": "Financial Charting Workstation & Options Risk Calculator",
     "category": "Quantitative Systems",
     "filterCategory": "fintech",
     "year": "2026",
     "featured": true,
-    "badge": "Institutional Workstation (105 Desks)",
+    "badge": "Financial Workstation",
     "coverImage": null,
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [],
-    "summary": "Ultra-low latency institutional quantitative workstation engineered with Next.js 15, React 19, TypeScript, and FastAPI. Expanded to 105 operational desks spanning Autonomous Multi-Agent LLM Alpha Execution Swarms, Direct Market Access (DMA) Colocation Latency Modelers, Zero-Knowledge Dark Routers, and Black-Scholes options Greeks.",
-    "role": "Full-Stack Quantitative Systems Architect",
-    "status": "Production Ready Workstation",
+    "summary": "A high performance financial analytics and charting workstation built with Next.js 15, TypeScript, and FastAPI. Features custom HTML5 Canvas rendering for fluid 120 FPS market visualization, real time WebSocket tick streaming, and client side Black Scholes options Greeks calculations.",
+    "role": "Full Stack Engineer",
+    "status": "Completed Engineering Workstation",
     "techStack": [
       "Next.js 15",
       "React 19",
@@ -205,49 +201,49 @@ export const projectsData = [
     "demoUrl": null,
     "metrics": [
       {
-        "label": "Operational Desks",
-        "value": "105 Desks"
-      },
-      {
         "label": "Chart Frame Rate",
-        "value": "60\u2013120 FPS"
+        "value": "60 to 120 FPS"
       },
       {
-        "label": "WebSocket Latency",
-        "value": "< 15ms"
+        "label": "Options Math",
+        "value": "Black Scholes Greeks"
+      },
+      {
+        "label": "Data Streaming",
+        "value": "FastAPI WebSockets"
       }
     ],
     "powHighlights": [
-      "Autonomous Multi-Agent LLM Alpha Execution Swarm (/agent-swarm) continuously modeling risk regimes",
-      "Direct Market Access (DMA) exchange colocation modeler calculating sub-microsecond tick propagation",
-      "Hardware-accelerated HTML5 Canvas sub-pixel renderer bypassing React DOM diffing overhead at 120 FPS"
+      "Custom HTML5 Canvas chart renderer bypassing React DOM diffing to maintain 120 FPS during heavy price updates",
+      "Analytical Black Scholes options pricer computing Delta, Gamma, Vega, Theta, and Rho in real time",
+      "FastAPI WebSocket backend streaming simulated tick feeds and orderbook depth to client tools"
     ],
     "caseStudy": {
-      "overview": "STELCERA matches tier-1 institutional trading terminals for quantitative crypto traders, algorithmic arbitrageurs, and liquidity providers.",
-      "problem": "Standard web trading interfaces suffer from DOM re-render lag during volatility spikes and lack integrated cross-DEX arbitrage and high-order options risk calculators.",
-      "idea": "Build a pure HTML5 Canvas sub-pixel chart engine paired with a FastAPI stochastic market generator broadcasting micro-orderbook depth over high-throughput WebSockets across 105 specialized desks.",
+      "overview": "STELCERA Terminal is a technical trading interface and analytical workstation designed to test high frame rate web rendering and mathematical risk models.",
+      "problem": "Standard web charts built on SVG or DOM elements stutter and lag during heavy market updates, while separate options calculators require cumbersome external tools.",
+      "idea": "Bypass DOM updates entirely by rendering charts directly to an HTML5 Canvas, paired with client side options math and a lightweight FastAPI WebSocket streaming server.",
       "architecture": [
         {
-          "tier": "HTML5 Canvas Sub-Pixel Engine",
-          "desc": "Hardware-accelerated candlestick and DOM rendering with custom drawing tools at 120 FPS."
+          "tier": "HTML5 Canvas Chart Engine",
+          "desc": "Direct pixel drawing for candlesticks and order depth, ensuring frame rates stay smooth at up to 120 FPS."
         },
         {
-          "tier": "Autonomous Agent Swarm",
-          "desc": "Autonomous Multi-Agent LLM Alpha Execution Swarm evaluating real-time cross-venue order books."
+          "tier": "Black Scholes Options Greeks Lab",
+          "desc": "Client side analytical calculations computing Delta, Gamma, Vega, Theta, and Rho instantly."
         },
         {
-          "tier": "Zero-Knowledge Dark Router",
-          "desc": "ZK-proof order routing protecting institutional liquidity against toxic front-running and MEV sandwich bots."
+          "tier": "FastAPI WebSocket Server",
+          "desc": "Asynchronous Python backend broadcasting price updates and orderbook depth without HTTP polling overhead."
         },
         {
-          "tier": "Black-Scholes Options Greeks Lab",
-          "desc": "Analytical options pricer computing Delta, Gamma, Vega, Theta, and Rho with dual-sided options chains."
+          "tier": "Modular Workspace Layout",
+          "desc": "Organized panels for price charts, risk calculators, and indicator views with low memory usage."
         }
       ],
-      "breakthrough": "Zero React re-render overhead during high-frequency tick cascades by driving canvas updates directly through requestAnimationFrame loops.",
+      "breakthrough": "Achieved zero DOM reconciliation overhead during rapid tick cascades by rendering directly onto canvas via requestAnimationFrame.",
       "codeSnippet": "// STELCERA Black-Scholes Analytical Pricing & Greeks Engine\nexport function calculateBlackScholes(S: number, K: number, T: number, r: number, sigma: number, type: 'call' | 'put') {\n  const d1 = (Math.log(S / K) + (r + 0.5 * sigma * sigma) * T) / (sigma * Math.sqrt(T));\n  const d2 = d1 - sigma * Math.sqrt(T);\n  const Nd1 = normalCDF(d1);\n  const Nd2 = normalCDF(d2);\n  const price = type === 'call' ? S * Nd1 - K * Math.exp(-r * T) * Nd2 : K * Math.exp(-r * T) * (1 - Nd2) - S * (1 - Nd1);\n  const delta = type === 'call' ? Nd1 : Nd1 - 1;\n  const gamma = normalPDF(d1) / (S * sigma * Math.sqrt(T));\n  return { price, delta, gamma };\n}",
-      "result": "Production-grade institutional workstation scaled to 105 operational desks with sub-15ms WebSocket tick streaming.",
-      "lesson": "Trading UI performance is won or lost in the render tree. Bypassing DOM reconciliation for pure Canvas is essential for institutional tools."
+      "result": "Responsive charting workstation rendering live tick feeds smoothly at up to 120 FPS with instant options calculations.",
+      "lesson": "Trading chart performance depends on keeping fast data out of the React DOM tree. Direct canvas drawing is essential for smooth real time data feeds."
     }
   },
   {
@@ -351,9 +347,9 @@ export const projectsData = [
     "id": "news-insights",
     "code": "05",
     "slug": "news-insights-media",
-    "title": "News-Insights",
-    "subtitle": "Investigative Media Intelligence & AI Publishing Platform",
-    "category": "Media Intelligence & AI",
+    "title": "News Insights",
+    "subtitle": "Investigative Journalism & Media Publishing Platform",
+    "category": "Journalism & Media",
     "filterCategory": "media",
     "year": "2026",
     "featured": true,
@@ -383,8 +379,8 @@ export const projectsData = [
         "title": "World Affairs & International Bureau"
       }
     ],
-    "summary": "High-throughput digital publishing and investigative journalism portal engineered with Next.js 15 App Router, Supabase PostgreSQL with RLS, TipTap rich text, bespoke obsidian & gold glass luxury subscription modal, and 75 Common Vibe-Coded Web App security defenses.",
-    "role": "Lead Full-Stack & Security Engineer",
+    "summary": "A digital publishing platform and news portal built with Next.js 15, Supabase, TipTap rich text, and Tailwind CSS. Hardened against common web security flaws including injection and unauthorized access, featuring clean reading typography and subscription membership flows.",
+    "role": "Full Stack & Security Engineer",
     "status": "Live in Production",
     "techStack": [
       "Next.js 15",
@@ -400,48 +396,48 @@ export const projectsData = [
     "metrics": [
       {
         "label": "Security Defense",
-        "value": "75 Vulnerabilities Audited"
+        "value": "Audited Web Security"
       },
       {
-        "label": "Data Pipeline",
-        "value": "Real-time Supabase"
+        "label": "Data Storage",
+        "value": "Supabase PostgreSQL"
       },
       {
-        "label": "Auth Flow",
-        "value": "Google OAuth + RLS"
+        "label": "Authentication",
+        "value": "Google OAuth & RLS"
       }
     ],
     "powHighlights": [
-      "Bespoke obsidian and gold glass luxury subscription modal with seamless tier upgrading",
-      "Strict compliance with 75 Common Vibe-Coded Web App Vulnerabilities defending against IDOR, XSS, and direct DB access",
-      "Dynamic engagement weighting loop with real-time like/dislike/repost recommendation telemetry"
+      "Sanitized rich text editing with TipTap preventing cross site scripting and content injection",
+      "Supabase database security using Row Level Security policies so unpublished drafts remain private",
+      "Custom reader subscription modal with subtle blur and instant Google sign in"
     ],
     "caseStudy": {
-      "overview": "News-Insights (ACHICHI Media) is a production investigative journalism and media intelligence platform designed to deliver verified reporting and high-engagement multimedia content with enterprise security defenses.",
-      "problem": "Media platforms suffer from client-side data leaks, injection vulnerabilities in content management systems, and reader churn caused by intrusive paywalls and clunky subscription flows.",
-      "idea": "Engineer a bespoke Next.js 15 App Router portal backed by Supabase with rigorous Row-Level Security, audited against the 75 Common Vibe-Coded Web App Vulnerabilities standard, featuring an elegant obsidian & gold glass luxury paywall modal.",
+      "overview": "News Insights is a full stack media publishing website engineered to deliver clean reading layouts, secure draft editing, and dependable reader subscriptions.",
+      "problem": "Online news sites often suffer from slow content loading, unescaped text injection vulnerabilities in editors, and intrusive popups that cause reader fatigue.",
+      "idea": "Build a server rendered publishing platform with Next.js 15 and Supabase, securing user drafts with database policies and providing a calm, elegant reader subscription experience.",
       "architecture": [
         {
-          "tier": "Next.js 15 App Router SSR",
-          "desc": "Server-side rendered articles with dynamic metadata for instant SEO indexing and zero hydration shifts."
+          "tier": "Server Rendered Next.js 15",
+          "desc": "Articles render quickly on the server for instant page delivery and consistent layout display."
         },
         {
-          "tier": "Vulnerability Fortress (75 Defenses)",
-          "desc": "Immunity against IDOR, direct database queries, CSRF, and XSS by sanitizing TipTap input and enforcing strict Supabase RLS."
+          "tier": "Input Sanitization and RLS",
+          "desc": "TipTap editor content is sanitized before saving, while database Row Level Security protects editorial drafts."
         },
         {
-          "tier": "Obsidian & Gold Glass Modal",
-          "desc": "Bespoke high-conversion membership modal utilizing backdrop blur, micro-animations, and instant Google OAuth onboarding."
+          "tier": "Reader Membership Modal",
+          "desc": "A clean modal with backdrop blur for smooth reader onboarding and subscription tier selection."
         },
         {
-          "tier": "Engagement Telemetry Loop",
-          "desc": "Real-time recommendation algorithm weighting articles by read completion, shares, and sentiment indicators."
+          "tier": "Article Interaction State",
+          "desc": "Lightweight client state tracking reader bookmarks, likes, and topic filtering."
         }
       ],
-      "breakthrough": "Zero vulnerability findings during rigorous security audit while boosting reader session duration through frictionless luxury modal interactions.",
+      "breakthrough": "Delivered fast article reading with zero unauthenticated draft leaks by securing content access directly inside PostgreSQL policies.",
       "codeSnippet": "// News-Insights Row-Level Security Policy for Published Articles\nCREATE POLICY \"Allow public read of published articles\"\nON public.articles\nFOR SELECT\nUSING (status = 'published' AND published_at <= NOW());",
-      "result": "Deployed in production on Vercel delivering instantaneous page loads, zero unauthorized data access, and verified OAuth user journeys.",
-      "lesson": "Security and aesthetic elegance are not mutually exclusive. Hardened RLS policies at the database layer free frontend engineers to craft breathtaking UI experiences."
+      "result": "Deployed in production on Vercel delivering instant page loads, protected editorial drafts, and smooth OAuth authentication.",
+      "lesson": "Security and good design work hand in hand. Enforcing database policies early keeps client code simple and focused on reader comfort."
     }
   },
   {
@@ -449,12 +445,12 @@ export const projectsData = [
     "code": "06",
     "slug": "antho-streetwear-vault",
     "title": "ANTHO",
-    "subtitle": "Avant-Garde Luxury Streetwear Storefront & Digital Vault",
-    "category": "Luxury E-Commerce",
+    "subtitle": "Avant Garde Streetwear Storefront & Digital Lookbook",
+    "category": "Streetwear & Commerce",
     "filterCategory": "commerce",
     "year": "2026",
     "featured": true,
-    "badge": "Production Storefront & Vault",
+    "badge": "Production Storefront",
     "coverImage": "/media/antho_live.webp",
     "videoUrl": null,
     "hasVideo": false,
@@ -480,8 +476,8 @@ export const projectsData = [
         "title": "Brand Heritage & Haute Couture Vision"
       }
     ],
-    "summary": "Avant-garde youth luxury streetwear commerce platform and digital vault engineered on Next.js 15, React 19, Tailwind CSS, Prisma ORM, and Paystack. Grounded in Nielsen HCI heuristics with visual-first portal navigation, Edge middleware HMAC route protection, and automated Playwright E2E suites.",
-    "role": "Lead Full-Stack & Product Engineer",
+    "summary": "An avant garde streetwear storefront and lookbook built with Next.js 15, React 19, Tailwind CSS, Prisma, and Paystack. Designed with image first portal navigation for effortless browsing, protected admin routes, and Playwright automated tests for reliable cart and checkout flows.",
+    "role": "Full Stack Engineer",
     "status": "Live in Production",
     "techStack": [
       "Next.js 15",
@@ -496,49 +492,49 @@ export const projectsData = [
     "demoUrl": "https://antho-rho.vercel.app",
     "metrics": [
       {
-        "label": "HCI Architecture",
-        "value": "Nielsen Heuristic #6"
+        "label": "Navigation",
+        "value": "Visual Portals"
       },
       {
         "label": "Catalog",
-        "value": "4-Capsule Vault"
+        "value": "Collection Hubs"
       },
       {
-        "label": "E2E Testing",
+        "label": "Testing",
         "value": "Playwright Suites"
       }
     ],
     "powHighlights": [
-      "Edge Middleware guarding /admin routes using Web Crypto HMAC-SHA256 tokens and strict security headers",
-      "Visual-first navigation portal applying Nielsen Heuristic #6 (Recognition over Recall) across 4 core hubs",
-      "Authoritative server-side price recalculation and Paystack HMAC-SHA512 webhook signature verification"
+      "Middleware protecting admin routes with cryptographic session token verification",
+      "Visual navigation layout guiding shoppers across core collections without confusing dropdowns",
+      "Server side price recalculation with Paystack webhook verification to prevent tampering"
     ],
     "caseStudy": {
-      "overview": "ANTHO is a luxury youth streetwear brand and digital vault combining avant-garde fashion aesthetics with rigorous software engineering and HCI interaction patterns.",
-      "problem": "Luxury fashion storefronts frequently suffer from cluttered dropdown menus that violate user recall heuristics, unverified pricing logic, and fragile checkout flows.",
-      "idea": "Overhaul the storefront navigation into a visual-first navigation portal grounded in Nielsen Heuristic #6 (Recognition over Recall) and Miller's Law, supported by edge route guarding and Paystack payment verification.",
+      "overview": "ANTHO is a streetwear fashion storefront and lookbook created to showcase collection drops with high contrast imagery and dependable checkout.",
+      "problem": "Fashion websites often overload shoppers with nested dropdown menus and flimsy cart state that fails during checkout.",
+      "idea": "Structure the site around visual portal cards that show each collection clearly, paired with server validated pricing and Paystack payment processing.",
       "architecture": [
         {
-          "tier": "Next.js Edge Middleware",
-          "desc": "Performs sub-millisecond route guarding on /admin using Web Crypto HMAC-SHA256 session tokens, CSP, and HSTS."
+          "tier": "Protected Admin Middleware",
+          "desc": "Validates session tokens on administrative routes before allowing access to inventory and settings."
         },
         {
-          "tier": "HCI Visual Navigation Portal",
-          "desc": "Replaces text dropdowns with high-contrast editorial imagery across 4 core hubs (Shop, Collections, Lookbook, Events)."
+          "tier": "Visual Portal Navigation",
+          "desc": "Organizes garments into distinct visual categories so shoppers recognize collections immediately."
         },
         {
-          "tier": "Deterministic Pricing & Cart",
-          "desc": "Eliminates cognitive discount noise with authoritative single-tier pricing and server-side recalculation."
+          "tier": "Server Validated Cart",
+          "desc": "Recalculates item subtotals on the server before initializing payments to guarantee price accuracy."
         },
         {
-          "tier": "Automated Playwright E2E Suite",
-          "desc": "Continuous end-to-end test suites validating cart, checkout, admin routes, and responsive viewports."
+          "tier": "Automated Test Coverage",
+          "desc": "Playwright end to end tests verifying browsing, cart additions, and checkout steps across mobile and desktop."
         }
       ],
-      "breakthrough": "Zero unauthorized admin intrusions and 100% test pass rate across Playwright end-to-end checkout simulations.",
+      "breakthrough": "Combined clean editorial visuals with strict server side price verification for an easy and reliable shopping experience.",
       "codeSnippet": "// ANTHO Edge Middleware Cryptographic Route Protection\nexport async function middleware(req: NextRequest) {\n  const token = req.cookies.get('antho_admin_token')?.value;\n  if (!token || !(await verifyHmacToken(token, process.env.ADMIN_SECRET!))) {\n    return NextResponse.redirect(new URL('/login', req.url));\n  }\n  return NextResponse.next();\n}",
-      "result": "Deployed in production on Vercel and custom domain (anthosyllogi.xyz) with sub-second page loads and seamless mobile UX.",
-      "lesson": "High fashion demands high discipline. Minimalist user interfaces must be backed by uncompromising cryptographic boundaries."
+      "result": "Deployed in production on Vercel with instant page loads, smooth mobile browsing, and automated checkout test coverage.",
+      "lesson": "Simpler navigation helps shoppers find items faster. Showing collections visually is far more intuitive than complex text menus."
     }
   },
   {
@@ -546,8 +542,8 @@ export const projectsData = [
     "code": "07",
     "slug": "abraham-collection-atelier",
     "title": "Abraham Collection",
-    "subtitle": "Bespoke Fashion Atelier & Digital Tailoring Platform",
-    "category": "Luxury Commerce",
+    "subtitle": "Bespoke Fashion Atelier & Digital Tailoring Showcase",
+    "category": "Fashion & Commerce",
     "filterCategory": "commerce",
     "year": "2026",
     "featured": true,
@@ -570,7 +566,7 @@ export const projectsData = [
       }
     ],
     "summary": "Founded in 2002 in Lagos, Abraham Collection has dressed generations of leaders in bespoke garments that fit with dignity. This digital atelier brings that physical craftsmanship to the web, letting clients explore hand stitched fabrics, study garment details, and book custom bespoke fittings with warmth and ease.",
-    "role": "Lead Full Stack Architect & Atelier Web Engineer",
+    "role": "Full Stack Web Engineer",
     "status": "Live in Production",
     "techStack": [
       "Next.js 14",
@@ -593,7 +589,7 @@ export const projectsData = [
       },
       {
         "label": "Offline Support",
-        "value": "Full PWA Cache"
+        "value": "PWA Offline Cache"
       }
     ],
     "powHighlights": [
@@ -630,25 +626,25 @@ export const projectsData = [
     "code": "08",
     "slug": "siphoon-quantitative-os",
     "title": "SIPHOON OS",
-    "subtitle": "Personal Forex Intelligence, Quantitative Journal & Decision Engine",
-    "category": "Quantitative Systems",
+    "subtitle": "Forex Trade Journal & Risk Management Dashboard",
+    "category": "Financial Tools",
     "filterCategory": "fintech",
     "year": "2026",
     "featured": true,
-    "badge": "Quantitative Workstation",
+    "badge": "Personal Trading Tool",
     "coverImage": null,
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [],
-    "summary": "Comprehensive Forex intelligence, trade journaling, and quantitative decision-support operating system built with Next.js 15, TypeScript, lightweight-charts, PostgreSQL, and Prisma. Features real-math pip/Kelly risk calculators, currency correlation heatmaps, and AI trade review copilot.",
-    "role": "Quantitative Systems Engineer & Architect",
-    "status": "Production Workstation",
+    "summary": "A personal Forex trade journal and risk calculator web app built with Next.js 15, TypeScript, PostgreSQL, Prisma, and TradingView lightweight charts. Helps currency traders calculate position lot sizes using the Kelly criterion, log trade entries with screenshots, and track rule discipline.",
+    "role": "Full Stack Engineer",
+    "status": "Personal Trading Tool",
     "techStack": [
       "Next.js 15",
       "TypeScript",
       "PostgreSQL",
       "Prisma",
-      "lightweight-charts",
+      "lightweight charts",
       "Tailwind CSS",
       "Docker"
     ],
@@ -656,49 +652,49 @@ export const projectsData = [
     "demoUrl": null,
     "metrics": [
       {
-        "label": "Chart Performance",
-        "value": "60 FPS Canvas"
+        "label": "Chart Display",
+        "value": "Lightweight Charts"
       },
       {
-        "label": "Math Engine",
-        "value": "Kelly & Ruin Risk"
+        "label": "Risk Formulas",
+        "value": "Kelly & Pip Math"
       },
       {
-        "label": "Telemetry",
-        "value": "Live Correlation Heatmap"
+        "label": "Trade Journal",
+        "value": "Prisma & PostgreSQL"
       }
     ],
     "powHighlights": [
-      "Analytical quantitative calculators for Kelly criterion optimal bet sizing, pip value, and risk of ruin",
-      "Hardware-accelerated 60 FPS multi-timeframe candlestick chart rendering with lightweight-charts",
-      "Integrated AI trade reviewer evaluating behavioral risk, pre-trade checklists, and strategy discipline"
+      "Calculates lot sizes, pip values, and risk of ruin fractions before opening trades",
+      "Candlestick charts using TradingView lightweight charts for responsive multi timeframe viewing",
+      "Structured trade journal logging entry screenshots, trade reasoning, and emotional discipline notes"
     ],
     "caseStudy": {
-      "overview": "SIPHOON OS is a dedicated personal trading operating system designed to eliminate emotional bias and enforce mathematical rigor across Forex risk management, journal logging, and strategy tracking.",
-      "problem": "Retail traders suffer 90%+ failure rates due to uncontrolled position sizing, emotional revenge trading, and lack of systemic post-trade mathematical audits.",
-      "idea": "Build a unified trading command center integrating real-math quantitative risk engines (Kelly criterion, probability of ruin), 60 FPS TradingView-grade canvas charting, and an AI trade review copilot.",
+      "overview": "SIPHOON OS is a personal trading journal and position calculator built to enforce consistent risk limits and eliminate emotional impulsive trading.",
+      "problem": "Many retail currency traders struggle because they calculate lot sizes by guesswork and fail to record trade reasoning, leading to emotional revenge trades and account drawdowns.",
+      "idea": "Build a single dashboard that calculates mathematical risk limits before each entry and logs trades with required rules checklists and screenshot evidence.",
       "architecture": [
         {
-          "tier": "Real-Math Quantitative Engine",
-          "desc": "Deterministic calculations for exact pip sizing, expectancy ratios, Kelly fractions, and multi-drawdown limits."
+          "tier": "Position Risk Calculator",
+          "desc": "Client side math computing position sizes based on stop loss distance, account balance, and Kelly risk limits."
         },
         {
-          "tier": "Lightweight Canvas Charting",
-          "desc": "Hardware-accelerated 60 FPS multi-timeframe candlestick charts with zero React DOM re-render drag."
+          "tier": "Lightweight Candlestick Charts",
+          "desc": "Canvas based charts for viewing price action cleanly across multiple timeframes."
         },
         {
-          "tier": "Structured Decision Journal",
-          "desc": "Prisma-backed trade ledger enforcing pre-trade checklists, emotional state tags, and image evidence logs."
+          "tier": "PostgreSQL Trade Journal",
+          "desc": "Prisma models storing entries, exits, setup screenshots, and trade notes for post trade reviews."
         },
         {
-          "tier": "AI Behavioral Auditor",
-          "desc": "Provider-agnostic AI agent analyzing closed trades against declared strategy rules to flag discipline deviations."
+          "tier": "Rule Discipline Checklist",
+          "desc": "Pre trade checklist verifying setup conditions before marking a planned trade as approved."
         }
       ],
-      "breakthrough": "Sub-millisecond execution of complex quantitative risk models directly in browser client state without server roundtrips.",
+      "breakthrough": "Instant client side lot sizing calculation, making it effortless to size positions accurately without spreadsheets.",
       "codeSnippet": "// SIPHOON OS \u2014 Kelly Criterion & Risk of Ruin Engine\nexport function calculateKellyCriterion(winRate: number, rewardRiskRatio: number): number {\n  const p = winRate;\n  const q = 1 - winRate;\n  const b = rewardRiskRatio;\n  const kelly = (b * p - q) / b;\n  return Math.max(0, kelly); // Fractional Kelly clamping\n}",
-      "result": "Engineered production workstation scaffold with 100% type-safe Prisma schema, quantitative calculator test suite, and command center.",
-      "lesson": "Consistent profitability in financial markets is not about forecasting the future; it is about ruthless risk sizing and behavioral discipline enforced by software."
+      "result": "Personal workstation with type safe Prisma schemas and quantitative calculators for daily trade logging.",
+      "lesson": "Trading success comes from disciplined risk management and honest trade reviews rather than emotional predictions."
     }
   },
   {
@@ -716,8 +712,8 @@ export const projectsData = [
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [],
-    "summary": "3D bespoke luxury fashion commerce platform connecting bespoke tailors with global patrons through interactive 3D spatial mannequins and milestone escrow, an unfinished prototype that Abraham has been developing recently.",
-    "role": "Lead Spatial & Systems Engineer",
+    "summary": "An unfinished 3D digital tailoring prototype Abraham has been developing recently. Explores interactive WebGL mannequins in Three.js and a milestone escrow concept to help bespoke tailors showcase garments and agree on production stages with clients.",
+    "role": "3D & Systems Engineer",
     "status": "Unfinished Prototype (Active R&D)",
     "techStack": [
       "Three.js",
@@ -735,36 +731,36 @@ export const projectsData = [
         "value": "Unfinished Prototype"
       },
       {
-        "label": "Measurement Accuracy",
-        "value": "98.5%"
+        "label": "3D Rendering",
+        "value": "Three.js WebGL"
       },
       {
-        "label": "Escrow Stages",
+        "label": "Escrow Concept",
         "value": "3 Milestones"
       }
     ],
     "powHighlights": [
-      "Parametric Three.js WebGL mannequin with customizable height, bust, waist, and drape physics",
-      "Automated 3-stage milestone escrow architecture to protect tailors and global patrons",
-      "Realistic textile shader rendering authentic African Adire wax print textures and gravity dynamics"
+      "Interactive Three.js 3D mannequin allowing users to preview garment silhouettes in the browser",
+      "Milestone escrow payment concept holding funds until fabric sourcing and sewing milestones are approved",
+      "Experimented with textile drape shaders for showcasing African wax print fabrics"
     ],
     "caseStudy": {
-      "overview": "LOOM is an unfinished prototype eliminating measurement mismatches and payment security friction for bespoke fashion through real-time spatial interfaces.",
-      "problem": "Traditional bespoke tailoring relies on error-prone tape measurements, resulting in high return rates and lack of payment security across borders.",
-      "idea": "Combine an interactive Three.js 3D spatial mannequin with milestone-based escrow payouts triggered on fabric verification, construction, and delivery.",
+      "overview": "LOOM is an unfinished 3D spatial prototype exploring how web graphics and phased escrow milestones can help custom tailors connect with clients.",
+      "problem": "Ordering custom clothing online often leads to miscommunicated fit expectations and trust issues around upfront deposits.",
+      "idea": "Combine an interactive 3D browser mannequin for previewing garment cuts with a phased milestone payment escrow releasing funds upon client approval.",
       "architecture": [
         {
-          "tier": "3D Spatial Mannequin",
-          "desc": "Parametric 3D mannequin rendering in WebGL with realistic textile draping."
+          "tier": "Three.js 3D Mannequin",
+          "desc": "Interactive 3D model in the browser allowing clients to rotate and view garment fits."
         },
         {
-          "tier": "Milestone Escrow Pipeline",
-          "desc": "Automated fund release in 3 verified phases: Fabric Sourced -> Cut & Sew -> Delivery Verified."
+          "tier": "Milestone Escrow Logic",
+          "desc": "Phased fund release concept dividing orders into fabric sourcing, tailoring, and final delivery."
         }
       ],
-      "breakthrough": "Seamless WebGL rendering in React with zero mobile frame drops, coupled with secure payment state verification.",
-      "result": "Engineered functional 3D luxury commerce prototype as an ongoing spatial exploration with validated merchant and patron pilot workflows.",
-      "lesson": "Spatial interfaces must serve a concrete economic purpose; 3D visualization combined with financial trust unlocks global luxury commerce."
+      "breakthrough": "Lightweight 3D model rendering in the browser without requiring external plugins or heavy downloads.",
+      "result": "Ongoing spatial exploration prototype with basic 3D mannequin controls and milestone escrow specifications.",
+      "lesson": "3D visualization on the web is most valuable when tied to practical customer needs like fit clarity and payment trust."
     }
   },
   {
@@ -772,7 +768,7 @@ export const projectsData = [
     "code": "10",
     "slug": "kucheza-gaming-esports",
     "title": "Kucheza Gaming",
-    "subtitle": "Esports Operations, 3D Tournament Staging & Enterprise Decks",
+    "subtitle": "3D Tournament Arena Modeling & Esports Sponsorship Presentations",
     "category": "3D & Spatial",
     "filterCategory": "spatial",
     "year": "2025",
@@ -795,8 +791,8 @@ export const projectsData = [
         "title": "Official Kucheza Gaming Identity"
       }
     ],
-    "summary": "Six month industrial training in gaming pipelines, 3D interactive tournament stage design in Blender, and corporate sponsorship presentations. Engineered high stakes spatial presentation systems for leading telecommunications and consumer brand partnerships.",
-    "role": "R&D Engineer & 3D Staging Designer",
+    "summary": "Six month industrial training focused on 3D tournament stage modeling in Blender, tournament bracket operations, and structured sponsorship presentation decks for corporate partners.",
+    "role": "3D Staging & Esports Operations Intern",
     "status": "Completed October 2025",
     "techStack": [
       "3D Staging",
@@ -813,36 +809,36 @@ export const projectsData = [
         "value": "6 Months"
       },
       {
-        "label": "Partner Systems",
-        "value": "Enterprise Partnerships"
+        "label": "3D Staging",
+        "value": "Blender Arena Models"
       },
       {
-        "label": "Staging Scope",
-        "value": "Arena & Exhibition Staging"
+        "label": "Operations",
+        "value": "Tournament Brackets"
       }
     ],
     "powHighlights": [
-      "3D tournament arena stage architectural design rendered in Blender with realistic concert lighting",
-      "Spatial presentation systems engineered for corporate sponsorship partnerships",
-      "Real-time tournament bracket workflows and player telemetry integration for esports operations"
+      "Modeled 3D tournament stages and arena lighting setups in Blender for event visualizations",
+      "Created visual sponsorship decks translating tournament gaming data for corporate sponsors",
+      "Assisted in running tournament bracket logistics and operational schedules during live competitions"
     ],
     "caseStudy": {
-      "overview": "Bridging the gap between gaming entertainment, corporate sponsorship systems, and physical event staging in the African esports ecosystem.",
-      "problem": "Traditional esports events struggle to present clear ROI and immersive physical presence to tier 1 enterprise sponsors.",
-      "idea": "Engineer 3D spatial tournament stage mockups and structured sponsorship architecture decks translating gaming metrics into corporate impact.",
+      "overview": "A six month university industrial training internship at Kucheza Gaming focused on physical esports stage visualization and partner presentation materials.",
+      "problem": "Esports organizers often find it hard to help sponsors visualize arena stages and tournament value before the event is built.",
+      "idea": "Use Blender to build 3D virtual stages showing sponsor banners, spectator seating, and lighting, paired with clear data slides.",
       "architecture": [
         {
-          "tier": "3D Event Staging",
-          "desc": "Interactive 3D booth and tournament stage designs prepared in Blender for high-impact spatial visualization."
+          "tier": "3D Arena Stage Models",
+          "desc": "Built architectural stage layouts and lighting mockups in Blender."
         },
         {
-          "tier": "Corporate Pitch Engineering",
-          "desc": "Data-driven sponsorship pitch decks engineered for premier corporate partner brands."
+          "tier": "Sponsorship Decks",
+          "desc": "Created presentation decks explaining audience reach and event schedules to corporate sponsors."
         }
       ],
-      "breakthrough": "Successfully delivered spatial 3D stage and keynote presentations for corporate partner retreats.",
-      "result": "Completed 6-month intensive training program on October 2, 2025.",
-      "lesson": "Great engineering requires great communication; technical systems must translate clearly to business stakeholders."
+      "breakthrough": "Delivered realistic 3D stage mockups that helped sponsors clearly see booth placements before physical construction.",
+      "result": "Completed 6 month intensive industrial training program in October 2025.",
+      "lesson": "Clear visual communication helps stakeholders understand complex technical and physical event designs before construction begins."
     }
   },
   {
@@ -850,7 +846,7 @@ export const projectsData = [
     "code": "11",
     "slug": "codeplay-naija-edutech",
     "title": "CodePlay Naija",
-    "subtitle": "Digital Literacy, Gamified STEM & Playful Computing",
+    "subtitle": "Practical Computing & Introductory Programming for Secondary Schools",
     "category": "Education & Impact",
     "filterCategory": "education",
     "year": "2025",
@@ -860,8 +856,8 @@ export const projectsData = [
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [],
-    "summary": "Practical computing curriculum empowering Nigerian secondary school educators and students with computational thinking skills through visual programming, embedded hardware, and Python progression.",
-    "role": "Curriculum Architect & Lead Instructor",
+    "summary": "A hands on computing curriculum and workshop series introducing Nigerian secondary school students to practical programming. Uses visual blocks, BBC Micro:bit hardware, and basic Python so students create real games and circuits rather than memorizing definitions.",
+    "role": "Curriculum Designer & Workshop Instructor",
     "status": "Deployed Initiative",
     "techStack": [
       "Construct 3",
@@ -875,35 +871,43 @@ export const projectsData = [
     "metrics": [
       {
         "label": "Students Reached",
-        "value": "200+"
+        "value": "200+ Students"
       },
       {
-        "label": "Completion Rate",
-        "value": "92%"
+        "label": "Curriculum Stages",
+        "value": "Blocks to Python"
       },
       {
-        "label": "Curriculum Tiers",
-        "value": "3 Stages"
+        "label": "Hardware Tools",
+        "value": "BBC Micro:bit"
       }
     ],
     "powHighlights": [
-      "Engineered interactive 3-stage learning roadmap transitioning students from visual logic to Python code",
-      "Trained 200+ students and teachers across Nigerian secondary school computer laboratories",
-      "Demonstrated 92% project completion rate in hands-on game creation and hardware workshops"
+      "Structured lessons guiding students step by step from visual block programming to text code in Python",
+      "Taught hands on coding workshops to over 200 secondary students across school computer labs",
+      "Included physical microcontroller projects with BBC Micro:bit to make computing tangible and engaging"
     ],
     "caseStudy": {
-      "overview": "Addresses the critical gap in practical Nigerian secondary computer science education through visual programming, embedded hardware, and gamified logic.",
-      "problem": "Traditional computing classes in Nigeria rely on rote memorization of theoretical terms without hands-on digital creation.",
-      "idea": "A structured 3-tier roadmap taking students from visual block logic (Blockly) to physical computing (Micro:bit) to text-based Python.",
+      "overview": "CodePlay Naija is an educational initiative introducing practical programming skills to Nigerian secondary school students through interactive projects.",
+      "problem": "Many secondary school computing classes teach definitions from textbooks without students writing code or building software.",
+      "idea": "Design project based lessons using visual blocks, interactive microcontrollers, and beginner Python so students learn by building games and tools.",
       "architecture": [
         {
-          "tier": "Digital Starter -> Expert Roadmap",
-          "desc": "Tiered progression taking students from visual block logic to microcontroller hardware and text-based Python."
+          "tier": "Visual Programming Foundations",
+          "desc": "Introduces logic, loops, and conditions through block based game creation."
+        },
+        {
+          "tier": "Physical Hardware Exploration",
+          "desc": "Connects BBC Micro:bit boards to teach inputs, sensors, and hardware control."
+        },
+        {
+          "tier": "Introduction to Python",
+          "desc": "Transitions students to basic text syntax for simple scripts and problem solving."
         }
       ],
-      "breakthrough": "Trained 200+ students and educators with 92% project completion rates in game creation workshops.",
-      "result": "Implemented across multiple secondary school computer laboratories in Nigeria.",
-      "lesson": "Empowerment occurs when theoretical concepts immediately produce tangible, interactive digital artifacts."
+      "breakthrough": "Helped over 200 students write their very first working programs and games directly on lab computers.",
+      "result": "Conducted interactive computing workshops across secondary school laboratories in Nigeria.",
+      "lesson": "Students learn computer science best when they can see their code take action immediately on screen or hardware."
     }
   },
   {
@@ -911,18 +915,18 @@ export const projectsData = [
     "code": "12",
     "slug": "creative-direction-fine-art",
     "title": "Pointillism & Fine Art Studio",
-    "subtitle": "Archival Ink Masterworks & Spectrum Ori Art Exhibition",
+    "subtitle": "Archival Ink Drawing & Spectrum Ori Art Exhibition",
     "category": "Design & Fine Art",
     "filterCategory": "art",
-    "year": "2024\u201326",
+    "year": "2024 · 2026",
     "featured": false,
-    "badge": "Exhibited Masterworks",
+    "badge": "Exhibited Artworks",
     "coverImage": null,
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [],
-    "summary": "Creative direction, visual brand systems, and original pointillism ink artworks ('Illusion of Freedom', 'Morayo') selected and curated for the prestigious Spectrum Ori Art Exhibition.",
-    "role": "Creative Director & Fine Artist",
+    "summary": "Original pointillism ink artworks ('Illusion of Freedom' and 'Morayo') created with archival micron pens and curated for the Spectrum Ori Art Exhibition in Lagos. Uses extreme patience across hundreds of thousands of deliberate ink dots, directly shaping Abraham's focus and discipline in software engineering.",
+    "role": "Fine Artist",
     "status": "Ongoing Studio Practice",
     "techStack": [
       "Pointillism Ink",
@@ -943,28 +947,28 @@ export const projectsData = [
         "value": "Archival Ink 005"
       },
       {
-        "label": "Curated Works",
-        "value": "2 Masterpieces"
+        "label": "Curated Artworks",
+        "value": "2 Works Selected"
       }
     ],
     "powHighlights": [
       "Original pointillist artworks 'Illusion of Freedom' and 'Morayo' curated and exhibited at Spectrum Ori",
-      "Over 250,000 individual micron ink stipples per composition creating continuous tonal realism",
-      "Directly informs Abraham's software architecture: rigorous patience, modular construction, and spatial harmony"
+      "Hundreds of thousands of individual micron ink stipples per composition creating continuous tonal realism",
+      "Physical craft discipline shaping software development: patience, attention to detail, and focus"
     ],
     "caseStudy": {
-      "overview": "The discipline of fine art and brand architecture directly informs software design \u2014 teaching precision, restraint, negative space, and visual rhythm.",
-      "problem": "Connecting traditional craftsmanship with contemporary digital identities without losing authenticity.",
-      "idea": "Use the pointillist philosophy (composing complex form from hundreds of thousands of discrete ink dots) as a foundational metaphor for modular software architecture.",
+      "overview": "Fine art pointillism in ink requires absolute dedication, steady focus, and deliberate placement where mistakes cannot be erased.",
+      "problem": "Modern digital design often relies on hasty iterations without the deep patience needed for clean, enduring craft.",
+      "idea": "Practice pointillism (rendering complex human expressions through thousands of individual pen dots) as a discipline that trains mental focus for clean systems engineering.",
       "architecture": [
         {
-          "tier": "Pointillism Practice",
-          "desc": "Constructing complex human emotional forms from hundreds of thousands of deliberate ink dots, demanding extreme patience and focus."
+          "tier": "Ink Pointillism Technique",
+          "desc": "Building human forms and deep values from individual ink dots using 005 micron pens on archival paper."
         }
       ],
-      "breakthrough": "Masterpieces 'Illusion of Freedom' and 'Morayo' curated and exhibited at the Spectrum Ori Art Exhibition.",
-      "result": "Enduring aesthetic philosophy that guides all digital products and user interfaces engineered by Abraham.",
-      "lesson": "Extreme patience in physical craft builds the mental tolerance required for complex, zero-error systems architecture."
+      "breakthrough": "Artworks 'Illusion of Freedom' and 'Morayo' selected and exhibited at the Spectrum Ori Art Exhibition.",
+      "result": "A disciplined creative practice that brings visual balance, patience, and care to every software interface.",
+      "lesson": "Extreme patience in physical craft builds the mental focus required for writing reliable, disciplined software."
     }
   },
   {
@@ -991,8 +995,8 @@ export const projectsData = [
         "title": "Meme Battle Mobile Portrait Battle UI & Sticker Arsenal"
       }
     ],
-    "summary": "Fast-paced 1v1 multiplayer party game engineered with interactive scenario reactions, searchable sticker and GIF arsenal with emotion filters, procedural Web Audio synthesizer, and live audience voting with AI referee scoring.",
-    "role": "Lead Game Designer, Audio Architect & Full-Stack Engineer",
+    "summary": "A fast paced 1v1 browser party game where players react to funny prompts with memes and stickers. Built with React 19, TypeScript, Vite, Tailwind CSS, a procedural Web Audio sound synthesizer, and a lightweight Gemini API prompt that rates humor and timing.",
+    "role": "Game Designer & Full Stack Engineer",
     "status": "Live in Production",
     "techStack": [
       "React 19",
@@ -1007,45 +1011,45 @@ export const projectsData = [
     "demoUrl": "https://meme-battle-zeta.vercel.app",
     "metrics": [
       {
-        "label": "Scenario Library",
+        "label": "Scenarios",
         "value": "150+ Situations"
       },
       {
-        "label": "Audio Engine",
-        "value": "100% Web Audio"
+        "label": "Sound Design",
+        "value": "Procedural Web Audio"
       },
       {
         "label": "AI Referee",
-        "value": "3-Scale Context AI"
+        "value": "Gemini API Scoring"
       }
     ],
     "powHighlights": [
-      "Engineered a fast paced party game where players clash in witty meme duels across five rounds",
-      "Designed a procedural sound synthesizer using the Web Audio API with zero audio file lag",
-      "Built an intelligent referee using Gemini AI that rates humor, context fit, and reaction timing"
+      "Fast paced party game where players duel with stickers and memes across five rounds",
+      "Procedural sound synthesizer using the Web Audio API with zero audio file download lag",
+      "AI referee using Gemini API to score joke relevance, humor, and reaction timing"
     ],
     "caseStudy": {
-      "overview": "Meme Battle (Sticker Clash) is a high-speed interactive web party game where players compete in real-time meme duels across five rounds.",
-      "problem": "Party games frequently struggle with slow card selection, clunky mobile controls, and repetitive joke fatigue.",
-      "idea": "Engineer a rapid mobile-first battle screen combining instant emotion filters, procedural Web Audio sweeps, and synchronized card reveals.",
+      "overview": "Meme Battle is an interactive web party game where two players compete in quick meme duels across five rounds.",
+      "problem": "Online party games often suffer from slow card loading, clunky mobile layouts, and awkward pauses between rounds.",
+      "idea": "Build a fast, mobile friendly game interface with quick emotion filters, instant card reveals, and synthesized browser sound effects.",
       "architecture": [
         {
-          "tier": "Core Battle Loop",
-          "desc": "Strict round state transitions: Matchmaking -> Selecting -> Locked In -> Synchronous Reveal -> Live Voting -> Review."
+          "tier": "Round Game Loop",
+          "desc": "Smooth round progression through matchmaking, selection, reveal, voting, and score calculation."
         },
         {
           "tier": "Procedural Web Audio Engine",
-          "desc": "Zero-latency mathematical synthesis producing audio sweeps, tension countdown ticks, and fanfare without external audio files."
+          "desc": "Synthesizes beeps, countdown ticks, and victory chimes directly in browser code without downloading audio files."
         },
         {
-          "tier": "AI Referee & Review Engine",
-          "desc": "Contextual 3-bar evaluation scoring context fit, humor impact, and reaction timing."
+          "tier": "AI Referee Scoring",
+          "desc": "Lightweight Gemini API prompt evaluating how well player stickers match each round prompt."
         }
       ],
-      "breakthrough": "Achieved sub-second sticker filtering and seamless real-time audience voting with 100% procedural sound synthesis.",
+      "breakthrough": "Created an instant, responsive party game with procedural sound synthesis and zero audio download overhead.",
       "codeSnippet": "// Meme Battle Procedural Sound Synthesizer\nclass SoundEffectsEngine {\n  playLock() {\n    const ctx = this.getContext();\n    [330, 440, 660].forEach((freq, i) => {\n      const osc = ctx.createOscillator();\n      const gain = ctx.createGain();\n      osc.frequency.setValueAtTime(freq, ctx.currentTime + i * 0.04);\n      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + i * 0.04 + 0.12);\n      osc.connect(gain); gain.connect(ctx.destination);\n      osc.start(ctx.currentTime + i * 0.04); osc.stop(ctx.currentTime + i * 0.04 + 0.12);\n    });\n  }\n}",
-      "result": "Deployed in production on Vercel with responsive desktop and mobile viewports.",
-      "lesson": "Party game magic lives in the speed of interaction. Eliminate decision friction and the comedy takes care of itself."
+      "result": "Deployed in production on Vercel with smooth support for both desktop and mobile screens.",
+      "lesson": "Party game fun depends on speed and momentum. Removing lag and decision friction lets the humor shine."
     }
   }
 ];

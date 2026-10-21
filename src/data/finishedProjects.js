@@ -131,11 +131,11 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
     id: "stelcera-terminal",
     code: "02",
     title: "STELCERA Terminal",
-    subtitle: "High Speed Financial Analytics and Trading Workstation",
+    subtitle: "Financial Charting Workstation & Options Risk Calculator",
     category: "Fintech & Quant",
     filterCategory: "fintech",
     year: "2026",
-    statusBadge: "Production Workstation",
+    statusBadge: "Financial Workstation",
     featured: true,
     coverImage: "/media/stelcera_terminal.jpg",
     videoUrl: null,
@@ -146,20 +146,20 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
         title: "STELCERA Quantitative Terminal Desk"
       }
     ],
-    summary: "A lightning fast workstation for financial analytics and market research. Runs smoothly at 120 frames per second without stutter, helping analysts understand risk across 105 trading desks in real time.",
-    role: "Full Stack Quantitative Systems Architect",
+    summary: "A high speed workstation for financial analytics, candlestick charting, and options math. Renders market moves at 120 frames per second on HTML5 Canvas without stutter, calculating Black Scholes options Greeks in under fifteen milliseconds.",
+    role: "Full Stack Engineer",
     techStack: ["Next.js 15", "React 19", "FastAPI", "WebSockets", "HTML5 Canvas", "Python", "NumPy"],
     github: "https://github.com/abraham-DT/stelcera-terminal",
     demoUrl: null,
     metrics: [
-      { label: "Operational Desks", value: "105 Desks" },
-      { label: "Render Frame Rate", value: "120 FPS" },
-      { label: "Data Stream Speed", value: "< 15ms" }
+      { label: "Chart Frame Rate", value: "120 FPS Canvas" },
+      { label: "Options Math", value: "Black Scholes" },
+      { label: "Data Streaming", value: "FastAPI WebSockets" }
     ],
     finishedHighlights: [
-      "Engineered chart screens that stay silky smooth at 120 frames per second during heavy market swings.",
-      "Built smart analytical assistants to scan trends across 105 financial desks.",
-      "Calculated investment risk scores in less than fifteen milliseconds."
+      "Engineered chart screens that stay silky smooth at 120 frames per second during heavy price changes.",
+      "Built analytical tools to calculate Black Scholes options Greeks and market depth.",
+      "Streamed live tick updates smoothly over WebSockets to client charting panels."
     ],
     thinkingTree: {
       root: {
@@ -177,14 +177,14 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
           steps: [
             {
               num: "02A",
-              title: "Instant Math Risk Engine",
-              detail: "Programmed risk calculators that evaluate market odds in less than fifteen milliseconds.",
+              title: "Options Greeks Risk Math",
+              detail: "Programmed client side risk calculators that compute Delta, Gamma, Vega, Theta, and Rho in milliseconds.",
               tech: "Python & NumPy"
             },
             {
               num: "02B",
-              title: "Live Data Streamer",
-              detail: "Broadcasted live market updates across one hundred and five research desks simultaneously.",
+              title: "WebSocket Price Streamer",
+              detail: "Broadcasted simulated live market updates smoothly without slow HTTP polling.",
               tech: "FastAPI"
             }
           ]
@@ -219,10 +219,10 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Peace of Mind Under Market Pressure",
+        title: "Responsive Quantitative Charting Desk",
         metric: "120 FPS",
-        detail: "Combined deep mathematical models with responsive visual beauty into a dependable financial trading desk.",
-        tag: "Production Workstation"
+        detail: "Combined Black Scholes mathematical models with fluid 120 FPS canvas charts into an intuitive trading workstation.",
+        tag: "Financial Workstation"
       }
     },
     caseStudy: {
@@ -378,7 +378,7 @@ router.post('/webhook/korapay', async (req, res) => {
     id: "news-insights",
     code: "04",
     title: "News Insights",
-    subtitle: "Calm Investigative Journalism and Media Publishing Platform",
+    subtitle: "Investigative Journalism and Media Publishing Platform",
     category: "Media & Intelligence",
     filterCategory: "media",
     year: "2026",
@@ -409,18 +409,18 @@ router.post('/webhook/korapay', async (req, res) => {
         title: "World Affairs & International Bureau"
       }
     ],
-    summary: "A calm digital sanctuary for investigative journalism and media intelligence. Built without distracting ads or noisy popups, letting readers immerse themselves in deep stories that open instantly.",
-    role: "Lead Full Stack and Security Engineer",
+    summary: "A calm digital sanctuary for investigative journalism and news publishing. Built with Next.js 15, Supabase, TipTap rich text, and Tailwind CSS, hardened against common web application vulnerabilities with clean typography and Google OAuth.",
+    role: "Full Stack and Security Engineer",
     techStack: ["Next.js 15", "TypeScript", "Tailwind CSS", "Supabase", "Zustand", "TipTap", "OAuth 2.0"],
     github: "https://github.com/abraham-DT/news-insights",
     demoUrl: "https://news-insights-abrahamtoluwani999-6423s-projects.vercel.app",
     metrics: [
-      { label: "Security Defense", value: "75 Risks Defended" },
-      { label: "Article Delivery", value: "Instant Edge" },
-      { label: "Reader Sanctuary", value: "Zero Ad Noise" }
+      { label: "Security Review", value: "Audited Web Security" },
+      { label: "Data Storage", value: "Supabase PostgreSQL" },
+      { label: "Authentication", value: "Google OAuth & RLS" }
     ],
     finishedHighlights: [
-      "Shielded reader accounts and editorial articles against 75 common web security risks.",
+      "Shielded reader accounts and editorial articles against common web security risks.",
       "Crafted a peaceful reading modal with soft visual blur and effortless one tap login.",
       "Optimized news stories to open immediately from search engines on any device."
     ],
@@ -440,8 +440,8 @@ router.post('/webhook/korapay', async (req, res) => {
           steps: [
             {
               num: "02A",
-              title: "Seventy Five Point Security Defense",
-              detail: "Audited the entire database and user login against seventy five major web vulnerability standards.",
+              title: "Input Sanitization and RLS",
+              detail: "Audited database tables and user logins with strict Row Level Security to keep editorial drafts protected.",
               tech: "Supabase RLS"
             },
             {
@@ -482,8 +482,8 @@ router.post('/webhook/korapay', async (req, res) => {
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "A Sanctuary for Honest Journalism",
-        metric: "75 Audits",
+        title: "Clean and Secure Publishing Platform",
+        metric: "Audited RLS",
         detail: "Gives readers a safe, respectful environment to learn, reflect, and stay informed on world events.",
         tag: "Live in Production"
       }
@@ -503,8 +503,8 @@ USING (status = 'published' AND published_at <= NOW());`
     id: "antho",
     code: "05",
     title: "ANTHO",
-    subtitle: "Avant Garde Luxury Streetwear Storefront and Digital Vault",
-    category: "Commerce & Logistics",
+    subtitle: "Avant Garde Streetwear Storefront and Digital Lookbook",
+    category: "Streetwear & Commerce",
     filterCategory: "commerce",
     year: "2026",
     statusBadge: "Live in Production",
@@ -534,20 +534,20 @@ USING (status = 'published' AND published_at <= NOW());`
         title: "Brand Heritage & Haute Couture Vision"
       }
     ],
-    summary: "A luxury youth fashion portal and digital archive. Replaces boring web menus with high impact visual discovery, letting visitors explore garment textures and capsule releases with effortless grace.",
-    role: "Lead Full Stack and Product Engineer",
+    summary: "An avant garde streetwear storefront and lookbook built with Next.js 15, React 19, Tailwind CSS, Prisma, and Paystack. Designed with image first portal navigation for effortless browsing, protected admin routes, and Playwright automated tests for reliable cart and checkout flows.",
+    role: "Full Stack Engineer",
     techStack: ["Next.js 15", "React 19", "Tailwind CSS", "Prisma", "Paystack", "Playwright", "Web Crypto"],
     github: "https://github.com/abraham-DT/antho",
     demoUrl: "https://antho-rho.vercel.app",
     metrics: [
-      { label: "Visual Clarity", value: "Image First" },
-      { label: "Vault Catalog", value: "4 Capsules" },
-      { label: "Checkout Tests", value: "100% Pass" }
+      { label: "Navigation", value: "Visual Portals" },
+      { label: "Catalog", value: "4 Collection Hubs" },
+      { label: "Testing", value: "Playwright Suites" }
     ],
     finishedHighlights: [
-      "Guarded administrative collection drops using secure digital keys and edge barriers.",
-      "Redesigned the fashion catalog around human curiosity so exploring clothes feels natural.",
-      "Verified every step of the checkout flow with automated shopping simulations."
+      "Middleware protecting admin routes with cryptographic session token verification.",
+      "Visual navigation layout guiding shoppers across core collections without confusing dropdowns.",
+      "Server side price recalculation with Paystack webhook verification to prevent tampering."
     ],
     thinkingTree: {
       root: {
@@ -565,15 +565,15 @@ USING (status = 'published' AND published_at <= NOW());`
           steps: [
             {
               num: "02A",
-              title: "Edge Gatekeeper for Exclusive Drops",
-              detail: "Secured private runway drops and stock changes behind strict edge server security checks.",
+              title: "Protected Admin Middleware",
+              detail: "Validates session tokens on administrative routes before allowing access to inventory and settings.",
               tech: "Web Crypto & Next.js"
             },
             {
               num: "02B",
-              title: "Speedy High Fashion Gallery",
-              detail: "Compressed editorial photography to display runway collections in a fraction of a second.",
-              tech: "Vercel Edge"
+              title: "Server Validated Cart",
+              detail: "Recalculates item subtotals on the server before initializing payments to guarantee price accuracy.",
+              tech: "Prisma & Paystack"
             }
           ]
         },
@@ -590,7 +590,7 @@ USING (status = 'published' AND published_at <= NOW());`
             },
             {
               num: "03B",
-              title: "The Vault Editorial Lookbook",
+              title: "Editorial Lookbook Showcase",
               detail: "Designed a quiet dark gallery where patrons can inspect garment silhouettes and fabric weaves.",
               tech: "Tailwind CSS"
             }
@@ -601,15 +601,15 @@ USING (status = 'published' AND published_at <= NOW());`
         stage: "04",
         label: "Fast Shipping & Field Delivery",
         title: "Automated Checkout Rehearsals",
-        description: "Simulated thousands of complete checkouts automatically to guarantee that shopping is smooth and reliable.",
+        description: "Simulated complete checkouts automatically with Playwright to guarantee that shopping is smooth and reliable.",
         tag: "FDE Deployment"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Haute Couture Meets Modern Web Speed",
-        metric: "100% Pass",
-        detail: "Delivered an avant garde fashion platform that pairs runway elegance with rock solid web engineering.",
+        title: "Modern Streetwear Lookbook and Storefront",
+        metric: "Playwright E2E",
+        detail: "Delivered an avant garde fashion platform that pairs lookbook aesthetics with rock solid web engineering.",
         tag: "Live in Production"
       }
     },
@@ -631,8 +631,8 @@ export async function middleware(req: NextRequest) {
     id: "abraham-collection",
     code: "06",
     title: "Abraham Collection",
-    subtitle: "Bespoke Fashion Atelier and Digital Tailoring Platform",
-    category: "Commerce & Logistics",
+    subtitle: "Bespoke Fashion Atelier and Digital Tailoring Showcase",
+    category: "Fashion & Commerce",
     filterCategory: "commerce",
     year: "2026",
     statusBadge: "Live in Production",
@@ -655,14 +655,14 @@ export async function middleware(req: NextRequest) {
       }
     ],
     summary: "Founded in 2002 in Lagos, Abraham Collection has dressed generations of leaders in bespoke garments that fit with dignity. This digital atelier brings that physical craftsmanship to the web, letting clients explore hand stitched fabrics, study garment details, and book custom bespoke fittings with warmth and ease.",
-    role: "Lead Full Stack Architect and Atelier Web Engineer",
+    role: "Full Stack Web Engineer",
     techStack: ["Next.js 14", "React 18", "TypeScript", "Tailwind CSS", "Supabase", "PWA"],
     github: "https://github.com/abraham-DT",
     demoUrl: "https://abrhamcollectionweb.vercel.app",
     metrics: [
       { label: "Atelier Heritage", value: "Since 2002" },
       { label: "Production Status", value: "Live on Vercel" },
-      { label: "Offline Support", value: "Full PWA Cache" }
+      { label: "Offline Support", value: "PWA Offline Cache" }
     ],
     finishedHighlights: [
       "Brought twenty four years of master tailoring tradition into a modern digital fashion platform.",
@@ -758,7 +758,7 @@ self.addEventListener('fetch', (event) => {
     id: "kucheza-gaming",
     code: "07",
     title: "Kucheza Gaming",
-    subtitle: "Esports Arena Design, 3D Staging and Corporate Presentations",
+    subtitle: "3D Tournament Arena Modeling and Esports Sponsorship Presentations",
     category: "3D & Gaming",
     filterCategory: "gaming",
     year: "2025",
@@ -781,20 +781,20 @@ self.addEventListener('fetch', (event) => {
         title: "Official Kucheza Gaming Identity"
       }
     ],
-    summary: "Six months of immersive work in esports event operations, 3D tournament stage architecture in Blender, and corporate partnership decks. Translated the excitement of competitive gaming into professional physical arena designs for major corporate sponsors.",
-    role: "Research Engineer and 3D Staging Designer",
+    summary: "Six month industrial training focused on 3D tournament stage modeling in Blender, tournament bracket operations, and structured sponsorship presentation decks for corporate partners.",
+    role: "3D Staging and Esports Operations Intern",
     techStack: ["3D Staging", "Blender", "Spatial Design", "Esports Operations", "Pitch Engineering"],
     github: "https://github.com/abraham-DT",
     demoUrl: null,
     metrics: [
-      { label: "Training Duration", value: "6 Months" },
-      { label: "Partner Systems", value: "Enterprise Scale" },
-      { label: "Staging Scope", value: "Arena Staging" }
+      { label: "Duration", value: "6 Months" },
+      { label: "3D Staging", value: "Blender Arena Models" },
+      { label: "Operations", value: "Tournament Brackets" }
     ],
     finishedHighlights: [
-      "Designed full 3D esports arena stages in Blender with concert lighting, giant screens, and spectator seating.",
-      "Engineered clear sponsorship pitch systems for major telecommunications and consumer brands.",
-      "Presented spatial design walk throughs to senior corporate executives during partner retreats."
+      "Modeled 3D tournament stages and arena lighting setups in Blender for event visualizations.",
+      "Created visual sponsorship decks translating tournament gaming data for corporate sponsors.",
+      "Assisted in running tournament bracket logistics and operational schedules during live competitions."
     ],
     thinkingTree: {
       root: {
@@ -854,10 +854,10 @@ self.addEventListener('fetch', (event) => {
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "A Lasting Foundation in Spatial Design",
+        title: "Practical Foundation in 3D Staging & Esports Operations",
         metric: "6 Months",
-        detail: "Completed a six month industrial training with leadership honors in 3D spatial staging and partnership architecture.",
-        tag: "Tier 1 Industry"
+        detail: "Completed a six month university industrial training program in 3D spatial stage design and tournament operations.",
+        tag: "Completed Internship"
       }
     },
     caseStudy: {
@@ -996,7 +996,7 @@ class SoundEffectsEngine {
     id: "civos",
     code: "09",
     title: "CivOS",
-    subtitle: "Civilization Operating System Spatial Autonomous World Engine",
+    subtitle: "Virtual World Simulation Architecture · Deterministic State Validation",
     category: "Conceptual & Systems",
     filterCategory: "conceptual",
     year: "2026",
@@ -1008,30 +1008,30 @@ class SoundEffectsEngine {
     gallery: [
       {
         url: "/media/civos_spatial.jpg",
-        title: "CivOS Autonomous Metaverse Architecture"
+        title: "CivOS Simulation Architecture & State Validation"
       }
     ],
-    summary: "A research world engine exploring how to build living virtual worlds with thousands of intelligent characters without bankrupting computer servers. Combines fast deterministic C++ physics with smart AI dialogue that wakes up only when players are nearby.",
-    role: "Lead Systems Architect and Researcher",
+    summary: "A systems research prototype exploring cost efficient simulation of game characters. Validates movement and trade rules deterministically in C++ before calling language models solely for dialogue.",
+    role: "Systems Researcher and C++ Engineer",
     techStack: ["C++", "Apache Kafka", "ERC 4337", "Redis", "Solidity", "Vector DB"],
     github: "https://github.com/abraham-DT/CivOS",
     demoUrl: null,
     metrics: [
-      { label: "Status Stage", value: "Active Prototype" },
-      { label: "Fast Code Core", value: "95% in C++" },
-      { label: "Compute Saved", value: "94% Overhead Cut" }
+      { label: "Architecture", value: "State Machine" },
+      { label: "Validation Core", value: "Deterministic C++" },
+      { label: "AI Role", value: "Dialogue Only" }
     ],
     finishedHighlights: [
-      "Moved 95 percent of world physics into fast C++ code so computers never waste energy on simple math.",
-      "Streamed continuous universe events across high speed logs so the world remains completely consistent.",
-      "Gave autonomous game characters smart accounts to manage their own virtual belongings."
+      "Validates character physics and inventory rules deterministically in C++ to prevent illegal actions.",
+      "Restricts language models to conversational dialogue so characters obey world rules without hallucinating.",
+      "Explores smart contract accounts for managing digital items in game economies."
     ],
     thinkingTree: {
       root: {
         stage: "01",
         label: "Problem & Creative Spark",
         title: "The Unsustainable Compute Costs of AI Virtual Worlds",
-        description: "Powering thousands of intelligent characters with raw AI calls leads to immediate server bankruptcy, while scripted bots feel lifeless.",
+        description: "Querying cloud language models for every character action causes high latency, immense API bills, and game breaking hallucinations.",
         tag: "Creative Spark"
       },
       branches: [
@@ -1042,14 +1042,14 @@ class SoundEffectsEngine {
           steps: [
             {
               num: "02A",
-              title: "Fast Five Tier Hierarchy in C++",
-              detail: "Shifted ninety five percent of world physics, collision, and trading math to deterministic C++ microservices.",
+              title: "Deterministic Action Validation in C++",
+              detail: "Validates all character movements, inventory trades, and collision rules in native C++ code.",
               tech: "C++"
             },
             {
               num: "02B",
-              title: "Immutable Event Log Stream",
-              detail: "Streamed state events continuously so autonomous characters can trade digital inventory reliably.",
+              title: "Structured State Logging",
+              detail: "Records world events cleanly so character states remain consistent across sessions.",
               tech: "Apache Kafka"
             }
           ]
@@ -1061,14 +1061,14 @@ class SoundEffectsEngine {
           steps: [
             {
               num: "03A",
-              title: "Spatial Population Heatmap",
-              detail: "Built real time visual dashboards showing autonomous agent clusters, economic velocity, and trade routes.",
+              title: "Population and World Heatmap",
+              detail: "Built visual telemetry screens showing character locations, activity clusters, and trade routes.",
               tech: "WebGL"
             },
             {
               num: "03B",
-              title: "Creator Command Console",
-              detail: "Designed clean telemetry monitors letting world architects inspect civilization dynamics at a glance.",
+              title: "Simulation Inspector Console",
+              detail: "Designed clean diagnostic monitors letting world designers inspect simulation dynamics at a glance.",
               tech: "React"
             }
           ]
@@ -1077,34 +1077,34 @@ class SoundEffectsEngine {
       convergence: {
         stage: "04",
         label: "Fast Shipping & Field Delivery",
-        title: "Ten Thousand Agent Stress Tests",
-        description: "Simulated thousands of interacting characters to confirm massive server savings before open prototyping.",
+        title: "Action Validation Load Benchmarks",
+        description: "Tested rule validation throughput across simulated characters to ensure fast, deterministic checks.",
         tag: "R&D Prototype"
       },
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Ninety Four Percent Overhead Cut for Autonomous Worlds",
-        metric: "94% Saved",
-        detail: "Breakthrough research prototype setting the architectural blueprint for persistent digital societies.",
+        title: "Deterministic Action Architecture for Virtual Worlds",
+        metric: "C++ Bouncer",
+        detail: "Research prototype proving that separating deterministic state rules from AI dialogue prevents hallucinations and saves server resources.",
         tag: "Active R&D Prototype"
       }
     },
     caseStudy: {
-      problem: "Running intelligent video game characters using raw AI calls causes immediate server bankruptcy and high lag.",
-      solution: "Built a smart system where fast traditional code handles movement and rules, while AI only generates conversation when human players are looking.",
-      breakthrough: "Cut AI compute overhead by ninety four percent while keeping virtual worlds vibrant and unpredictable."
+      problem: "Querying cloud language models for every character action causes high latency, immense API bills, and game breaking hallucinations.",
+      solution: "Handled physics, inventory math, and rule checks deterministically in C++, invoking language models only when characters speak to a player.",
+      breakthrough: "Separated rigid world rules from conversational dialogue, keeping character behavior consistent while minimizing cloud API calls."
     }
   },
   {
     id: "loom",
     code: "10",
     title: "LOOM",
-    subtitle: "3D Spatial Digital Atelier and Milestone Escrow System",
+    subtitle: "3D Spatial Digital Atelier & Milestone Escrow Prototype",
     category: "Conceptual & Spatial",
     filterCategory: "conceptual",
     year: "2025 Present",
-    statusBadge: "Active Spatial Prototype",
+    statusBadge: "Unfinished Prototype",
     featured: false,
     coverImage: "/media/virtual_atelier.jpg",
     videoUrl: null,
@@ -1115,20 +1115,20 @@ class SoundEffectsEngine {
         title: "LOOM 3D Spatial Digital Atelier"
       }
     ],
-    summary: "An interactive 3D digital atelier where custom tailors and patrons collaborate across borders. Features an adjustable 3D mannequin and verified milestone payments that protect both the tailor and the customer.",
-    role: "Lead Spatial and Systems Engineer",
+    summary: "An unfinished 3D digital tailoring prototype Abraham has been developing recently. Explores interactive WebGL mannequins in Three.js and a milestone escrow concept to help bespoke tailors showcase garments and agree on production stages with clients.",
+    role: "3D and Systems Engineer",
     techStack: ["Three.js", "React", "Blender", "WebGL", "Node.js", "Tailwind CSS"],
     github: "https://github.com/darktune/loom",
     demoUrl: null,
     metrics: [
-      { label: "Status Stage", value: "Active Prototype" },
-      { label: "Fit Accuracy", value: "98.5% Target" },
-      { label: "Escrow Stages", value: "3 Steps" }
+      { label: "Status Stage", value: "Unfinished Prototype" },
+      { label: "3D Rendering", value: "Three.js WebGL" },
+      { label: "Escrow Concept", value: "3 Milestones" }
     ],
     finishedHighlights: [
       "Engineered an interactive 3D mannequin in the browser that adjusts to customer body measurements.",
-      "Designed a three step payment escrow system that releases funds as garment stages are verified.",
-      "Simulated realistic fabric drape and weight for authentic African textile patterns."
+      "Designed a three step payment escrow concept that releases funds as garment stages are verified.",
+      "Experimented with textile drape shaders for showcasing African wax print fabrics."
     ],
     thinkingTree: {
       root: {
@@ -1147,13 +1147,13 @@ class SoundEffectsEngine {
             {
               num: "02A",
               title: "Three Step Milestone Escrow",
-              detail: "Programmed smart contracts releasing client payments automatically as garment stages are verified.",
+              detail: "Programmed smart contract logic releasing client payments automatically as garment stages are verified.",
               tech: "Node.js & EVM"
             },
             {
               num: "02B",
               title: "Parametric Mannequin Calculation",
-              detail: "Converted customer body measurements into accurate three dimensional parametric mesh dimensions.",
+              detail: "Converted customer body measurements into three dimensional parametric mesh dimensions.",
               tech: "WebGL"
             }
           ]
@@ -1188,15 +1188,15 @@ class SoundEffectsEngine {
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Bespoke Fashion Digital Atelier and Escrow Protocol",
-        metric: "98.5% Fit",
-        detail: "Active prototype merging physical textile heritage with interactive spatial computing.",
-        tag: "Active Spatial Prototype"
+        title: "3D Digital Atelier and Escrow Prototype",
+        metric: "3D WebGL",
+        detail: "Unfinished spatial prototype exploring interactive 3D fitting and milestone escrow for custom tailors.",
+        tag: "Unfinished Prototype"
       }
     },
     caseStudy: {
       problem: "Custom tailoring over distances suffers from tape measurement mistakes and payment distrust between client and tailor.",
-      solution: "Combined a parametric 3D mannequin with milestone payments released in three verified stages.",
+      solution: "Combined an interactive 3D browser mannequin with milestone payments released in three verified stages.",
       breakthrough: "Achieved realistic cloth drape simulation directly in web browsers with smooth mobile touch controls."
     }
   },
@@ -1204,11 +1204,11 @@ class SoundEffectsEngine {
     id: "siphoon-os",
     code: "11",
     title: "SIPHOON OS",
-    subtitle: "Personal Forex Intelligence, Quantitative Journal and Risk Engine",
+    subtitle: "Forex Trade Journal & Risk Management Dashboard",
     category: "Conceptual & Fintech",
     filterCategory: "conceptual",
     year: "2026",
-    statusBadge: "Quantitative Workstation",
+    statusBadge: "Personal Trading Tool",
     featured: false,
     coverImage: "/media/siphoon_os.jpg",
     videoUrl: null,
@@ -1219,20 +1219,20 @@ class SoundEffectsEngine {
         title: "SIPHOON OS Quantitative Workstation"
       }
     ],
-    summary: "A personal Forex intelligence and trading risk workstation. Built with proven mathematical risk calculators, live market heatmaps, and a thoughtful trade journal that helps traders stay calm, disciplined, and focused on long term consistency.",
-    role: "Quantitative Systems Engineer and Architect",
+    summary: "A personal Forex trade journal and risk calculator web app built with Next.js 15, TypeScript, PostgreSQL, Prisma, and TradingView lightweight charts. Helps currency traders calculate position lot sizes using the Kelly criterion, log trade entries with screenshots, and track rule discipline.",
+    role: "Full Stack Engineer",
     techStack: ["Next.js 15", "TypeScript", "PostgreSQL", "Prisma", "lightweight charts", "Tailwind CSS"],
     github: "https://github.com/darktune/Stelcera",
     demoUrl: null,
     metrics: [
-      { label: "Chart Performance", value: "60 FPS Canvas" },
-      { label: "Risk Formulas", value: "Kelly Math" },
-      { label: "Market Heatmap", value: "Live Correlation" }
+      { label: "Chart Display", value: "Lightweight Charts" },
+      { label: "Risk Formulas", value: "Kelly & Pip Math" },
+      { label: "Trade Journal", value: "Prisma & PostgreSQL" }
     ],
     finishedHighlights: [
-      "Engineered exact position sizing calculators to eliminate emotional overtrading and protect capital.",
+      "Calculates lot sizes, pip values, and risk of ruin fractions before opening trades.",
       "Rendered live multi timeframe charts with zero stutter at sixty frames per second.",
-      "Built a journal assistant that reviews closed trades to help traders learn from their decisions."
+      "Structured trade journal logging entry screenshots, trade reasoning, and emotional discipline notes."
     ],
     thinkingTree: {
       root: {
@@ -1292,10 +1292,10 @@ class SoundEffectsEngine {
       outcome: {
         stage: "05",
         label: "Real World Impact & Evolution",
-        title: "Disciplined Quantitative Trading Command Center",
+        title: "Disciplined Trade Journal and Risk Dashboard",
         metric: "60 FPS",
         detail: "Personal quantitative risk workstation empowering disciplined execution through verified mathematical formulas.",
-        tag: "Quantitative Workstation"
+        tag: "Personal Trading Tool"
       }
     },
     caseStudy: {

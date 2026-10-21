@@ -77,13 +77,13 @@ export const gwenKnowledgeBase = {
     // 4. Flagship: STELCERA Terminal
     {
       id: "stelcera-terminal",
-      intent: ["stelcera", "trading", "terminal", "arbitrage", "options", "greeks", "105 desks", "swarm", "canvas 120 fps", "dma"],
-      tags: ["#STELCERA", "#Trading", "#Quant", "#105Desks"],
-      answer: "**STELCERA Terminal** is a high speed financial workstation created to give traders complete clarity in fast moving markets.\n\n**What makes it special:**\n• **Smooth and Fluid**: Renders market moves at 120 frames per second with zero lag or screen stutter.\n• **Clear Market Vision**: Calculates financial options math and market depth in under fifteen milliseconds.\n• **Helpful Market Swarms**: Autonomous assistants read volume shifts and highlight genuine market opportunities.\n• **Instant Data Stream**: Delivers live prices smoothly across 105 financial desks.",
+      intent: ["stelcera", "trading", "terminal", "options", "greeks", "canvas 120 fps", "fastapi"],
+      tags: ["#STELCERA", "#Trading", "#Quant", "#OptionsMath"],
+      answer: "**STELCERA Terminal** is a high speed financial workstation created to give traders complete clarity in fast moving markets.\n\n**What makes it special:**\n• **Smooth and Fluid**: Renders market moves at 120 frames per second on HTML5 Canvas without screen stutter.\n• **Clear Market Vision**: Calculates Black Scholes options Greeks in under fifteen milliseconds.\n• **Reliable Data Streaming**: Delivers live candlestick data and market prices smoothly via FastAPI WebSockets.",
       contextCard: {
         title: "STELCERA Terminal",
-        badge: "105 Desk Quantitative Workstation",
-        detail: "105 Desks · 120 FPS Canvas · Agent Swarms · Options Greeks",
+        badge: "Financial Charting Workstation",
+        detail: "120 FPS Canvas · Black Scholes Greeks · FastAPI WebSockets",
         actionText: "VIEW STELCERA DETAILS",
         projectId: "stelcera-terminal"
       },
@@ -109,13 +109,13 @@ export const gwenKnowledgeBase = {
     // 6. Flagship: News-Insights
     {
       id: "news-insights",
-      intent: ["news", "insights", "media", "75 vulnerabilities", "security", "tiptap", "publishing", "achichi"],
+      intent: ["news", "insights", "media", "security", "tiptap", "publishing", "achichi"],
       tags: ["#NewsInsights", "#Security", "#Nextjs15", "#MediaAI"],
-      answer: "**News Insights** is an investigative digital publication and media portal built for thoughtful journalism and reader trust.\n\n**Key highlights:**\n• **Built for Security**: Audited against 75 common web vulnerabilities to protect reader data and editorial privacy.\n• **Warm Reading Experience**: An obsidian glass subscription view with gentle blur and instant one tap access.\n• **Fast and Light**: Pages load instantly so readers discover great stories without delay.",
+      answer: "**News Insights** is an investigative digital publication and media portal built for thoughtful journalism and reader trust.\n\n**Key highlights:**\n• **Built for Security**: Hardened against common web vulnerabilities to protect reader data and editorial privacy.\n• **Warm Reading Experience**: An obsidian glass subscription view with gentle blur and instant one tap access.\n• **Fast and Light**: Pages load instantly so readers discover great stories without delay.",
       contextCard: {
         title: "News Insights Media Portal",
         badge: "Live in Production",
-        detail: "75 Security Audits · Instant Page Loads · Obsidian Gold Modal",
+        detail: "Hardened Security · Instant Page Loads · Obsidian Gold Modal",
         actionText: "VIEW NEWS INSIGHTS DETAILS",
         projectId: "news-insights"
       },
@@ -157,13 +157,13 @@ export const gwenKnowledgeBase = {
     // 9. Research & Unfinished Project: CivOS
     {
       id: "civos-metaverse-os",
-      intent: ["civos", "civilization os", "memory", "bouncer", "metaverse os", "ai agents", "operating system", "kafka", "erc-4337", "5-tier"],
-      tags: ["#CivOS", "#Systems", "#AIOS", "#ResearchPrototype"],
-      answer: "**CivOS (Civilization Operating System)** is an active research prototype exploring how to build living virtual societies without burning massive computing costs.\n\n**The big idea:**\n• **Living Characters**: Virtual characters have real memory, personal goals, and social relationships.\n• **Clever Five Tier Design**: Runs 95 percent of world math and physics in lightning fast local C++ code. The AI only speaks when a human is nearby, cutting computing overhead by 94 percent.\n• **Transparent Rules**: Every action is recorded clearly so rules are always fair and characters can trade safely.",
+      intent: ["civos", "civilization os", "memory", "bouncer", "metaverse os", "ai agents", "operating system", "kafka", "erc 4337"],
+      tags: ["#CivOS", "#Systems", "#Simulation", "#ResearchPrototype"],
+      answer: "**CivOS** is an active research prototype exploring deterministic state validation for virtual world non player characters.\n\n**The big idea:**\n• **Deterministic Rules**: Validates character movement, collisions, and trade actions in native C++ before touching an AI model.\n• **Dialogue Only AI**: Restricts language models strictly to character dialogue so NPCs cannot hallucinate illegal physical actions.\n• **Cost Efficiency**: Eliminates expensive cloud model calls for routine game loop mechanics.",
       contextCard: {
         title: "CivOS Kernel Research",
         badge: "Active Research Prototype",
-        detail: "Five Tier Compute Hierarchy · 94% Cost Cut · Autonomous Agents",
+        detail: "Deterministic C++ Validation · Dialogue Only AI · Cost Efficient Simulation",
         actionText: "ASK ABOUT CIVOS CODE",
         targetSection: "about"
       },
@@ -191,11 +191,11 @@ export const gwenKnowledgeBase = {
       id: "oees-olfactory-hci",
       intent: ["oees", "olfactory", "scent", "hci", "hardware", "unreal engine plugin", "smell", "sensory"],
       tags: ["#OEES", "#HCIResearch", "#Olfactory"],
-      answer: "**OEES (Olfactory Enhanced Entertainment Experience)** is a sensory research project that brings natural scents into virtual worlds.\n\n**Why this matters:**\n• **Deeper Senses**: Games usually talk only to our eyes and ears. OEES introduces scents synchronized to game moments.\n• **Emotional Memory**: Testing showed that when players smell rain or grass during a story, their emotional memory of the scene jumps by over 40 percent.\n• **Instant Response**: Custom hardware connects directly with the game engine to release scents in the exact right second.",
+      answer: "**OEES (Olfactory Enhanced Entertainment Experience)** is a sensory research project exploring the integration of scent cues into interactive games.\n\n**The concept:**\n• **Deeper Senses**: Explores scent triggers synchronized to virtual moments such as rain or burning wood.\n• **Game Engine Integration**: Conceptual hardware interfacing with game engines to test multi sensory player immersion.\n• **Hardware Schematics**: Circuit designs and timing sequences for micro scent dispersal.",
       contextCard: {
         title: "OEES Sensory Research",
         badge: "Sensory Research & Hardware Schematics",
-        detail: "Natural Scents · Instant Response · 40% Stronger Emotional Recall",
+        detail: "Natural Scents · Game Engine Triggers · Hardware Schematics",
         actionText: "ASK ABOUT SENSORY RESEARCH",
         targetSection: "about"
       },

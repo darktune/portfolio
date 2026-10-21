@@ -19,7 +19,7 @@ export default function ArtArchiveSection() {
           </h2>
         </div>
         <p className="text-xs sm:text-sm font-mono text-[var(--text-secondary)]">
-          Exhibited at Spectrum Ori · 40+ Hours Zero-Error Ink
+          Exhibited at Spectrum Ori · 40+ Hours Zero Error Ink
         </p>
       </div>
 
@@ -66,10 +66,10 @@ export default function ArtArchiveSection() {
         <div>
           <span className="text-[var(--text-muted)] block text-[10px] uppercase">SELECTED LINE STUDY</span>
           <span className="font-bold text-[var(--text-primary)] text-sm">{selectedArt.title}</span>
-          <span className="text-[var(--text-secondary)] ml-2">— {selectedArt.concept}</span>
+          <span className="text-[var(--text-secondary)] ml-2">· {selectedArt.concept}</span>
         </div>
         <div className="text-[10px] text-[var(--text-muted)]">
-          "Extreme patience in art translates directly to zero-error assembly in code."
+          "Extreme patience in art translates directly to zero error assembly in code."
         </div>
       </div>
     </section>
