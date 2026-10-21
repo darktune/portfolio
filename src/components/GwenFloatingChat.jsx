@@ -98,14 +98,55 @@ export default function GwenFloatingChat({ onOpenCaseStudy, externalPrompt, isOp
     setInputPrompt('');
     setIsThinking(true);
 
-    setThinkingStateText("Searching architectural knowledge base...");
-    await new Promise(r => setTimeout(r, 300));
+    setThinkingStateText("Connecting to GWEN intelligence...");
+
+    // Format conversation history for Gemini LLM
+    const historyPayload = messages.slice(-6).map(m => ({
+      role: m.role,
+      text: m.text
+    }));
+
+    let fullAnswer = '';
+    let contextCard = null;
+    let followUps = null;
+
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 7000);
+
+      const response = await fetch('/api/gwen', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text.trim(), history: historyPayload }),
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data && data.answer && !data.fallback) {
+          fullAnswer = data.answer;
+          // Context card and follow ups from knowledge retrieval
+          const localMatch = queryGwenKnowledge(text);
+          contextCard = localMatch.contextCard;
+          followUps = localMatch.followUps;
+        }
+      }
+    } catch {
+      // Graceful offline or timeout handling
+    }
+
+    // Seamless zero latency fallback to local knowledge engine
+    if (!fullAnswer) {
+      const fallbackResult = queryGwenKnowledge(text);
+      fullAnswer = fallbackResult.answer;
+      contextCard = fallbackResult.contextCard;
+      followUps = fallbackResult.followUps;
+    }
 
     setIsThinking(false);
     setIsStreaming(true);
 
-    const queryResult = queryGwenKnowledge(text);
-    const fullAnswer = queryResult.answer;
     const assistantMsgId = `assistant-${Date.now()}`;
 
     setMessages(prev => [
@@ -114,8 +155,8 @@ export default function GwenFloatingChat({ onOpenCaseStudy, externalPrompt, isOp
         id: assistantMsgId,
         role: "assistant",
         text: "",
-        contextCard: queryResult.contextCard,
-        followUps: queryResult.followUps
+        contextCard: contextCard,
+        followUps: followUps
       }
     ]);
 
@@ -127,7 +168,7 @@ export default function GwenFloatingChat({ onOpenCaseStudy, externalPrompt, isOp
       setMessages(prev =>
         prev.map(m => m.id === assistantMsgId ? { ...m, text: currentText } : m)
       );
-      await new Promise(r => setTimeout(r, 16));
+      await new Promise(r => setTimeout(r, 14));
     }
 
     setIsStreaming(false);

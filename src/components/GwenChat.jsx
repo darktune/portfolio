@@ -47,19 +47,54 @@ export default function GwenChat({ onOpenCaseStudy, externalPrompt }) {
     setInputPrompt('');
     setIsThinking(true);
 
-    // High-level safe thinking steps
-    setThinkingStateText("Searching Abraham's portfolio knowledge base...");
-    await new Promise(r => setTimeout(r, 450));
-    setThinkingStateText("Matching architecture blueprints and project logs...");
-    await new Promise(r => setTimeout(r, 400));
-    setThinkingStateText("Synthesizing answer...");
-    await new Promise(r => setTimeout(r, 350));
+    setThinkingStateText("Connecting to GWEN intelligence...");
+
+    // Format conversation history for Gemini LLM
+    const historyPayload = messages.slice(-6).map(m => ({
+      role: m.role,
+      text: m.text
+    }));
+
+    let fullAnswer = '';
+    let contextCard = null;
+    let followUps = null;
+
+    try {
+      const controller = new AbortController();
+      const timeoutId = setTimeout(() => controller.abort(), 7000);
+
+      const response = await fetch('/api/gwen', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: text.trim(), history: historyPayload }),
+        signal: controller.signal
+      });
+      clearTimeout(timeoutId);
+
+      if (response.ok) {
+        const data = await response.json();
+        if (data && data.answer && !data.fallback) {
+          fullAnswer = data.answer;
+          const localMatch = queryGwenKnowledge(text);
+          contextCard = localMatch.contextCard;
+          followUps = localMatch.followUps;
+        }
+      }
+    } catch {
+      // Graceful offline or timeout handling
+    }
+
+    // Seamless zero latency fallback to local knowledge engine
+    if (!fullAnswer) {
+      const fallbackResult = queryGwenKnowledge(text);
+      fullAnswer = fallbackResult.answer;
+      contextCard = fallbackResult.contextCard;
+      followUps = fallbackResult.followUps;
+    }
 
     setIsThinking(false);
     setIsStreaming(true);
 
-    const queryResult = queryGwenKnowledge(text);
-    const fullAnswer = queryResult.answer;
     const assistantMsgId = `assistant-${Date.now()}`;
 
     // Add empty assistant message to stream into
@@ -69,8 +104,8 @@ export default function GwenChat({ onOpenCaseStudy, externalPrompt }) {
         id: assistantMsgId,
         role: "assistant",
         text: "",
-        contextCard: queryResult.contextCard,
-        followUps: queryResult.followUps
+        contextCard: contextCard,
+        followUps: followUps
       }
     ]);
 
