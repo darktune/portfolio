@@ -94,37 +94,55 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
     );
   }
 
-  // 4. REAVO: Spatial Luxury Commerce Crest & Monogram
+  // 4. REAVO: Official Student Gadget Brand Logo
   if (id.includes('reavo')) {
     return (
-      <svg
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="none"
-        className={`shrink-0 ${className}`}
-        title="REAVO Verified Mark"
+      <div 
+        className={`relative flex items-center justify-center shrink-0 ${className}`} 
+        style={{ width: size, height: size }}
+        title="REAVO Official Brand Logo"
       >
-        <circle cx="12" cy="12" r="9.5" stroke="#d4af37" strokeWidth="1.8" />
-        <path d="M9 16V8H12.5C14.4 8 15.5 9 15.5 10.5C15.5 11.8 14.6 12.8 13.2 13L15.8 16H13.8L11.5 13.2H9" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
+        <img
+          src="/media/reavo_logo.png"
+          alt="REAVO"
+          className="w-full h-full object-contain dark:invert transition-all"
+          loading="eager"
+        />
+      </div>
     );
   }
 
-  // 5. News Insights: Geopolitical Intelligence Beacon Pulse
-  if (id.includes('news')) {
+  // 5. News Insights: Official ACHICHI Media Vector Logo
+  if (id.includes('news') || id.includes('achichi')) {
     return (
       <svg
         width={size}
         height={size}
-        viewBox="0 0 24 24"
+        viewBox="0 0 100 100"
         fill="none"
+        xmlns="http://www.w3.org/2000/svg"
         className={`shrink-0 ${className}`}
-        title="News Insights Verified Mark"
+        title="News Insights · ACHICHI Media Official Logo"
+        aria-label="News Insights"
       >
-        <circle cx="12" cy="12" r="3" fill="#6366f1" />
-        <path d="M7.05 7.05C4.32 9.78 4.32 14.22 7.05 16.95M16.95 7.05C19.68 9.78 19.68 14.22 16.95 16.95" stroke="#6366f1" strokeWidth="2" strokeLinecap="round" />
-        <path d="M3.51 3.51C-0.39 7.41 -0.39 16.59 3.51 20.49M20.49 3.51C24.39 7.41 24.39 16.59 20.49 20.49" stroke="#3b82f6" strokeWidth="1.8" strokeLinecap="round" />
+        <circle cx="50" cy="50" r="48" fill="#0F2A4A" />
+        <ellipse cx="38" cy="68" rx="28" ry="10" fill="#1E88C7" opacity="0.5" />
+        <path d="M14 65 Q25 58 38 65 Q51 72 62 65 Q73 58 84 65" stroke="#1E88C7" strokeWidth="4" strokeLinecap="round" fill="none" />
+        <path d="M18 72 Q30 65 43 72 Q56 79 68 72 Q76 67 82 72" stroke="#4BB8E8" strokeWidth="3" strokeLinecap="round" fill="none" opacity="0.7" />
+        <ellipse cx="48" cy="45" rx="20" ry="15" fill="#2E8B57" />
+        <line x1="48" y1="30" x2="48" y2="60" stroke="#1a5c38" strokeWidth="1.5" />
+        <line x1="28" y1="45" x2="68" y2="45" stroke="#1a5c38" strokeWidth="1.5" />
+        <line x1="33" y1="34" x2="63" y2="56" stroke="#1a5c38" strokeWidth="1" opacity="0.7" />
+        <line x1="33" y1="56" x2="63" y2="34" stroke="#1a5c38" strokeWidth="1" opacity="0.7" />
+        <ellipse cx="45" cy="41" rx="8" ry="6" fill="#3dae72" opacity="0.5" />
+        <ellipse cx="68" cy="40" rx="8" ry="6" fill="#4CAF50" />
+        <circle cx="71" cy="38" r="1.5" fill="#fff" />
+        <ellipse cx="34" cy="58" rx="7" ry="4" fill="#2E8B57" transform="rotate(-30 34 58)" />
+        <ellipse cx="62" cy="58" rx="7" ry="4" fill="#2E8B57" transform="rotate(30 62 58)" />
+        <ellipse cx="36" cy="35" rx="5" ry="3" fill="#2E8B57" transform="rotate(20 36 35)" />
+        <ellipse cx="60" cy="35" rx="5" ry="3" fill="#2E8B57" transform="rotate(-20 60 35)" />
+        <circle cx="50" cy="50" r="48" stroke="#1E88C7" strokeWidth="2" fill="none" opacity="0.6" />
+        <circle cx="50" cy="50" r="46" stroke="#2E8B57" strokeWidth="1" fill="none" opacity="0.4" />
       </svg>
     );
   }
@@ -206,20 +224,21 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
     );
   }
 
-  // 10. ANTHO: Haute Couture Architectural Monogram
+  // 10. ANTHO: Official Contemporary Nigerian Streetwear Brand Mark
   if (id.includes('antho')) {
     return (
-      <svg
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="none"
-        className={`shrink-0 ${className}`}
-        title="ANTHO Verified Mark"
+      <div 
+        className={`relative flex items-center justify-center shrink-0 ${className}`} 
+        style={{ width: size, height: size }}
+        title="ANTHO Official Brand Mark"
       >
-        <circle cx="12" cy="12" r="9.5" stroke="currentColor" strokeWidth="1.8" />
-        <path d="M12 5.5L6.5 18H9.2L10.6 14.5H13.4L14.8 18H17.5L12 5.5ZM11.3 12.5L12 10.2L12.7 12.5H11.3Z" fill="currentColor" />
-      </svg>
+        <img
+          src="/media/antho_logo.png"
+          alt="ANTHO"
+          className="w-full h-full object-contain rounded-full dark:invert transition-all"
+          loading="eager"
+        />
+      </div>
     );
   }
 
@@ -255,6 +274,26 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
         <circle cx="12" cy="12" r="8.5" stroke="#eab308" strokeWidth="1.8" strokeDasharray="2 2" />
         <circle cx="12" cy="12" r="3.2" fill="#ca8a04" />
         <path d="M12 2V5M12 19V22M2 12H5M19 12H22" stroke="#eab308" strokeWidth="1.8" strokeLinecap="round" />
+      </svg>
+    );
+  }
+
+  // 13. Google Developer Groups: Official 4-Color Vector Chevron Mark
+  if (id.includes('gdg') || id.includes('google')) {
+    return (
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        className={`shrink-0 ${className}`}
+        title="Google Developer Groups Official Mark"
+        aria-label="Google Developer Groups"
+      >
+        <path d="M7 7L3 12L7 17" stroke="#4285F4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <path d="M17 7L21 12L17 17" stroke="#34A853" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+        <circle cx="12" cy="9.5" r="1.5" fill="#EA4335" />
+        <circle cx="12" cy="14.5" r="1.5" fill="#FBBC05" />
       </svg>
     );
   }

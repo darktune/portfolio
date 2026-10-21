@@ -95,6 +95,9 @@ export default function ProjectModal({ project, isOpen, onClose }) {
           {/* Header Bar */}
           <div className="sticky top-0 z-20 bg-[var(--bg-surface-elevated)] backdrop-blur-xl px-6 sm:px-8 py-4 border-b border-[var(--border-subtle)] flex items-center justify-between">
             <div className="flex items-center gap-3">
+              <span className="w-6 h-6 rounded-lg ios-pill flex items-center justify-center p-1 shrink-0 border border-[var(--border-subtle)] shadow-xs">
+                <ProjectLogo project={project} size={14} />
+              </span>
               <span className="text-xs font-mono font-bold text-zinc-900 dark:text-white uppercase tracking-wider">
                 {project.statusBadge}
               </span>

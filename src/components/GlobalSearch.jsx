@@ -3,6 +3,7 @@ import { Search, X, ArrowRight, FolderGit2, Cpu, Sparkles, Terminal, BookOpen, L
 import { projectsData } from '../data/projects';
 import { disciplinesData } from '../data/disciplines';
 import { skillsTaxonomy } from '../data/skills';
+import ProjectLogo from './ProjectLogo';
 
 export default function GlobalSearch({ isOpen, onClose, onSelectProject, onAskGwen }) {
   const [query, setQuery] = useState('');
@@ -150,15 +151,16 @@ export default function GlobalSearch({ isOpen, onClose, onSelectProject, onAskGw
                 className="p-3 rounded-lg hover:bg-[var(--bg-subtle)] cursor-pointer transition-colors flex items-center justify-between group"
               >
                 <div className="flex items-center gap-3">
-                  <div className="w-7 h-7 rounded bg-[var(--bg-surface-raised)] hairline-all flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--accent)]">
-                    {res.type === 'project' && <FolderGit2 size={14} />}
+                  <div className="w-7 h-7 rounded bg-[var(--bg-surface-raised)] hairline-all flex items-center justify-center text-[var(--text-muted)] group-hover:text-[var(--accent)] shrink-0">
+                    {res.type === 'project' && <ProjectLogo project={res} size={15} />}
                     {res.type === 'discipline' && <Cpu size={14} />}
                     {res.type === 'skill' && <Terminal size={14} />}
                   </div>
 
                   <div>
-                    <div className="font-heading font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--accent)]">
-                      {res.title}
+                    <div className="font-heading font-semibold text-sm text-[var(--text-primary)] group-hover:text-[var(--accent)] flex items-center gap-2">
+                      {res.type === 'project' && <ProjectLogo project={res} size={13} className="sm:hidden" />}
+                      <span>{res.title}</span>
                     </div>
                     <div className="text-xs text-[var(--text-muted)] font-mono">
                       {res.subtitle}

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Sparkles, Send, Trash2, ArrowRight, CornerDownLeft, Bot, User, CheckCircle2, Cpu, Terminal, ArrowUpRight } from 'lucide-react';
 import { queryGwenKnowledge } from '../lib/gwen/retrieval';
 import { gwenKnowledgeBase } from '../data/gwenKnowledge';
+import ProjectLogo from './ProjectLogo';
 
 export default function GwenChat({ onOpenCaseStudy, externalPrompt }) {
   const [messages, setMessages] = useState([
@@ -226,7 +227,10 @@ export default function GwenChat({ onOpenCaseStudy, externalPrompt }) {
                 {msg.contextCard && (
                   <div className="p-4 rounded bg-[var(--bg-surface)] hairline-all text-xs font-mono space-y-2 border-l-2 border-l-[var(--text-primary)]">
                     <div className="flex items-center justify-between gap-2">
-                      <span className="font-bold text-[var(--text-primary)]">{msg.contextCard.title}</span>
+                      <div className="flex items-center gap-2">
+                        <ProjectLogo project={msg.contextCard.projectId || msg.contextCard.title} size={15} />
+                        <span className="font-bold text-[var(--text-primary)]">{msg.contextCard.title}</span>
+                      </div>
                       <span className="text-[10px] text-[var(--text-muted)] font-semibold">{msg.contextCard.badge}</span>
                     </div>
                     <p className="text-[11px] text-[var(--text-secondary)]">{msg.contextCard.detail}</p>

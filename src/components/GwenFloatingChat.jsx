@@ -3,6 +3,7 @@ import { Send, Trash2, X, Minimize2, Maximize2, Bot, User, CornerDownLeft, Arrow
 import GwenIcon from './GwenIcon';
 import { queryGwenKnowledge } from '../lib/gwen/retrieval';
 import { gwenKnowledgeBase } from '../data/gwenKnowledge';
+import ProjectLogo from './ProjectLogo';
 
 export default function GwenFloatingChat({ onOpenCaseStudy, externalPrompt, isOpen: controlledIsOpen, onToggleOpen }) {
   const [internalIsOpen, setInternalIsOpen] = useState(false);
@@ -317,7 +318,10 @@ export default function GwenFloatingChat({ onOpenCaseStudy, externalPrompt, isOp
                   {msg.contextCard && (
                     <div className="p-3.5 rounded-2xl ios-pill text-xs font-mono space-y-1.5 border-l-3 border-l-[var(--text-primary)]">
                       <div className="flex items-center justify-between gap-2">
-                        <span className="font-bold text-[var(--text-primary)]">{msg.contextCard.title}</span>
+                        <div className="flex items-center gap-2">
+                          <ProjectLogo project={msg.contextCard.projectId || msg.contextCard.title} size={15} />
+                          <span className="font-bold text-[var(--text-primary)]">{msg.contextCard.title}</span>
+                        </div>
                         <span className="text-[10px] text-[var(--text-muted)] font-semibold">{msg.contextCard.badge}</span>
                       </div>
                       <p className="text-[11px] text-[var(--text-secondary)] leading-tight">{msg.contextCard.detail}</p>
