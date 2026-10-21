@@ -60,7 +60,7 @@ MAJOR SYSTEMS AND CREATIONS:
 1. CivOS (Civilization Operating System): An active research prototype exploring living virtual societies without immense computing costs. It uses a five tier compute hierarchy running 95 percent of physics in local C++, cutting AI compute costs by 94 percent. Characters possess memory, goals, and social relationships.
 2. D MEX Protocol: Abraham's BSc capstone project. A decentralized, trustless protocol for peer to peer trading of gaming assets across games. Written with custom EVM assembly (Yul) cutting gas fees by 38 percent, with automated front running protection.
 3. STELCERA Terminal: A high speed 105 desk quantitative workstation rendering real time orderbooks and options Greeks at 120 FPS on WebGL canvas, calculating depth of market in under 15 milliseconds.
-4. REAVO: A consumer electronics store and admin operating system live in production on Vercel with verified KoraPay payments and automated inventory sync.
+4. REAVO: A student electronics store and inventory management dashboard live in production on Vercel with verified KoraPay checkout and automated stock sync.
 5. ANTHO: An avant garde luxury streetwear store live in production featuring four intuitive visual portals and full test coverage.
 6. Kucheza Gaming: Six month industrial training where Abraham engineered 3D tournament arena stages in Blender with concert lighting and executive presentation decks.
 7. News Insights: An investigative journalism portal audited against 75 web vulnerabilities with an obsidian gold glass reading modal.

@@ -93,11 +93,11 @@ export const gwenKnowledgeBase = {
     // 5. Flagship: REAVO
     {
       id: "reavo-commerce",
-      intent: ["reavo", "ecommerce", "storefront", "korapay", "admin os", "gadgets", "electronics"],
-      tags: ["#REAVO", "#CommerceOS", "#KoraPay"],
-      answer: "**REAVO** is a live consumer electronics store and business management system running in production on Vercel.\n\n**The human experience:**\n• **Safe and Smooth Checkout**: Verified payment workflows prevent double charges and protect every customer order.\n• **Bank Grade Privacy**: Strict database rules ensure that customer information remains safe and private.\n• **Helpful Automation**: An intelligent operations assistant keeps warehouse inventory updated in real time.",
+      intent: ["reavo", "ecommerce", "storefront", "korapay", "dashboard", "gadgets", "electronics", "student store"],
+      tags: ["#REAVO", "#StudentStore", "#KoraPay"],
+      answer: "**REAVO** is a student electronics store and inventory management dashboard running live in production on Vercel.\n\n**The student experience:**\n• **Safe and Smooth Checkout**: Verified payment workflows prevent double charges and protect every student purchase.\n• **Strict Account Privacy**: Database security rules ensure that student orders and information remain private.\n• **Reliable Inventory**: Automated stock synchronization keeps warehouse inventory updated so items are never sold out unnoticed.",
       contextCard: {
-        title: "REAVO App & Admin OS",
+        title: "REAVO Store & Admin Dashboard",
         badge: "Live in Production",
         detail: "Safe Payments · Bank Grade Security · Automated Stock Sync",
         actionText: "VIEW REAVO DETAILS",

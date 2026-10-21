@@ -255,19 +255,19 @@ export const projectsData = [
     "code": "04",
     "slug": "reavo-commerce-os",
     "title": "REAVO",
-    "subtitle": "Autonomous E-Commerce Engine & Corporate Admin Operating System",
+    "subtitle": "Student Electronics Store & Inventory Management Dashboard",
     "category": "Commerce & Logistics",
     "filterCategory": "commerce",
     "year": "2026",
     "featured": true,
-    "badge": "Production E-Commerce OS",
+    "badge": "Live Production Store",
     "coverImage": "/media/reavo_live.webp",
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [
       {
         "url": "/media/reavo_live.webp",
-        "title": "REAVO Live Storefront & Admin OS"
+        "title": "REAVO Live Storefront & Admin Dashboard"
       },
       {
         "url": "/media/reavo_shop.webp",
@@ -286,8 +286,8 @@ export const projectsData = [
         "title": "Student Tech Accessories & Peripherals Desk"
       }
     ],
-    "summary": "Production consumer electronics storefront and specialized Corporate Admin OS powered by Supabase, KoraPay webhook idempotency, automated inventory synchronization, and an autonomous AI operations copilot.",
-    "role": "Sole Full-Stack Architect & Core Engineer",
+    "summary": "A production student electronics storefront and order management dashboard built with React, Node.js, Express, and Supabase, featuring verified payment checkout and real time inventory tracking.",
+    "role": "Full Stack Engineer",
     "status": "Live in Production",
     "techStack": [
       "Node.js",
@@ -302,12 +302,12 @@ export const projectsData = [
     "demoUrl": "https://reavo-app.vercel.app",
     "metrics": [
       {
-        "label": "Payment Security",
-        "value": "HMAC-SHA256"
+        "label": "Payment Verification",
+        "value": "HMAC SHA256"
       },
       {
-        "label": "Database",
-        "value": "Zero-Trust RLS"
+        "label": "Database Security",
+        "value": "Row Level Security"
       },
       {
         "label": "Deployment",
@@ -315,36 +315,36 @@ export const projectsData = [
       }
     ],
     "powHighlights": [
-      "Production KoraPay Collections checkout with cryptographic HMAC webhook verification and idempotency locks",
-      "Zero-trust Supabase database hardening with fine-grained Row-Level Security (RLS) on orders and inventory",
-      "Automated hourly stock synchronization cron and AI operations copilot for proactive low-stock mitigation"
+      "Production KoraPay checkout with cryptographic HMAC webhook verification and idempotency locks",
+      "Supabase database hardening with fine grained Row Level Security on orders and inventory",
+      "Automated hourly stock synchronization cron to prevent overselling on student gadgets"
     ],
     "caseStudy": {
-      "overview": "REAVO is a production consumer electronics retail platform engineered with a specialized Corporate Admin Operating System to streamline fulfillment, inventory management, and affiliate disbursements.",
-      "problem": "Retail platforms frequently encounter double-spending from unverified webhooks, database race conditions during concurrent checkouts, and stockouts due to delayed inventory synchronization.",
-      "idea": "Architect a dual-system platform: a lightning-fast customer storefront paired with an authoritative Express/Supabase backend featuring cryptographic payment verification, automated cron sync, and an AI Operations Copilot.",
+      "overview": "REAVO is a production student electronics store and inventory management dashboard built to streamline gadget retail, order fulfillment, and stock tracking across campus.",
+      "problem": "Student retail stores face double spending from unverified payment callbacks, cart race conditions during high demand drops, and messy manual inventory records.",
+      "idea": "Architect a dual system platform: a fast customer storefront paired with an Express and Supabase backend featuring cryptographic payment verification and automated stock synchronization.",
       "architecture": [
         {
-          "tier": "Authoritative Express Backend",
-          "desc": "Centralized API layer handling cart reconciliation, order states, and secure server-to-server payment requests."
+          "tier": "Express API Backend",
+          "desc": "Centralized API handling catalog listings, cart validation, order states, and secure server to server payment requests."
         },
         {
-          "tier": "Cryptographic Webhook Fortress",
-          "desc": "HMAC-SHA256 signature validation on KoraPay webhooks with atomic idempotency locks preventing double-credit exploits."
+          "tier": "Cryptographic Webhook Verification",
+          "desc": "HMAC SHA256 signature validation on KoraPay payment callbacks with atomic idempotency locks preventing double credit exploits."
         },
         {
-          "tier": "Zero-Trust Supabase RLS",
-          "desc": "PostgreSQL Row-Level Security policies ensuring non-admin sessions can never tamper with product prices or order tables."
+          "tier": "Supabase Row Level Security",
+          "desc": "PostgreSQL Row Level Security policies ensuring shoppers only access their own records while keeping product tables protected."
         },
         {
-          "tier": "Automated Cron & AI Copilot",
-          "desc": "Automated hourly stock audits and daily executive briefings with an AI copilot assisting store admins in real-time."
+          "tier": "Automated Stock Synchronization",
+          "desc": "Automated hourly stock audits to keep warehouse inventory in sync and notify administrators of low stock items."
         }
       ],
-      "breakthrough": "Elimination of payment fraud and ghost checkouts via atomic database transactions coupled with deterministic KoraPay HMAC verification.",
+      "breakthrough": "Elimination of payment fraud and phantom checkouts via atomic database transactions coupled with deterministic KoraPay HMAC verification.",
       "codeSnippet": "// REAVO Cryptographic Webhook Verification & Idempotency\nrouter.post('/webhook/korapay', async (req, res) => {\n  const signature = req.headers['x-korapay-signature'];\n  const hash = crypto.createHmac('sha256', process.env.KORAPAY_SECRET_KEY)\n    .update(JSON.stringify(req.body)).digest('hex');\n  if (hash !== signature) return res.status(401).json({ error: 'INVALID_SIGNATURE' });\n  const { event, data } = req.body;\n  const processed = await markWebhookProcessed(data.reference);\n  if (!processed) return res.status(200).send('ALREADY_PROCESSED');\n  await fulfillOrder(data.reference);\n  return res.status(200).json({ status: 'SUCCESS' });\n});",
-      "result": "Live in production on Vercel handling secure consumer orders with sub-second page loads and zero database authorization leaks.",
-      "lesson": "E-commerce trust rests entirely on backend idempotency. Never trust client-reported payment confirmations; verify cryptographically at the boundary."
+      "result": "Live in production on Vercel handling student gadget orders with instant page loads and zero database authorization leaks.",
+      "lesson": "Commerce trust rests entirely on backend idempotency. Never trust client reported payment confirmations; verify cryptographically at the boundary."
     }
   },
   {

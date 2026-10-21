@@ -10,18 +10,18 @@ export default function KnowledgeVaultSection({ onOpenGwenPrompt }) {
       id: "c74b4a6b",
       fullId: "c74b4a6b-71da-424d-b3ff-ebf0d817e77f",
       date: "2026-08-20",
-      title: "STELCERA Institutional Trading Terminal — 18 Desks, Arbitrage & Phased Roadmap",
+      title: "STELCERA Institutional Trading Terminal · 18 Desks, Arbitrage & Phased Roadmap",
       category: "Trading & Systems",
       exchanges: 52,
       steps: 1002,
-      scope: "Full architecture of 18 trading desks, Black-Scholes options Greeks, Level 2 DOM canvas, and cross-DEX scanner.",
+      scope: "Full architecture of 18 trading desks, Black Scholes options Greeks, Level 2 DOM canvas, and cross DEX scanner.",
       artifacts: ["audit_and_documentation.md", "implementation_plan.md", "walkthrough.md"]
     },
     {
       id: "ee94c182",
       fullId: "ee94c182-aed1-40e1-8c79-463e1205e7b2",
       date: "2026-08-20",
-      title: "Trading / Arbitrage & Roadmap — Chats, Backend Code & Master Audits",
+      title: "Trading / Arbitrage & Roadmap · Chats, Backend Code & Master Audits",
       category: "Trading & Systems",
       exchanges: 3,
       steps: 97,
@@ -43,7 +43,7 @@ export default function KnowledgeVaultSection({ onOpenGwenPrompt }) {
       id: "252afcba",
       fullId: "252afcba-1006-45a4-a876-d46878a3c5fb",
       date: "2026-07-26",
-      title: "D-MEX Protocol — Cross-Game Atomic Swap Architecture & Gas Fuzzing",
+      title: "D MEX Protocol · Cross Game Atomic Swap Architecture & Gas Fuzzing",
       category: "Web3 & Smart Contracts",
       exchanges: 9,
       steps: 220,
@@ -65,7 +65,7 @@ export default function KnowledgeVaultSection({ onOpenGwenPrompt }) {
       id: "d038816d",
       fullId: "d038816d-b5b0-4f1a-8e87-155fe3c24b8d",
       date: "2026-08-14",
-      title: "REAVO E-Commerce Full Extraction & Database Architecture",
+      title: "REAVO Store Full Extraction & Database Architecture",
       category: "Web3 & 3D",
       exchanges: 263,
       steps: 4845,
@@ -96,7 +96,7 @@ export default function KnowledgeVaultSection({ onOpenGwenPrompt }) {
             Transparent Engineering Archives
           </h2>
           <p className="text-sm sm:text-base text-[var(--text-secondary)]">
-            A preserved knowledge repository of 42+ real-world engineering sessions, architecture blueprints, SQL schemas, and audit logs.
+            A preserved knowledge repository of 42+ real world engineering sessions, architecture blueprints, SQL schemas, and audit logs.
           </p>
         </div>
 

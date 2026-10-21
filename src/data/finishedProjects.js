@@ -246,7 +246,7 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
     id: "reavo-app",
     code: "03",
     title: "REAVO",
-    subtitle: "Honest Student Electronics Store and Campus Operating System",
+    subtitle: "Student Electronics Store and Inventory Management Dashboard",
     category: "Commerce & Logistics",
     filterCategory: "commerce",
     year: "2026",
@@ -258,7 +258,7 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
     gallery: [
       {
         url: "/media/reavo_live.webp",
-        title: "REAVO Live Storefront & Admin OS"
+        title: "REAVO Live Storefront & Admin Dashboard"
       },
       {
         url: "/media/reavo_shop.webp",
