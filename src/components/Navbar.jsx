@@ -61,7 +61,7 @@ export default function Navbar({ theme = 'system', setTheme }) {
             e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
             e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
           }}
-          className={`group/nav relative overflow-hidden flex items-center justify-between px-4 sm:px-6 py-2.5 rounded-full transition-all duration-300 ios-glass-nav neon-nav-glow border ${
+          className={`group/nav relative overflow-visible flex items-center justify-between px-4 sm:px-6 py-2.5 rounded-full transition-all duration-300 ios-glass-nav neon-nav-glow border ${
           scrolled
             ? 'shadow-xl border-[var(--border-strong)]'
             : 'shadow-md border-[var(--border-subtle)]'
@@ -140,7 +140,7 @@ export default function Navbar({ theme = 'system', setTheme }) {
                     animate={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 6, scale: 0.95 }}
                     transition={{ duration: 0.16, ease: [0.23, 1, 0.32, 1] }}
-                    className="absolute right-0 mt-2 p-1 rounded-2xl ios-glass-nav border border-[var(--border-strong)] shadow-2xl flex flex-col gap-0.5 min-w-[115px] z-50"
+                    className="absolute right-0 top-full mt-2 p-1.5 rounded-2xl ios-glass-nav border border-[var(--border-strong)] shadow-2xl flex flex-col gap-1 min-w-[125px] z-50"
                   >
                     <button
                       onClick={() => { setTheme('light'); setThemeMenuOpen(false); }}

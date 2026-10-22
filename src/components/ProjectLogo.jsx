@@ -44,13 +44,13 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
         <img
           src="/media/abraham_collection_logo.png"
           alt="Abraham Collection"
-          className="w-full h-full object-contain dark:hidden"
+          className="w-full h-full object-contain rounded-sm dark:hidden"
           loading="eager"
         />
         <img
           src="/media/abraham_collection_logo_white.png"
           alt="Abraham Collection"
-          className="w-full h-full object-contain hidden dark:block"
+          className="w-full h-full object-contain rounded-sm hidden dark:block"
           loading="eager"
         />
       </div>
@@ -235,7 +235,7 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
         <img
           src="/media/antho_logo.png"
           alt="ANTHO"
-          className="w-full h-full object-contain rounded-full dark:invert transition-all"
+          className="w-full h-full object-contain transition-all"
           loading="eager"
         />
       </div>
