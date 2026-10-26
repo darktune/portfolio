@@ -188,39 +188,41 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
     );
   }
 
-  // 8. LOOM: 3D Spatial Digital Atelier Isometric Drape
+  // 8. LOOM: 3D Spatial Digital Atelier Isometric Drape & Prism Mark
   if (id.includes('loom')) {
     return (
-      <svg
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="none"
-        className={`shrink-0 ${className}`}
-        title="LOOM Verified Mark"
+      <div 
+        className={`relative flex items-center justify-center shrink-0 ${className}`} 
+        style={{ width: size, height: size }}
+        title="LOOM 3D Spatial Digital Atelier"
+        aria-label="LOOM"
       >
-        <path d="M12 2L20 7V17L12 22L4 17V7L12 2Z" stroke="#a855f7" strokeWidth="1.8" strokeLinejoin="round" />
-        <path d="M12 22V12M20 7L12 12M4 7L12 12" stroke="#f43f5e" strokeWidth="1.8" strokeLinejoin="round" />
-      </svg>
+        <img
+          src="/media/loom_logo.svg"
+          alt="LOOM"
+          className="w-full h-full object-contain"
+          loading="eager"
+        />
+      </div>
     );
   }
 
-  // 9. SIPHOON OS: Distributed P2P Mesh Network Torus
+  // 9. SIPHOON OS: Quantitative Trading OS & Cyclotron Telemetry Mark
   if (id.includes('siphoon')) {
     return (
-      <svg
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="none"
-        className={`shrink-0 ${className}`}
-        title="SIPHOON OS Verified Mark"
+      <div 
+        className={`relative flex items-center justify-center shrink-0 ${className}`} 
+        style={{ width: size, height: size }}
+        title="SIPHOON Quantitative Trading OS"
+        aria-label="SIPHOON OS"
       >
-        <circle cx="12" cy="12" r="9" stroke="#0284c7" strokeWidth="1.8" />
-        <ellipse cx="12" cy="12" rx="9" ry="4" stroke="#14b8a6" strokeWidth="1.6" />
-        <ellipse cx="12" cy="12" rx="4" ry="9" stroke="#06b6d4" strokeWidth="1.6" />
-        <circle cx="12" cy="12" r="2.2" fill="#0284c7" />
-      </svg>
+        <img
+          src="/media/siphoon_logo.svg"
+          alt="SIPHOON OS"
+          className="w-full h-full object-contain"
+          loading="eager"
+        />
+      </div>
     );
   }
 
@@ -293,26 +295,6 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
         <path d="M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12" stroke="#0284c7" strokeWidth="1.8" strokeLinecap="round" />
         <path d="M12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12" stroke="#38bdf8" strokeWidth="1.8" strokeLinecap="round" />
         <circle cx="12" cy="12" r="2.2" fill="#38bdf8" />
-      </svg>
-    );
-  }
-
-  // 14. Google Developer Groups: Official 4-Color Vector Chevron Mark
-  if (id.includes('gdg') || id.includes('google')) {
-    return (
-      <svg
-        width={size}
-        height={size}
-        viewBox="0 0 24 24"
-        fill="none"
-        className={`shrink-0 ${className}`}
-        title="Google Developer Groups Official Mark"
-        aria-label="Google Developer Groups"
-      >
-        <path d="M7 7L3 12L7 17" stroke="#4285F4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <path d="M17 7L21 12L17 17" stroke="#34A853" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-        <circle cx="12" cy="9.5" r="1.5" fill="#EA4335" />
-        <circle cx="12" cy="14.5" r="1.5" fill="#FBBC05" />
       </svg>
     );
   }

@@ -721,7 +721,7 @@ export const projectsData = [
     "title": "LOOM",
     "subtitle": "3D Spatial Digital Atelier & Milestone Escrow Prototype",
     "category": "3D & Spatial",
-    "filterCategory": "spatial",
+    "filterCategory": "gaming",
     "year": "2025 · Present",
     "featured": true,
     "badge": "Live 3D Atelier",
