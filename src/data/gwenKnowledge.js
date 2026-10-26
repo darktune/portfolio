@@ -168,16 +168,16 @@ export const gwenKnowledgeBase = {
       followUps: ["Tell me about The OASIS", "Explain D MEX Protocol", "What is OEES?"]
     },
 
-    // 10. Research & Unfinished: LOOM
+    // 10. Spatial & 3D Atelier: LOOM
     {
       id: "loom",
-      intent: ["loom", "fashion", "3d fashion", "mannequin", "three.js", "cloth drape", "spatial atelier", "textile", "unfinished"],
-      tags: ["#LOOM", "#3DSpatial", "#SpatialAtelier", "#UnfinishedRND"],
-      answer: "**LOOM** is an unfinished spatial digital atelier prototype that Abraham has been developing recently. It connects bespoke tailors with fashion lovers through interactive 3D mannequins.\n\n**The vision:**\n• **3D Digital Mannequin**: An interactive model in the browser showing how fabrics drape and fit.\n• **Beautiful Textiles**: Shaders that capture the real texture, weave, and warmth of authentic fabrics.\n• **Safe Milestone Escrow**: Protects both the tailor and the buyer at every step of crafting the garment.",
+      intent: ["loom", "fashion", "3d fashion", "mannequin", "three.js", "cloth drape", "spatial atelier", "textile"],
+      tags: ["#LOOM", "#3DSpatial", "#SpatialAtelier", "#ProductionLive"],
+      answer: "**LOOM** is a luxury 3D digital tailoring atelier and milestone escrow platform engineered by Abraham. It replaces static fashion lookbooks with an interactive WebGL showroom, biometric body morphing, bespoke Native Studio configurator, tailor patron quotation model, and milestone escrow security.\n\n**Key Highlights:**\n• **3D Virtual Atelier**: 360 degree orbital mannequin rig with mathematical five point studio lighting.\n• **Native Studio**: Six stage bespoke African and contemporary fashion customizer.\n• **Milestone Escrow**: Payaza escrow integration protecting tailors and patrons across production milestones.\n• **Live Deployment**: Hosted live at [loom 3d virtual atelier](https://loom-3d-virtual-atelier.vercel.app/).",
       contextCard: {
         title: "LOOM · 3D Spatial Digital Atelier",
-        badge: "Unfinished Prototype · Active R&D",
-        detail: "Three.js Spatial Mannequin · Procedural Drape · Escrow Pipeline",
+        badge: "Live 3D Atelier · Production",
+        detail: "Three.js WebGL · Biometric Mannequin · Native Studio · Payaza Escrow",
         actionText: "EXPLORE SPATIAL WORK",
         targetSection: "experience"
       },

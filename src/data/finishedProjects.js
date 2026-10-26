@@ -1104,26 +1104,38 @@ class SoundEffectsEngine {
     category: "Conceptual & Spatial",
     filterCategory: "conceptual",
     year: "2025 Present",
-    statusBadge: "Unfinished Prototype",
+    statusBadge: "Live 3D Atelier",
     featured: false,
-    coverImage: "/media/virtual_atelier.jpg",
+    coverImage: "/media/loom_live.webp",
     videoUrl: null,
     hasVideo: false,
     gallery: [
       {
-        url: "/media/virtual_atelier.jpg",
-        title: "LOOM 3D Spatial Digital Atelier"
+        url: "/media/loom_live.webp",
+        title: "LOOM Salon Landing & Editorial Showcase"
+      },
+      {
+        url: "/media/loom_3d_atelier.webp",
+        title: "Interactive 3D Virtual Showroom & Orbit Rig"
+      },
+      {
+        url: "/media/loom_studio.webp",
+        title: "Native Studio Six Stage Garment Configurator"
+      },
+      {
+        url: "/media/loom_mobile.webp",
+        title: "Mobile Responsive Atelier Dock Experience"
       }
     ],
-    summary: "An unfinished 3D digital tailoring prototype Abraham has been developing recently. Explores interactive WebGL mannequins in Three.js and a milestone escrow concept to help bespoke tailors showcase garments and agree on production stages with clients.",
+    summary: "A luxury 3D fashion atelier platform replacing static digital lookbooks with an interactive full screen WebGL showroom, biometric body morphing, bespoke Native Studio configurator, tailor patron direct quotation model, and milestone escrow security.",
     role: "3D and Systems Engineer",
     techStack: ["Three.js", "React", "Blender", "WebGL", "Node.js", "Tailwind CSS"],
     github: "https://github.com/darktune/loom",
     demoUrl: "https://loom-3d-virtual-atelier.vercel.app",
     metrics: [
-      { label: "Status Stage", value: "Unfinished Prototype" },
+      { label: "Status Stage", value: "Production Live" },
       { label: "3D Rendering", value: "Three.js WebGL" },
-      { label: "Escrow Concept", value: "3 Milestones" }
+      { label: "Escrow Stages", value: "3 Milestones" }
     ],
     finishedHighlights: [
       "Engineered an interactive 3D mannequin in the browser that adjusts to customer body measurements.",
