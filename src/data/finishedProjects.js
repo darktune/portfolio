@@ -258,23 +258,23 @@ export function calculateBlackScholes(S: number, K: number, T: number, r: number
     gallery: [
       {
         url: "/media/reavo_live.webp",
-        title: "REAVO Live Storefront & Admin Dashboard"
-      },
-      {
-        url: "/media/reavo_shop.webp",
-        title: "Student Gadget Catalog & Hardware Store"
+        title: "REAVO Live Storefront & Product Matrix"
       },
       {
         url: "/media/reavo_apple.webp",
-        title: "Apple Ecosystem & Student Deals"
+        title: "Interactive Apple Flagship Feature Showcase"
+      },
+      {
+        url: "/media/reavo_shop.webp",
+        title: "The REAVO Student Gadget Manifesto"
       },
       {
         url: "/media/reavo_cart.webp",
-        title: "Student Checkout & Cart Drawer Verification"
+        title: "Verified Campus Growth & Cumulative Revenue Record"
       },
       {
         url: "/media/reavo_accessories.webp",
-        title: "Student Tech Accessories & Peripherals Desk"
+        title: "Campus Ambassador Movement & Student Community"
       }
     ],
     summary: "An honest student electronics store and campus management system. Protects student purchases with verified payments and keeps warehouse stock synchronized so students never pay for items that are out of stock.",

@@ -263,23 +263,23 @@ export const projectsData = [
     "gallery": [
       {
         "url": "/media/reavo_live.webp",
-        "title": "REAVO Live Storefront & Admin Dashboard"
-      },
-      {
-        "url": "/media/reavo_shop.webp",
-        "title": "Student Gadget Catalog & Hardware Store"
+        "title": "REAVO Live Storefront & Product Matrix"
       },
       {
         "url": "/media/reavo_apple.webp",
-        "title": "Apple Ecosystem & Student Deals"
+        "title": "Interactive Apple Flagship Feature Showcase"
+      },
+      {
+        "url": "/media/reavo_shop.webp",
+        "title": "The REAVO Student Gadget Manifesto"
       },
       {
         "url": "/media/reavo_cart.webp",
-        "title": "Student Checkout & Cart Drawer Verification"
+        "title": "Verified Campus Growth & Cumulative Revenue Record"
       },
       {
         "url": "/media/reavo_accessories.webp",
-        "title": "Student Tech Accessories & Peripherals Desk"
+        "title": "Campus Ambassador Movement & Student Community"
       }
     ],
     "summary": "A production student electronics storefront and order management dashboard built with React, Node.js, Express, and Supabase, featuring verified payment checkout and real time inventory tracking.",
