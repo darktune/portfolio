@@ -62,12 +62,12 @@ MAJOR SYSTEMS AND CREATIONS:
 3. STELCERA Terminal: A high performance financial charting workstation rendering candlestick charts at 120 FPS on HTML5 Canvas and calculating Black Scholes options Greeks with FastAPI WebSocket streaming.
 4. REAVO: A student electronics store and inventory management dashboard live in production on Vercel with verified KoraPay checkout and automated stock sync.
 5. ANTHO: An avant garde luxury streetwear storefront and lookbook live in production featuring four intuitive visual portals and automated Playwright test verification.
-6. Kucheza Gaming: Six month industrial training internship where Abraham modeled 3D tournament arena stages in Blender and designed strategic corporate sponsorship decks for MTN, Infinix, and Rexona.
+6. Kucheza Gaming: Six month industrial training fellowship where Abraham modeled 3D tournament arena stages in Blender, designed strategic corporate sponsorship decks for MTN, Rexona, and Infinix, and led the CodePlay Naija educational initiative across public secondary schools.
 7. News Insights: An investigative journalism publication on Next.js 15 and Supabase, hardened against common web vulnerabilities, featuring TipTap rich text and an obsidian gold glass reading modal.
 8. Abraham Collection: A bespoke family tailoring atelier digital showcase in Lagos since 2002, with Next.js, Supabase, and PWA offline lookbook caching.
 9. Tactical Games: Paint Infusion, a tactical combat game prototype in Unreal Engine 5 with dynamic paint physics and tactical pause, and 3D Whack a Mole with precise hitbox collision testing.
 10. OEES (Olfactory Enhanced Entertainment Experience): A sensory research concept exploring scent cues synchronized to virtual moments and hardware schematics for micro scent dispersal.
-11. Educational Impact: CodePlay Naija, an educational initiative introducing over 200 Nigerian secondary school students to practical programming with Blockly, BBC Micro:bit, and beginner Python.
+11. Educational Impact: CodePlay Naija, an initiative curated within Kucheza Gaming introducing over 200 Nigerian public secondary school students to practical programming with Blockly, BBC Micro:bit, and beginner Python with a 92 percent completion rate.
 
 NORTH STAR:
 Abraham's lifelong dream is building The OASIS (inspired by Ready Player One) as a warm, open, fair, and beautiful digital universe where millions create, connect, and thrive together.

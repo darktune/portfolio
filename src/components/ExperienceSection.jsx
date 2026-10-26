@@ -15,13 +15,13 @@ export default function ExperienceSection() {
     {
       id: 'kucheza',
       company: 'Kucheza Gaming',
-      role: 'Industrial Training Fellow · Spatial R&D & Esports Systems',
+      role: 'Industrial Training Fellow · Spatial R&D & Systems',
       period: 'Apr 2025 · Oct 2025',
       status: 'Completed',
       location: 'Lagos, Nigeria',
-      badge: 'Tier 1 Industry',
-      highlight: 'Engineered spatial 3D tournament arena stage architectures and corporate presentation systems for leading enterprise brand partnerships.',
-      keyMetric: '3D Spatial Staging & Enterprise Decks',
+      badge: 'Tier 1 Industry Fellowship',
+      highlight: 'Engineered spatial 3D tournament arena stage architectures, co developed corporate sponsorship strategies for enterprise brands including MTN and Infinix, and led the CodePlay Naija public secondary schools initiative.',
+      keyMetric: 'Enterprise Staging & CodePlay Naija (92% Completion)',
       glowClass: 'bg-emerald-500',
       accentGlow: 'rgba(16, 185, 129, 0.22)',
       accentBorder: 'rgba(16, 185, 129, 0.65)',
@@ -35,12 +35,12 @@ export default function ExperienceSection() {
         </svg>
       ),
       deliverables: [
-        'Designed interactive 3D tournament staging and spectator arena layouts for national esports championships',
-        'Engineered spatial exhibition booths and visual pitch systems for premier enterprise brand partnerships',
-        'Authored and presented executive spatial keynote visualizations for corporate partner retreats',
+        'Designed interactive 3D tournament staging and spectator arena layouts for broadcast esports operations',
+        'Engineered spatial exhibition booths and visual pitch systems for premier enterprise brand partnerships including MTN, Rexona, and Infinix',
+        'Curated and led curriculum engineering for CodePlay Naija, an initiative training over 200 public secondary school students in programming logic and computational thinking with a 92 percent completion rate',
         'Conducted spatial computing and audience engagement research for youth digital recreation'
       ],
-      technologies: ['Unreal Engine 5', 'Blender', 'Spatial Staging', 'Enterprise Strategy', 'Pitch Architecture']
+      technologies: ['Unreal Engine 5', 'Blender', 'Spatial Staging', 'CodePlay Naija', 'Python Logic', 'Enterprise Strategy']
     },
     {
       id: 'blueshels',
@@ -96,35 +96,6 @@ export default function ExperienceSection() {
         'Developing active prototype as an ongoing spatial computing and interactive web exploration'
       ],
       technologies: ['Three.js', 'React', 'WebGL Shaders', 'Spatial Topology', 'Procedural Mesh']
-    },
-    {
-      id: 'codeplay',
-      company: 'CodePlay Naija',
-      role: 'Educational Technology Lead & Curriculum Architect',
-      period: '2024 · 2025',
-      status: 'Deployed',
-      location: 'Lagos, Nigeria',
-      badge: '200+ Trained',
-      highlight: 'Designed and deployed computing literacy programs across Nigerian secondary schools with a 92% completion rate.',
-      keyMetric: '92% Completion Rate Across Schools',
-      glowClass: 'bg-amber-500',
-      accentGlow: 'rgba(245, 158, 11, 0.22)',
-      accentBorder: 'rgba(245, 158, 11, 0.65)',
-      logo: (
-        <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
-          <rect x="3" y="4" width="18" height="14" rx="3" stroke="#f59e0b" strokeWidth="1.8" />
-          <path d="M7 10L10 12L7 14" stroke="#f97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-          <line x1="12" y1="14" x2="16" y2="14" stroke="#f59e0b" strokeWidth="2" strokeLinecap="round" />
-          <line x1="9" y1="20" x2="15" y2="20" stroke="currentColor" strokeWidth="1.8" className="text-[var(--text-muted)]" />
-        </svg>
-      ),
-      deliverables: [
-        'Authored comprehensive curriculum in algorithmic logic, Python programming, and modern web systems',
-        'Trained over 200 secondary school students and educators with an unprecedented 92% completion rate',
-        'Mentored emerging student engineering teams building practical utility tools for local community challenges',
-        'Coordinated interactive hack nights and live code walk through sessions across partner institutions'
-      ],
-      technologies: ['Python', 'Curriculum Design', 'Algorithmic Logic', 'Mentorship', 'Community Systems']
     },
     {
       id: 'studio',

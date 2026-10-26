@@ -141,7 +141,7 @@ export const gwenKnowledgeBase = {
       id: "kucheza-gaming",
       intent: ["kucheza", "gaming", "esports", "blender", "staging", "industrial training", "arena"],
       tags: ["#KuchezaGaming", "#3DStaging", "#Esports", "#Blender"],
-      answer: "**Kucheza Gaming** was Abraham's six month industrial training where he explored gaming production and spatial arena stage design.\n\n**What he created:**\n• **3D Arena Stages**: Crafted full tournament stage environments in Blender with dramatic concert lighting and camera views.\n• **Impactful Presentations**: Engineered winning visual systems and decks for premier enterprise partner brands.\n• **Executive Staging**: Designed interactive 3D spatial retreat presentations for corporate leadership partners.",
+      answer: "**Kucheza Gaming** was Abraham's six month industrial training fellowship where he engineered gaming production, spatial arena stage design, and educational initiatives.\n\n**What he created:**\n• **3D Arena Stages**: Crafted full tournament stage environments in Blender with dramatic concert lighting and camera views.\n• **Impactful Presentations**: Engineered winning visual pitch decks and sponsorship activation strategies for enterprise brands including MTN, Infinix, and Rexona.\n• **CodePlay Naija Initiative**: Curated and led curriculum engineering for CodePlay Naija, an initiative introducing over 200 public secondary school students to programming logic and Python with a 92 percent completion rate.",
       contextCard: {
         title: "Kucheza Gaming R&D",
         badge: "Completed Industrial Training",
@@ -221,7 +221,7 @@ export const gwenKnowledgeBase = {
       id: "ai-vision-education",
       intent: ["face emotion", "emotion ai", "computer vision", "codeplay naija", "siphoon os", "forex", "kelly criterion"],
       tags: ["#FaceEmotionAI", "#CodePlayNaija", "#SIPHOONOS"],
-      answer: "Along with systems and games, Abraham builds tools that help and educate people:\n\n• **Real Time Emotion AI**: A computer vision model that detects human emotions from webcam video in under twenty milliseconds.\n• **CodePlay Naija**: A practical computing curriculum that helped over two hundred secondary school students and teachers in Nigeria learn to code with confidence.\n• **SIPHOON OS**: A clear trading journal and risk dashboard helping traders build healthy financial habits.",
+      answer: "Along with systems and games, Abraham builds tools that help and educate people:\n\n• **Real Time Emotion AI**: A computer vision model that detects human emotions from webcam video in under twenty milliseconds.\n• **CodePlay Naija**: An educational initiative curated within Kucheza Gaming that introduced over two hundred Nigerian public secondary school students to coding logic and beginner Python with a 92 percent completion rate.\n• **SIPHOON OS**: A clear trading journal and risk dashboard helping traders build healthy financial habits.",
       contextCard: {
         title: "AI Vision & Impact Systems",
         badge: "Deployed Projects",

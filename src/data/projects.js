@@ -740,8 +740,8 @@ export const projectsData = [
       "Node.js",
       "Tailwind CSS"
     ],
-    "github": "https://github.com/abraham-DT/virtual-atelier",
-    "demoUrl": null,
+    "github": "https://github.com/darktune/loom",
+    "demoUrl": "https://loom-3d-virtual-atelier.vercel.app",
     "metrics": [
       {
         "label": "Status",
@@ -863,7 +863,7 @@ export const projectsData = [
     "code": "11",
     "slug": "codeplay-naija-edutech",
     "title": "CodePlay Naija",
-    "subtitle": "Practical Computing & Introductory Programming for Secondary Schools",
+    "subtitle": "Public Secondary School Computing Initiative Curated within Kucheza Gaming",
     "category": "Education & Impact",
     "filterCategory": "education",
     "year": "2025",
@@ -873,9 +873,9 @@ export const projectsData = [
     "videoUrl": null,
     "hasVideo": false,
     "gallery": [],
-    "summary": "A hands on computing curriculum and workshop series introducing Nigerian secondary school students to practical programming. Uses visual blocks, BBC Micro:bit hardware, and basic Python so students create real games and circuits rather than memorizing definitions.",
-    "role": "Curriculum Designer & Workshop Instructor",
-    "status": "Deployed Initiative",
+    "summary": "A hands on computing curriculum and workshop initiative for public secondary schools curated within Kucheza Gaming. Uses visual blocks, BBC Micro:bit hardware, and basic Python so students create real games and circuits rather than memorizing definitions.",
+    "role": "Curriculum Designer & Workshop Lead (Kucheza Fellowship)",
+    "status": "Curated Initiative",
     "techStack": [
       "Construct 3",
       "Blockly",
@@ -905,7 +905,7 @@ export const projectsData = [
       "Included physical microcontroller projects with BBC Micro:bit to make computing tangible and engaging"
     ],
     "caseStudy": {
-      "overview": "CodePlay Naija is an educational initiative introducing practical programming skills to Nigerian secondary school students through interactive projects.",
+      "overview": "CodePlay Naija was a computational thinking and programming initiative for public secondary schools curated within Kucheza Gaming during Abraham's industrial training fellowship.",
       "problem": "Many secondary school computing classes teach definitions from textbooks without students writing code or building software.",
       "idea": "Design project based lessons using visual blocks, interactive microcontrollers, and beginner Python so students learn by building games and tools.",
       "architecture": [

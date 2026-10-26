@@ -781,20 +781,20 @@ self.addEventListener('fetch', (event) => {
         title: "Official Kucheza Gaming Identity"
       }
     ],
-    summary: "Six month industrial training focused on 3D tournament stage modeling in Blender, tournament bracket operations, and structured sponsorship presentation decks for corporate partners.",
-    role: "3D Staging and Esports Operations Intern",
+    summary: "Six month industrial training focused on 3D tournament stage modeling in Blender, corporate sponsorship decks for MTN and Infinix, and leading the CodePlay Naija public secondary schools initiative.",
+    role: "Spatial R&D Fellow & Esports Operations (Kucheza)",
     techStack: ["3D Staging", "Blender", "Spatial Design", "Esports Operations", "Pitch Engineering"],
     github: "https://github.com/abraham-DT",
     demoUrl: null,
     metrics: [
       { label: "Duration", value: "6 Months" },
       { label: "3D Staging", value: "Blender Arena Models" },
-      { label: "Operations", value: "Tournament Brackets" }
+      { label: "CodePlay Naija", value: "92% Completion Rate" }
     ],
     finishedHighlights: [
       "Modeled 3D tournament stages and arena lighting setups in Blender for event visualizations.",
-      "Created visual sponsorship decks translating tournament gaming data for corporate sponsors.",
-      "Assisted in running tournament bracket logistics and operational schedules during live competitions."
+      "Created visual sponsorship decks translating tournament gaming data for corporate sponsors including MTN and Infinix.",
+      "Led curriculum engineering for CodePlay Naija, an initiative training over 200 public secondary school students in programming logic with a 92 percent completion rate."
     ],
     thinkingTree: {
       root: {
@@ -1119,7 +1119,7 @@ class SoundEffectsEngine {
     role: "3D and Systems Engineer",
     techStack: ["Three.js", "React", "Blender", "WebGL", "Node.js", "Tailwind CSS"],
     github: "https://github.com/darktune/loom",
-    demoUrl: null,
+    demoUrl: "https://loom-3d-virtual-atelier.vercel.app",
     metrics: [
       { label: "Status Stage", value: "Unfinished Prototype" },
       { label: "3D Rendering", value: "Three.js WebGL" },

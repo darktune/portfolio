@@ -11,7 +11,7 @@ export const timelineData = [
     phase: "Industrial Training (R&D & Esports)",
     org: "Kucheza Gaming",
     badge: "Completed Oct 2025",
-    detail: "Six month intensive industrial training: Game programming, 3D tournament booth design, esports ecosystem research, and corporate pitch deck engineering for MTN, Infinix, and Rexona."
+    detail: "Six month intensive industrial training: Game programming, 3D tournament booth design, esports ecosystem research, corporate pitch deck engineering for MTN, Infinix, and Rexona, and leading the CodePlay Naija public secondary schools initiative with a 92 percent completion rate."
   },
   {
     year: "2024 to 2025",
@@ -22,10 +22,10 @@ export const timelineData = [
   },
   {
     year: "2025",
-    phase: "Spatial Systems & EduTech Deployment",
-    org: "LOOM / CodePlay Naija",
-    badge: "Recent R&D",
-    detail: "Engineering LOOM as an unfinished 3D spatial digital atelier prototype with real time drape simulation. Launched CodePlay Naija digital literacy roadmap across Nigerian secondary schools."
+    phase: "Spatial Systems & Digital Atelier",
+    org: "LOOM",
+    badge: "Recent Prototype",
+    detail: "Engineering LOOM as an unfinished 3D spatial digital atelier prototype with real time cloth drape simulation, custom WebGL shaders, and milestone escrow logic."
   },
   {
     year: "2024",
