@@ -263,14 +263,22 @@ export const projectsData = [
     "gallery": [
       {
         "url": "/media/reavo_live.webp",
-        "title": "REAVO Live Storefront & Product Matrix"
+        "title": "REAVO Production Storefront & Hero Showcase"
+      },
+      {
+        "url": "/media/reavo_admin.webp",
+        "title": "Executive Admin OS & Real Time Inventory Engine"
+      },
+      {
+        "url": "/media/reavo_shop.webp",
+        "title": "Student Gadget Catalog & Hardware Store"
       },
       {
         "url": "/media/reavo_apple.webp",
         "title": "Interactive Apple Flagship Feature Showcase"
       },
       {
-        "url": "/media/reavo_shop.webp",
+        "url": "/media/reavo_manifesto.webp",
         "title": "The REAVO Student Gadget Manifesto"
       },
       {
