@@ -14,15 +14,13 @@ export const gwenKnowledgeBase = {
   },
 
   suggestedPrompts: [
-    "What is The OASIS and Abraham's vision?",
-    "How does art since age six inspire his software?",
-    "Tell me about CivOS and living virtual worlds",
-    "What is D MEX Protocol?",
-    "Tell me about STELCERA Terminal",
-    "How does OEES bring scent into games?",
-    "Tell me about REAVO and ANTHO online stores",
-    "What did Abraham show at the Spectrum Ori exhibition?",
-    "What games has Abraham created?"
+    "How did Abraham achieve 38 percent gas savings in Yul on D MEX?",
+    "How does REAVO protect student payments with HMAC SHA256?",
+    "Tell me about Abraham's BSc thesis at Covenant University",
+    "Tell me about STELCERA Terminal's 120 FPS canvas",
+    "What is CivOS and deterministic state validation?",
+    "What did Abraham show at the Spectrum Ori art exhibition?",
+    "Tell me about Blueshels Ltd web engineering"
   ],
 
   knowledgeEntries: [
@@ -264,6 +262,22 @@ export const gwenKnowledgeBase = {
         targetSection: "about"
       },
       followUps: ["Tell me about CivOS", "Explain D MEX Protocol", "How did he start drawing at age 6?"]
+    },
+
+    // 16. Blueshels Ltd: Web Design & Frontend UI Engineering
+    {
+      id: "blueshels-experience",
+      intent: ["blueshels", "frontend", "ui engineer", "web designer", "conversion", "wcag", "work experience"],
+      tags: ["#Blueshels", "#FrontendEngineering", "#DesignSystems", "#WCAG"],
+      answer: "At **Blueshels Ltd** (2024 to 2025), Abraham worked as a **Web Designer and Frontend UI Engineer**:\n\n• **Performance Optimization**: Engineered responsive web interfaces and digital campaign infrastructure, optimizing asset delivery to achieve sub second load times.\n• **Accessibility Standards**: Implemented accessible design systems conforming strictly to WCAG 2.1 specifications across client web properties.\n• **Conversion Engineering**: Structured high converting checkout funnels and performance optimized storefronts, boosting client checkout conversion rates by 28 percent.",
+      contextCard: {
+        title: "Blueshels Ltd",
+        badge: "Web Designer & Frontend UI Engineer (2024 to 2025)",
+        detail: "Sub Second Load Times · WCAG 2.1 · 28% Conversion Growth",
+        actionText: "VIEW EXPERIENCE",
+        targetSection: "experience"
+      },
+      followUps: ["Tell me about Kucheza Gaming", "What is REAVO?", "Explain D MEX Protocol"]
     }
   ]
 };

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Copy, Check, ArrowDown } from 'lucide-react';
+import { Copy, Check, ArrowDown, FileText } from 'lucide-react';
 import { GithubIcon, LinkedinIcon, XIcon } from './Icons';
 import HyperCube3D from './HyperCube3D';
 import PersonalMark from './PersonalMark';
@@ -93,6 +93,21 @@ export default function Hero({ onExploreClick }) {
               </div>
               <span>{copied ? "Email Copied!" : "Copy Email"}</span>
             </button>
+
+            {/* Direct Resume Action: Prominent PDF Download */}
+            <a
+              href="/Toluwani_Abraham_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download="Toluwani_Abraham_Resume.pdf"
+              className="inline-flex items-center gap-2 px-5 py-3 rounded-full text-xs sm:text-sm font-mono transition-all active:scale-95 group bg-black/5 hover:bg-black/10 text-zinc-900 border border-black/15 dark:bg-zinc-900/90 dark:text-zinc-100 dark:border-zinc-700/90 dark:hover:border-zinc-500 dark:hover:bg-zinc-800/90 dark:shadow-[0_2px_12px_rgba(0,0,0,0.5)]"
+              title="Download Technical Resume (PDF)"
+            >
+              <div className="icon-hover-physics">
+                <FileText size={14} className="text-zinc-700 dark:text-zinc-300" />
+              </div>
+              <span>Technical Resume</span>
+            </a>
 
             {/* Social Channels */}
             <div className="flex items-center gap-1.5 pl-1">

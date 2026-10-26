@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Copy, Check, ArrowUpRight, Mail, Phone, ChevronDown, MessageSquare, Send, PhoneCall } from 'lucide-react';
+import { Copy, Check, ArrowUpRight, Mail, Phone, ChevronDown, MessageSquare, Send, PhoneCall, FileText } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { GithubIcon, LinkedinIcon, XIcon } from './Icons';
 
@@ -207,6 +207,22 @@ export default function ContactSection() {
                 <XIcon size={16} />
               </div>
               <span className="font-medium">X (Twitter)</span>
+            </div>
+            <ArrowUpRight size={14} className="text-[var(--text-muted)] group-hover:text-[var(--text-primary)] transition-colors" />
+          </a>
+
+          <a
+            href="/Toluwani_Abraham_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            download="Toluwani_Abraham_Resume.pdf"
+            className="flex items-center justify-between p-3.5 rounded-2xl ios-pill text-xs font-mono text-[var(--text-primary)] hover:border-[var(--border-hover)] transition-all group"
+          >
+            <div className="flex items-center gap-2.5">
+              <div className="icon-hover-physics">
+                <FileText size={16} className="text-zinc-700 dark:text-zinc-300" />
+              </div>
+              <span className="font-medium">Technical Resume</span>
             </div>
             <ArrowUpRight size={14} className="text-[var(--text-muted)] group-hover:text-[var(--text-primary)] transition-colors" />
           </a>

@@ -43,34 +43,32 @@ export default function ExperienceSection() {
       technologies: ['Unreal Engine 5', 'Blender', 'Spatial Staging', 'Enterprise Strategy', 'Pitch Architecture']
     },
     {
-      id: 'gdg-covenant',
-      company: 'Google Developer Groups · Game Developers Track & Systems R&D',
-      role: 'Track Lead & Systems Researcher · Final Year Capstone',
-      period: '2022 · 2026',
-      status: 'Graduated',
-      location: 'Ota, Nigeria',
-      badge: 'GDG on Campus & BSc Capstone',
-      highlight: 'Led game development initiatives for Google Developer Groups and conducted personal systems R&D for final year thesis project D MEX and spatial computing.',
-      keyMetric: 'Game Dev Track & BSc Thesis',
-      glowClass: 'bg-blue-500',
-      accentGlow: 'rgba(66, 133, 244, 0.22)',
-      accentBorder: 'rgba(66, 133, 244, 0.65)',
+      id: 'blueshels',
+      company: 'Blueshels Ltd',
+      role: 'Web Designer & Frontend UI Engineer',
+      period: '2024 · 2025',
+      status: 'Completed',
+      location: 'Lagos, Nigeria',
+      badge: 'Frontend & UI Engineering',
+      highlight: 'Engineered responsive web interfaces and digital campaign infrastructure, optimizing asset delivery to achieve sub second load times.',
+      keyMetric: '28% Checkout Conversion Increase',
+      glowClass: 'bg-sky-500',
+      accentGlow: 'rgba(2, 132, 199, 0.22)',
+      accentBorder: 'rgba(56, 189, 248, 0.65)',
       logo: (
         <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 transition-transform duration-300 group-hover:scale-110" fill="none">
-          {/* Official GDG Colors: Blue, Red, Yellow, Green */}
-          <path d="M7 7L3 12L7 17" stroke="#4285F4" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          <path d="M17 7L21 12L17 17" stroke="#34A853" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-          <circle cx="12" cy="9.5" r="1.5" fill="#EA4335" />
-          <circle cx="12" cy="14.5" r="1.5" fill="#FBBC05" />
+          <path d="M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12" stroke="#0284c7" strokeWidth="1.8" strokeLinecap="round" />
+          <path d="M12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12" stroke="#38bdf8" strokeWidth="1.8" strokeLinecap="round" />
+          <circle cx="12" cy="12" r="2.2" fill="#38bdf8" />
         </svg>
       ),
       deliverables: [
-        'Directed game development workshops, spatial physics tutorials, and game engine sessions for the Google Developer Groups community',
-        'Conducted personal systems R&D architecting D MEX cross chain atomic swap protocol as final year BSc thesis capstone at Covenant University',
-        'Engineered CivOS distributed computing research prototype exploring living virtual world compute hierarchies',
-        'Graduated with BSc in Computer Science with distinction in systems architecture and cryptographic protocols'
+        'Engineered responsive web interfaces and digital campaign infrastructure, optimizing asset delivery to achieve sub second load times',
+        'Implemented accessible design systems conforming to WCAG 2.1 guidelines across enterprise client properties',
+        'Structured high converting checkout funnels and performance optimized storefronts, boosting client conversion by 28%',
+        'Built reusable modular component libraries in React, Tailwind CSS, and TypeScript with fluid responsive layout scaling'
       ],
-      technologies: ['Game Development', 'Unreal Engine 5', 'Solidity', 'C++', 'Three.js', 'BSc Capstone R&D']
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Design Systems', 'WCAG 2.1', 'Web Performance']
     },
     {
       id: 'loom',

@@ -14,6 +14,13 @@ export const timelineData = [
     detail: "Six month intensive industrial training: Game programming, 3D tournament booth design, esports ecosystem research, and corporate pitch deck engineering for MTN, Infinix, and Rexona."
   },
   {
+    year: "2024 to 2025",
+    phase: "Web Design & Frontend UI Engineering",
+    org: "Blueshels Ltd",
+    badge: "Commercial Production",
+    detail: "Engineered responsive web interfaces and digital campaign infrastructure with sub second load times, accessible WCAG 2.1 design systems, and a 28 percent increase in checkout conversion rates."
+  },
+  {
     year: "2025",
     phase: "Spatial Systems & EduTech Deployment",
     org: "LOOM / CodePlay Naija",

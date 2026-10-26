@@ -278,7 +278,26 @@ export default function ProjectLogo({ project, projectId, size = 18, className =
     );
   }
 
-  // 13. Google Developer Groups: Official 4-Color Vector Chevron Mark
+  // 13. Blueshels Ltd: Sleek Precision Minimalist Mark
+  if (id.includes('blueshels')) {
+    return (
+      <svg
+        width={size}
+        height={size}
+        viewBox="0 0 24 24"
+        fill="none"
+        className={`shrink-0 ${className}`}
+        title="Blueshels Ltd"
+        aria-label="Blueshels Ltd"
+      >
+        <path d="M12 3C7.03 3 3 7.03 3 12C3 16.97 7.03 21 12 21C16.97 21 21 16.97 21 12" stroke="#0284c7" strokeWidth="1.8" strokeLinecap="round" />
+        <path d="M12 7C9.24 7 7 9.24 7 12C7 14.76 9.24 17 12 17C14.76 17 17 14.76 17 12" stroke="#38bdf8" strokeWidth="1.8" strokeLinecap="round" />
+        <circle cx="12" cy="12" r="2.2" fill="#38bdf8" />
+      </svg>
+    );
+  }
+
+  // 14. Google Developer Groups: Official 4-Color Vector Chevron Mark
   if (id.includes('gdg') || id.includes('google')) {
     return (
       <svg
