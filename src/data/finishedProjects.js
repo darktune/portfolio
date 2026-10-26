@@ -1208,22 +1208,34 @@ class SoundEffectsEngine {
     category: "Conceptual & Fintech",
     filterCategory: "conceptual",
     year: "2026",
-    statusBadge: "Personal Trading Tool",
+    statusBadge: "Live Production Tool",
     featured: false,
-    coverImage: "/media/siphoon_os.jpg",
+    coverImage: "/media/siphoon_live.webp",
     videoUrl: null,
     hasVideo: false,
     gallery: [
       {
-        url: "/media/siphoon_os.jpg",
-        title: "SIPHOON OS Quantitative Workstation"
+        url: "/media/siphoon_live.webp",
+        title: "SIPHOON OS Command Center & Live Market Desk"
+      },
+      {
+        url: "/media/siphoon_intelligence.webp",
+        title: "Market Intelligence & Bayesian Signal Engine"
+      },
+      {
+        url: "/media/siphoon_quant.webp",
+        title: "Quant Hub Risk Calculators & Position Sizing"
+      },
+      {
+        url: "/media/siphoon_journal.webp",
+        title: "Forex Trade Journal & Execution Log"
       }
     ],
     summary: "A personal Forex trade journal and risk calculator web app built with Next.js 15, TypeScript, PostgreSQL, Prisma, and TradingView lightweight charts. Helps currency traders calculate position lot sizes using the Kelly criterion, log trade entries with screenshots, and track rule discipline.",
     role: "Full Stack Engineer",
     techStack: ["Next.js 15", "TypeScript", "PostgreSQL", "Prisma", "lightweight charts", "Tailwind CSS"],
-    github: "https://github.com/darktune/Stelcera",
-    demoUrl: null,
+    github: "https://github.com/darktune/SIPHOON",
+    demoUrl: "https://siphoon.vercel.app",
     metrics: [
       { label: "Chart Display", value: "Lightweight Charts" },
       { label: "Risk Formulas", value: "Kelly & Pip Math" },

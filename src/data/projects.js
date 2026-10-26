@@ -631,14 +631,31 @@ export const projectsData = [
     "filterCategory": "fintech",
     "year": "2026",
     "featured": true,
-    "badge": "Personal Trading Tool",
-    "coverImage": null,
+    "badge": "Live Production Tool",
+    "coverImage": "/media/siphoon_live.webp",
     "videoUrl": null,
     "hasVideo": false,
-    "gallery": [],
+    "gallery": [
+      {
+        "url": "/media/siphoon_live.webp",
+        "title": "SIPHOON OS Command Center & Live Market Desk"
+      },
+      {
+        "url": "/media/siphoon_intelligence.webp",
+        "title": "Market Intelligence & Bayesian Signal Engine"
+      },
+      {
+        "url": "/media/siphoon_quant.webp",
+        "title": "Quant Hub Risk Calculators & Position Sizing"
+      },
+      {
+        "url": "/media/siphoon_journal.webp",
+        "title": "Forex Trade Journal & Execution Log"
+      }
+    ],
     "summary": "A personal Forex trade journal and risk calculator web app built with Next.js 15, TypeScript, PostgreSQL, Prisma, and TradingView lightweight charts. Helps currency traders calculate position lot sizes using the Kelly criterion, log trade entries with screenshots, and track rule discipline.",
     "role": "Full Stack Engineer",
-    "status": "Personal Trading Tool",
+    "status": "Live Production Tool",
     "techStack": [
       "Next.js 15",
       "TypeScript",
@@ -648,8 +665,8 @@ export const projectsData = [
       "Tailwind CSS",
       "Docker"
     ],
-    "github": "https://github.com/abraham-DT/siphoon-os",
-    "demoUrl": null,
+    "github": "https://github.com/darktune/SIPHOON",
+    "demoUrl": "https://siphoon.vercel.app",
     "metrics": [
       {
         "label": "Chart Display",
