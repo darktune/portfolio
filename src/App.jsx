@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProjectsSection from './components/ProjectsSection';
@@ -150,6 +151,9 @@ export default function App() {
         externalPrompt={gwenExternalPrompt}
         onOpenCaseStudy={handleOpenProjectById}
       />
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
 
     </div>
   );
