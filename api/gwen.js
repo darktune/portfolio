@@ -109,10 +109,10 @@ CRITICAL FORMATTING DIRECTIVE:
   };
 
   const modelsToTry = [
-    'gemini-3.8-flash',
     'gemini-2.0-flash',
     'gemini-2.0-flash-lite',
-    'gemini-1.5-flash'
+    'gemini-1.5-flash',
+    'gemini-3.8-flash'
   ];
   let successfulText = '';
   let activeModel = '';
@@ -124,7 +124,8 @@ CRITICAL FORMATTING DIRECTIVE:
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload)
+          body: JSON.stringify(payload),
+          signal: AbortSignal.timeout(4000)
         }
       );
 
