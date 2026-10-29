@@ -47,5 +47,5 @@ export const currentlyNowData = [
   { label: "Building", desc: "CivOS deterministic action validation research prototype and D MEX smart contract testing." },
   { label: "Researching", desc: "Agent coordination patterns, deterministic state validation rules, and options risk pricing." },
   { label: "Credentials", desc: "BSc Computer Science Graduate from Covenant University." },
-  { label: "Markets", desc: "Studying London and New York session liquidity sweeps and currency market structure." }
+  { label: "Markets", desc: "SIPHOON historical bar replay engine, automated market intelligence harvester, and 25,000 Monte Carlo simulations." }
 ];
