@@ -48,9 +48,13 @@ export default function AboutSection() {
           <div className="pt-2">
             <div className="rounded-3xl ios-glass-card p-5 sm:p-6 space-y-4 border border-[var(--border-subtle)]">
               <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2.5">
-                  <div className="w-9 h-9 rounded-2xl ios-pill flex items-center justify-center text-[var(--text-primary)]">
-                    <PersonalMark size={16} />
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-2xl overflow-hidden ring-1 ring-zinc-300 dark:ring-zinc-700 shrink-0 shadow-sm">
+                    <img 
+                      src="/media/abraham_portrait.jpg" 
+                      alt="Abraham Toluwani" 
+                      className="w-full h-full object-cover object-top"
+                    />
                   </div>
                   <div>
                     <div className="text-sm font-bold text-[var(--text-primary)]">

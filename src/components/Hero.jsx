@@ -33,10 +33,25 @@ export default function Hero({ onExploreClick }) {
         {/* Main Column: Authoritative Manifesto & Cadence */}
         <div className="lg:col-span-8 space-y-6">
           
-          <div className="space-y-3">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-950 dark:text-white leading-[1.04]">
-              Abraham Toluwani
-            </h1>
+          <div className="space-y-4">
+            <div className="flex items-center gap-4 sm:gap-5">
+              <div className="relative group shrink-0">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden ring-2 ring-zinc-200 dark:ring-zinc-800 shadow-md group-hover:ring-zinc-900 dark:group-hover:ring-white transition-all">
+                  <img 
+                    src="/media/abraham_portrait.jpg" 
+                    alt="Abraham Toluwani" 
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+                <span className="absolute -bottom-1 -right-1 flex h-3.5 w-3.5">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-500 border-2 border-white dark:border-zinc-950"></span>
+                </span>
+              </div>
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-950 dark:text-white leading-[1.04]">
+                Abraham Toluwani
+              </h1>
+            </div>
 
             {/* Occupations: Clean Black/Neutral Typography Without Pill Bubbles */}
             <div className="flex flex-wrap items-center gap-x-3 gap-y-1.5 pt-1 text-xs sm:text-sm font-mono font-medium text-zinc-900 dark:text-zinc-100">
