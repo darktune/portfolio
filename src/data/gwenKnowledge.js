@@ -77,7 +77,7 @@ export const gwenKnowledgeBase = {
       id: "stelcera-terminal",
       intent: ["stelcera", "trading", "terminal", "options", "greeks", "canvas 120 fps", "fastapi"],
       tags: ["#STELCERA", "#Trading", "#Quant", "#OptionsMath"],
-      answer: "**STELCERA Terminal** is a high speed financial workstation created to give traders complete clarity in fast moving markets.\n\n**What makes it special:**\n• **Smooth and Fluid**: Renders market moves at 120 frames per second on HTML5 Canvas without screen stutter.\n• **Clear Market Vision**: Calculates Black Scholes options Greeks in under fifteen milliseconds.\n• **Reliable Data Streaming**: Delivers live candlestick data and market prices smoothly via FastAPI WebSockets.",
+      answer: "**STELCERA Terminal** is a high speed financial workstation created to give traders complete clarity in fast moving markets.\n\n**What makes it special:**\n• **Smooth and Fluid**: Renders market moves at 120 frames per second on HTML5 Canvas without screen stutter.\n• **Clear Market Vision**: Calculates Black Scholes options Greeks in under fifteen milliseconds.\n• **Reliable Data Streaming**: Delivers live candlestick data and market prices smoothly via FastAPI WebSockets.\n• **Live Deployment**: Hosted live at [stelcera-w5x1.vercel.app](https://stelcera-w5x1.vercel.app/).",
       contextCard: {
         title: "STELCERA Terminal",
         badge: "Financial Charting Workstation",

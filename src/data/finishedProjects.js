@@ -150,7 +150,7 @@ function verifySecret(bytes32 hashLock, bytes32 secret) internal pure returns (b
     role: "Full Stack Engineer",
     techStack: ["Next.js 15", "React 19", "FastAPI", "WebSockets", "HTML5 Canvas", "Python", "NumPy"],
     github: "https://github.com/abraham-DT/stelcera-terminal",
-    demoUrl: null,
+    demoUrl: "https://stelcera-w5x1.vercel.app",
     metrics: [
       { label: "Chart Frame Rate", value: "120 FPS Canvas" },
       { label: "Options Math", value: "Black Scholes" },

@@ -20,6 +20,7 @@ async function checkLive() {
       const sText = await sRes.text();
       console.log('  Includes siphoon.vercel.app:', sText.includes('siphoon.vercel.app'));
       console.log('  Includes loom-3d-virtual-atelier:', sText.includes('loom-3d-virtual-atelier'));
+      console.log('  Includes stelcera-w5x1:', sText.includes('stelcera-w5x1'));
       console.log('  Includes Blueshels:', sText.includes('Blueshels'));
       console.log('  Includes reavo_admin:', sText.includes('reavo_admin'));
       console.log('  Includes CodePlay Naija in Kucheza:', sText.includes('Kucheza Gaming'));

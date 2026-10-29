@@ -198,7 +198,7 @@ export const projectsData = [
       "NumPy"
     ],
     "github": "https://github.com/abraham-DT/stelcera-terminal",
-    "demoUrl": null,
+    "demoUrl": "https://stelcera-w5x1.vercel.app",
     "metrics": [
       {
         "label": "Chart Frame Rate",
